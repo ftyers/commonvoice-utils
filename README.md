@@ -151,5 +151,10 @@ want to just train [coqui-ai/STT](https://github.com/coqui-ai/STT/) on Common Vo
 
 ## See also
 
-* [`epitran`](https://github.com/dmort97/epitran/): Great grapheme to phoneme system that supports a wide
+* [`epitran`](https://github.com/dmort27/epitran/): Great grapheme to phoneme system that supports a wide
   range of languages.
+
+## Acknowledgements 
+
+* Grapheme to phoneme correspondences for the following languages from [`epitran`](https://github.com/dmort27/epitran/):
+  * `vi`, `uk`, `kk`, `ky`
