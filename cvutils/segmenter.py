@@ -1,5 +1,4 @@
-import re 
-
+import re, os
 
 class Segmenter:
 	"""
@@ -14,18 +13,19 @@ class Segmenter:
 
 	def load_data(self):
 		self.eos = []
-		for line in open('data/' + self.lang + '/validate.tsv').readlines():
+		data_dir = os.path.abspath(os.path.dirname(__file__)) + '/data/'
+		for line in open(data_dir + self.lang + '/validate.tsv').readlines():
 			row = line.strip('\n').split('\t')
 			if row[0] == 'NORM':
 				k = row[1].strip()	
 				v = row[2].strip()	
 				self.transform[k] = v
-		for line in open('data/' + self.lang + '/punct.tsv').readlines():
+		for line in open(data_dir + self.lang + '/punct.tsv').readlines():
 			row = line.strip('\n').split('\t')
 			k = row[1].strip()	
 			self.eos.append(k)
 		self.abbr = []
-		for line in open('data/' + self.lang + '/abbr.tsv').readlines():
+		for line in open(data_dir + self.lang + '/abbr.tsv').readlines():
 			row = line.strip('\n').split('\t')
 			k = row[1].strip()	
 			self.abbr.append(k)

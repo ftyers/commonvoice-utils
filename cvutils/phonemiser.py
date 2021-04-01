@@ -1,5 +1,4 @@
-import re 
-
+import re, os
 
 class Phonemiser:
 	"""
@@ -14,7 +13,8 @@ class Phonemiser:
 
 	def load_data(self):
 		self.lkp = {}
-		fd = open('data/' + self.lang + '/phon.tsv')
+		data_dir = os.path.abspath(os.path.dirname(__file__)) + '/data/'
+		fd = open(data_dir + self.lang + '/phon.tsv')
 		line = fd.readline() # Skip the first line
 		line = fd.readline()
 		while line:

@@ -24,6 +24,7 @@ setup(
         "Programming Language :: Python :: 3.7",
     ],
     include_package_data=True,
+    packages=['cvutils'],
     install_requires=["re"]
 )
 

@@ -82,7 +82,7 @@ utilities and data useful in training ASR and TTS systems.
 ### Grapheme to phoneme
 
 ```python
->>> from phonemiser import Phonemiser
+>>> from cvutils import Phonemiser
 >>> p = Phonemiser('ab')
 >>> p.phonemise('гӏапынхъамыз')
 'ʕapənqaməz'
@@ -95,7 +95,7 @@ utilities and data useful in training ASR and TTS systems.
 ### Validator
 
 ```python
->>> from validator import Validator
+>>> from cvuilts import Validator
 >>> v = Validator('ab')
 >>> v.validate('Аллаҳ хаҵеи-ԥҳәыси иеилыхны, аҭыԥҳацәа роума иалихыз?')
 'аллаҳ хаҵеи-ԥҳәыси иеилыхны аҭыԥҳацәа роума иалихыз'
@@ -108,11 +108,11 @@ utilities and data useful in training ASR and TTS systems.
 ### Sentence segmentation
 
 ```python
->>> from segmenter import Segmenter 
+>>> from cvutils import Segmenter 
 >>> s = Segmenter('br')
->>> sent = "Peurliesañ avat e kemm ar vogalennoù e c'hengerioù evit dont da vezañ heñvel ouzh ar vogalennoù en nominativ (d.l.e. ar stumm-meneg), da skouer e hungareg: Aour, tungsten, zink, uraniom, h.a., a vez kavet e kondon Bouryatia. A-bouez-bras evit armerzh ar vro eo al labour-douar ivez pa vez gounezet gwinizh ha legumaj dreist-holl. A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa."
->>> for i in s.segment(sent):
-...     print(i)
+>>> para = "Peurliesañ avat e kemm ar vogalennoù e c'hengerioù evit dont da vezañ heñvel ouzh ar vogalennoù en nominativ (d.l.e. ar stumm-meneg), da skouer e hungareg: Aour, tungsten, zink, uraniom, h.a., a vez kavet e kondon Bouryatia. A-bouez-bras evit armerzh ar vro eo al labour-douar ivez pa vez gounezet gwinizh ha legumaj dreist-holl. A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa."
+>>> for sent in s.segment(para):
+...     print(sent)
 ... 
 Peurliesañ avat e kemm ar vogalennoù e c'hengerioù evit dont da vezañ heñvel ouzh ar vogalennoù en nominativ (d.l.e. ar stumm-meneg), da skouer e hungareg: Aour, tungsten, zink, uraniom, h.a., a vez kavet e kondon Bouryatia.
 A-bouez-bras evit armerzh ar vro eo al labour-douar ivez pa vez gounezet gwinizh ha legumaj dreist-holl.

@@ -1,3 +1,5 @@
+import os
+
 class Alphabet:
 	"""
 	>>> p = Alphabet('ab')
@@ -9,7 +11,9 @@ class Alphabet:
 		self.load_data()
 
 	def load_data(self):
-		a = [line.strip('\n') for line in open('data/' + self.lang + '/alphabet.txt').readlines()]
+		data_dir = os.path.abspath(os.path.dirname(__file__)) + '/data/'
+		fd = open(data_dir + self.lang + '/alphabet.txt')
+		a = [line.strip('\n') for line in fd.readlines()]
 		a = list(set(''.join(a)))
 		a.sort()
 		self.alphabet = ''.join(a)

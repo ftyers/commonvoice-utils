@@ -1,4 +1,4 @@
-import re
+import re, os
 
 class Validator:
 	"""
@@ -15,7 +15,8 @@ class Validator:
 		self.alphabet = [] 
 		self.transform = {}
 		self.lower = False
-		for line in open('data/' + self.lang + '/validate.tsv').readlines():
+		data_dir = os.path.abspath(os.path.dirname(__file__)) + '/data/'
+		for line in open(data_dir + self.lang + '/validate.tsv').readlines():
 			row = line.strip('\n').split('\t')
 			if row[0] == 'ALLOW':
 				a = row[1].strip()
