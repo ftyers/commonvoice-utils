@@ -21,3 +21,12 @@ utilities and data useful in training ASR and TTS systems.
 >>> p.phonemise('гӏапынхъамыз')
 'ʕapənqaməz'
 ```
+
+### Validator
+
+```python
+>>> from validator import Validator
+>>> v = Validator('ab')
+>>> v.validate('Аллаҳ хаҵеи-ԥҳәыси иеилыхны, аҭыԥҳацәа роума иалихыз?')
+'аллаҳ хаҵеи-ԥҳәыси иеилыхны аҭыԥҳацәа роума иалихыз'
+```
