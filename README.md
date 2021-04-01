@@ -33,7 +33,7 @@ utilities and data useful in training ASR and TTS systems.
 | Estonian             | Eesti     |``    | `et`   |            |           |   ✔       |            |
 | Basque               | Euskara   |`eus` | `eu`   |            |           |    ✔      |            |
 | Persian              |           |`pes` | `fa`   |            |           |          |            |
-| Finnish              | Suomi     |`fin` | `fi`   | ✔           |           |   ✔       |            |
+| Finnish              | Suomi     |`fin` | `fi`   | ✔           |   ✔        |   ✔       |            |
 | French               |      |`fra` | `fr`   |            |           |          |            |
 | Frisian              |      |`` | `fy-NL`   |            |           |          |            |
 | Irish                |      |`gle` | `ga-IE`   |            |           |    ✔      |            |
