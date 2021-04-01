@@ -41,7 +41,7 @@ utilities and data useful in training ASR and TTS systems.
 | Persian              | فارسی          |`pes` | `fa`   |    —        |           |          |            |
 | Finnish              | Suomi     |`fin` | `fi`   | ✔           |   ✔        |   ✔       |            |
 | French               | Français     |`fra` | `fr`   |     —       |           |     ✔     |            |
-| Frisian              | Frysk     |`fry` | `fy-NL`   |            |           |          |            |
+| Frisian              | Frysk     |`fry` | `fy-NL`   |            |           |       ✔    |            |
 | Irish                | Gaeilge     |`gle` | `ga-IE`   |            |           |    ✔      |            |
 | Hindi                | हिन्दी      |`hin` | `hi`   |            |           |          |            |
 | Upper Sorbian        | Hornjoserbšćina     |`hsb` | `hsb`   |            |           |       ✔   |            |
@@ -52,8 +52,8 @@ utilities and data useful in training ASR and TTS systems.
 | Italian              | Italiano     |`ita` | `it`   |     ✔       |           |    ✔      |            |
 | Japanese             | 日本語     |`jpn` | `ja`   |      —      |           |          |            |
 | Georgian             |  ქართული ენა    |`kat` | `ka`   |    ✔          |           | ✔         |            |
-| Kabyle               | Taqbaylit     |`kab` | `kab`   |            |           |          |            |
-| Kazakh               | Қазақша     |`kaz` | `kk`   |   ✔          |           |          |            |
+| Kabyle               | Taqbaylit     |`kab` | `kab`   |      ✔        |           |      ✔      |            |
+| Kazakh               | Қазақша     |`kaz` | `kk`   |   ✔          |           |      ✔     |            |
 | Kyrgyz               | Кыргызча     |`kir` | `ky`   |    ✔         |           |  ✔        |            |
 | Luganda              | Luganda     |`lug` | `lg`   |            |           |       ✔       |            |
 | Lithuanian           | Lietuvių kalba     |`lit` | `lt`   |            |           |  ✔          |            |
