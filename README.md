@@ -141,3 +141,8 @@ The idea of these utilities is to provide adequate implementations of things are
 when working with all the languages in Common Voice. If you are working on a single language or have 
 a specific setup or are using more data than just Common Voice, maybe this isn't for you. But if you
 want to just train [coqui-ai/STT](https://github.com/coqui-ai/STT/) on Common Voice, then maybe it is :)
+
+## See also
+
+* [`epitran`](https://github.com/dmort97/epitran/): Great grapheme to phoneme system that supports a wide
+  range of languages.
