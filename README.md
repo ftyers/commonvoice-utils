@@ -62,7 +62,7 @@ utilities and data useful in training ASR and TTS systems.
 | Dutch                | Nederlands     |`nld` | `nl`   |            |           |          |            |
 | Oriya                | ଓଡ଼ିଆ     |`ori` | `or`   |            |           |          |            |
 | Punjabi              | ਪੰਜਾਬੀ     |`pan` | `pa-IN`   |            |           |          |            |
-| Polish               | Polski     |`pol` | `pl`   |            |           |     ✔     |            |
+| Polish               | Polski     |`pol` | `pl`   |   ✔          |           |     ✔     |            |
 | Portuguese           | Português     |`por` | `pt`   |            |           |     ✔     |            |
 | Kʼicheʼ              | Kʼicheʼ             |`quc` | `quc`   |   ✔          |           |      ✔    |            |
 | Romansch (Sursilvan) | Romontsch     |`roh` | `rm-sursilv`   |            |           |  ✔        |            |
