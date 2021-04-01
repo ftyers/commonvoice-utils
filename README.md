@@ -10,3 +10,14 @@ utilities and data useful in training ASR and TTS systems.
 |--------- |----- |-------- |----------- |---------- |----------|---------- |
 | Abaza    | `aba` | `ab`   | ✔          | ✔         | ✔        |           |
 
+
+## How to use it
+
+### Grapheme to phoneme
+
+```python
+>>> from phonemiser import Phonemiser
+>>> p = Phonemiser('ab')
+>>> p.phonemise('гӏапынхъамыз')
+'ʕapənqaməz'
+```
