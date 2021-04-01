@@ -46,6 +46,7 @@ utilities and data useful in training ASR and TTS systems.
 | Hindi                | हिन्दी      |`hin` | `hi`   |            |           |          |            |
 | Upper Sorbian        | Hornjoserbšćina     |`hsb` | `hsb`   |            |           |       ✔   |            |
 | Hungarian            | Magyar nyelv     |`hun` | `hu`   |      ✔       |           |     ✔     |            |
+| Armenian             | Հայերեն         | `hye` | `hy-AM` | ✔        |          |       ✔   |             |
 | Interlingua          | Interlingua     |`ina` | `ia`   |            |           |          |            |
 | Indonesian           | Bahasa indonesia     |`ind` | `id`   |            |           |     ✔     |            |
 | Italian              | Italiano     |`ita` | `it`   |            |           |          |            |
