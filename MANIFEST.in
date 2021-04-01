@@ -1,0 +1,3 @@
+include data/
+include data/ab
+include data/ab/phon.tsv
