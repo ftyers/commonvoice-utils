@@ -14,13 +14,17 @@ class Phonemiser:
 
 	def load_data(self):
 		self.lkp = {}
-		for line in open('data/' + self.lang + '/phon.tsv').readlines():
+		fd = open('data/' + self.lang + '/phon.tsv')
+		line = fd.readline() # Skip the first line
+		line = fd.readline()
+		while line:
 			row = line.strip('\n').split('\t')
 			k = row[0].strip()	
 			v = row[1].strip()	
 			if k not in self.lkp:
 				self.lkp[k] = []
 			self.lkp[k].append(v)
+			line = fd.readline()
 		
 	def maxmatch(self, token):
 		token += ' '
