@@ -68,7 +68,7 @@ utilities and data useful in training ASR and TTS systems.
 | Swedish              | Svenska      |`swe` | `sv-SE`   |            |           |     ✔     |            |
 | Tamil                | தமிழ்    |`tam` | `ta`   |            |           |          |            |
 | Thai                 | ภาษาไทย     |`tha` | `th`   |    ✔        |           |     ✔     |            |
-| Turkish              | Türkçe |`tur` | `tr`   |   ✔         |           |          |            |
+| Turkish              | Türkçe |`tur` | `tr`   |   ✔         |           |      ✔     |            |
 | Tatar                | Татар теле |`tat` | `tt`   | ✔          |        |  ✔     |         |
 | Ukrainian            |  Українська мова    |`ukr` | `uk`   |   ✔         |           |          |            |
 | Vietnamese           | Tiếng Việt     |`vie` | `vi`   |            |           |    ✔      |            |
@@ -128,3 +128,16 @@ A-bouez-bras evit armerzh ar vro eo al labour-douar ivez pa vez gounezet gwinizh
 A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 ```
 
+
+## Frequently asked questions
+
+### Why not use [insert better system] for [insert task here] ?
+
+There are potentially lot of better language-specific systems for doing these tasks, but each one has
+a slightly different API, so if you want to support all the Common Voice languages or even a reasonable
+subset you have to learn and use the same number of language-specific APIs. 
+
+The idea of these utilities is to provide adequate implementations of things are are likely to be useful
+when working with all the languages in Common Voice. If you are working on a single language or have 
+a specific setup or are using more data than just Common Voice, maybe this isn't for you. But if you
+want to just train [coqui-ai/STT](https://github.com/coqui-ai/STT/) on Common Voice, then maybe it is :)
