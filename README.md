@@ -6,9 +6,11 @@ utilities and data useful in training ASR and TTS systems.
 
 ## Language support 
 
-| Language | Code | CV Code | Phonemiser | Validator | Alphabet | Segmenter |
-|--------- |----- |-------- |----------- |---------- |----------|---------- |
-| Abaza    | `aba` | `ab`   | ✔          | ✔         | ✔        |           |
+| Language | Autonym   | Code | CV Code | Phonemiser | Validator | Alphabet | Segmenter |
+|--------- |---------- |----- |------- |----------- |----------|---------- |
+| Abaza    | Абаза     |`abq` | `ab`   | ✔          | ✔         | ✔        |           |
+| Breton   | Brezhoneg |`bre` | `br`   | ✔          | ✔         | ✔        |           |
+
 
 
 ## How to use it
