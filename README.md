@@ -60,7 +60,7 @@ utilities and data useful in training ASR and TTS systems.
 | Latvian              | Latviešu valoda    |`lvs` | `lv`   |            |           |     ✔       |            |
 | Mongolian            | Монгол хэл |`khk` | `mn`   | ✔          |        |    ✔   |           |
 | Maltese              | Malti     |`mlt` | `mt`   |            |           |      ✔      |            |
-| Dutch                | Nederlands     |`nld` | `nl`   |            |           |          |            |
+| Dutch                | Nederlands     |`nld` | `nl`   |   ✔         |           |    ✔      |            |
 | Oriya                | ଓଡ଼ିଆ     |`ori` | `or`   |            |           |          |            |
 | Punjabi              | ਪੰਜਾਬੀ     |`pan` | `pa-IN`   |            |           |          |            |
 | Polish               | Polski     |`pol` | `pl`   |   ✔          |           |     ✔     |            |
