@@ -38,6 +38,6 @@ utilities and data useful in training ASR and TTS systems.
 
 >>> v = Validator('br')
 >>> v.validate('Ha cʼhoant hocʼh eus da gendercʼhel da implijout ar servijer-mañ ?')
-"ha c'hoant hoc'h eus da genderc'hel da implijout ar servijer mañ"
+"ha c'hoant hoc'h eus da genderc'hel da implijout ar servijer-mañ"
 ```
 
