@@ -6,7 +6,6 @@ REPL	)	_
 REPL	*	_
 REPL	+	_
 REPL	,	_
-REPL	-	_
 REPL	.	_
 REPL	/	_
 REPL	:	_
@@ -73,4 +72,5 @@ ALLOW	w	_
 ALLOW	x	_
 ALLOW	y	_
 ALLOW	z	_
+ALLOW	-	_
 ALLOW	_	_
