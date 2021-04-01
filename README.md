@@ -155,7 +155,9 @@ want to just train [coqui-ai/STT](https://github.com/coqui-ai/STT/) on Common Vo
 
 Depending on the language in Common Voice, the transcripts can contain a lot of random punctuation,
 numerals, and incorrect character encodings (for example Latin *ç* instead of Cyrillic *ҫ* for Chuvash). These
-may look the same but will result in bigger sparsity for the model.
+may look the same but will result in bigger sparsity for the model. Additionally some languages may
+have several encodings of the same character, such as the apostrophe. These will ideally be normalised
+before training.
 
 Also, if you are working with a single language you probably have time to look through all the transcripts
 for the alphabetic symbols, but if you want to work with a large number of Common Voice languages at the 
