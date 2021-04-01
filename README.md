@@ -26,7 +26,7 @@ utilities and data useful in training ASR and TTS systems.
 | Estonian       |      |`` | `et`   |            |           |          |            |
 | Basque       |      |`eus` | `eu`   |            |           |          |            |
 | Persian       |      |`pes` | `fa`   |            |           |          |            |
-| Finnish       |      |`fin` | `fi`   |            |           |          |            |
+| Finnish       | Suomi     |`fin` | `fi`   | ✔           |           |          |            |
 | French       |      |`fra` | `fr`   |            |           |          |            |
 | Frisian       |      |`` | `fy-NL`   |            |           |          |            |
 | Irish       |      |`gle` | `ga-IE`   |            |           |          |            |
@@ -60,7 +60,7 @@ utilities and data useful in training ASR and TTS systems.
 | Swedish       |      |`swe` | `sv-SE`   |            |           |          |            |
 | Tamil       |      |`` | `ta`   |            |           |          |            |
 | Thai       |      |`tha` | `th`   |            |           |          |            |
-| Turkish      |      |`tur` | `tr`   |            |           |          |            |
+| Turkish      | Türkçe |`tur` | `tr`   |   ✔         |           |          |            |
 | Tatar  | Татар теле |`tat` | `tt`   | ✔          |        |      |         |
 | Ukrainian       |      |`ukr` | `uk`   |            |           |          |            |
 | Vietnamese       |      |`vie` | `vi`   |            |           |          |            |
