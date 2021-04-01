@@ -9,7 +9,10 @@ class Validator:
 	def __init__(self, lang):
 		self.lang = lang
 
-		self.load_data()
+		try:
+			self.load_data()
+		except FileNotFoundError:
+			print('[Validator] Function not implemented')
 
 	def load_data(self):
 		self.alphabet = [] 

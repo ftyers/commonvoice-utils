@@ -9,7 +9,10 @@ class Phonemiser:
 	def __init__(self, lang):
 		self.lang = lang
 
-		self.load_data()
+		try:
+			self.load_data()
+		except FileNotFoundError:
+			print('[Phonemiser] Function not implemented')
 
 	def load_data(self):
 		self.lkp = {}

@@ -9,7 +9,10 @@ class Segmenter:
 	def __init__(self, lang):
 		self.lang = lang
 
-		self.load_data()
+		try:
+			self.load_data()
+		except FileNotFoundError:
+			print('[Segmenter] Function not implemented')
 
 	def load_data(self):
 		self.eos = []
