@@ -46,7 +46,8 @@ utilities and data useful in training ASR and TTS systems.
 | Japanese       |      |`jpn` | `ja`   |            |           |          |            |
 | Georgian       |  ქართული ენა    |`kat` | `ka`   |    ✔          |           |          |            |
 | Kabyle       |      |`` | `kab`   |            |           |          |            |
-| Kyrgyz       |      |`kir` | `ky`   |            |           |          |            |
+| Kazakh       | Қазақша     |`kaz` | `kk`   |   ✔          |           |          |            |
+| Kyrgyz       | Кыргызча     |`kir` | `ky`   |    ✔         |           |          |            |
 | Luganda       |      |`` | `lg`   |            |           |          |            |
 | Lithuanian       |      |`` | `lt`   |            |           |          |            |
 | Latvian      |      |`` | `lv`   |            |           |          |            |
@@ -66,10 +67,10 @@ utilities and data useful in training ASR and TTS systems.
 | Slovenian       |      |`slv` | `sl`   |            |           |          |            |
 | Swedish       |      |`swe` | `sv-SE`   |            |           |          |            |
 | Tamil       |      |`` | `ta`   |            |           |          |            |
-| Thai       |      |`tha` | `th`   |            |           |          |            |
+| Thai       | ภาษาไทย     |`tha` | `th`   |    ✔        |           |          |            |
 | Turkish      | Türkçe |`tur` | `tr`   |   ✔         |           |          |            |
 | Tatar  | Татар теле |`tat` | `tt`   | ✔          |        |      |         |
-| Ukrainian       |      |`ukr` | `uk`   |            |           |          |            |
+| Ukrainian       |  Українська мова    |`ukr` | `uk`   |   ✔         |           |          |            |
 | Vietnamese       |      |`vie` | `vi`   |            |           |          |            |
 | Votic       |      |`vot` | `vot`   |            |           |          |            |
 | Chinese (China)       |      |`cmn` | `zh-CN`   |            |           |          |            |
