@@ -26,7 +26,7 @@ utilities and data useful in training ASR and TTS systems.
 | Welsh                | Cymraeg     |`cym` | `cy`   |       ✔      |           |     ✔      |            |
 | Dhivehi              | ދިވެހި         |`div` | `dv`   | ✔          |        |      |         |
 | Greek                | Ελληνικά |`ell` | `el`   | ✔          |        |  ✔      |         |
-| German               | Deutsch     |`deu` | `de`   |            |           |          |            |
+| German               | Deutsch     |`deu` | `de`   |            |          ✔  |     ✔      |            |
 | English              | English     |`eng` | `en`   |            |           |    ✔       |            |
 | Esperanto            | Esperanto     |`epo` | `eo`   |            |           |   ✔       |            |
 | Spanish              | Español   |`spa` | `es`   |            |           |       ✔   |            |
