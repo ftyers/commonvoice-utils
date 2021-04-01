@@ -6,11 +6,17 @@ utilities and data useful in training ASR and TTS systems.
 
 ## Language support 
 
-| Language | Autonym   | Code | CV Code | Phonemiser | Validator | Alphabet | Segmenter |
+| Language | Autonym   | Code | Code (CV) | Phonemiser | Validator | Alphabet | Segmenter |
 |--------- |---------- |----- |------- |----------- |----------|---------- |------------|
 | Abaza    | Абаза     |`abq` | `ab`   | ✔          | ✔         | ✔        |           |
 | Breton   | Brezhoneg |`bre` | `br`   | ✔          | ✔         | ✔        |      ✔     |
 | Chuvash  | Чӑвашла |`chv` | `cv`   | ✔          | ✔         | ✔        |      ✔     |
+| Dhivehi  | ދިވެހި |`div` | `dv`   | ✔          |        |      |         |
+| Greek  | Ελληνικά |`ell` | `el`   | ✔          |        |      |         |
+| Mongolian  | Монгол хэл |`khk` | `mn`   | ✔          |        |      |         |
+| Sakha  | Саха тыла  |`sah` | `sah`   | ✔          |        |      |         |
+| Tatar  | Татар теле |`tat` | `tt`   | ✔          |        |      |         |
+
 
 ## Tools
 
