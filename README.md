@@ -50,7 +50,7 @@ utilities and data useful in training ASR and TTS systems.
 | Interlingua          | Interlingua     |`ina` | `ia`   |            |           |          |            |
 | Indonesian           | Bahasa indonesia     |`ind` | `id`   |       ✔        |           |     ✔     |            |
 | Italian              | Italiano     |`ita` | `it`   |     ✔       |           |    ✔      |            |
-| Japanese             | 日本語     |`jpn` | `ja`   |      —      |           |          |            |
+| Japanese             | 日本語     |`jpn` | `ja`   |      —      |           |     —     |            |
 | Georgian             |  ქართული ენა    |`kat` | `ka`   |    ✔          |           | ✔         |            |
 | Kabyle               | Taqbaylit     |`kab` | `kab`   |      ✔        |           |      ✔      |            |
 | Kazakh               | Қазақша     |`kaz` | `kk`   |   ✔          |           |      ✔     |            |
@@ -81,9 +81,9 @@ utilities and data useful in training ASR and TTS systems.
 | Ukrainian            |  Українська мова    |`ukr` | `uk`   |   ✔         |           |    ✔       |            |
 | Vietnamese           | Tiếng Việt     |`vie` | `vi`   |       ✔      |           |    ✔      |            |
 | Votic                | Vaďďa tšeeli    |`vot` | `vot`   |            |           |   ✔       |            |
-| Chinese (China)      | 中文     |`cmn` | `zh-CN`   |      —      |           |          |            |
-| Chinese (Hong Kong)  | 中文     |`cmn` | `zh-HK`   |      —      |           |          |            |
-| Chinese (Taiwan)     | 中文     |`cmn` | `zh-TW`   |      —      |           |          |            |
+| Chinese (China)      | 中文     |`cmn` | `zh-CN`   |      —      |           |    —      |            |
+| Chinese (Hong Kong)  | 中文     |`cmn` | `zh-HK`   |      —      |           |    —      |            |
+| Chinese (Taiwan)     | 中文     |`cmn` | `zh-TW`   |      —      |           |    —      |            |
 
 ## How to use it
 
