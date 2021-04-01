@@ -70,7 +70,7 @@ utilities and data useful in training ASR and TTS systems.
 | Romansch (Vallader)  | Rumantsch     |`roh` | `rm-vallader`   |            |           |   ✔       |            |
 | Romanian             | Românește     |`ron` | `ro`   |            |           |    ✔       |            |
 | Russian              | Русский     |`rus` | `ru`   |            |           |     ✔     |            |
-| Kinyarwanda          | Kinyarwanda     |`kin` | `rw`   |            |           |          |            |
+| Kinyarwanda          | Kinyarwanda     |`kin` | `rw`   |    ✔         |           |    ✔       |            |
 | Sakha                | Саха тыла  |`sah` | `sah`   | ✔          |        |      |         |
 | Slovenian            | Slovenščina     |`slv` | `sl`   |            |           |    ✔      |            |
 | Swedish              | Svenska      |`swe` | `sv-SE`   |            |           |     ✔     |            |
