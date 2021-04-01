@@ -14,6 +14,12 @@ class Segmenter:
 
 	def load_data(self):
 		self.eos = []
+		for line in open('data/' + self.lang + '/validate.tsv').readlines():
+			row = line.strip('\n').split('\t')
+			if row[0] == 'NORM':
+				k = row[1].strip()	
+				v = row[2].strip()	
+				self.transform[k] = v
 		for line in open('data/' + self.lang + '/punct.tsv').readlines():
 			row = line.strip('\n').split('\t')
 			k = row[1].strip()	
@@ -23,9 +29,18 @@ class Segmenter:
 			row = line.strip('\n').split('\t')
 			k = row[1].strip()	
 			self.abbr.append(k)
+
+	def normalise(self, s):
+		o = s
+		for ch in self.transform:
+			o = o.replace(ch, self.transform[ch])
+		return o
 				
-	def segment(self, paragraph):
+	def segment(self, paragraph, normalise=False):
 		sentences = []
+
+		if normalise:
+			paragraph = self.normalise(paragraph)
 
 		tokens = paragraph.replace(' ', ' ¶ ').split(' ')
 		sentence = ''
