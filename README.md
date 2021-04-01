@@ -49,7 +49,7 @@ utilities and data useful in training ASR and TTS systems.
 | Armenian             | Հայերեն         | `hye` | `hy-AM` | ✔        |          |       ✔   |             |
 | Interlingua          | Interlingua     |`ina` | `ia`   |            |           |          |            |
 | Indonesian           | Bahasa indonesia     |`ind` | `id`   |            |           |     ✔     |            |
-| Italian              | Italiano     |`ita` | `it`   |            |           |          |            |
+| Italian              | Italiano     |`ita` | `it`   |     ✔       |           |    ✔      |            |
 | Japanese             | 日本語     |`jpn` | `ja`   |            |           |          |            |
 | Georgian             |  ქართული ენა    |`kat` | `ka`   |    ✔          |           | ✔         |            |
 | Kabyle               | Taqbaylit     |`kab` | `kab`   |            |           |          |            |
