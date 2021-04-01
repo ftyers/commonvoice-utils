@@ -21,8 +21,8 @@ utilities and data useful in training ASR and TTS systems.
 | Breton               | Brezhoneg |`bre` | `br`   | ✔          | ✔         | ✔        |      ✔     |
 | Catalan              | Català     |`cat` | `ca`   |            |           |      ✔    |            |
 | Czech                | Čeština     |`ces` | `cs`   |    ✔        |    ✔        |  ✔        |            |
-| Hakha Chin           | Hakha Lai |`cnh` | `cnh`   |            |           |     ✔      |            |
 | Chuvash              | Чӑвашла |`chv` | `cv`   | ✔          | ✔         | ✔        |      ✔     |
+| Hakha Chin           | Hakha Lai |`cnh` | `cnh`   |            |           |     ✔      |            |
 | Welsh                | Cymraeg     |`cym` | `cy`   |       ✔      |           |     ✔      |            |
 | Dhivehi              | ދިވެހި         |`div` | `dv`   | ✔          |        |      |         |
 | Greek                | Ελληνικά |`ell` | `el`   | ✔          |        |  ✔      |         |
