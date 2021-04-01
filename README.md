@@ -6,10 +6,15 @@ utilities and data useful in training ASR and TTS systems.
 
 ## Tools
 
-* Phonemiser: A rudimentary grapheme to phoneme (g2p) system based on a deterministic longest-match left-to-right replacements of orthographic units
-* Validator: A validation script that can be used with `import_cv2.py` from [coqui-ai/STT](https://github.com/coqui-ai/STT/)
-* Alphabet: The relevant alphabet of the language, appropriate for use in training ASR
-* Segmenter: A deterministic sentence segmentation algorithm tuned for segmenting paragraphs from Wikipedia
+* Phonemiser: 
+  * A rudimentary grapheme to phoneme (g2p) system based on a deterministic longest-match left-to-right replacements of orthographic units
+* Validator: 
+  * A validation script that can be used with `import_cv2.py` from [coqui-ai/STT](https://github.com/coqui-ai/STT/)
+  * It checks a sentence to see if it can be converted and if possible normalises the encoding, removes punctuation and returns it
+* Alphabet: 
+  * The relevant alphabet of the language, appropriate for use in training ASR
+* Segmenter: 
+  * A deterministic sentence segmentation algorithm tuned for segmenting paragraphs from Wikipedia
 
 ## Language support 
 
