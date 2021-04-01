@@ -10,8 +10,14 @@ utilities and data useful in training ASR and TTS systems.
 |--------- |---------- |----- |------- |----------- |----------|---------- |------------|
 | Abaza    | Абаза     |`abq` | `ab`   | ✔          | ✔         | ✔        |           |
 | Breton   | Brezhoneg |`bre` | `br`   | ✔          | ✔         | ✔        |      ✔     |
+| Chuvash  | Чӑвашла |`chv` | `cv`   | ✔          | ✔         | ✔        |      ✔     |
 
+## Tools
 
+* Phonemiser: A rudimentary grapheme to phoneme system based on longest-match left-to-right replacements of orthographic units
+* Validator: A validation script that can be used with `import_cv2.py` from [coqui-ai/STT](https://github.com/coqui-ai/STT/)
+* Alphabet: The relevant alphabet of the language, appropriate for use in training ASR
+* Segmenter: A deterministic sentence segmentation algorithm tuned for segmenting paragraphs from Wikipedia
 
 ## How to use it
 
