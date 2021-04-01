@@ -21,7 +21,7 @@ utilities and data useful in training ASR and TTS systems.
 | Language | Autonym   | Code | Code (CV) | Phon | Valid | Alphabet | Segment |
 |--------------------- |---------- |----- |------- |----------- |----------|---------- |------------|
 | Abaza                | Абаза     |`abq` | `ab`   | ✔          | ✔         | ✔        |           |
-| Arabic               | اَلْعَرَبِيَّةُ     |`ara` | `ar`   |            |           |          |            |
+| Arabic               | اَلْعَرَبِيَّةُ     |`ara` | `ar`   |     —       |           |          |            |
 | Assamese             |  অসমীয়া    |`asm` | `as`   |            |           |          |            |
 | Basaa                | Basaa        |`bas` | `bas`   |     ✔      |          | ✔        |           |
 | Breton               | Brezhoneg |`bre` | `br`   | ✔          | ✔         | ✔        |      ✔     |
@@ -33,14 +33,14 @@ utilities and data useful in training ASR and TTS systems.
 | Dhivehi              | ދިވެހި         |`div` | `dv`   | ✔          |        |      |         |
 | Greek                | Ελληνικά |`ell` | `el`   | ✔          |        |  ✔      |         |
 | German               | Deutsch     |`deu` | `de`   |            |          ✔  |     ✔      |            |
-| English              | English     |`eng` | `en`   |            |           |    ✔       |            |
+| English              | English     |`eng` | `en`   |      —      |           |    ✔       |            |
 | Esperanto            | Esperanto     |`epo` | `eo`   |            |           |   ✔       |            |
 | Spanish              | Español   |`spa` | `es`   |            |           |       ✔   |            |
 | Estonian             | Eesti     |`est`    | `et`   |            |           |   ✔       |            |
 | Basque               | Euskara   |`eus` | `eu`   |            |      ✔        |    ✔      |            |
-| Persian              | فارسی          |`pes` | `fa`   |            |           |          |            |
+| Persian              | فارسی          |`pes` | `fa`   |    —        |           |          |            |
 | Finnish              | Suomi     |`fin` | `fi`   | ✔           |   ✔        |   ✔       |            |
-| French               | Français     |`fra` | `fr`   |            |           |          |            |
+| French               | Français     |`fra` | `fr`   |     —       |           |     ✔     |            |
 | Frisian              | Frysk     |`fry` | `fy-NL`   |            |           |          |            |
 | Irish                | Gaeilge     |`gle` | `ga-IE`   |            |           |    ✔      |            |
 | Hindi                | हिन्दी      |`hin` | `hi`   |            |           |          |            |
@@ -50,7 +50,7 @@ utilities and data useful in training ASR and TTS systems.
 | Interlingua          | Interlingua     |`ina` | `ia`   |            |           |          |            |
 | Indonesian           | Bahasa indonesia     |`ind` | `id`   |            |           |     ✔     |            |
 | Italian              | Italiano     |`ita` | `it`   |     ✔       |           |    ✔      |            |
-| Japanese             | 日本語     |`jpn` | `ja`   |            |           |          |            |
+| Japanese             | 日本語     |`jpn` | `ja`   |      —      |           |          |            |
 | Georgian             |  ქართული ენა    |`kat` | `ka`   |    ✔          |           | ✔         |            |
 | Kabyle               | Taqbaylit     |`kab` | `kab`   |            |           |          |            |
 | Kazakh               | Қазақша     |`kaz` | `kk`   |   ✔          |           |          |            |
@@ -81,9 +81,9 @@ utilities and data useful in training ASR and TTS systems.
 | Ukrainian            |  Українська мова    |`ukr` | `uk`   |   ✔         |           |    ✔       |            |
 | Vietnamese           | Tiếng Việt     |`vie` | `vi`   |       ✔      |           |    ✔      |            |
 | Votic                | Vaďďa tšeeli    |`vot` | `vot`   |            |           |   ✔       |            |
-| Chinese (China)      | 中文     |`cmn` | `zh-CN`   |            |           |          |            |
-| Chinese (Hong Kong)  | 中文     |`cmn` | `zh-HK`   |            |           |          |            |
-| Chinese (Taiwan)     | 中文     |`cmn` | `zh-TW`   |            |           |          |            |
+| Chinese (China)      | 中文     |`cmn` | `zh-CN`   |      —      |           |          |            |
+| Chinese (Hong Kong)  | 中文     |`cmn` | `zh-HK`   |      —      |           |          |            |
+| Chinese (Taiwan)     | 中文     |`cmn` | `zh-TW`   |      —      |           |          |            |
 
 ## How to use it
 
