@@ -23,6 +23,7 @@ utilities and data useful in training ASR and TTS systems.
 | Abaza                | Абаза     |`abq` | `ab`   | ✔          | ✔         | ✔        |           |
 | Arabic               | اَلْعَرَبِيَّةُ     |`ara` | `ar`   |            |           |          |            |
 | Assamese             |  অসমীয়া    |`asm` | `as`   |            |           |          |            |
+| Basaa                | Basaa        |`bas` | `bas`   |           |          | ✔        |           |
 | Breton               | Brezhoneg |`bre` | `br`   | ✔          | ✔         | ✔        |      ✔     |
 | Catalan              | Català     |`cat` | `ca`   |            |           |      ✔    |            |
 | Czech                | Čeština     |`ces` | `cs`   |    ✔        |    ✔        |  ✔        |            |
