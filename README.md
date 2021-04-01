@@ -10,6 +10,7 @@ utilities and data useful in training ASR and TTS systems.
 |--------- |---------- |----- |------- |----------- |----------|---------- |------------|
 | Abaza    | Абаза     |`abq` | `ab`   | ✔          | ✔         | ✔        |           |
 | Breton   | Brezhoneg |`bre` | `br`   | ✔          | ✔         | ✔        |      ✔     |
+| Chuvash  | Чӑвашла |`chv` | `cv`   | ✔          | ✔         | ✔        |      ✔     |
 
 
 
