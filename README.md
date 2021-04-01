@@ -71,8 +71,8 @@ utilities and data useful in training ASR and TTS systems.
 | Turkish              | Türkçe |`tur` | `tr`   |   ✔         |           |          |            |
 | Tatar                | Татар теле |`tat` | `tt`   | ✔          |        |  ✔     |         |
 | Ukrainian            |  Українська мова    |`ukr` | `uk`   |   ✔         |           |          |            |
-| Vietnamese           | Tiếng Việt     |`vie` | `vi`   |            |           |          |            |
-| Votic                | Vaďďa tšeeli    |`vot` | `vot`   |            |           |          |            |
+| Vietnamese           | Tiếng Việt     |`vie` | `vi`   |            |           |    ✔      |            |
+| Votic                | Vaďďa tšeeli    |`vot` | `vot`   |            |           |   ✔       |            |
 | Chinese (China)      | 中文     |`cmn` | `zh-CN`   |            |           |          |            |
 | Chinese (Hong Kong)  | 中文     |`cmn` | `zh-HK`   |            |           |          |            |
 | Chinese (Taiwan)     | 中文     |`cmn` | `zh-TW`   |            |           |          |            |
