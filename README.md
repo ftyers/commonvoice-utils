@@ -48,7 +48,7 @@ utilities and data useful in training ASR and TTS systems.
 | Hungarian            | Magyar nyelv     |`hun` | `hu`   |      ✔       |           |     ✔     |            |
 | Armenian             | Հայերեն         | `hye` | `hy-AM` | ✔        |          |       ✔   |             |
 | Interlingua          | Interlingua     |`ina` | `ia`   |            |           |          |            |
-| Indonesian           | Bahasa indonesia     |`ind` | `id`   |            |           |     ✔     |            |
+| Indonesian           | Bahasa indonesia     |`ind` | `id`   |       ✔        |           |     ✔     |            |
 | Italian              | Italiano     |`ita` | `it`   |     ✔       |           |    ✔      |            |
 | Japanese             | 日本語     |`jpn` | `ja`   |      —      |           |          |            |
 | Georgian             |  ქართული ენა    |`kat` | `ka`   |    ✔          |           | ✔         |            |
