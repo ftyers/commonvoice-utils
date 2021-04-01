@@ -4,6 +4,13 @@ This repository collects together linguistic processing data for using dataset
 dumps from the Common Voice project. It aims to provide a one-stop-shop for 
 utilities and data useful in training ASR and TTS systems.
 
+## Tools
+
+* Phonemiser: A rudimentary grapheme to phoneme system based on longest-match left-to-right replacements of orthographic units
+* Validator: A validation script that can be used with `import_cv2.py` from [coqui-ai/STT](https://github.com/coqui-ai/STT/)
+* Alphabet: The relevant alphabet of the language, appropriate for use in training ASR
+* Segmenter: A deterministic sentence segmentation algorithm tuned for segmenting paragraphs from Wikipedia
+
 ## Language support 
 
 | Language | Autonym   | Code | Code (CV) | Phonemiser | Validator | Alphabet | Segmenter |
@@ -68,14 +75,6 @@ utilities and data useful in training ASR and TTS systems.
 | Chinese (China)       |      |`cmn` | `zh-CN`   |            |           |          |            |
 | Chinese (Hong Kong)       |      |`` | `zh-HK`   |            |           |          |            |
 | Chinese (Taiwan)       |      |`cmn` | `zh-TW`   |            |           |          |            |
-
-
-## Tools
-
-* Phonemiser: A rudimentary grapheme to phoneme system based on longest-match left-to-right replacements of orthographic units
-* Validator: A validation script that can be used with `import_cv2.py` from [coqui-ai/STT](https://github.com/coqui-ai/STT/)
-* Alphabet: The relevant alphabet of the language, appropriate for use in training ASR
-* Segmenter: A deterministic sentence segmentation algorithm tuned for segmenting paragraphs from Wikipedia
 
 ## How to use it
 
