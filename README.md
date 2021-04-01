@@ -16,12 +16,12 @@ utilities and data useful in training ASR and TTS systems.
 | Language | Autonym   | Code | Code (CV) | Phonemiser | Validator | Alphabet | Segmenter |
 |--------------------- |---------- |----- |------- |----------- |----------|---------- |------------|
 | Abaza                | Абаза     |`abq` | `ab`   | ✔          | ✔         | ✔        |           |
-| Arabic               |      |`ara` | `ar`   |            |           |          |            |
-| Assamese             |      |`asm` | `as`   |            |           |          |            |
+| Arabic               | اَلْعَرَبِيَّةُ     |`ara` | `ar`   |            |           |          |            |
+| Assamese             |  অসমীয়া    |`asm` | `as`   |            |           |          |            |
 | Breton               | Brezhoneg |`bre` | `br`   | ✔          | ✔         | ✔        |      ✔     |
-| Catalan              |      |`cat` | `ca`   |            |           |          |            |
-| Czech                |      |`ces` | `cs`   |            |           |          |            |
-| Hakha Chin           |      |`cnh` | `cnh`   |            |           |          |            |
+| Catalan              | Català     |`cat` | `ca`   |            |           |          |            |
+| Czech                | Čeština     |`ces` | `cs`   |            |           |          |            |
+| Hakha Chin           | Hakha Lai |`cnh` | `cnh`   |            |           |          |            |
 | Chuvash              | Чӑвашла |`chv` | `cv`   | ✔          | ✔         | ✔        |      ✔     |
 | Welsh                | Cymraeg     |`cym` | `cy`   |            |           |          |            |
 | Dhivehi              | ދިވެހި |`div` | `dv`   | ✔          |        |      |         |
@@ -30,52 +30,52 @@ utilities and data useful in training ASR and TTS systems.
 | English              | English     |`eng` | `en`   |            |           |          |            |
 | Esperanto            | Esperanto     |`epo` | `eo`   |            |           |          |            |
 | Spanish              | Español   |`spa` | `es`   |            |           |          |            |
-| Estonian             | Eesti     |``    | `et`   |            |           |   ✔       |            |
+| Estonian             | Eesti     |`est`    | `et`   |            |           |   ✔       |            |
 | Basque               | Euskara   |`eus` | `eu`   |            |           |    ✔      |            |
-| Persian              |           |`pes` | `fa`   |            |           |          |            |
+| Persian              | فارسی          |`pes` | `fa`   |            |           |          |            |
 | Finnish              | Suomi     |`fin` | `fi`   | ✔           |   ✔        |   ✔       |            |
-| French               |      |`fra` | `fr`   |            |           |          |            |
-| Frisian              |      |`` | `fy-NL`   |            |           |          |            |
-| Irish                |      |`gle` | `ga-IE`   |            |           |    ✔      |            |
-| Hindi                |      |`hin` | `hi`   |            |           |          |            |
-| Upper Sorbian        |      |`` | `hsb`   |            |           |       ✔   |            |
-| Hungarian            |      |`hun` | `hu`   |            |           |     ✔     |            |
-| Interlingua          |      |`` | `ia`   |            |           |          |            |
-| Indonesian           |      |`ind` | `id`   |            |           |     ✔     |            |
-| Italian              |      |`ita` | `it`   |            |           |          |            |
-| Japanese             |      |`jpn` | `ja`   |            |           |          |            |
+| French               | Français     |`fra` | `fr`   |            |           |          |            |
+| Frisian              | Frysk     |`` | `fy-NL`   |            |           |          |            |
+| Irish                | Gaeilge     |`gle` | `ga-IE`   |            |           |    ✔      |            |
+| Hindi                | हिन्दी      |`hin` | `hi`   |            |           |          |            |
+| Upper Sorbian        | Hornjoserbšćina     |`` | `hsb`   |            |           |       ✔   |            |
+| Hungarian            | Magyar nyelv     |`hun` | `hu`   |            |           |     ✔     |            |
+| Interlingua          | Interlingua     |`` | `ia`   |            |           |          |            |
+| Indonesian           | Bahasa indonesia     |`ind` | `id`   |            |           |     ✔     |            |
+| Italian              | Italiano     |`ita` | `it`   |            |           |          |            |
+| Japanese             | 日本語     |`jpn` | `ja`   |            |           |          |            |
 | Georgian             |  ქართული ენა    |`kat` | `ka`   |    ✔          |           | ✔         |            |
-| Kabyle               |      |`` | `kab`   |            |           |          |            |
+| Kabyle               | Taqbaylit     |`` | `kab`   |            |           |          |            |
 | Kazakh               | Қазақша     |`kaz` | `kk`   |   ✔          |           |          |            |
 | Kyrgyz               | Кыргызча     |`kir` | `ky`   |    ✔         |           |  ✔        |            |
-| Luganda              |      |`` | `lg`   |            |           |          |            |
-| Lithuanian           |      |`` | `lt`   |            |           |          |            |
-| Latvian              |      |`` | `lv`   |            |           |          |            |
+| Luganda              | Luganda     |`` | `lg`   |            |           |          |            |
+| Lithuanian           | Lietuvių kalba     |`lit` | `lt`   |            |           |          |            |
+| Latvian              | Latviešu valoda    |`lvs` | `lv`   |            |           |          |            |
 | Mongolian            | Монгол хэл |`khk` | `mn`   | ✔          |        |      |         |
-| Maltese              |      |`mlt` | `mt`   |            |           |          |            |
-| Dutch                |      |`nld` | `nl`   |            |           |          |            |
-| Oriya                |      |`` | `or`   |            |           |          |            |
-| Punjabi              |      |`pan` | `pa-IN`   |            |           |          |            |
-| Polish               |      |`pol` | `pl`   |            |           |     ✔     |            |
-| Portuguese           |      |`por` | `pt`   |            |           |     ✔     |            |
-| Romansch (Sursilvan) |      |`` | `rm-sursilv`   |            |           |  ✔        |            |
-| Romansch (Vallader)  |      |`` | `rm-vallader`   |            |           |   ✔       |            |
-| Romanian             |      |`ron` | `ro`   |            |           |          |  ✔          |
+| Maltese              | Malti     |`mlt` | `mt`   |            |           |          |            |
+| Dutch                | Nederlands     |`nld` | `nl`   |            |           |          |            |
+| Oriya                | ଓଡ଼ିଆ     |`` | `or`   |            |           |          |            |
+| Punjabi              | ਪੰਜਾਬੀ     |`pan` | `pa-IN`   |            |           |          |            |
+| Polish               | Polski     |`pol` | `pl`   |            |           |     ✔     |            |
+| Portuguese           | Português     |`por` | `pt`   |            |           |     ✔     |            |
+| Romansch (Sursilvan) | Romontsch     |`` | `rm-sursilv`   |            |           |  ✔        |            |
+| Romansch (Vallader)  | Rumantsch     |`` | `rm-vallader`   |            |           |   ✔       |            |
+| Romanian             | Românește     |`ron` | `ro`   |            |           |          |  ✔          |
 | Russian              | Русский     |`rus` | `ru`   |            |           |     ✔     |            |
-| Kinyarwanda          |      |`` | `rw`   |            |           |          |            |
+| Kinyarwanda          | Kinyarwanda     |`` | `rw`   |            |           |          |            |
 | Sakha                | Саха тыла  |`sah` | `sah`   | ✔          |        |      |         |
-| Slovenian            |      |`slv` | `sl`   |            |           |    ✔      |            |
+| Slovenian            | Slovenščina     |`slv` | `sl`   |            |           |    ✔      |            |
 | Swedish              | Svenska      |`swe` | `sv-SE`   |            |           |     ✔     |            |
 | Tamil                | தமிழ்    |`tam` | `ta`   |            |           |          |            |
 | Thai                 | ภาษาไทย     |`tha` | `th`   |    ✔        |           |     ✔     |            |
 | Turkish              | Türkçe |`tur` | `tr`   |   ✔         |           |          |            |
 | Tatar                | Татар теле |`tat` | `tt`   | ✔          |        |  ✔     |         |
 | Ukrainian            |  Українська мова    |`ukr` | `uk`   |   ✔         |           |          |            |
-| Vietnamese           |      |`vie` | `vi`   |            |           |          |            |
-| Votic                |      |`vot` | `vot`   |            |           |          |            |
-| Chinese (China)      |      |`cmn` | `zh-CN`   |            |           |          |            |
-| Chinese (Hong Kong)  |      |`cmn` | `zh-HK`   |            |           |          |            |
-| Chinese (Taiwan)     |      |`cmn` | `zh-TW`   |            |           |          |            |
+| Vietnamese           | Tiếng Việt     |`vie` | `vi`   |            |           |          |            |
+| Votic                | Vaďďa tšeeli    |`vot` | `vot`   |            |           |          |            |
+| Chinese (China)      | 中文     |`cmn` | `zh-CN`   |            |           |          |            |
+| Chinese (Hong Kong)  | 中文     |`cmn` | `zh-HK`   |            |           |          |            |
+| Chinese (Taiwan)     | 中文     |`cmn` | `zh-TW`   |            |           |          |            |
 
 ## How to use it
 
