@@ -79,6 +79,15 @@ utilities and data useful in training ASR and TTS systems.
 
 ## How to use it
 
+### Alphabet
+
+```python
+>>> from cvutils import Alphabet
+>>> a = Alphabet('cv')
+>>> a.get_alphabet()
+' -абвгдежзийклмнопрстуфхцчшщыэюяёҫӑӗӳ'
+```
+
 ### Grapheme to phoneme
 
 ```python
