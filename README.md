@@ -19,17 +19,17 @@ utilities and data useful in training ASR and TTS systems.
 | Arabic               | اَلْعَرَبِيَّةُ     |`ara` | `ar`   |            |           |          |            |
 | Assamese             |  অসমীয়া    |`asm` | `as`   |            |           |          |            |
 | Breton               | Brezhoneg |`bre` | `br`   | ✔          | ✔         | ✔        |      ✔     |
-| Catalan              | Català     |`cat` | `ca`   |            |           |          |            |
+| Catalan              | Català     |`cat` | `ca`   |            |           |      ✔    |            |
 | Czech                | Čeština     |`ces` | `cs`   |    ✔        |    ✔        |  ✔        |            |
-| Hakha Chin           | Hakha Lai |`cnh` | `cnh`   |            |           |          |            |
+| Hakha Chin           | Hakha Lai |`cnh` | `cnh`   |            |           |     ✔      |            |
 | Chuvash              | Чӑвашла |`chv` | `cv`   | ✔          | ✔         | ✔        |      ✔     |
 | Welsh                | Cymraeg     |`cym` | `cy`   |       ✔      |           |     ✔      |            |
-| Dhivehi              | ދިވެހި |`div` | `dv`   | ✔          |        |      |         |
-| Greek                | Ελληνικά |`ell` | `el`   | ✔          |        |      |         |
+| Dhivehi              | ދިވެހި         |`div` | `dv`   | ✔          |        |      |         |
+| Greek                | Ελληνικά |`ell` | `el`   | ✔          |        |  ✔      |         |
 | German               | Deutsch     |`deu` | `de`   |            |           |          |            |
-| English              | English     |`eng` | `en`   |            |           |          |            |
-| Esperanto            | Esperanto     |`epo` | `eo`   |            |           |          |            |
-| Spanish              | Español   |`spa` | `es`   |            |           |          |            |
+| English              | English     |`eng` | `en`   |            |           |    ✔       |            |
+| Esperanto            | Esperanto     |`epo` | `eo`   |            |           |   ✔       |            |
+| Spanish              | Español   |`spa` | `es`   |            |           |       ✔   |            |
 | Estonian             | Eesti     |`est`    | `et`   |            |           |   ✔       |            |
 | Basque               | Euskara   |`eus` | `eu`   |            |           |    ✔      |            |
 | Persian              | فارسی          |`pes` | `fa`   |            |           |          |            |
