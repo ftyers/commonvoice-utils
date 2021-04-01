@@ -10,7 +10,7 @@ README = (HERE / "README.md").read_text()
 # This call to setup() does all the work
 setup(
     name="commonvoice-utils",
-    version="0.1.0",
+    version="0.1.1",
     description="Linguistic processing for languages in Common Voice",
     long_description=README,
     long_description_content_type="text/markdown",
@@ -19,7 +19,7 @@ setup(
     author_email="ftyers@prompsit.com",
     license="AGPL",
     classifiers=[
-        "License :: OSI Approved :: AGPL License",
+	"License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.7",
     ],
