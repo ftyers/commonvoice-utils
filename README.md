@@ -45,7 +45,7 @@ utilities and data useful in training ASR and TTS systems.
 | Irish                | Gaeilge     |`gle` | `ga-IE`   |            |           |    ✔      |            |
 | Hindi                | हिन्दी      |`hin` | `hi`   |            |           |          |            |
 | Upper Sorbian        | Hornjoserbšćina     |`hsb` | `hsb`   |            |           |       ✔   |            |
-| Hungarian            | Magyar nyelv     |`hun` | `hu`   |            |           |     ✔     |            |
+| Hungarian            | Magyar nyelv     |`hun` | `hu`   |      ✔       |           |     ✔     |            |
 | Interlingua          | Interlingua     |`ina` | `ia`   |            |           |          |            |
 | Indonesian           | Bahasa indonesia     |`ind` | `id`   |            |           |     ✔     |            |
 | Italian              | Italiano     |`ita` | `it`   |            |           |          |            |
@@ -78,7 +78,7 @@ utilities and data useful in training ASR and TTS systems.
 | Turkish              | Türkçe |`tur` | `tr`   |   ✔         |           |      ✔     |            |
 | Tatar                | Татар теле |`tat` | `tt`   | ✔          |        |  ✔     |         |
 | Ukrainian            |  Українська мова    |`ukr` | `uk`   |   ✔         |           |    ✔       |            |
-| Vietnamese           | Tiếng Việt     |`vie` | `vi`   |            |           |    ✔      |            |
+| Vietnamese           | Tiếng Việt     |`vie` | `vi`   |       ✔      |           |    ✔      |            |
 | Votic                | Vaďďa tšeeli    |`vot` | `vot`   |            |           |   ✔       |            |
 | Chinese (China)      | 中文     |`cmn` | `zh-CN`   |            |           |          |            |
 | Chinese (Hong Kong)  | 中文     |`cmn` | `zh-HK`   |            |           |          |            |
