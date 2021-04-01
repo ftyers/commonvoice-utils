@@ -9,7 +9,7 @@ utilities and data useful in training ASR and TTS systems.
 | Language | Autonym   | Code | CV Code | Phonemiser | Validator | Alphabet | Segmenter |
 |--------- |---------- |----- |------- |----------- |----------|---------- |------------|
 | Abaza    | Абаза     |`abq` | `ab`   | ✔          | ✔         | ✔        |           |
-| Breton   | Brezhoneg |`bre` | `br`   | ✔          | ✔         | ✔        |           |
+| Breton   | Brezhoneg |`bre` | `br`   | ✔          | ✔         | ✔        |      ✔     |
 
 
 
@@ -39,5 +39,19 @@ utilities and data useful in training ASR and TTS systems.
 >>> v = Validator('br')
 >>> v.validate('Ha cʼhoant hocʼh eus da gendercʼhel da implijout ar servijer-mañ ?')
 "ha c'hoant hoc'h eus da genderc'hel da implijout ar servijer-mañ"
+```
+
+### Sentence segmentation
+
+```python
+>>> from segmenter import Segmenter 
+>>> s = Segmenter('br')
+>>> sent = "Peurliesañ avat e kemm ar vogalennoù e c'hengerioù evit dont da vezañ heñvel ouzh ar vogalennoù en nominativ (d.l.e. ar stumm-meneg), da skouer e hungareg: Aour, tungsten, zink, uraniom, h.a., a vez kavet e kondon Bouryatia. A-bouez-bras evit armerzh ar vro eo al labour-douar ivez pa vez gounezet gwinizh ha legumaj dreist-holl. A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa."
+>>> for i in s.segment(sent):
+...     print(i)
+... 
+Peurliesañ avat e kemm ar vogalennoù e c'hengerioù evit dont da vezañ heñvel ouzh ar vogalennoù en nominativ (d.l.e. ar stumm-meneg), da skouer e hungareg: Aour, tungsten, zink, uraniom, h.a., a vez kavet e kondon Bouryatia.
+A-bouez-bras evit armerzh ar vro eo al labour-douar ivez pa vez gounezet gwinizh ha legumaj dreist-holl.
+A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 ```
 
