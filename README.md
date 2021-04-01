@@ -20,7 +20,7 @@ utilities and data useful in training ASR and TTS systems.
 | Assamese             |  অসমীয়া    |`asm` | `as`   |            |           |          |            |
 | Breton               | Brezhoneg |`bre` | `br`   | ✔          | ✔         | ✔        |      ✔     |
 | Catalan              | Català     |`cat` | `ca`   |            |           |          |            |
-| Czech                | Čeština     |`ces` | `cs`   |            |           |          |            |
+| Czech                | Čeština     |`ces` | `cs`   |    ✔        |    ✔        |  ✔        |            |
 | Hakha Chin           | Hakha Lai |`cnh` | `cnh`   |            |           |          |            |
 | Chuvash              | Чӑвашла |`chv` | `cv`   | ✔          | ✔         | ✔        |      ✔     |
 | Welsh                | Cymraeg     |`cym` | `cy`   |            |           |          |            |
