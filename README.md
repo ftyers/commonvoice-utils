@@ -57,16 +57,17 @@ utilities and data useful in training ASR and TTS systems.
 | Luganda              | Luganda     |`lug` | `lg`   |            |           |       ✔       |            |
 | Lithuanian           | Lietuvių kalba     |`lit` | `lt`   |            |           |  ✔          |            |
 | Latvian              | Latviešu valoda    |`lvs` | `lv`   |            |           |     ✔       |            |
-| Mongolian            | Монгол хэл |`khk` | `mn`   | ✔          |        |      |     ✔      |
+| Mongolian            | Монгол хэл |`khk` | `mn`   | ✔          |        |    ✔   |           |
 | Maltese              | Malti     |`mlt` | `mt`   |            |           |      ✔      |            |
 | Dutch                | Nederlands     |`nld` | `nl`   |            |           |          |            |
 | Oriya                | ଓଡ଼ିଆ     |`ori` | `or`   |            |           |          |            |
 | Punjabi              | ਪੰਜਾਬੀ     |`pan` | `pa-IN`   |            |           |          |            |
 | Polish               | Polski     |`pol` | `pl`   |            |           |     ✔     |            |
 | Portuguese           | Português     |`por` | `pt`   |            |           |     ✔     |            |
+| Kʼicheʼ              | Kʼicheʼ             |`quc` | `quc`   |   ✔          |           |      ✔    |            |
 | Romansch (Sursilvan) | Romontsch     |`roh` | `rm-sursilv`   |            |           |  ✔        |            |
 | Romansch (Vallader)  | Rumantsch     |`roh` | `rm-vallader`   |            |           |   ✔       |            |
-| Romanian             | Românește     |`ron` | `ro`   |            |           |          |  ✔          |
+| Romanian             | Românește     |`ron` | `ro`   |            |           |    ✔       |            |
 | Russian              | Русский     |`rus` | `ru`   |            |           |     ✔     |            |
 | Kinyarwanda          | Kinyarwanda     |`kin` | `rw`   |            |           |          |            |
 | Sakha                | Саха тыла  |`sah` | `sah`   | ✔          |        |      |         |
