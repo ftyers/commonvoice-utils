@@ -48,11 +48,11 @@ utilities and data useful in training ASR and TTS systems.
 | Kabyle               | Taqbaylit     |`kab` | `kab`   |            |           |          |            |
 | Kazakh               | Қазақша     |`kaz` | `kk`   |   ✔          |           |          |            |
 | Kyrgyz               | Кыргызча     |`kir` | `ky`   |    ✔         |           |  ✔        |            |
-| Luganda              | Luganda     |`lug` | `lg`   |            |           |          |            |
-| Lithuanian           | Lietuvių kalba     |`lit` | `lt`   |            |           |          |            |
-| Latvian              | Latviešu valoda    |`lvs` | `lv`   |            |           |          |            |
-| Mongolian            | Монгол хэл |`khk` | `mn`   | ✔          |        |      |         |
-| Maltese              | Malti     |`mlt` | `mt`   |            |           |          |            |
+| Luganda              | Luganda     |`lug` | `lg`   |            |           |       ✔       |            |
+| Lithuanian           | Lietuvių kalba     |`lit` | `lt`   |            |           |  ✔          |            |
+| Latvian              | Latviešu valoda    |`lvs` | `lv`   |            |           |     ✔       |            |
+| Mongolian            | Монгол хэл |`khk` | `mn`   | ✔          |        |      |     ✔      |
+| Maltese              | Malti     |`mlt` | `mt`   |            |           |      ✔      |            |
 | Dutch                | Nederlands     |`nld` | `nl`   |            |           |          |            |
 | Oriya                | ଓଡ଼ିଆ     |`ori` | `or`   |            |           |          |            |
 | Punjabi              | ਪੰਜਾਬੀ     |`pan` | `pa-IN`   |            |           |          |            |
