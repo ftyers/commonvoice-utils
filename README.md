@@ -151,6 +151,16 @@ when working with all the languages in Common Voice. If you are working on a sin
 a specific setup or are using more data than just Common Voice, maybe this isn't for you. But if you
 want to just train [coqui-ai/STT](https://github.com/coqui-ai/STT/) on Common Voice, then maybe it is :)
 
+### Why not just make the alphabet from the transcripts ?
+
+Depending on the language in Common Voice, the transcripts can contain a lot of random punctuation,
+numerals, and incorrect character encodings (for example Latin *ç* instead of Cyrillic *ҫ* for Chuvash). These
+may look the same but will result in bigger sparsity for the model.
+
+Also, if you are working with a single language you probably have time to look through all the transcripts
+for the alphabetic symbols, but if you want to work with a large number of Common Voice languages at the 
+same time it's useful to have them all in one place.
+
 ## See also
 
 * [`epitran`](https://github.com/dmort27/epitran/): Great grapheme to phoneme system that supports a wide
