@@ -1,4 +1,6 @@
-import re, os
+import re, os, sys
+from att import ATTFST
+import pathlib
 
 class Phonemiser:
 	"""
@@ -16,7 +18,25 @@ class Phonemiser:
 
 	def load_data(self):
 		self.lkp = {}
-		data_dir = os.path.abspath(os.path.dirname(__file__)) + '/data/'
+		data_dir = os.path.abspath(os.path.dirname(__file__)) + '/data/' + self.lang + '/'
+		paths = [p.name for p in pathlib.Path(data_dir).glob('phon.*')]
+		if len(paths) == 0:
+			raise FileNotFoundError
+		for path in paths:
+			if path.count('.att') > 0:
+				self.load_data_att()
+				break
+			if path.count('.tsv') > 0:
+				self.load_data_tsv()
+				break
+
+	def load_data_att(self):
+		data_dir = os.path.abspath(os.path.dirname(__file__)) + '/data/' + self.lang + '/'
+		self.transducer = ATTFST(data_dir + '/phon.att')	
+		self.phonemise = self.lookup_att
+
+	def load_data_tsv(self):
+		data_dir = os.path.abspath(os.path.dirname(__file__)) + '/data/' + self.lang + '/'
 		fd = open(data_dir + self.lang + '/phon.tsv')
 		line = fd.readline() # Skip the first line
 		line = fd.readline()
@@ -28,6 +48,7 @@ class Phonemiser:
 				self.lkp[k] = []
 			self.lkp[k].append(v)
 			line = fd.readline()
+		self.phonemise = self.lookup_tsv
 		
 	def maxmatch(self, token):
 		token += ' '
@@ -47,8 +68,14 @@ class Phonemiser:
 		remainder = token[1:]
 	
 		return [firstWord] + self.maxmatch(remainder)
-	
-	def phonemise(self, token):
+
+	def lookup_att(self, token):
+		res = list(self.transducer.apply(token))
+		if len(res) > 0:
+			return res[0][0]
+		return None
+
+	def lookup_tsv(self, token):
 		ks = list(self.lkp.keys())
 		ks.sort(key=lambda x : len(x), reverse=True)
 		segs = self.maxmatch(token.lower())	
@@ -58,6 +85,13 @@ class Phonemiser:
 				op += self.lkp[seg][0]
 		return op
 	
+	def phonemise(self, token):
+		if self.transducer:
+			self.lookup_att(token)
+		elif len(self.lkp.keys()) > 0:
+			self.lookup_tsv(token)
+		return None	
+
 if __name__ == "__main__":
 	import doctest
 	doctest.testmod()

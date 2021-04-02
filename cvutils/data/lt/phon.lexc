@@ -1,0 +1,93 @@
+Multichar_Symbols 
+
+%>
+
+LEXICON Root 
+
+Cns "weight: 1.0" ;
+Vow "weight: 1.0" ;
+
+LEXICON Loop 
+
+ Vow "weight: 1.0" ;
+ Cns "weight: 1.0" ;
+ # ; 
+
+LEXICON Cns 
+
+b:b  Hard "weight: 1.0" ;
+c:t̪͡s̪  Hard "weight: 1.0" ;
+č:t͡ʃ  Hard "weight: 1.0" ;
+ch:x  Hard "weight: 1.0" ;
+d:d̪  Hard "weight: 1.0" ;
+dz:d̪͡z̪  Hard "weight: 0.5" ;
+dž:d͡ʒ  Hard "weight: 0.5" ;
+f:f  Hard "weight: 1.0" ;
+g:ɡ  Hard "weight: 1.0" ;
+h:ɣ  Hard "weight: 1.0" ;
+j:j Hard "weight: 1.0" ;
+k:k  Hard "weight: 1.0" ;
+l:ɫ  Hard "weight: 1.0" ;
+m:m  Hard "weight: 1.0" ;
+n:n̪  Hard "weight: 1.0" ;
+p:p  Hard "weight: 1.0" ;
+r:ɾ  Hard "weight: 1.0" ;
+s:s̪  Hard "weight: 1.0" ;
+š:ʃ  Hard "weight: 1.0" ;
+t:t̪  Hard "weight: 1.0" ;
+v:v  Hard "weight: 1.0" ;
+z:z̪  Hard "weight: 1.0" ;
+ž:ʒ  Hard "weight: 1.0" ;
+b:bʲ Soft "weight: 1.0" ;
+c:t͡sʲ Soft "weight: 1.0" ;
+č:t͡ɕ Soft "weight: 1.0" ;
+ch:xʲ Soft "weight: 0.5" ;
+d:dʲ Soft "weight: 1.0" ;
+dz:d͡zʲ Soft "weight: 0.5" ;
+dž:d͡ʑ Soft "weight: 0.5" ;
+f:fʲ Soft "weight: 1.0" ;
+g:ɡʲ Soft "weight: 1.0" ;
+h:ɣʲ Soft "weight: 1.0" ;
+j:j Soft "weight: 1.0" ;
+k:kʲ Soft "weight: 1.0" ;
+l:lʲ Soft "weight: 1.0" ;
+m:mʲ Soft "weight: 1.0" ;
+n:nʲ Soft "weight: 1.0" ;
+p:pʲ Soft "weight: 1.0" ;
+r:ɾʲ Soft "weight: 1.0" ;
+s:sʲ Soft "weight: 1.0" ;
+š:ɕ Soft "weight: 1.0" ;
+t:tʲ Soft "weight: 1.0" ;
+v:vʲ Soft "weight: 1.0" ;
+z:zʲ Soft "weight: 1.0" ;
+ž:ʑ Soft "weight: 1.0" ;
+
+LEXICON Hard
+a:ɐ  Loop "weight: 1.0" ;
+o:ɔ  Loop "weight: 1.0" ;
+u:ʊ  Loop "weight: 1.0" ;
+ą:äː Loop "weight: 1.0" ;
+o:oː  Loop "weight: 1.0" ;
+ų:uː Loop "weight: 1.0" ;
+ū:uː  Loop "weight: 1.0" ;
+   # "weight: 0.5" ; 
+
+LEXICON Soft
+
+i: Hard "weight: 1.0" ;
+   Soft2 "weight: 1.0" ;
+   # "weight: 1.0" ; 
+
+LEXICON Soft2 
+e:ɛ Loop "weight: 1.0" ;
+e:æː Loop "weight: 1.0" ;
+ę:æː Loop "weight: 1.0" ;
+ė:eː Loop "weight: 1.0" ;
+i:ɪ  Loop "weight: 1.0" ;
+į:iː Loop "weight: 1.0" ;
+y:iː  Loop "weight: 1.0" ;
+
+LEXICON Vow 
+
+Hard "weight: 1.0" ;
+Soft2 "weight: 1.0" ;
