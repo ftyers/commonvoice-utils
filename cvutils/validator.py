@@ -1,4 +1,4 @@
-import re, os, sys
+import re, os, sys, unicodedata
 
 class Validator:
 	"""
@@ -30,6 +30,8 @@ class Validator:
 					self.alphabet.append(a)
 			if row[0] == 'LOWER':
 				self.lower = True
+			if row[0] == 'NKFC':
+				self.nkfc = True
 			if row[0] == 'SKIP':
 				self.skip.append(row[1])
 			if row[0] == 'REPL' or row[0] == 'NORM':
@@ -47,6 +49,8 @@ class Validator:
 		label = transcript
 		if self.lower:
 			label = label.lower()
+		if self.nkfc:
+			label = unicodedata.normalize('NFKC', label)
 		for k in self.transform:
 			label = label.replace(k, self.transform[k])		
 		for c in label:

@@ -24,7 +24,7 @@ class Alphabet:
 	def get_alphabet(self):
 		return self.alphabet
 
-	def write_alphabet(fn):
+	def write_alphabet(self, fn):
 		fd = open(fn, 'w')
 		fd.write(''.join([c + '\n' for c in self.alphabet]))
 		fd.close()
