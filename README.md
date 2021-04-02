@@ -65,7 +65,7 @@ utilities and data useful in training ASR and TTS systems.
 | Maltese              | Malti     |`mlt` | `mt`  |`mt` |      ✔       |           |      ✔      |            |
 | Dutch                | Nederlands     |`nld` | `nl` |`nl`  |   ✔         |           |    ✔      |            |
 | Oriya                | ଓଡ଼ିଆ                                       |`ori` | `or`  |`or` |            |           |          |            |
-| Punjabi              | ਪੰਜਾਬੀ     |`pan` | `pa-IN`   | |`pa`           |           |          |            |
+| Punjabi              | ਪੰਜਾਬੀ     |`pan` | `pa-IN`   | `pa`  |          |           |          |            |
 | Polish               | Polski     |`pol` | `pl`  |`pl` |   ✔          |           |     ✔     |            |
 | Portuguese           | Português     |`por` | `pt`  |`pt` |            |           |     ✔     |            |
 | Kʼicheʼ              | Kʼicheʼ             |`quc` | `quc` | — |   ✔          |           |      ✔    |            |
