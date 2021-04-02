@@ -10,7 +10,7 @@ README = (HERE / "README.md").read_text()
 # This call to setup() does all the work
 setup(
     name="commonvoice-utils",
-    version="0.1.4",
+    version="0.1.5",
     description="Linguistic processing for languages in Common Voice",
     long_description=README,
     long_description_content_type="text/markdown",

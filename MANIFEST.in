@@ -23,7 +23,9 @@ include cvutils/data/eo
 include cvutils/data/eo/alphabet.txt
 include cvutils/data/quc
 include cvutils/data/quc/alphabet.txt
+include cvutils/data/quc/validate.tsv
 include cvutils/data/quc/phon.tsv
+include cvutils/data/quc/.validate.tsv.swp
 include cvutils/data/hu
 include cvutils/data/hu/alphabet.txt
 include cvutils/data/hu/phon.tsv

@@ -68,7 +68,7 @@ utilities and data useful in training ASR and TTS systems.
 | Punjabi              | ਪੰਜਾਬੀ     |`pan` | `pa-IN`   | `pa`  |          |           |          |            |
 | Polish               | Polski     |`pol` | `pl`  |`pl` |   ✔          |           |     ✔     |            |
 | Portuguese           | Português     |`por` | `pt`  |`pt` |            |           |     ✔     |            |
-| Kʼicheʼ              | Kʼicheʼ             |`quc` | `quc` | — |   ✔          |           |      ✔    |            |
+| Kʼicheʼ              | Kʼicheʼ             |`quc` | `quc` | — |   ✔          |   ✔        |      ✔    |            |
 | Romansch (Sursilvan) | Romontsch     |`roh` | `rm-sursilv`  |`rm` |            |           |  ✔        |            |
 | Romansch (Vallader)  | Rumantsch     |`roh` | `rm-vallader`  |`rm` |            |           |   ✔       |            |
 | Romanian             | Românește     |`ron` | `ro`  |`ro` |   ✔          |           |    ✔       |            |
