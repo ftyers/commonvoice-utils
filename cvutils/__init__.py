@@ -6,7 +6,7 @@ from phonemiser import Phonemiser
 from segmenter import Segmenter
 from validator import Validator
 from alphabet import Alphabet
-from corpus import Corpus
+from corpora import Corpora
 
 # This is horrible, rewrite this
 

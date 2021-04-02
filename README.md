@@ -17,6 +17,8 @@ utilities and data useful in training ASR and TTS systems.
   * The relevant alphabet of the language, appropriate for use in training ASR
 * Segmenter: 
   * A deterministic sentence segmentation algorithm tuned for segmenting paragraphs from Wikipedia
+* Corpora:
+  * Contains metadata for different corpora you may be interested in using with Common Voice
 
 ## Language support 
 
@@ -97,6 +99,22 @@ utilities and data useful in training ASR and TTS systems.
 >>> a = Alphabet('cv')
 >>> a.get_alphabet()
 ' -абвгдежзийклмнопрстуфхцчшщыэюяёҫӑӗӳ'
+```
+
+### Corpora
+
+```python
+>>> from cvutils import Corpora
+>>> c = Corpora('kpv')
+>>> c.dump_url()
+'https://dumps.wikimedia.org/kvwiki/latest/kvwiki-latest-pages-articles.xml.bz2'
+>>> c.target_segments()
+[]
+>>> c = Corpora('cv')
+>>> c.target_segments()
+['пӗрре', 'иккӗ', 'виҫҫӗ', 'тӑваттӑ', 'пиллӗк', 'улттӑ', 'ҫиччӗ', 'саккӑр', 'тӑххӑр', 'вуннӑ', 'ҫапла', 'ҫук']
+>>> c.dump_url()
+'https://dumps.wikimedia.org/cvwiki/latest/cvwiki-latest-pages-articles.xml.bz2'
 ```
 
 ### Grapheme to phoneme

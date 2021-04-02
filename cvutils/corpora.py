@@ -1,22 +1,22 @@
 import os
 
-class Corpus:
+class Corpora:
 	"""
-	>>> c = Corpus('sah')
+	>>> c = Corpora('sah')
 	>>> c.dump_url()
 	'https://dumps.wikimedia.org/sahwiki/latest/sahwiki-latest-pages-articles.xml.bz2'
-	>>> c = Corpus('cv')
+	>>> c = Corpora('cv')
 	>>> c.target_segments()
 	['пӗрре', 'иккӗ', 'виҫҫӗ', 'тӑваттӑ', 'пиллӗк', 'улттӑ', 'ҫиччӗ', 'саккӑр', 'тӑххӑр', 'вуннӑ', 'ҫапла', 'ҫук']
-	>>> c = Corpus('ga-IE')
+	>>> c = Corpora('ga-IE')
 	>>> c.dump_url()
 	'https://dumps.wikimedia.org/gawiki/latest/gawiki-latest-pages-articles.xml.bz2'
-	>>> c = Corpus('kpv')
+	>>> c = Corpora('kpv')
 	>>> c.dump_url()
 	'https://dumps.wikimedia.org/kvwiki/latest/kvwiki-latest-pages-articles.xml.bz2'
-	>>> c = Corpus('quc')
+	>>> c = Corpora('quc')
 	>>> c.dump_url()
-	>>> c = Corpus('rm-vallader')
+	>>> c = Corpora('rm-vallader')
 	>>> c.dump_url()
 	'https://dumps.wikimedia.org/rmwiki/latest/rmwiki-latest-pages-articles.xml.bz2'
 	"""
