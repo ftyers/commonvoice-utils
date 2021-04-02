@@ -35,8 +35,8 @@ utilities and data useful in training ASR and TTS systems.
 | German               | Deutsch     |`deu` | `de`   |            |          ✔  |     ✔      |            |
 | English              | English     |`eng` | `en`   |      —      |           |    ✔       |            |
 | Esperanto            | Esperanto     |`epo` | `eo`   |            |           |   ✔       |            |
-| Spanish              | Español   |`spa` | `es`   |            |           |       ✔   |            |
-| Estonian             | Eesti     |`est`    | `et`   |            |           |   ✔       |            |
+| Spanish              | Español   |`spa` | `es`   |       ✔      |           |       ✔   |            |
+| Estonian             | Eesti     |`est`    | `et`   |     ✔        |           |   ✔       |            |
 | Basque               | Euskara   |`eus` | `eu`   |     ✔      |      ✔        |    ✔      |            |
 | Persian              | فارسی          |`pes` | `fa`   |    —        |           |          |            |
 | Finnish              | Suomi     |`fin` | `fi`   | ✔           |   ✔        |   ✔       |            |
