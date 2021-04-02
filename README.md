@@ -82,7 +82,7 @@ utilities and data useful in training ASR and TTS systems.
 | Tamil                | தமிழ்    |`tam` | `ta`   |`ta`|       ✔      |           |        ✔   |            |
 | Thai                 | ภาษาไทย     |`tha` | `th`  |`th` |    ✔        |           |     ✔     |            |
 | Turkish              | Türkçe |`tur` | `tr`  |`tr` |   ✔         |           |      ✔     |            |
-| Tatar                | Татар теле |`tat` | `tt`  |`tt` | ✔          |        |  ✔     |         |
+| Tatar                | Татар теле |`tat` | `tt`  |`tt` | ✔          |   ✔     |  ✔     |         |
 | Ukrainian            |  Українська мова    |`ukr` | `uk` |`uk`  |   ✔         |     ✔      |    ✔       |            |
 | Vietnamese           | Tiếng Việt     |`vie` | `vi` |`vi`  |       ✔      |           |    ✔      |            |
 | Votic                | Vaďďa tšeeli    |`vot` | `vot` |  —  |            |           |   ✔       |            |
