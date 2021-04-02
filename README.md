@@ -20,73 +20,73 @@ utilities and data useful in training ASR and TTS systems.
 
 ## Language support 
 
-| Language | Autonym   | Code | Code (CV) | Phon | Valid | Alphabet | Segment |
-|--------------------- |---------- |----- |------- |----------- |----------|---------- |------------|
-| Abaza                | Абаза     |`abq` | `ab`   | ✔          | ✔         | ✔        |           |
-| Arabic               | اَلْعَرَبِيَّةُ     |`ara` | `ar`   |     —       |   ✔         |          ✔  |            |
-| Assamese             |  অসমীয়া    |`asm` | `as`   |            |           |          |            |
-| Basaa                | Basaa        |`bas` | `bas`   |     ✔      |          | ✔        |           |
-| Breton               | Brezhoneg |`bre` | `br`   | ✔          | ✔         | ✔        |      ✔     |
-| Catalan              | Català     |`cat` | `ca`   |            |           |      ✔    |            |
-| Czech                | Čeština     |`ces` | `cs`   |    ✔        |    ✔        |  ✔        |            |
-| Chuvash              | Чӑвашла |`chv` | `cv`   | ✔          | ✔         | ✔        |      ✔     |
-| Hakha Chin           | Hakha Lai |`cnh` | `cnh`   |            |           |     ✔      |            |
-| Welsh                | Cymraeg     |`cym` | `cy`   |       ✔      |           |     ✔      |            |
-| Dhivehi              | ދިވެހި         |`div` | `dv`   | ✔          |        |      |         |
-| Greek                | Ελληνικά |`ell` | `el`   | ✔          |        |  ✔      |         |
-| German               | Deutsch     |`deu` | `de`   |            |          ✔  |     ✔      |            |
-| English              | English     |`eng` | `en`   |      —      |           |    ✔       |            |
-| Esperanto            | Esperanto     |`epo` | `eo`   |            |           |   ✔       |            |
-| Spanish              | Español   |`spa` | `es`   |       ✔      |           |       ✔   |            |
-| Estonian             | Eesti     |`est`    | `et`   |     ✔        |           |   ✔       |            |
-| Basque               | Euskara   |`eus` | `eu`   |     ✔      |      ✔        |    ✔      |            |
-| Persian              | فارسی          |`pes` | `fa`   |    —        |           |          |            |
-| Finnish              | Suomi     |`fin` | `fi`   | ✔           |   ✔        |   ✔       |            |
-| French               | Français     |`fra` | `fr`   |     —       |           |     ✔     |            |
-| Frisian              | Frysk     |`fry` | `fy-NL`   |            |           |       ✔    |            |
-| Irish                | Gaeilge     |`gle` | `ga-IE`   |            |           |    ✔      |            |
-| Hindi                | हिन्दी      |`hin` | `hi`   |            |           |          |            |
-| Upper Sorbian        | Hornjoserbšćina     |`hsb` | `hsb`   |            |           |       ✔   |            |
-| Hungarian            | Magyar nyelv     |`hun` | `hu`   |      ✔       |           |     ✔     |            |
-| Armenian             | Հայերեն         | `hye` | `hy-AM` | ✔        |          |       ✔   |             |
-| Interlingua          | Interlingua     |`ina` | `ia`   |    ✔         |           |     ✔     |            |
-| Indonesian           | Bahasa indonesia     |`ind` | `id`   |       ✔        |           |     ✔     |            |
-| Italian              | Italiano     |`ita` | `it`   |     ✔       |           |    ✔      |            |
-| Japanese             | 日本語     |`jpn` | `ja`   |      —      |           |     —     |            |
-| Georgian             |  ქართული ენა    |`kat` | `ka`   |    ✔          |           | ✔         |            |
-| Kabyle               | Taqbaylit     |`kab` | `kab`   |      ✔        |           |      ✔      |            |
-| Kazakh               | Қазақша     |`kaz` | `kk`   |   ✔          |           |      ✔     |            |
-| Kyrgyz               | Кыргызча     |`kir` | `ky`   |    ✔         |           |  ✔        |            |
-| Komi-Zyrian          | Коми кыв     |`kpv` | `kv`   |       ✔       |           |  ✔        |            |
-| Luganda              | Luganda     |`lug` | `lg`   |       ✔       |           |       ✔       |            |
-| Lithuanian           | Lietuvių kalba     |`lit` | `lt`   |   ✔         |           |  ✔          |            |
-| Latvian              | Latviešu valoda    |`lvs` | `lv`   |  ✔          |           |     ✔       |            |
-| Mongolian            | Монгол хэл |`khk` | `mn`   | ✔          |        |    ✔   |           |
-| Maltese              | Malti     |`mlt` | `mt`   |      ✔       |           |      ✔      |            |
-| Dutch                | Nederlands     |`nld` | `nl`   |   ✔         |           |    ✔      |            |
-| Oriya                | ଓଡ଼ିଆ     |`ori` | `or`   |            |           |          |            |
-| Punjabi              | ਪੰਜਾਬੀ     |`pan` | `pa-IN`   |            |           |          |            |
-| Polish               | Polski     |`pol` | `pl`   |   ✔          |           |     ✔     |            |
-| Portuguese           | Português     |`por` | `pt`   |            |           |     ✔     |            |
-| Kʼicheʼ              | Kʼicheʼ             |`quc` | `quc`   |   ✔          |           |      ✔    |            |
-| Romansch (Sursilvan) | Romontsch     |`roh` | `rm-sursilv`   |            |           |  ✔        |            |
-| Romansch (Vallader)  | Rumantsch     |`roh` | `rm-vallader`   |            |           |   ✔       |            |
-| Romanian             | Românește     |`ron` | `ro`   |   ✔          |           |    ✔       |            |
-| Russian              | Русский     |`rus` | `ru`   |            |           |     ✔     |            |
-| Kinyarwanda          | Kinyarwanda     |`kin` | `rw`   |    ✔         |           |    ✔       |            |
-| Sakha                | Саха тыла  |`sah` | `sah`   | ✔          |        |  ✔     |         |
-| Slovenian            | Slovenščina     |`slv` | `sl`   | ✔           |           |    ✔      |            |
-| Swedish              | Svenska      |`swe` | `sv-SE`   |     ✔        |           |     ✔     |            |
-| Tamil                | தமிழ்    |`tam` | `ta`   |       ✔      |           |        ✔   |            |
-| Thai                 | ภาษาไทย     |`tha` | `th`   |    ✔        |           |     ✔     |            |
-| Turkish              | Türkçe |`tur` | `tr`   |   ✔         |           |      ✔     |            |
-| Tatar                | Татар теле |`tat` | `tt`   | ✔          |        |  ✔     |         |
-| Ukrainian            |  Українська мова    |`ukr` | `uk`   |   ✔         |           |    ✔       |            |
-| Vietnamese           | Tiếng Việt     |`vie` | `vi`   |       ✔      |           |    ✔      |            |
-| Votic                | Vaďďa tšeeli    |`vot` | `vot`   |            |           |   ✔       |            |
-| Chinese (China)      | 中文     |`cmn` | `zh-CN`   |      —      |           |    —      |            |
-| Chinese (Hong Kong)  | 中文     |`cmn` | `zh-HK`   |      —      |           |    —      |            |
-| Chinese (Taiwan)     | 中文     |`cmn` | `zh-TW`   |      —      |           |    —      |            |
+| Language             | Autonym       | Code | (CV) | (WP) | Phon | Valid | Alphabet | Segment |
+|--------------------- |-------------- |----- |------|----- |----------- |----------|---------- |------------|
+| Abaza                | Абаза         |`abq` | `ab` |  —  | ✔          | ✔         | ✔        |           |
+| Arabic               | اَلْعَرَبِيَّةُ       |`ara` | `ar` | `ar`  |     —       |   ✔         |          ✔  |            |
+| Assamese             |  অসমীয়া    |`asm` | `as`   |   `as` |          |           |          |            |
+| Basaa                | Basaa         |`bas` | `bas`  |  — |     ✔      |          | ✔        |           |
+| Breton               | Brezhoneg     |`bre` | `br`   | `br` | ✔          | ✔         | ✔        |      ✔     |
+| Catalan              | Català        |`cat` | `ca`   | `ca` |            |           |      ✔    |            |
+| Czech                | Čeština       |`ces` | `cs`   |`` |    ✔        |    ✔        |  ✔        |            |
+| Chuvash              | Чӑвашла       |`chv` | `cv`   |``| ✔          | ✔         | ✔        |      ✔     |
+| Hakha Chin           | Hakha Lai     |`cnh` | `cnh`  |`` |            |           |     ✔      |            |
+| Welsh                | Cymraeg       |`cym` | `cy`   |``|       ✔      |           |     ✔      |            |
+| Dhivehi              | ދިވެހި           |`div` | `dv`   |``| ✔          |        |      |         |
+| Greek                | Ελληνικά      |`ell` | `el`   |``| ✔          |        |  ✔      |         |
+| German               | Deutsch       |`deu` | `de`   |``|            |          ✔  |     ✔      |            |
+| English              | English       |`eng` | `en`   |``|      —      |           |    ✔       |            |
+| Esperanto            | Esperanto     |`epo` | `eo`   |``|            |           |   ✔       |            |
+| Spanish              | Español   |`spa` | `es`   |``|       ✔      |           |       ✔   |            |
+| Estonian             | Eesti     |`est`    | `et`   |``|     ✔        |           |   ✔       |            |
+| Basque               | Euskara   |`eus` | `eu`   |``|     ✔      |      ✔        |    ✔      |            |
+| Persian              | فارسی          |`pes` | `fa`   |``|    —        |           |          |            |
+| Finnish              | Suomi     |`fin` | `fi`   |``| ✔           |   ✔        |   ✔       |            |
+| French               | Français     |`fra` | `fr`   |``|     —       |           |     ✔     |            |
+| Frisian              | Frysk     |`fry` | `fy-NL`   |``|            |           |       ✔    |            |
+| Irish                | Gaeilge     |`gle` | `ga-IE`   |``|            |           |    ✔      |            |
+| Hindi                | हिन्दी      |`hin` | `hi`   | |``           |           |          |            |
+| Upper Sorbian        | Hornjoserbšćina     |`hsb` | `hsb`  |`` |            |           |       ✔   |            |
+| Hungarian            | Magyar nyelv     |`hun` | `hu`  |`` |      ✔       |           |     ✔     |            |
+| Armenian             | Հայերեն         | `hye` | `hy-AM` |``| ✔        |          |       ✔   |             |
+| Interlingua          | Interlingua     |`ina` | `ia`  |`` |    ✔         |           |     ✔     |            |
+| Indonesian           | Bahasa indonesia     |`ind` | `id` |``  |       ✔        |           |     ✔     |            |
+| Italian              | Italiano     |`ita` | `it` |``  |     ✔       |           |    ✔      |            |
+| Japanese             | 日本語     |`jpn` | `ja`   |``|      —      |           |     —     |            |
+| Georgian             |  ქართული ენა    |`kat` | `ka`  |`` |    ✔          |           | ✔         |            |
+| Kabyle               | Taqbaylit     |`kab` | `kab`  |`` |      ✔        |           |      ✔      |            |
+| Kazakh               | Қазақша     |`kaz` | `kk`  |`` |   ✔          |           |      ✔     |            |
+| Kyrgyz               | Кыргызча     |`kir` | `ky`  |`` |    ✔         |           |  ✔        |            |
+| Komi-Zyrian          | Коми кыв     |`kpv` | `kv`  |`` |       ✔       |           |  ✔        |            |
+| Luganda              | Luganda     |`lug` | `lg`  |`` |       ✔       |           |       ✔       |            |
+| Lithuanian           | Lietuvių kalba     |`lit` | `lt` |``  |   ✔         |           |  ✔          |            |
+| Latvian              | Latviešu valoda    |`lvs` | `lv` |``  |  ✔          |           |     ✔       |            |
+| Mongolian            | Монгол хэл |`khk` | `mn`  |`` | ✔          |        |    ✔   |           |
+| Maltese              | Malti     |`mlt` | `mt`  |`` |      ✔       |           |      ✔      |            |
+| Dutch                | Nederlands     |`nld` | `nl` |``  |   ✔         |           |    ✔      |            |
+| Oriya                | ଓଡ଼ିଆ     |`ori` | `or`  |`` |            |           |          |            |
+| Punjabi              | ਪੰਜਾਬੀ     |`pan` | `pa-IN`   | |``           |           |          |            |
+| Polish               | Polski     |`pol` | `pl`  |`` |   ✔          |           |     ✔     |            |
+| Portuguese           | Português     |`por` | `pt`  |`` |            |           |     ✔     |            |
+| Kʼicheʼ              | Kʼicheʼ             |`quc` | `quc` |``  |   ✔          |           |      ✔    |            |
+| Romansch (Sursilvan) | Romontsch     |`roh` | `rm-sursilv`  |`` |            |           |  ✔        |            |
+| Romansch (Vallader)  | Rumantsch     |`roh` | `rm-vallader`  |`` |            |           |   ✔       |            |
+| Romanian             | Românește     |`ron` | `ro`  |`` |   ✔          |           |    ✔       |            |
+| Russian              | Русский     |`rus` | `ru`   |``|            |           |     ✔     |            |
+| Kinyarwanda          | Kinyarwanda     |`kin` | `rw` |``  |    ✔         |           |    ✔       |            |
+| Sakha                | Саха тыла  |`sah` | `sah`   |``| ✔          |        |  ✔     |         |
+| Slovenian            | Slovenščina     |`slv` | `sl`  |`sl` | ✔           |           |    ✔      |            |
+| Swedish              | Svenska      |`swe` | `sv-SE`  |`sv` |     ✔        |           |     ✔     |            |
+| Tamil                | தமிழ்    |`tam` | `ta`   |`ta`|       ✔      |           |        ✔   |            |
+| Thai                 | ภาษาไทย     |`tha` | `th`  |`th` |    ✔        |           |     ✔     |            |
+| Turkish              | Türkçe |`tur` | `tr`  |`tr` |   ✔         |           |      ✔     |            |
+| Tatar                | Татар теле |`tat` | `tt`  |`tt` | ✔          |        |  ✔     |         |
+| Ukrainian            |  Українська мова    |`ukr` | `uk` |`uk`  |   ✔         |           |    ✔       |            |
+| Vietnamese           | Tiếng Việt     |`vie` | `vi` |`vi`  |       ✔      |           |    ✔      |            |
+| Votic                | Vaďďa tšeeli    |`vot` | `vot` |  |            |           |   ✔       |            |
+| Chinese (China)      | 中文     |`cmn` | `zh-CN` |``  |      —      |           |    —      |            |
+| Chinese (Hong Kong)  | 中文     |`cmn` | `zh-HK`  |`` |      —      |           |    —      |            |
+| Chinese (Taiwan)     | 中文     |`cmn` | `zh-TW`   |``|      —      |           |    —      |            |
 
 ## How to use it
 
@@ -144,9 +144,9 @@ A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 
 ### Why not use [insert better system] for [insert task here] ?
 
-There are potentially lot of better language-specific systems for doing these tasks, but each one has
+There are potentially a lot of better language-specific systems for doing these tasks, but each one has
 a slightly different API, so if you want to support all the Common Voice languages or even a reasonable
-subset you have to learn and use the same number of language-specific APIs. 
+subset you have to learn and use the same number of language-specific APIs.
 
 The idea of these utilities is to provide adequate implementations of things are are likely to be useful
 when working with all the languages in Common Voice. If you are working on a single language or have 
