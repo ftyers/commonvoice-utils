@@ -1,4 +1,4 @@
-import re, os
+import re, os, sys
 
 class Validator:
 	"""
@@ -15,7 +15,8 @@ class Validator:
 			print('[Validator] Function not implemented')
 
 	def load_data(self):
-		self.alphabet = [] 
+		self.alphabet = [' '] 
+		self.skip = [] 
 		self.transform = {}
 		self.lower = False
 		data_dir = os.path.abspath(os.path.dirname(__file__)) + '/data/'
@@ -29,6 +30,8 @@ class Validator:
 					self.alphabet.append(a)
 			if row[0] == 'LOWER':
 				self.lower = True
+			if row[0] == 'SKIP':
+				self.skip.append(row[1])
 			if row[0] == 'REPL':
 				k = row[1].strip()
 				v = row[2].strip()
@@ -47,6 +50,8 @@ class Validator:
 		for k in self.transform:
 			label = label.replace(k, self.transform[k])		
 		for c in label:
+			if c in self.skip:
+				return None
 			if c not in self.alphabet:
 				return None
 
