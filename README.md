@@ -8,8 +8,8 @@ utilities and data useful in training ASR and TTS systems.
 
 * Phonemiser: 
   * A rudimentary grapheme to phoneme (g2p) system based on either:
-    * a deterministic longest-match left-to-right replacements of orthographic units
-    * weighted finite-state transducer
+    * a deterministic longest-match left-to-right replacement of orthographic units; or
+    * a weighted finite-state transducer
 * Validator: 
   * A validation script that can be used with `import_cv2.py` from [coqui-ai/STT](https://github.com/coqui-ai/STT/)
   * It checks a sentence to see if it can be converted and if possible normalises the encoding, removes punctuation and returns it
