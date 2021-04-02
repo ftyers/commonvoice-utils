@@ -32,7 +32,7 @@ class Validator:
 				self.lower = True
 			if row[0] == 'SKIP':
 				self.skip.append(row[1])
-			if row[0] == 'REPL':
+			if row[0] == 'REPL' or row[0] == 'NORM':
 				k = row[1].strip()
 				v = row[2].strip()
 				if row[2] == '_':
