@@ -57,7 +57,7 @@ utilities and data useful in training ASR and TTS systems.
 | Kabyle               | Taqbaylit     |`kab` | `kab`   |      ✔        |           |      ✔      |            |
 | Kazakh               | Қазақша     |`kaz` | `kk`   |   ✔          |           |      ✔     |            |
 | Kyrgyz               | Кыргызча     |`kir` | `ky`   |    ✔         |           |  ✔        |            |
-| Komi-Zyrian          | Коми кыв     |`kpv` | `kv`   |             |           |  ✔        |            |
+| Komi-Zyrian          | Коми кыв     |`kpv` | `kv`   |       ✔       |           |  ✔        |            |
 | Luganda              | Luganda     |`lug` | `lg`   |       ✔       |           |       ✔       |            |
 | Lithuanian           | Lietuvių kalba     |`lit` | `lt`   |   ✔         |           |  ✔          |            |
 | Latvian              | Latviešu valoda    |`lvs` | `lv`   |  ✔          |           |     ✔       |            |
