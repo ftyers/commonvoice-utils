@@ -73,7 +73,7 @@ utilities and data useful in training ASR and TTS systems.
 | Russian              | Русский     |`rus` | `ru`   |            |           |     ✔     |            |
 | Kinyarwanda          | Kinyarwanda     |`kin` | `rw`   |    ✔         |           |    ✔       |            |
 | Sakha                | Саха тыла  |`sah` | `sah`   | ✔          |        |  ✔     |         |
-| Slovenian            | Slovenščina     |`slv` | `sl`   |            |           |    ✔      |            |
+| Slovenian            | Slovenščina     |`slv` | `sl`   | ✔           |           |    ✔      |            |
 | Swedish              | Svenska      |`swe` | `sv-SE`   |            |           |     ✔     |            |
 | Tamil                | தமிழ்    |`tam` | `ta`   |            |           |          |            |
 | Thai                 | ภาษาไทย     |`tha` | `th`   |    ✔        |           |     ✔     |            |
