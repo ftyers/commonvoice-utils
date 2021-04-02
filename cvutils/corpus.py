@@ -16,6 +16,9 @@ class Corpus:
 	'https://dumps.wikimedia.org/kvwiki/latest/kvwiki-latest-pages-articles.xml.bz2'
 	>>> c = Corpus('quc')
 	>>> c.dump_url()
+	>>> c = Corpus('rm-vallader')
+	>>> c.dump_url()
+	'https://dumps.wikimedia.org/rmwiki/latest/rmwiki-latest-pages-articles.xml.bz2'
 	"""
 	def __init__(self, lang):
 		self.lang = lang
