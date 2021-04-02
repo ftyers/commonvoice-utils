@@ -21,7 +21,7 @@ utilities and data useful in training ASR and TTS systems.
 | Language | Autonym   | Code | Code (CV) | Phon | Valid | Alphabet | Segment |
 |--------------------- |---------- |----- |------- |----------- |----------|---------- |------------|
 | Abaza                | Абаза     |`abq` | `ab`   | ✔          | ✔         | ✔        |           |
-| Arabic               | اَلْعَرَبِيَّةُ     |`ara` | `ar`   |     —       |           |          |            |
+| Arabic               | اَلْعَرَبِيَّةُ     |`ara` | `ar`   |     —       |   ✔         |          ✔  |            |
 | Assamese             |  অসমীয়া    |`asm` | `as`   |            |           |          |            |
 | Basaa                | Basaa        |`bas` | `bas`   |     ✔      |          | ✔        |           |
 | Breton               | Brezhoneg |`bre` | `br`   | ✔          | ✔         | ✔        |      ✔     |
