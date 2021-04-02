@@ -1,11 +1,12 @@
-import sys, os, pathlib
+import sys, os, pathlib, re
 
 sys.path.append(os.path.dirname(__file__))
 
 from phonemiser import Phonemiser
-from segmenter import Segmenter  
+from segmenter import Segmenter
 from validator import Validator
 from alphabet import Alphabet
+from corpus import Corpus
 
 # This is horrible, rewrite this
 
@@ -13,23 +14,37 @@ class CV:
 	def __init__(self):
 		self.supported = {'phonemiser':[], 'segmenter':[], 'validator':[], 'alphabet':[]}
 
-		for path in pathlib.Path(os.path.dirname(__file__) + '/data/').rglob('alphabet.txt'):
+		data_dir = os.path.dirname(__file__) + '/data/'
+		for path in pathlib.Path(data_dir).rglob('alphabet.txt'):
 			locale = path.resolve()
 			locale = str(locale).replace('/alphabet.txt', '').split('/')[-1]
 			self.supported['alphabet'].append(locale)
 
-		for path in pathlib.Path(os.path.dirname(__file__) + '/data/').rglob('validate.tsv'):
+		for path in pathlib.Path(data_dir).rglob('validate.tsv'):
 			locale = path.resolve()
 			locale = str(locale).replace('/validate.tsv', '').split('/')[-1]
 			self.supported['validator'].append(locale)
-				
-	def alphabet_available(self, code): 
-		if code in self.supported['alphabet']:
-			return True
-		return False
 
-	def validator_available(self, code): 
-		if code in self.supported['validator']:
-			return True
-		return False
+		for path in pathlib.Path(data_dir).rglob('phon.*'):
+			locale = path.resolve()
+			locale = re.sub('/phon.(att|tsv)', '', str(locale)).split('/')[-1]
+			self.supported['phonemiser'].append(locale)
+	
+		for path in pathlib.Path(data_dir).rglob('punct.tsv'):
+			locale = path.resolve()
+			locale = str(locale).replace('/punct.tsv', '').split('/')[-1]
+			self.supported['segmenter'].append(locale)
+							
+				
+	def alphabets(self):
+		return self.supported['alphabet']
+
+	def validators(self):
+		return self.supported['validator']
+
+	def phonemisers(self):
+		return self.supported['phonemiser']
+
+	def segmenters(self):
+		return self.supported['segmenter']
 
