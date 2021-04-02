@@ -11,6 +11,11 @@ class Corpus:
 	>>> c = Corpus('ga-IE')
 	>>> c.dump_url()
 	'https://dumps.wikimedia.org/gawiki/latest/gawiki-latest-pages-articles.xml.bz2'
+	>>> c = Corpus('kpv')
+	>>> c.dump_url()
+	'https://dumps.wikimedia.org/kvwiki/latest/kvwiki-latest-pages-articles.xml.bz2'
+	>>> c = Corpus('quc')
+	>>> c.dump_url()
 	"""
 	def __init__(self, lang):
 		self.lang = lang
@@ -32,7 +37,9 @@ class Corpus:
 		return self.small_vocab
 
 	def dump_url(self):
-		return 'https://dumps.wikimedia.org/%swiki/latest/%swiki-latest-pages-articles.xml.bz2' % (self.wikipedia_code, self.wikipedia_code)
+		if self.wikipedia_code:
+			return 'https://dumps.wikimedia.org/%swiki/latest/%swiki-latest-pages-articles.xml.bz2' % (self.wikipedia_code, self.wikipedia_code)
+		return None
 
 
 if __name__ == "__main__":
