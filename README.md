@@ -75,7 +75,7 @@ utilities and data useful in training ASR and TTS systems.
 | Sakha                | Саха тыла  |`sah` | `sah`   | ✔          |        |  ✔     |         |
 | Slovenian            | Slovenščina     |`slv` | `sl`   | ✔           |           |    ✔      |            |
 | Swedish              | Svenska      |`swe` | `sv-SE`   |            |           |     ✔     |            |
-| Tamil                | தமிழ்    |`tam` | `ta`   |            |           |          |            |
+| Tamil                | தமிழ்    |`tam` | `ta`   |       ✔      |           |        ✔   |            |
 | Thai                 | ภาษาไทย     |`tha` | `th`   |    ✔        |           |     ✔     |            |
 | Turkish              | Türkçe |`tur` | `tr`   |   ✔         |           |      ✔     |            |
 | Tatar                | Татар теле |`tat` | `tt`   | ✔          |        |  ✔     |         |
@@ -171,5 +171,5 @@ same time it's useful to have them all in one place.
 ## Acknowledgements 
 
 * Grapheme to phoneme correspondences for the following languages from [`epitran`](https://github.com/dmort27/epitran/):
-  * `vi`, `uk`, `kk`, `ky`
+  * `vi`, `uk`, `kk`, `ky`, `ta`
 * Code for [transducer lookup](https://github.com/mhulden/foma/blob/master/foma/python/attapply.py) from Måns Huldén.

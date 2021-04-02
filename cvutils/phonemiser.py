@@ -47,6 +47,8 @@ class Phonemiser:
 			row = line.strip('\n').split('\t')
 			k = row[0].strip()	
 			v = row[1].strip()	
+			if v == '_':
+				v = ''
 			if k not in self.lkp:
 				self.lkp[k] = []
 			self.lkp[k].append(v)
