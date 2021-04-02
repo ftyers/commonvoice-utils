@@ -6,7 +6,6 @@ REPL	.	_
 REPL	:	_
 REPL	;	_
 REPL	?	_
-REPL	`	_
 REPL	«	_
 REPL	»	_
 REPL	–	_
@@ -16,6 +15,7 @@ REPL	”	_
 REPL	…	_
 NORM	’	ʼ
 NORM	'	ʼ
+NORM	`	ʼ
 ALLOW	а	_
 ALLOW	б	_
 ALLOW	в	_
