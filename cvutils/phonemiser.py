@@ -7,10 +7,13 @@ class Phonemiser:
 	>>> p = Phonemiser('ab')
 	>>> p.phonemise('гӏапынхъамыз')
 	'ʕapənqaməz'
+	>>> p = Phonemiser('lt')
+	>>> p.phonemise('abažūras')
+	'ɐbɐʒuːɾɐs̪'
 	"""
 	def __init__(self, lang):
 		self.lang = lang
-
+		self.transducer = None
 		try:
 			self.load_data()
 		except FileNotFoundError:
@@ -37,7 +40,7 @@ class Phonemiser:
 
 	def load_data_tsv(self):
 		data_dir = os.path.abspath(os.path.dirname(__file__)) + '/data/' + self.lang + '/'
-		fd = open(data_dir + self.lang + '/phon.tsv')
+		fd = open(data_dir + '/phon.tsv')
 		line = fd.readline() # Skip the first line
 		line = fd.readline()
 		while line:
