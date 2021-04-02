@@ -172,3 +172,4 @@ same time it's useful to have them all in one place.
 
 * Grapheme to phoneme correspondences for the following languages from [`epitran`](https://github.com/dmort27/epitran/):
   * `vi`, `uk`, `kk`, `ky`
+* Code for [transducer lookup](https://github.com/mhulden/foma/blob/master/foma/python/attapply.py) from Måns Huldén.
