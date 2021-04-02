@@ -8,7 +8,8 @@ class Validator:
 	"""
 	def __init__(self, lang):
 		self.lang = lang
-
+		self.lower = False
+		self.nkfc = False
 		try:
 			self.load_data()
 		except FileNotFoundError:
