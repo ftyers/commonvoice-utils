@@ -9,7 +9,7 @@ class Validator:
 	def __init__(self, lang):
 		self.lang = lang
 		self.lower = False
-		self.nkfc = False
+		self.nfkc = False
 		try:
 			self.load_data()
 		except FileNotFoundError:
@@ -31,8 +31,8 @@ class Validator:
 					self.alphabet.append(a)
 			if row[0] == 'LOWER':
 				self.lower = True
-			if row[0] == 'NKFC':
-				self.nkfc = True
+			if row[0] == 'NFKC':
+				self.nfkc = True
 			if row[0] == 'SKIP':
 				self.skip.append(row[1])
 			if row[0] == 'REPL' or row[0] == 'NORM':
@@ -50,7 +50,7 @@ class Validator:
 		label = transcript
 		if self.lower:
 			label = label.lower()
-		if self.nkfc:
+		if self.nfkc:
 			label = unicodedata.normalize('NFKC', label)
 		for k in self.transform:
 			label = label.replace(k, self.transform[k])		
@@ -69,7 +69,7 @@ class Validator:
 		label = transcript.strip()
 		if self.lower:
 			label = label.lower()
-		if self.nkfc:
+		if self.nfkc:
 			label = unicodedata.normalize('NFKC', label)
 		for k in self.transform:
 			label = label.replace(k, self.transform[k])		

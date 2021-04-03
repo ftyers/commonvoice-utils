@@ -1,5 +1,5 @@
 LOWER	_	_
-NKFC	_	_
+NFKC	_	_
 REPL	"	_
 REPL	!	_
 REPL	(	_
