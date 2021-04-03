@@ -65,6 +65,26 @@ class Validator:
 
 		return label if label else None
 
+	def normalise(self, transcript):
+		label = transcript.strip()
+		if self.lower:
+			label = label.lower()
+		if self.nkfc:
+			label = unicodedata.normalize('NFKC', label)
+		for k in self.transform:
+			label = label.replace(k, self.transform[k])		
+		for c in label:
+			if c in self.skip:
+				return (False, label)
+			if c not in self.alphabet:
+				return (False, label)
+
+		label = re.sub('  *', ' ', label)
+		label = label.strip()
+
+		return (True, label) if label else (False, label)
+
+
 if __name__ == "__main__":
 	import doctest
 	doctest.testmod()

@@ -1,6 +1,9 @@
 LOWER	_	_
 NKFC	_	_
 REPL	"	_
+REPL	!	_
+REPL	(	_
+REPL	)	_
 REPL	+	_
 REPL	,	_
 REPL	.	_
@@ -9,9 +12,13 @@ REPL	;	_
 REPL	?	_
 REPL	«	_
 REPL	»	_
+REPL	„	_
+REPL	”	_
+REPL	“	_
 REPL	–	_
 REPL	—	_
 REPL	…	_
+REPL	́	_
 SKIP	%	_
 SKIP	0	_
 SKIP	1	_
@@ -31,6 +38,7 @@ NORM	e	е
 NORM	ĕ	ӗ
 NORM	o	о
 NORM	ӱ	ӳ
+NORM	ÿ	ӳ
 ALLOW	а	_
 ALLOW	ӑ	_
 ALLOW	б	_

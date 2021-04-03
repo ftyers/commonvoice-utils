@@ -8,6 +8,7 @@ class Segmenter:
 	"""
 	def __init__(self, lang):
 		self.lang = lang
+		self.transform = {}
 
 		try:
 			self.load_data()
