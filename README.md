@@ -45,7 +45,7 @@ utilities and data useful in training ASR and TTS systems.
 | Persian              | فارسی               |`pes` | `fa`   |`fa`|    —        |           |          |            |
 | Finnish              | Suomi               |`fin` | `fi`   |`fi`| ✔           |   ✔        |   ✔       |            |
 | French               | Français            |`fra` | `fr`   |`fr`|     —       |           |     ✔     |            |
-| Frisian              | Frysk               |`fry` | `fy-NL`   |`fy`|            |           |       ✔    |            |
+| Frisian              | Frysk               |`fry` | `fy-NL`   |`fy`|            |     ✔       |       ✔    |            |
 | Irish                | Gaeilge             |`gle` | `ga-IE`   |`ga`|            |    ✔       |    ✔      |            |
 | Hindi                | हिन्दी                                              |`hin` | `hi`   | `hi`           |           |          |            |
 | Upper Sorbian        | Hornjoserbšćina     |`hsb` | `hsb`  |`hsb` |            |           |       ✔   |            |
