@@ -15,6 +15,8 @@ debug = False
 
 if mode == 'dump':
 	dump_name = sys.argv[2]
+	if dump_name == '-':
+		dump_name = '/dev/stdin'
 	wikipedia.process(dump_name)
 	
 if mode == 'segment':
@@ -27,7 +29,7 @@ if mode == 'segment':
 		
 		line = sys.stdin.readline()
 
-elif mode == 'validate':
+elif mode == 'validate' or mode == 'norm':
 	locale = sys.argv[2]
 	def cleanup(skipped, chars, alphabet, count_valid, total):
 		if debug:
