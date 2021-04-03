@@ -151,6 +151,7 @@ include cvutils/data/rm-sursilv/alphabet.txt
 include cvutils/data/rm-sursilv/wikipedia.txt
 include cvutils/data/ka
 include cvutils/data/ka/alphabet.txt
+include cvutils/data/ka/validate.tsv
 include cvutils/data/ka/phon.tsv
 include cvutils/data/ka/vocab.tsv
 include cvutils/data/ar

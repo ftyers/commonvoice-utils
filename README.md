@@ -55,7 +55,7 @@ utilities and data useful in training ASR and TTS systems.
 | Indonesian           | Bahasa indonesia     |`ind` | `id` |`id`  |       ✔        |           |     ✔     |            |
 | Italian              | Italiano     |`ita` | `it` |`it`  |     ✔       |           |    ✔      |            |
 | Japanese             | 日本語     |`jpn` | `ja`   |`ja`|      —      |           |     —     |            |
-| Georgian             |  ქართული ენა    |`kat` | `ka`  |`ka` |    ✔          |           | ✔         |            |
+| Georgian             |  ქართული ენა    |`kat` | `ka`  |`ka` |    ✔          |      ✔      | ✔         |            |
 | Kabyle               | Taqbaylit     |`kab` | `kab`  |`kab` |      ✔        |           |      ✔      |            |
 | Kazakh               | Қазақша     |`kaz` | `kk`  |`kk` |   ✔          |           |      ✔     |            |
 | Kyrgyz               | Кыргызча     |`kir` | `ky`  |`ky` |    ✔         |           |  ✔        |            |
