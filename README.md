@@ -32,7 +32,7 @@ utilities and data useful in training ASR and TTS systems.
 | Catalan              | Català        |`cat` | `ca`   | `ca` |            |           |      ✔    |            |
 | Czech                | Čeština       |`ces` | `cs`   |`cs` |    ✔        |    ✔        |  ✔        |            |
 | Chuvash              | Чӑвашла       |`chv` | `cv`   |`cv`| ✔          | ✔         | ✔        |      ✔     |
-| Hakha Chin           | Hakha Lai     |`cnh` | `cnh`  |—  |            |           |     ✔      |            |
+| Hakha Chin           | Hakha Lai     |`cnh` | `cnh`  |—  |            |      ✔      |     ✔      |            |
 | Welsh                | Cymraeg       |`cym` | `cy`   |`cy`|       ✔      |           |     ✔      |            |
 | Dhivehi              | ދިވެހި           |`div` | `dv`   |`dv`| ✔          |        |      |         |
 | Greek                | Ελληνικά      |`ell` | `el`   |`el`| ✔          |        |  ✔      |         |

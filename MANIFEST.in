@@ -203,6 +203,7 @@ include cvutils/data/ia/alphabet.txt
 include cvutils/data/ia/phon.tsv
 include cvutils/data/cnh
 include cvutils/data/cnh/alphabet.txt
+include cvutils/data/cnh/validate.tsv
 include cvutils/data/bas
 include cvutils/data/bas/alphabet.txt
 include cvutils/data/bas/wikipedia.txt
