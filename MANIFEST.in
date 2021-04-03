@@ -6,6 +6,7 @@ include cvutils/data/rm-vallader/alphabet.txt
 include cvutils/data/rm-vallader/wikipedia.txt
 include cvutils/data/fy-NL
 include cvutils/data/fy-NL/alphabet.txt
+include cvutils/data/fy-NL/validate.tsv
 include cvutils/data/fy-NL/wikipedia.txt
 include cvutils/data/fy-NL/vocab.tsv
 include cvutils/data/sl
