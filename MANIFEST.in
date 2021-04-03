@@ -41,6 +41,7 @@ include cvutils/data/hu/alphabet.txt
 include cvutils/data/hu/phon.tsv
 include cvutils/data/sah
 include cvutils/data/sah/alphabet.txt
+include cvutils/data/sah/validate.tsv
 include cvutils/data/sah/phon.tsv
 include cvutils/data/cs
 include cvutils/data/cs/alphabet.txt
