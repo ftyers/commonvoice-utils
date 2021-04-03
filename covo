@@ -9,6 +9,12 @@ from cvutils import Alphabet
 
 from cvutils import wikipedia
 
+if len(sys.argv) == 1:
+	print('covo   dump     [pages-articles.xml.bz2]',file=sys.stderr)
+	print('       segment  [locale]',file=sys.stderr)
+	print('       norm     [locale]',file=sys.stderr)
+	sys.exit(-1)
+
 mode = sys.argv[1]
 
 debug = False

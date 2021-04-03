@@ -10,7 +10,7 @@ README = (HERE / "README.md").read_text()
 # This call to setup() does all the work
 setup(
     name="commonvoice-utils",
-    version="0.1.7",
+    version="0.1.8",
     description="Linguistic processing for languages in Common Voice",
     long_description=README,
     long_description_content_type="text/markdown",
@@ -24,6 +24,7 @@ setup(
         "Programming Language :: Python :: 3.7",
     ],
     include_package_data=True,
+    scripts=['covo'],
     packages=['cvutils']
 )
 
