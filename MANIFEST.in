@@ -205,6 +205,7 @@ include cvutils/data/bas/wikipedia.txt
 include cvutils/data/bas/phon.tsv
 include cvutils/data/et
 include cvutils/data/et/alphabet.txt
+include cvutils/data/et/validate.tsv
 include cvutils/data/et/phon.tsv
 include cvutils/data/et/vocab.tsv
 include cvutils/data/tr
