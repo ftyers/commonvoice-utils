@@ -103,6 +103,8 @@ include cvutils/data/pl/phon.tsv
 include cvutils/data/pl/vocab.tsv
 include cvutils/data/ga-IE
 include cvutils/data/ga-IE/alphabet.txt
+include cvutils/data/ga-IE/phon.lexc
+include cvutils/data/ga-IE/validate.tsv
 include cvutils/data/ga-IE/wikipedia.txt
 include cvutils/data/sv-SE
 include cvutils/data/sv-SE/alphabet.txt
