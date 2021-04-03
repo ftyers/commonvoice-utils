@@ -58,6 +58,8 @@ class Segmenter:
 			if token[-1] in self.eos:
 				if re.match('\W*(' + '|'.join(self.abbr) + ')\W*', token):
 					sentence += token
+				elif re.match('[0-9]+\.', token): 
+					sentence += token
 				else: 
 					sentence += token
 					sentences.append(sentence.strip())

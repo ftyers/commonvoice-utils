@@ -1,9 +1,13 @@
 LOWER	_	_
+REPL	.	_
 REPL	,	_
+REPL	;	_
 REPL	-	_
 REPL	:	_
 REPL	«	_
 REPL	»	_
+NORM	a	а
+NORM	o	о
 ALLOW	а	_
 ALLOW	б	_
 ALLOW	в	_
