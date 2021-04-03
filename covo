@@ -1,0 +1,63 @@
+#!/usr/bin/env python3
+
+import sys, requests, io
+
+from cvutils import Corpora 
+from cvutils import Segmenter
+from cvutils import Validator
+from cvutils import Alphabet 
+
+from cvutils import wikipedia
+
+mode = sys.argv[1]
+
+debug = False
+
+if mode == 'dump':
+	dump_name = sys.argv[2]
+	wikipedia.process(dump_name)
+	
+if mode == 'segment':
+	locale = sys.argv[2]
+	s = Segmenter(locale)
+	line = sys.stdin.readline()
+	while line:
+		for sentence in s.segment(line):
+			print(sentence)	
+		
+		line = sys.stdin.readline()
+
+elif mode == 'validate':
+	locale = sys.argv[2]
+	def cleanup(skipped, chars, alphabet, count_valid, total):
+		if debug:
+			print('',file=sys.stderr)
+			print('\n'.join(skipped), file=sys.stderr)
+			print('',file=sys.stderr)
+			print(chars - alphabet, file=sys.stderr)			
+		print('%d/%d (%.2f%%)' % (count_valid, total, (count_valid/total)*100.0),file=sys.stderr)
+	
+
+	v = Validator(locale)
+	a = Alphabet(locale)
+	line = sys.stdin.readline()
+	chars = set()
+	alphabet = set(a.get_alphabet())
+	skipped = []
+	count_valid = 0
+	total = 0
+	try: 
+		while line:
+			(valid, sent) = v.normalise(line)
+			if valid:
+				count_valid += 1
+				print(sent)
+			else:
+				skipped.append(sent)
+				[chars.add(c) for c in sent]
+			total += 1	
+			line = sys.stdin.readline()
+	except KeyboardInterrupt:
+		cleanup(skipped, chars, alphabet, count_valid, total)
+
+	cleanup(skipped, chars, alphabet, count_valid, total)
