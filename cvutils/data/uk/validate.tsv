@@ -16,6 +16,7 @@ REPL	…	_
 NORM	’	ʼ
 NORM	'	ʼ
 NORM	`	ʼ
+SKIP	ы	_
 ALLOW	а	_
 ALLOW	б	_
 ALLOW	в	_
