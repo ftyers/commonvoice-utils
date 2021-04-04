@@ -131,6 +131,10 @@ include cvutils/data/id/alphabet.txt
 include cvutils/data/id/phon.tsv
 include cvutils/data/id/vocab.tsv
 include cvutils/data/dv
+include cvutils/data/dv/alphabet.txt
+include cvutils/data/dv/validate.tsv
+include cvutils/data/dv/punct.tsv
+include cvutils/data/dv/abbr.tsv
 include cvutils/data/dv/phon.tsv
 include cvutils/data/cv
 include cvutils/data/cv/alphabet.txt
