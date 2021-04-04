@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 
-import sys, requests, io
+import sys
 
 from cvutils import Corpora 
 from cvutils import Segmenter
 from cvutils import Validator
 from cvutils import Alphabet 
+from cvutils import Phonemiser
 
 from cvutils import wikipedia
 
@@ -16,6 +17,7 @@ if len(sys.argv) == 1:
 	print('       dump-url [locale]',file=sys.stderr)
 	print('       segment  [locale]',file=sys.stderr)
 	print('       norm     [locale]',file=sys.stderr)
+	print('       phon     [locale]',file=sys.stderr)
 	sys.exit(-1)
 
 mode = sys.argv[1]
@@ -75,3 +77,11 @@ elif mode == 'validate' or mode == 'norm':
 		cleanup(skipped, chars, alphabet, count_valid, total)
 
 	cleanup(skipped, chars, alphabet, count_valid, total)
+
+elif mode == 'phon' or mode == 'phonemise':
+	locale = sys.argv[2]
+	p = Phonemiser(locale)
+	line = sys.stdin.readline()
+	while line:
+		print(' '.join([p.phonemise(w) for w in line.split(' ')]))
+		line = sys.stdin.readline()
