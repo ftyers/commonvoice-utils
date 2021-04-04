@@ -56,11 +56,15 @@ class Segmenter:
 				sentence += ' '
 				continue
 			if token[-1] in self.eos:
-				if re.match('\W*(' + '|'.join(self.abbr) + ')\W*', token):
+				#print(token)
+				found = False
+				for abbrev in self.abbr:
+					if token == abbrev:
+						sentence += token
+						found = True
+				if re.match('[0-9]+\.', token): 
 					sentence += token
-				elif re.match('[0-9]+\.', token): 
-					sentence += token
-				else: 
+				elif not found: 
 					sentence += token
 					sentences.append(sentence.strip())
 					sentence = ''

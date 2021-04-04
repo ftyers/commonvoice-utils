@@ -11,6 +11,7 @@ from cvutils import wikipedia
 
 if len(sys.argv) == 1:
 	print('covo   dump     [pages-articles.xml.bz2]',file=sys.stderr)
+	print('       dump-url [locale]',file=sys.stderr)
 	print('       segment  [locale]',file=sys.stderr)
 	print('       norm     [locale]',file=sys.stderr)
 	sys.exit(-1)
@@ -24,6 +25,11 @@ if mode == 'dump':
 	if dump_name == '-':
 		dump_name = '/dev/stdin'
 	wikipedia.process(dump_name)
+
+if mode == 'dump-url':
+	dump_locale = sys.argv[2]
+	c = Corpora(dump_locale)
+	print(c.dump_url())
 	
 if mode == 'segment':
 	locale = sys.argv[2]
