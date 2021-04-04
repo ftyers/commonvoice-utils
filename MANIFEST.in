@@ -124,6 +124,8 @@ include cvutils/data/mt/phon.tsv
 include cvutils/data/hsb
 include cvutils/data/hsb/alphabet.txt
 include cvutils/data/hsb/validate.tsv
+include cvutils/data/hsb/punct.tsv
+include cvutils/data/hsb/abbr.tsv
 include cvutils/data/id
 include cvutils/data/id/alphabet.txt
 include cvutils/data/id/phon.tsv
