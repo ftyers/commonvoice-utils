@@ -58,7 +58,7 @@ utilities and data useful in training ASR and TTS systems.
 | Georgian             |  ქართული ენა    |`kat` | `ka`  |`ka` |    ✔          |      ✔      | ✔         |            |
 | Kabyle               | Taqbaylit     |`kab` | `kab`  |`kab` |      ✔        |           |      ✔      |            |
 | Kazakh               | Қазақша     |`kaz` | `kk`  |`kk` |   ✔          |           |      ✔     |            |
-| Kyrgyz               | Кыргызча     |`kir` | `ky`  |`ky` |    ✔         |     ✔        |  ✔        |            |
+| Kyrgyz               | Кыргызча     |`kir` | `ky`  |`ky` |    ✔         |     ✔        |  ✔        |    ✔          |
 | Komi-Zyrian          | Коми кыв     |`kpv` | `kv`  |`kv` |       ✔       |           |  ✔        |            |
 | Luganda              | Luganda     |`lug` | `lg`  |`lg` |       ✔       |        ✔     |       ✔       |            |
 | Lithuanian           | Lietuvių kalba     |`lit` | `lt` |`lt`  |   ✔         |           |  ✔          |            |
