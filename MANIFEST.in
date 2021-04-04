@@ -194,7 +194,10 @@ include cvutils/data/or
 include cvutils/data/or/vocab.tsv
 include cvutils/data/mn
 include cvutils/data/mn/alphabet.txt
+include cvutils/data/mn/.abbr.tsv.swp
 include cvutils/data/mn/validate.tsv
+include cvutils/data/mn/punct.tsv
+include cvutils/data/mn/abbr.tsv
 include cvutils/data/mn/phon.tsv
 include cvutils/data/ca
 include cvutils/data/ca/alphabet.txt

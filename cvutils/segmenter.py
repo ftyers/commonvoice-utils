@@ -14,6 +14,7 @@ class Segmenter:
 			self.load_data()
 		except FileNotFoundError:
 			print('[Segmenter] Function not implemented')
+			sys.exit(-1)
 
 	def load_data(self):
 		self.eos = []
