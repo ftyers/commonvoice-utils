@@ -18,7 +18,7 @@ if len(sys.argv) == 1:
 
 mode = sys.argv[1]
 
-debug = True
+debug = False
 
 if mode == 'dump':
 	dump_name = sys.argv[2]
