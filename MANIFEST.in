@@ -60,6 +60,9 @@ include cvutils/data/pt/vocab.tsv
 include cvutils/data/ky
 include cvutils/data/ky/alphabet.txt
 include cvutils/data/ky/validate.tsv
+include cvutils/data/ky/punct.tsv
+include cvutils/data/ky/abbr.tsv
+include cvutils/data/ky/l
 include cvutils/data/ky/phon.tsv
 include cvutils/data/ky/vocab.tsv
 include cvutils/data/ro
