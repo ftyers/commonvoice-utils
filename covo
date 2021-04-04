@@ -9,6 +9,8 @@ from cvutils import Alphabet
 
 from cvutils import wikipedia
 
+debug = False
+
 if len(sys.argv) == 1:
 	print('covo   dump     [pages-articles.xml.bz2]',file=sys.stderr)
 	print('       dump-url [locale]',file=sys.stderr)
@@ -17,8 +19,6 @@ if len(sys.argv) == 1:
 	sys.exit(-1)
 
 mode = sys.argv[1]
-
-debug = False
 
 if mode == 'dump':
 	dump_name = sys.argv[2]

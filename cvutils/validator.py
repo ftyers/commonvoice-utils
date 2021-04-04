@@ -77,6 +77,7 @@ class Validator:
 			if c in self.skip:
 				return (False, label)
 			if c not in self.alphabet:
+				#print('X',c)
 				return (False, label)
 
 		label = re.sub('  *', ' ', label)
