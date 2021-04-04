@@ -1,4 +1,4 @@
-import re, os
+import re, os, sys
 
 class Segmenter:
 	"""
