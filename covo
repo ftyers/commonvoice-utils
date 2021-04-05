@@ -85,3 +85,11 @@ elif mode == 'phon' or mode == 'phonemise':
 	while line:
 		print(' '.join([p.phonemise(w) for w in line.split(' ')]))
 		line = sys.stdin.readline()
+
+
+elif mode == 'opus':
+	locale = sys.argv[2]
+	c = Corpora(locale)
+	for line in c.opus():
+		print('%s\t%s' % (line[1], line[0]))
+

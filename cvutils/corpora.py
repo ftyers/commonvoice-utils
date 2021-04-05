@@ -1,4 +1,4 @@
-import os
+import os, urllib.request, re
 
 class Corpora:
 	"""
@@ -43,6 +43,33 @@ class Corpora:
 		if self.wikipedia_code:
 			return 'https://dumps.wikimedia.org/%swiki/latest/%swiki-latest-pages-articles.xml.bz2' % (self.wikipedia_code, self.wikipedia_code)
 		return None
+
+	def opus(self):
+		q = 'https://opus.nlpl.eu/?src=' + self.lang + '&trg=en'
+		p = urllib.request.urlopen(q)
+		page = p.read().decode('utf-8').split('\n')
+		d = ''
+		area = False
+		for line in page:
+			if line.count('<b>Language resources: </b>'):
+				area = True
+			if line.count('</table>'):
+				area = False  
+			if area:
+				d+= line
+
+		if not d:
+			return None
+
+		urls = []
+		for line in d.replace('<td>','\n<td>').split('\n'):
+			urltitle = re.findall('href="[^"]+" title="[^"]+"', line)
+# <td>&nbsp;<a rel="nofollow" href="https://object.pouta.csc.fi/OPUS-wikimedia/v20190628/smt/ab-en.alg.zip" title="1 aligned documents,58 sentence alignments">alg</a>&nbsp;<a rel="nofollow" href="https://object.pouta.csc.fi/OPUS-wikimedia/v20190628/smt/ab-en.zip" title="1 aligned documents,58 sentence alignments">smt</a>&nbsp;</td>
+			for entry in urltitle:
+				e = entry.replace('href="','').strip('"').split('" title="')
+				if self.lang + '.txt.gz' in e[0] and '/mono/' in e[0]:
+					urls.append(e)
+		return urls					
 
 
 if __name__ == "__main__":
