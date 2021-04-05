@@ -27,7 +27,7 @@ utilities and data useful in training ASR and TTS systems.
 | Abhaz                | Аԥсуа         |`abk` | `ab` |  —  | ✔          | ✔         | ✔        |           |
 | Arabic               | اَلْعَرَبِيَّةُ       |`ara` | `ar` | `ar`  |     —       |   ✔         |          ✔  |            |
 | Assamese             |  অসমীয়া    |`asm` | `as`   |   `as` |          |           |          |            |
-| Azeri                | Azerce        | `aze` | `az` | `az` |         |  ✔         |  ✔       |          | 
+| Azeri                | Azərbaycanca | `aze` | `az` | `az` |         |  ✔         |  ✔       |          | 
 | Basaa                | Basaa         |`bas` | `bas`  |  — |     ✔      |          | ✔        |           |
 | Breton               | Brezhoneg     |`bre` | `br`   | `br` | ✔          | ✔         | ✔        |      ✔     |
 | Catalan              | Català        |`cat` | `ca`   | `ca` |            |           |      ✔    |            |
