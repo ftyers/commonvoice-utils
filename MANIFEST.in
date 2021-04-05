@@ -121,6 +121,8 @@ include cvutils/data/sv-SE/vocab.tsv
 include cvutils/data/mt
 include cvutils/data/mt/alphabet.txt
 include cvutils/data/mt/validate.tsv
+include cvutils/data/mt/punct.tsv
+include cvutils/data/mt/abbr.tsv
 include cvutils/data/mt/phon.tsv
 include cvutils/data/hsb
 include cvutils/data/hsb/alphabet.txt

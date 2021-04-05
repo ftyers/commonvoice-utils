@@ -64,7 +64,7 @@ utilities and data useful in training ASR and TTS systems.
 | Lithuanian           | Lietuvių kalba     |`lit` | `lt` |`lt`  |   ✔         |           |  ✔          |            |
 | Latvian              | Latviešu valoda    |`lvs` | `lv` |`lv`  |  ✔          |           |     ✔       |            |
 | Mongolian            | Монгол хэл |`khk` | `mn`  |`mn` | ✔          |   ✔     |    ✔   |        ✔     |
-| Maltese              | Malti     |`mlt` | `mt`  |`mt` |      ✔       |           |      ✔      |            |
+| Maltese              | Malti     |`mlt` | `mt`  |`mt` |      ✔       |      ✔     |      ✔      |         ✔   |
 | Dutch                | Nederlands     |`nld` | `nl` |`nl`  |   ✔         |           |    ✔      |            |
 | Oriya                | ଓଡ଼ିଆ                                       |`ori` | `or`  |`or` |            |           |          |            |
 | Punjabi              | ਪੰਜਾਬੀ     |`pan` | `pa-IN`   | `pa`  |          |           |          |            |
