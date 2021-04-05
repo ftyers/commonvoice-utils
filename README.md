@@ -80,7 +80,7 @@ utilities and data useful in training ASR and TTS systems.
 | Sakha                | Саха тыла  |`sah` | `sah`   |`sah`| ✔          |      ✔  |  ✔     |      ✔    |
 | Slovenian            | Slovenščina     |`slv` | `sl`  |`sl` | ✔           |           |    ✔      |            |
 | Swedish              | Svenska      |`swe` | `sv-SE`  |`sv` |     ✔        |           |     ✔     |            |
-| Tamil                | தமிழ்    |`tam` | `ta`   |`ta`|       ✔      |           |        ✔   |            |
+| Tamil                | தமிழ்    |`tam` | `ta`   |`ta`|       ✔      |     ✔      |        ✔   |            |
 | Thai                 | ภาษาไทย     |`tha` | `th`  |`th` |    ✔        |           |     ✔     |            |
 | Turkish              | Türkçe |`tur` | `tr`  |`tr` |   ✔         |           |      ✔     |            |
 | Tatar                | Татар теле |`tat` | `tt`  |`tt` | ✔          |   ✔     |  ✔     |         |
