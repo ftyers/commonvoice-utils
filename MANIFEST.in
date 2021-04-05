@@ -86,6 +86,9 @@ include cvutils/data/nl
 include cvutils/data/nl/alphabet.txt
 include cvutils/data/nl/phon.tsv
 include cvutils/data/nl/vocab.tsv
+include cvutils/data/az
+include cvutils/data/az/alphabet.txt
+include cvutils/data/az/validate.tsv
 include cvutils/data/de
 include cvutils/data/de/alphabet.txt
 include cvutils/data/de/validate.tsv
