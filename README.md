@@ -93,7 +93,31 @@ utilities and data useful in training ASR and TTS systems.
 
 ## How to use it
 
-### Alphabet
+### Command line tool
+
+Use a Wikipedia dump to get text for a language mode in the right format:
+
+```python
+$ covo dump mtwiki-latest-pages-articles.xml.bz2 | covo segment mt | covo norm mt
+x'inhi l-wikipedija
+il-wikipedija hi mmexxija mill-fondazzjoni wikimedia fondazzjoni mingħajr fini ta' lukru li tospita proġetti oħra b'kontenut ħieles u multilingwi
+il-malti huwa l-ilsien nazzjonali tar-repubblika ta' malta
+huwa l-ilsien uffiċjali flimkien mal-ingliż kif ukoll wieħed mill-ilsna uffiċjali tal-unjoni ewropea
+```
+
+Get a list of URLs for a particular language from the OPUS corpus collection:
+
+```python
+$ ./covo opus mt | sort -gr
+23859 documents,69.4M tokens	https://object.pouta.csc.fi/OPUS-DGT/v2019/mono/mt.txt.gz
+8665 documents,25.8M tokens	https://object.pouta.csc.fi/OPUS-JRC-Acquis/v3.0/mono/mt.txt.gz
+5388 documents,8.9M tokens	https://object.pouta.csc.fi/OPUS-JW300/v1b/mono/mt.txt.gz
+...
+```
+
+### Module
+
+#### Alphabet
 
 ```python
 >>> from cvutils import Alphabet
@@ -102,7 +126,7 @@ utilities and data useful in training ASR and TTS systems.
 ' -абвгдежзийклмнопрстуфхцчшщыэюяёҫӑӗӳ'
 ```
 
-### Corpora
+#### Corpora
 
 ```python
 >>> from cvutils import Corpora
@@ -118,7 +142,7 @@ utilities and data useful in training ASR and TTS systems.
 'https://dumps.wikimedia.org/cvwiki/latest/cvwiki-latest-pages-articles.xml.bz2'
 ```
 
-### Grapheme to phoneme
+#### Grapheme to phoneme
 
 ```python
 >>> from cvutils import Phonemiser
@@ -131,7 +155,7 @@ utilities and data useful in training ASR and TTS systems.
 'impliʒut'
 ```
 
-### Validator
+#### Validator
 
 ```python
 >>> from cvutils import Validator
@@ -144,7 +168,7 @@ utilities and data useful in training ASR and TTS systems.
 "ha c'hoant hoc'h eus da genderc'hel da implijout ar servijer-mañ"
 ```
 
-### Sentence segmentation
+#### Sentence segmentation
 
 ```python
 >>> from cvutils import Segmenter 
@@ -157,7 +181,6 @@ Peurliesañ avat e kemm ar vogalennoù e c'hengerioù evit dont da vezañ heñve
 A-bouez-bras evit armerzh ar vro eo al labour-douar ivez pa vez gounezet gwinizh ha legumaj dreist-holl.
 A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 ```
-
 
 ## Frequently asked questions
 
