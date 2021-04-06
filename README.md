@@ -36,7 +36,7 @@ utilities and data useful in training ASR and TTS systems.
 | Hakha Chin           | Hakha Lai     |`cnh` | `cnh`  |—  |            |      ✔      |     ✔      |            |
 | Welsh                | Cymraeg       |`cym` | `cy`   |`cy`|       ✔      |           |     ✔      |            |
 | Dhivehi              | ދިވެހި           |`div` | `dv`   |`dv`| ✔          |    ✔     |   ✔    |      ✔    |
-| Greek                | Ελληνικά      |`ell` | `el`   |`el`| ✔          |        |  ✔      |         |
+| Greek                | Ελληνικά      |`ell` | `el`   |`el`| ✔          |      ✔   |  ✔      |         |
 | German               | Deutsch       |`deu` | `de`   |`de`|            |          ✔  |     ✔      |            |
 | English              | English       |`eng` | `en`   |`en`|      —      |           |    ✔       |            |
 | Esperanto            | Esperanto     |`epo` | `eo`   |`eo`|            |           |   ✔       |            |

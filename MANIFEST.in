@@ -53,6 +53,7 @@ include cvutils/data/cs/phon.tsv
 include cvutils/data/cs/vocab.tsv
 include cvutils/data/el
 include cvutils/data/el/alphabet.txt
+include cvutils/data/el/validate.tsv
 include cvutils/data/el/phon.tsv
 include cvutils/data/pt
 include cvutils/data/pt/alphabet.txt
