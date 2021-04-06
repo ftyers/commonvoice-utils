@@ -10,6 +10,7 @@ class Validator:
 		self.lang = lang
 		self.lower = False
 		self.nfkc = False
+		self.nfkd = False
 		try:
 			self.load_data()
 		except FileNotFoundError:
@@ -33,6 +34,8 @@ class Validator:
 				self.lower = True
 			if row[0] == 'NFKC':
 				self.nfkc = True
+			if row[0] == 'NFKD':
+				self.nfkd = True
 			if row[0] == 'SKIP':
 				self.skip.append(row[1])
 			if row[0] == 'REPL' or row[0] == 'NORM':
@@ -52,6 +55,8 @@ class Validator:
 			label = label.lower()
 		if self.nfkc:
 			label = unicodedata.normalize('NFKC', label)
+		if self.nfkd:
+			label = unicodedata.normalize('NFKD', label)
 		for k in self.transform:
 			label = label.replace(k, self.transform[k])		
 		for c in label:
@@ -71,6 +76,8 @@ class Validator:
 			label = label.lower()
 		if self.nfkc:
 			label = unicodedata.normalize('NFKC', label)
+		if self.nfkc:
+			label = unicodedata.normalize('NFKD', label)
 		for k in self.transform:
 			label = label.replace(k, self.transform[k])		
 		for c in label:
