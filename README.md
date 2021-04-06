@@ -81,7 +81,7 @@ utilities and data useful in training ASR and TTS systems.
 | Slovenian            | Slovenščina     |`slv` | `sl`  |`sl` | ✔           |           |    ✔      |            |
 | Swedish              | Svenska      |`swe` | `sv-SE`  |`sv` |     ✔        |           |     ✔     |            |
 | Tamil                | தமிழ்    |`tam` | `ta`   |`ta`|       ✔      |     ✔      |        ✔   |            |
-| Thai                 | ภาษาไทย     |`tha` | `th`  |`th` |    ✔        |           |     ✔     |            |
+| Thai                 | ภาษาไทย     |`tha` | `th`  |`th` |    ✔        |    ✔       |     ✔     |            |
 | Turkish              | Türkçe |`tur` | `tr`  |`tr` |   ✔         |           |      ✔     |            |
 | Tatar                | Татар теле |`tat` | `tt`  |`tt` | ✔          |   ✔     |  ✔     |         |
 | Ukrainian            |  Українська мова    |`ukr` | `uk` |`uk`  |   ✔         |     ✔      |    ✔       |            |
