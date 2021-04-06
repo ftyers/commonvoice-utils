@@ -154,6 +154,7 @@ include cvutils/data/cv/phon.tsv
 include cvutils/data/cv/vocab.tsv
 include cvutils/data/kab
 include cvutils/data/kab/alphabet.txt
+include cvutils/data/kab/validate.tsv
 include cvutils/data/kab/phon.tsv
 include cvutils/data/da
 include cvutils/data/da/vocab.tsv
@@ -185,6 +186,7 @@ include cvutils/data/ru/alphabet.txt
 include cvutils/data/ru/vocab.tsv
 include cvutils/data/lv
 include cvutils/data/lv/alphabet.txt
+include cvutils/data/lv/validate.tsv
 include cvutils/data/lv/phon.tsv
 include cvutils/data/rw
 include cvutils/data/rw/alphabet.txt
