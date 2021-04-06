@@ -161,6 +161,7 @@ include cvutils/data/da/vocab.tsv
 include cvutils/data/lt
 include cvutils/data/lt/alphabet.txt
 include cvutils/data/lt/phon.lexc
+include cvutils/data/lt/validate.tsv
 include cvutils/data/lt/phon.att
 include cvutils/data/fi
 include cvutils/data/fi/alphabet.txt

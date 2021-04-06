@@ -62,7 +62,7 @@ utilities and data useful in training ASR and TTS systems.
 | Kyrgyz               | Кыргызча     |`kir` | `ky`  |`ky` |    ✔         |     ✔        |  ✔        |    ✔          |
 | Komi-Zyrian          | Коми кыв     |`kpv` | `kv`  |`kv` |       ✔       |           |  ✔        |            |
 | Luganda              | Luganda     |`lug` | `lg`  |`lg` |       ✔       |        ✔     |       ✔       |            |
-| Lithuanian           | Lietuvių kalba     |`lit` | `lt` |`lt`  |   ✔         |           |  ✔          |            |
+| Lithuanian           | Lietuvių kalba     |`lit` | `lt` |`lt`  |   ✔         |      ✔      |  ✔          |            |
 | Latvian              | Latviešu valoda    |`lvs` | `lv` |`lv`  |  ✔          |      ✔     |     ✔       |            |
 | Mongolian            | Монгол хэл |`khk` | `mn`  |`mn` | ✔          |   ✔     |    ✔   |        ✔     |
 | Maltese              | Malti     |`mlt` | `mt`  |`mt` |      ✔       |      ✔     |      ✔      |         ✔   |
