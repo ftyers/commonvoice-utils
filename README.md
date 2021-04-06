@@ -108,7 +108,7 @@ huwa l-ilsien uffiċjali flimkien mal-ingliż kif ukoll wieħed mill-ilsna uffi�
 Get a list of URLs for a particular language from the OPUS corpus collection:
 
 ```python
-$ ./covo opus mt | sort -gr
+$ covo opus mt | sort -gr
 23859 documents,69.4M tokens	https://object.pouta.csc.fi/OPUS-DGT/v2019/mono/mt.txt.gz
 8665 documents,25.8M tokens	https://object.pouta.csc.fi/OPUS-JRC-Acquis/v3.0/mono/mt.txt.gz
 5388 documents,8.9M tokens	https://object.pouta.csc.fi/OPUS-JW300/v1b/mono/mt.txt.gz
