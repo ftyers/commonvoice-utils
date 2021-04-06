@@ -106,6 +106,7 @@ include cvutils/data/ta/phon.tsv
 include cvutils/data/ta/vocab.tsv
 include cvutils/data/th
 include cvutils/data/th/alphabet.txt
+include cvutils/data/th/validate.tsv
 include cvutils/data/th/phon.tsv
 include cvutils/data/vi
 include cvutils/data/vi/alphabet.txt
