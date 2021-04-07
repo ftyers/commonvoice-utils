@@ -72,8 +72,8 @@ utilities and data useful in training ASR and TTS systems.
 | Polish               | Polski     |`pol` | `pl`  |`pl` |   ✔          |           |     ✔     |            |
 | Portuguese           | Português     |`por` | `pt`  |`pt` |            |    ✔        |     ✔     |            |
 | Kʼicheʼ              | Kʼicheʼ             |`quc` | `quc` | — |   ✔          |   ✔        |      ✔    |            |
-| Romansch (Sursilvan) | Romontsch     |`roh` | `rm-sursilv`  |`rm` |            |           |  ✔        |            |
-| Romansch (Vallader)  | Rumantsch     |`roh` | `rm-vallader`  |`rm` |            |           |   ✔       |            |
+| Romansch (Sursilvan) | Romontsch     |`roh` | `rm-sursilv`  |`rm` |            |      ✔     |  ✔        |            |
+| Romansch (Vallader)  | Rumantsch     |`roh` | `rm-vallader`  |`rm` |            |     ✔      |   ✔       |            |
 | Romanian             | Românește     |`ron` | `ro`  |`ro` |   ✔          |    ✔         |    ✔       |            |
 | Russian              | Русский     |`rus` | `ru`   |`ru`|            |           |     ✔     |            |
 | Kinyarwanda          | Kinyarwanda     |`kin` | `rw` |`rw`  |    ✔         |           |    ✔       |            |
