@@ -76,7 +76,7 @@ class Validator:
 			label = label.lower()
 		if self.nfkc:
 			label = unicodedata.normalize('NFKC', label)
-		if self.nfkc:
+		if self.nfkd:
 			label = unicodedata.normalize('NFKD', label)
 		for k in self.transform:
 			label = label.replace(k, self.transform[k])		
