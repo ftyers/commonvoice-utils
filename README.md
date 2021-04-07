@@ -53,7 +53,7 @@ utilities and data useful in training ASR and TTS systems.
 | Hungarian            | Magyar nyelv     |`hun` | `hu`  |`hu` |      ✔       |       ✔       |     ✔     |            |
 | Armenian             | Հայերեն         | `hye` | `hy-AM` |`hy`| ✔        |          |       ✔   |             |
 | Interlingua          | Interlingua     |`ina` | `ia`  |`ia` |    ✔         |           |     ✔     |            |
-| Indonesian           | Bahasa indonesia     |`ind` | `id` |`id`  |       ✔        |           |     ✔     |            |
+| Indonesian           | Bahasa indonesia     |`ind` | `id` |`id`  |       ✔        |       ✔     |     ✔     |            |
 | Italian              | Italiano     |`ita` | `it` |`it`  |     ✔       |           |    ✔      |            |
 | Japanese             | 日本語     |`jpn` | `ja`   |`ja`|      —      |           |     —     |            |
 | Georgian             |  ქართული ენა    |`kat` | `ka`  |`ka` |    ✔          |      ✔      | ✔         |            |
@@ -74,11 +74,11 @@ utilities and data useful in training ASR and TTS systems.
 | Kʼicheʼ              | Kʼicheʼ             |`quc` | `quc` | — |   ✔          |   ✔        |      ✔    |            |
 | Romansch (Sursilvan) | Romontsch     |`roh` | `rm-sursilv`  |`rm` |            |           |  ✔        |            |
 | Romansch (Vallader)  | Rumantsch     |`roh` | `rm-vallader`  |`rm` |            |           |   ✔       |            |
-| Romanian             | Românește     |`ron` | `ro`  |`ro` |   ✔          |           |    ✔       |            |
+| Romanian             | Românește     |`ron` | `ro`  |`ro` |   ✔          |    ✔         |    ✔       |            |
 | Russian              | Русский     |`rus` | `ru`   |`ru`|            |           |     ✔     |            |
 | Kinyarwanda          | Kinyarwanda     |`kin` | `rw` |`rw`  |    ✔         |           |    ✔       |            |
 | Sakha                | Саха тыла  |`sah` | `sah`   |`sah`| ✔          |      ✔  |  ✔     |      ✔    |
-| Slovenian            | Slovenščina     |`slv` | `sl`  |`sl` | ✔           |           |    ✔      |            |
+| Slovenian            | Slovenščina     |`slv` | `sl`  |`sl` | ✔           |   ✔         |    ✔      |            |
 | Swedish              | Svenska      |`swe` | `sv-SE`  |`sv` |     ✔        |           |     ✔     |            |
 | Tamil                | தமிழ்    |`tam` | `ta`   |`ta`|       ✔      |     ✔      |        ✔   |            |
 | Thai                 | ภาษาไทย     |`tha` | `th`  |`th` |    ✔        |    ✔       |     ✔     |            |
