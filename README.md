@@ -50,7 +50,7 @@ utilities and data useful in training ASR and TTS systems.
 | Irish                | Gaeilge             |`gle` | `ga-IE`   |`ga`|            |    ✔       |    ✔      |            |
 | Hindi                | हिन्दी                                              |`hin` | `hi`   | `hi`           |           |          |            |
 | Upper Sorbian        | Hornjoserbšćina     |`hsb` | `hsb`  |`hsb` |            |       ✔     |       ✔   |       ✔      |
-| Hungarian            | Magyar nyelv     |`hun` | `hu`  |`hu` |      ✔       |           |     ✔     |            |
+| Hungarian            | Magyar nyelv     |`hun` | `hu`  |`hu` |      ✔       |       ✔       |     ✔     |            |
 | Armenian             | Հայերեն         | `hye` | `hy-AM` |`hy`| ✔        |          |       ✔   |             |
 | Interlingua          | Interlingua     |`ina` | `ia`  |`ia` |    ✔         |           |     ✔     |            |
 | Indonesian           | Bahasa indonesia     |`ind` | `id` |`id`  |       ✔        |           |     ✔     |            |

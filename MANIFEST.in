@@ -39,6 +39,7 @@ include cvutils/data/quc/phon.tsv
 include cvutils/data/quc/.validate.tsv.swp
 include cvutils/data/hu
 include cvutils/data/hu/alphabet.txt
+include cvutils/data/hu/validate.tsv
 include cvutils/data/hu/phon.tsv
 include cvutils/data/sah
 include cvutils/data/sah/alphabet.txt
