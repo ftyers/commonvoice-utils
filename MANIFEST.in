@@ -115,6 +115,7 @@ include cvutils/data/th/validate.tsv
 include cvutils/data/th/phon.tsv
 include cvutils/data/vi
 include cvutils/data/vi/alphabet.txt
+include cvutils/data/vi/validate.tsv
 include cvutils/data/vi/phon.tsv
 include cvutils/data/pl
 include cvutils/data/pl/alphabet.txt
