@@ -215,6 +215,8 @@ include cvutils/data/kpv/alphabet.txt
 include cvutils/data/kpv/wikipedia.txt
 include cvutils/data/kpv/phon.tsv
 include cvutils/data/or
+include cvutils/data/or/alphabet.txt
+include cvutils/data/or/validate.tsv
 include cvutils/data/or/vocab.tsv
 include cvutils/data/pa-IN
 include cvutils/data/pa-IN/alphabet.txt
