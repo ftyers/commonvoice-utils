@@ -43,7 +43,7 @@ utilities and data useful in training ASR and TTS systems.
 | Spanish              | Español             |`spa` | `es`   |`es`|       ✔      |           |       ✔   |            |
 | Estonian             | Eesti               |`est`    | `et`   |`et`|     ✔        |    ✔         |   ✔       |            |
 | Basque               | Euskara             |`eus` | `eu`   |`eu`|     ✔      |      ✔        |    ✔      |            |
-| Persian              | فارسی               |`pes` | `fa`   |`fa`|    —        |           |          |            |
+| Persian              | فارسی               |`pes` | `fa`   |`fa`|    —        |       ✔    |    ✔      |            |
 | Finnish              | Suomi               |`fin` | `fi`   |`fi`| ✔           |   ✔        |   ✔       |            |
 | French               | Français            |`fra` | `fr`   |`fr`|     —       |           |     ✔     |            |
 | Frisian              | Frysk               |`fry` | `fy-NL`   |`fy`|            |     ✔       |       ✔    |            |

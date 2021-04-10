@@ -1,4 +1,7 @@
 include cvutils/data/
+include cvutils/data/fa
+include cvutils/data/fa/alphabet.txt
+include cvutils/data/fa/validate.tsv
 include cvutils/data/gl
 include cvutils/data/gl/vocab.tsv
 include cvutils/data/rm-vallader
@@ -131,6 +134,8 @@ include cvutils/data/sv-SE/alphabet.txt
 include cvutils/data/sv-SE/wikipedia.txt
 include cvutils/data/sv-SE/phon.tsv
 include cvutils/data/sv-SE/vocab.tsv
+include cvutils/data/ur
+include cvutils/data/ur/phon.tsv
 include cvutils/data/mt
 include cvutils/data/mt/alphabet.txt
 include cvutils/data/mt/validate.tsv
@@ -166,6 +171,8 @@ include cvutils/data/kab/validate.tsv
 include cvutils/data/kab/phon.tsv
 include cvutils/data/da
 include cvutils/data/da/vocab.tsv
+include cvutils/data/as
+include cvutils/data/as/phon.tsv
 include cvutils/data/lt
 include cvutils/data/lt/alphabet.txt
 include cvutils/data/lt/phon.lexc
