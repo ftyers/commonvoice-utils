@@ -209,6 +209,11 @@ Also, if you are working with a single language you probably have time to look t
 for the alphabetic symbols, but if you want to work with a large number of Common Voice languages at the 
 same time it's useful to have them all in one place.
 
+### Hey aren't some of those languages not in Common Voice ?
+
+That's right, some of the languages are either not in Common Voice (yet!) or are in Common Voice but have
+not been released yet. If I've been working with them I've included them anyway.
+
 ## See also
 
 * [`epitran`](https://github.com/dmort27/epitran/): Great grapheme to phoneme system that supports a wide
@@ -219,3 +224,4 @@ same time it's useful to have them all in one place.
 * Grapheme to phoneme correspondences for the following languages from [`epitran`](https://github.com/dmort27/epitran/):
   * `vi`, `uk`, `kk`, `ky`, `ta`
 * Code for [transducer lookup](https://github.com/mhulden/foma/blob/master/foma/python/attapply.py) from Måns Huldén.
+* Code for [Wikipedia extraction](https://github.com/apertium/WikiExtractor) from Apertium.
