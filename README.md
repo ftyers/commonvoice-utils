@@ -25,6 +25,7 @@ utilities and data useful in training ASR and TTS systems.
 | Language             | Autonym       | Code | (CV) | (WP) | Phon | Valid | Alphabet | Segment |
 |--------------------- |-------------- |----- |------|----- |----------- |----------|---------- |------------|
 | Abhaz                | Аԥсуа         |`abk` | `ab` |  —  | ✔          | ✔         | ✔        |           |
+| Amharic              | አማርኛ          | `amh` | —  | `am` | ✔           |          | ✔         |           |
 | Arabic               | اَلْعَرَبِيَّةُ       |`ara` | `ar` | `ar`  |     —       |   ✔         |          ✔  |            |
 | Assamese             |  অসমীয়া    |`asm` | `as`   |   `as` |          |           |          |            |
 | Azeri                | Azərbaycanca | `aze` | `az` | `az` |         |  ✔         |  ✔       |          | 
@@ -71,7 +72,7 @@ utilities and data useful in training ASR and TTS systems.
 | Punjabi              | ਪੰਜਾਬੀ     |`pan` | `pa-IN`   | `pa`  |          |       ✔    |     ✔     |            |
 | Polish               | Polski     |`pol` | `pl`  |`pl` |   ✔          |           |     ✔     |            |
 | Portuguese           | Português     |`por` | `pt`  |`pt` |            |    ✔        |     ✔     |            |
-| Kʼicheʼ              | Kʼicheʼ             |`quc` | `quc` | — |   ✔          |   ✔        |      ✔    |            |
+| Kʼicheʼ              | Kʼicheʼ             |`quc` | — | — |   ✔          |   ✔        |      ✔    |            |
 | Romansch (Sursilvan) | Romontsch     |`roh` | `rm-sursilv`  |`rm` |            |      ✔     |  ✔        |            |
 | Romansch (Vallader)  | Rumantsch     |`roh` | `rm-vallader`  |`rm` |            |     ✔      |   ✔       |            |
 | Romanian             | Românește     |`ron` | `ro`  |`ro` |   ✔          |    ✔         |    ✔       |            |
@@ -79,7 +80,7 @@ utilities and data useful in training ASR and TTS systems.
 | Kinyarwanda          | Kinyarwanda     |`kin` | `rw` |`rw`  |    ✔         |           |    ✔       |            |
 | Sakha                | Саха тыла  |`sah` | `sah`   |`sah`| ✔          |      ✔  |  ✔     |      ✔    |
 | Slovenian            | Slovenščina     |`slv` | `sl`  |`sl` | ✔           |   ✔         |    ✔      |            |
-| Swahili              | Kiswahili    |`swa` | `sw`  |`sw` |     ✔        |     ✔        |     ✔     |            |
+| Swahili              | Kiswahili    |`swa` | —  |`sw` |     ✔        |     ✔        |     ✔     |            |
 | Swedish              | Svenska      |`swe` | `sv-SE`  |`sv` |     ✔        |           |     ✔     |            |
 | Tamil                | தமிழ்    |`tam` | `ta`   |`ta`|       ✔      |     ✔      |        ✔   |            |
 | Thai                 | ภาษาไทย     |`tha` | `th`  |`th` |    ✔        |    ✔       |     ✔     |            |
