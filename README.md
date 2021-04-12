@@ -97,9 +97,12 @@ utilities and data useful in training ASR and TTS systems.
 
 ### Command line tool
 
+There is also a command line tool, `covo` /ˈkəʊvəʊ/ which aims to expose much of the functionality
+through the command line. Some examples on the next lines:
+
 Use a Wikipedia dump to get text for a language mode in the right format:
 
-```python
+```bash
 $ covo dump mtwiki-latest-pages-articles.xml.bz2 | covo segment mt | covo norm mt
 x'inhi l-wikipedija
 il-wikipedija hi mmexxija mill-fondazzjoni wikimedia fondazzjoni mingħajr fini ta' lukru li tospita proġetti oħra b'kontenut ħieles u multilingwi
@@ -109,12 +112,19 @@ huwa l-ilsien uffiċjali flimkien mal-ingliż kif ukoll wieħed mill-ilsna uffi�
 
 Get a list of URLs for a particular language from the OPUS corpus collection:
 
-```python
+```bash
 $ covo opus mt | sort -gr
 23859 documents,69.4M tokens	https://object.pouta.csc.fi/OPUS-DGT/v2019/mono/mt.txt.gz
 8665 documents,25.8M tokens	https://object.pouta.csc.fi/OPUS-JRC-Acquis/v3.0/mono/mt.txt.gz
 5388 documents,8.9M tokens	https://object.pouta.csc.fi/OPUS-JW300/v1b/mono/mt.txt.gz
 ...
+```
+
+Get the grapheme to phoneme output for some arbitrary input:
+
+```bash
+$ echo "euskal herrian euskaraz" | covo phon eu
+eus̺kal erian eus̺kaɾas̻
 ```
 
 ### Module
