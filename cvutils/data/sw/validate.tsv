@@ -15,7 +15,6 @@ SKIP	8	_
 SKIP	9	_
 SKIP	<	_
 SKIP	>	_
-SKIP	'	_
 ALLOW	a	_
 ALLOW	b	_
 ALLOW	c	_
@@ -42,4 +41,5 @@ ALLOW	w	_
 ALLOW	x	_
 ALLOW	y	_
 ALLOW	z	_
+ALLOW	'	_
 ALLOW	_	_

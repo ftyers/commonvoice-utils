@@ -229,6 +229,10 @@ include cvutils/data/or
 include cvutils/data/or/alphabet.txt
 include cvutils/data/or/validate.tsv
 include cvutils/data/or/vocab.tsv
+include cvutils/data/sw
+include cvutils/data/sw/alphabet.txt
+include cvutils/data/sw/validate.tsv
+include cvutils/data/sw/phon.tsv
 include cvutils/data/pa-IN
 include cvutils/data/pa-IN/alphabet.txt
 include cvutils/data/pa-IN/validate.tsv
