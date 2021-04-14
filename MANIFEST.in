@@ -110,6 +110,9 @@ include cvutils/data/cy
 include cvutils/data/cy/alphabet.txt
 include cvutils/data/cy/phon.tsv
 include cvutils/data/cy/vocab.tsv
+include cvutils/data/ug
+include cvutils/data/ug/alphabet.txt
+include cvutils/data/ug/phon.tsv
 include cvutils/data/ta
 include cvutils/data/ta/alphabet.txt
 include cvutils/data/ta/validate.tsv
@@ -119,6 +122,7 @@ include cvutils/data/th
 include cvutils/data/th/alphabet.txt
 include cvutils/data/th/validate.tsv
 include cvutils/data/th/phon.tsv
+include cvutils/data/sme
 include cvutils/data/vi
 include cvutils/data/vi/alphabet.txt
 include cvutils/data/vi/validate.tsv

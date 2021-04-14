@@ -8,6 +8,7 @@ class Alphabet:
 	"""
 	def __init__(self, lang):
 		self.lang = lang
+		self.alphabet = ''
 		try:
 			self.load_data()
 		except FileNotFoundError:

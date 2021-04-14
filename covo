@@ -19,6 +19,7 @@ if len(sys.argv) == 1:
 	print('       norm     [locale]',file=sys.stderr)
 	print('       phon     [locale]',file=sys.stderr)
 	print('       opus     [locale]',file=sys.stderr)
+	print('       alphabet [locale]',file=sys.stderr)
 	sys.exit(-1)
 
 mode = sys.argv[1]
@@ -33,7 +34,12 @@ if mode == 'dump-url':
 	dump_locale = sys.argv[2]
 	c = Corpora(dump_locale)
 	print(c.dump_url())
-	
+
+if mode == 'alphabet':
+	locale = sys.argv[2]
+	a = Alphabet(locale)
+	print(a.get_alphabet())
+		
 if mode == 'segment':
 	locale = sys.argv[2]
 	s = Segmenter(locale)
