@@ -126,7 +126,11 @@ Get the grapheme to phoneme output for some arbitrary input:
 ```bash
 $ echo "euskal herrian euskaraz" | covo phon eu
 eus̺kal erian eus̺kaɾas̻
+
+$ echo "قايتا نىشان بەلگىلەش ئورنى ئۇيغۇرچە ۋىكىپىدىيە" | covo phon ug
+qɑjtɑ nɪʃɑn bɛlɡɪlɛʃ ornɪ ujʁurtʃɛ vɪkɪpɪdɪjɛ
 ```
+
 
 ### Module
 
