@@ -21,7 +21,7 @@ if len(sys.argv) == 1:
 	print('       norm     [locale]',file=sys.stderr)
 	print('       phon     [locale]',file=sys.stderr)
 	print('       opus     [locale]',file=sys.stderr)
-	print('       text     [locale] [tsv file]',file=sys.stderr)
+	print('       text     [locale] [tsv file1 tsv file2 ...]',file=sys.stderr)
 	sys.exit(-1)
 
 mode = sys.argv[1]
