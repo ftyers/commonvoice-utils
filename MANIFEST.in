@@ -167,9 +167,11 @@ include cvutils/data/dv/abbr.tsv
 include cvutils/data/dv/phon.tsv
 include cvutils/data/cv
 include cvutils/data/cv/alphabet.txt
+include cvutils/data/cv/phon.lexc
 include cvutils/data/cv/validate.tsv
 include cvutils/data/cv/punct.tsv
 include cvutils/data/cv/abbr.tsv
+include cvutils/data/cv/phon.hfst
 include cvutils/data/cv/phon.tsv
 include cvutils/data/cv/vocab.tsv
 include cvutils/data/kab
@@ -227,6 +229,7 @@ include cvutils/data/eu/phon.tsv
 include cvutils/data/eu/vocab.tsv
 include cvutils/data/fr
 include cvutils/data/fr/alphabet.txt
+include cvutils/data/fr/validate.tsv
 include cvutils/data/fr/vocab.tsv
 include cvutils/data/kpv
 include cvutils/data/kpv/alphabet.txt
