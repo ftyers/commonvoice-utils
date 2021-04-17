@@ -2,6 +2,8 @@
 
 import sys
 
+from pathlib import Path
+
 from cvutils import Corpora 
 from cvutils import Segmenter
 from cvutils import Validator
@@ -19,7 +21,7 @@ if len(sys.argv) == 1:
 	print('       norm     [locale]',file=sys.stderr)
 	print('       phon     [locale]',file=sys.stderr)
 	print('       opus     [locale]',file=sys.stderr)
-	print('       alphabet [locale]',file=sys.stderr)
+	print('       text     [locale] [tsv file]',file=sys.stderr)
 	sys.exit(-1)
 
 mode = sys.argv[1]
@@ -100,3 +102,20 @@ elif mode == 'opus':
 	for line in c.opus():
 		print('%s\t%s' % (line[1], line[0]))
 
+elif mode == 'text':
+	import csv
+
+	locale = sys.argv[2]
+	v = Validator(locale)
+	# Do this with pathlib to allow globbing
+	for fn in sys.argv[3:]:
+		with open(fn) as csv_file:
+			csv_reader = csv.reader(csv_file, delimiter=',')
+			next(csv_reader)
+			for row in csv_reader:
+				if not row:
+					continue
+				(valid, sent) = v.normalise(row[2])
+				if valid:
+					print(sent)		
+		
