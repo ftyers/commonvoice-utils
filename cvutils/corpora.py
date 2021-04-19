@@ -70,7 +70,40 @@ class Corpora:
 				if self.lang + '.txt.gz' in e[0] and '/mono/' in e[0]:
 					urls.append(e)
 		return urls					
+"""
+	def filter(self, fd, umbral=10):
+		word2sent = {} # token -> sentence
+		word2freq = {} # token -> frequency
+		id2found = {} # sentence id -> number of words over the umbral
+		id2len = {} # sentence id -> len in tokens
+		id2sent = {} # sentence id -> sentence
 
+		idx = 0
+		line = fd.readline()
+		while line:
+			id2sent[idx] = line
+			if idx not in id2found:
+				id2found[idx] = 0
+			# do better tokenisation
+			tokens = line.split(' ') 
+			id2len[idx] = len(tokens)
+			flush = []
+			for token in tokens:
+				if token not in word2freq:
+					word2freq[token] = 0
+				word2freq[token] += 1
+				if token not in word2sent
+					word2sent[token] = []
+				word2sent.append(idx)	
+				if word2freq[token] >= umbral:
+					# mark the token for flushing
+					id2found[idx] += 1
+					flush.append(token)
+			
+			idx += 1
+			line = fd.readline()
+		
+"""
 
 if __name__ == "__main__":
         import doctest
