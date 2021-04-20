@@ -23,6 +23,7 @@ if len(sys.argv) == 1:
 	print('       norm     [locale]',file=sys.stderr)
 	print('       phon     [locale]',file=sys.stderr)
 	print('       opus     [locale]',file=sys.stderr)
+	print('       filter   [locale]',file=sys.stderr)
 	print('       getckp   [locale] [path]',file=sys.stderr)
 	print('       text     [locale] [tsv file1 tsv file2 ...]',file=sys.stderr)
 	sys.exit(-1)
@@ -122,6 +123,13 @@ elif mode == 'text':
 				if valid:
 					print(sent)		
 		
+elif mode == 'filter':
+	locale = sys.argv[2]
+	umbral = 5
+	if len(sys.argv) == 4:
+		umbral = int(sys.argv[3])
+	c = Corpora(locale)
+	c.filter(sys.stdin, sys.stdout, umbral=umbral)
 
 elif mode == 'getckp':
 	locale = sys.argv[2]

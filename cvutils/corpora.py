@@ -45,6 +45,7 @@ class Corpora:
 		return None
 
 	def opus(self):
+		"""Get a list of URLs from OPUS for a given language code"""
 		q = 'https://opus.nlpl.eu/?src=' + self.lang + '&trg=en'
 		p = urllib.request.urlopen(q)
 		page = p.read().decode('utf-8').split('\n')
@@ -70,8 +71,9 @@ class Corpora:
 				if self.lang + '.txt.gz' in e[0] and '/mono/' in e[0]:
 					urls.append(e)
 		return urls					
-"""
-	def filter(self, fd, umbral=10):
+
+	def filter(self, input_fd, output_fd, umbral=10):
+		"""Apply a frequency filter to an input stream"""
 		word2sent = {} # token -> sentence
 		word2freq = {} # token -> frequency
 		id2found = {} # sentence id -> number of words over the umbral
@@ -79,31 +81,50 @@ class Corpora:
 		id2sent = {} # sentence id -> sentence
 
 		idx = 0
-		line = fd.readline()
+		line = input_fd.readline()
 		while line:
-			id2sent[idx] = line
+			id2sent[idx] = line.strip('\n')
 			if idx not in id2found:
 				id2found[idx] = 0
 			# do better tokenisation
-			tokens = line.split(' ') 
+			tokens = id2sent[idx].split(' ') 
 			id2len[idx] = len(tokens)
-			flush = []
+			#print('!!!', idx, tokens)
+			flush = set()
 			for token in tokens:
 				if token not in word2freq:
 					word2freq[token] = 0
 				word2freq[token] += 1
-				if token not in word2sent
-					word2sent[token] = []
-				word2sent.append(idx)	
+				if token not in word2sent:
+					word2sent[token] = set()
+				word2sent[token].add(idx)	
 				if word2freq[token] >= umbral:
+					for sent in word2sent[token]:
+						if sent in id2found:
+							id2found[sent] += 1
 					# mark the token for flushing
-					id2found[idx] += 1
-					flush.append(token)
+					flush.add(token)
+			removed = set()
+			for word in flush:
+				for sent in word2sent[word]:
+					if sent not in id2len or sent not in id2found:
+						continue
+					if id2len[sent] == id2found[sent]:
+						#print('$$$', word2freq)
+						#print('###', id2found[sent], '|||', id2len[sent])
+						removed.add(sent)
+				for sent in removed:
+					if sent in word2sent[word]:
+						word2sent[word].remove(sent)
+
+			for sent in removed:
+				print(id2sent[sent], file=output_fd)
+				if sent in id2sent: del id2sent[sent]
+				if sent in id2found: del id2found[sent]
+				if sent in id2len: del id2len[sent]
 			
 			idx += 1
-			line = fd.readline()
-		
-"""
+			line = input_fd.readline()
 
 if __name__ == "__main__":
         import doctest
