@@ -81,8 +81,7 @@ class Corpora:
 		id2sent = {} # sentence id -> sentence
 
 		idx = 0
-		line = input_fd.readline()
-		while line:
+		for line in input_fd:
 			id2sent[idx] = line.strip('\n')
 			if idx not in id2found:
 				id2found[idx] = 0
@@ -124,7 +123,6 @@ class Corpora:
 				if sent in id2len: del id2len[sent]
 			
 			idx += 1
-			line = input_fd.readline()
 
 if __name__ == "__main__":
         import doctest
