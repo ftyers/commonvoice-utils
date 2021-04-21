@@ -7,6 +7,8 @@ include cvutils/data/gl/vocab.tsv
 include cvutils/data/rm-vallader
 include cvutils/data/rm-vallader/alphabet.txt
 include cvutils/data/rm-vallader/validate.tsv
+include cvutils/data/rm-vallader/punct.tsv
+include cvutils/data/rm-vallader/abbr.tsv
 include cvutils/data/rm-vallader/wikipedia.txt
 include cvutils/data/fy-NL
 include cvutils/data/fy-NL/alphabet.txt
@@ -197,6 +199,7 @@ include cvutils/data/vot/wikipedia.txt
 include cvutils/data/rm-sursilv
 include cvutils/data/rm-sursilv/alphabet.txt
 include cvutils/data/rm-sursilv/validate.tsv
+include cvutils/data/rm-sursilv/abbr.tsv
 include cvutils/data/rm-sursilv/wikipedia.txt
 include cvutils/data/ka
 include cvutils/data/ka/alphabet.txt

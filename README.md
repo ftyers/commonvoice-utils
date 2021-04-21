@@ -185,8 +185,8 @@ A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 | Polish               | Polski     |`pol` | `pl`  |`pl` |   ✔          |           |     ✔     |            |
 | Portuguese           | Português     |`por` | `pt`  |`pt` |            |    ✔        |     ✔     |            |
 | Kʼicheʼ              | Kʼicheʼ             |`quc` | — | — |   ✔          |   ✔        |      ✔    |            |
-| Romansch (Sursilvan) | Romontsch     |`roh` | `rm-sursilv`  |`rm` |            |      ✔     |  ✔        |            |
-| Romansch (Vallader)  | Rumantsch     |`roh` | `rm-vallader`  |`rm` |            |     ✔      |   ✔       |            |
+| Romansch (Sursilvan) | Romontsch     |`roh` | `rm-sursilv`  |`rm` |            |      ✔     |  ✔        |        ✔      |
+| Romansch (Vallader)  | Rumantsch     |`roh` | `rm-vallader`  |`rm` |            |     ✔      |   ✔       |        ✔      |
 | Romanian             | Românește     |`ron` | `ro`  |`ro` |   ✔          |    ✔         |    ✔       |            |
 | Russian              | Русский     |`rus` | `ru`   |`ru`|            |           |     ✔     |            |
 | Kinyarwanda          | Kinyarwanda     |`kin` | `rw` |`rw`  |    ✔         |           |    ✔       |            |
