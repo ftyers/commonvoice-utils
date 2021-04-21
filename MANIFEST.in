@@ -25,6 +25,7 @@ include cvutils/data/sl/vocab.tsv
 include cvutils/data/am
 include cvutils/data/am/alphabet.txt
 include cvutils/data/am/phon.tsv
+include cvutils/data/sk
 include cvutils/data/ab
 include cvutils/data/ab/alphabet.txt
 include cvutils/data/ab/validate.tsv
@@ -90,6 +91,8 @@ include cvutils/data/hy-AM/alphabet.txt
 include cvutils/data/hy-AM/wikipedia.txt
 include cvutils/data/hy-AM/phon.tsv
 include cvutils/data/ba
+include cvutils/data/ba/alphabet.txt
+include cvutils/data/ba/phon.tsv
 include cvutils/data/ba/vocab.tsv
 include cvutils/data/it
 include cvutils/data/it/alphabet.txt
@@ -126,6 +129,7 @@ include cvutils/data/th
 include cvutils/data/th/alphabet.txt
 include cvutils/data/th/validate.tsv
 include cvutils/data/th/phon.tsv
+include cvutils/data/kmr
 include cvutils/data/sme
 include cvutils/data/vi
 include cvutils/data/vi/alphabet.txt
