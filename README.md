@@ -162,6 +162,7 @@ A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 | French               | Français            |`fra` | `fr`   |`fr`|     —       |           |     ✔     |            |
 | Frisian              | Frysk               |`fry` | `fy-NL`   |`fy`|            |     ✔       |       ✔    |     ✔        |
 | Irish                | Gaeilge             |`gle` | `ga-IE`   |`ga`|            |    ✔       |    ✔      |            |
+| Galician             | Galego              |`glg` | `gl`   |`gl`|       ✔       |          |    ✔      |            |
 | Hindi                | हिन्दी                                              |`hin` | `hi`   | `hi`           |           |          |            |
 | Upper Sorbian        | Hornjoserbšćina     |`hsb` | `hsb`  |`hsb` |            |       ✔     |       ✔   |       ✔      |
 | Hungarian            | Magyar nyelv     |`hun` | `hu`  |`hu` |      ✔       |       ✔       |     ✔     |            |
