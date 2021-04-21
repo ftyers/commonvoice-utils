@@ -130,6 +130,8 @@ include cvutils/data/th/alphabet.txt
 include cvutils/data/th/validate.tsv
 include cvutils/data/th/phon.tsv
 include cvutils/data/kmr
+include cvutils/data/kmr/alphabet.txt
+include cvutils/data/kmr/phon.tsv
 include cvutils/data/sme
 include cvutils/data/vi
 include cvutils/data/vi/alphabet.txt

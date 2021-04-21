@@ -174,7 +174,7 @@ A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 | Kabyle               | Taqbaylit     |`kab` | `kab`  |`kab` |      ✔        |           |      ✔      |            |
 | Kazakh               | Қазақша     |`kaz` | `kk`  |`kk` |   ✔          |           |      ✔     |            |
 | Kyrgyz               | Кыргызча     |`kir` | `ky`  |`ky` |    ✔         |     ✔        |  ✔        |    ✔          |
-| Kurmanji Kurdish     | Kurmancî    |`kmr` | `ku`  |`ku` |             |             |          |              |
+| Kurmanji Kurdish     | Kurmancî    |`kmr` | `ku`  |`ku` |      ✔       |             |   ✔       |              |
 | Komi-Zyrian          | Коми кыв     |`kpv` | `kv`  |`kv` |       ✔       |           |  ✔        |            |
 | Luganda              | Luganda     |`lug` | `lg`  |`lg` |       ✔       |        ✔     |       ✔       |            |
 | Lithuanian           | Lietuvių kalba     |`lit` | `lt` |`lt`  |   ✔         |      ✔      |  ✔          |            |
