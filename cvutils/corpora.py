@@ -22,6 +22,7 @@ class Corpora:
 	"""
 	def __init__(self, lang):
 		self.lang = lang
+		self.opus_weights = {}
 		self.load_data()
 
 	def load_data(self):
@@ -35,6 +36,9 @@ class Corpora:
 		wikipedia_file = data_dir + self.lang + '/wikipedia.txt'
 		if os.path.isfile(wikipedia_file):
 			self.wikipedia_code = open(wikipedia_file).read().strip()
+		for line in open(os.path.abspath(os.path.dirname(__file__))+'/opus.weights').readlines():
+			(v, k) = line.strip().split('\t')
+			self.opus_weights[k] = int(v)
 
 	def target_segments(self):
 		return self.small_vocab
@@ -46,6 +50,7 @@ class Corpora:
 
 	def opus(self):
 		"""Get a list of URLs from OPUS for a given language code"""
+		URL_BASE = 'https://object.pouta.csc.fi/'
 		q = 'https://opus.nlpl.eu/?src=' + self.lang + '&trg=en'
 		p = urllib.request.urlopen(q)
 		page = p.read().decode('utf-8').split('\n')
@@ -69,7 +74,12 @@ class Corpora:
 			for entry in urltitle:
 				e = entry.replace('href="','').strip('"').split('" title="')
 				if self.lang + '.txt.gz' in e[0] and '/mono/' in e[0]:
-					urls.append(e)
+					name = e[0].replace(URL_BASE, '')
+					name = name.split('/')[0]
+					w = 0
+					if name in self.opus_weights:
+						w = self.opus_weights[name]
+					urls.append((w, name, e))
 		return urls					
 
 	def filter(self, input_fd, output_fd, umbral=10):

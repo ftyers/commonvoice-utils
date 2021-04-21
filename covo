@@ -103,8 +103,12 @@ elif mode == 'phon' or mode == 'phonemise':
 elif mode == 'opus':
 	locale = sys.argv[2]
 	c = Corpora(locale)
-	for line in c.opus():
-		print('%s\t%s' % (line[1], line[0]))
+	crps = c.opus()
+	crps.sort(reverse=True)
+	for line in crps:
+		if line[0] < 0:
+			continue
+		print('%s\t%s' % (line[2][1], line[2][0]))
 
 elif mode == 'text':
 	import csv
