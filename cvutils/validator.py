@@ -17,6 +17,7 @@ class Validator:
 			print('[Validator] Function not implemented')
 
 	def load_data(self):
+		# Should probably remove this for langs that don't write space
 		self.alphabet = [' '] 
 		self.skip = [] 
 		self.transform = {}

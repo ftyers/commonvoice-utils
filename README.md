@@ -39,7 +39,7 @@ utilities and data useful in training ASR and TTS systems.
 | Dhivehi              | ދިވެހި           |`div` | `dv`   |`dv`| ✔          |    ✔     |   ✔    |      ✔    |
 | Greek                | Ελληνικά      |`ell` | `el`   |`el`| ✔          |      ✔   |  ✔      |         |
 | German               | Deutsch       |`deu` | `de`   |`de`|            |          ✔  |     ✔      |            |
-| English              | English       |`eng` | `en`   |`en`|      —      |           |    ✔       |            |
+| English              | English       |`eng` | `en`   |`en`|      —      |    ✔        |    ✔       |            |
 | Esperanto            | Esperanto     |`epo` | `eo`   |`eo`|            |           |   ✔       |            |
 | Spanish              | Español             |`spa` | `es`   |`es`|       ✔      |           |       ✔   |            |
 | Estonian             | Eesti               |`est`    | `et`   |`et`|     ✔        |    ✔         |   ✔       |            |
