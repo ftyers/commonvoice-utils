@@ -20,6 +20,118 @@ utilities and data useful in training ASR and TTS systems.
 * Corpora:
   * Contains metadata for different corpora you may be interested in using with Common Voice
 
+## Installation
+
+The easiest way is with `pip`:
+
+```bash
+$ pip install git+https://github.com/ftyers/commonvoice-utils.git
+```
+
+## How to use it
+
+### Command line tool
+
+There is also a command line tool, `covo` /ˈkəʊvəʊ/ which aims to expose much of the functionality
+through the command line. Some examples on the next lines:
+
+Use a Wikipedia dump to get text for a language mode in the right format:
+
+```bash
+$ covo dump mtwiki-latest-pages-articles.xml.bz2 | covo segment mt | covo norm mt
+x'inhi l-wikipedija
+il-wikipedija hi mmexxija mill-fondazzjoni wikimedia fondazzjoni mingħajr fini ta' lukru li tospita proġetti oħra b'kontenut ħieles u multilingwi
+il-malti huwa l-ilsien nazzjonali tar-repubblika ta' malta
+huwa l-ilsien uffiċjali flimkien mal-ingliż kif ukoll wieħed mill-ilsna uffiċjali tal-unjoni ewropea
+```
+
+Get a list of URLs for a particular language from the OPUS corpus collection:
+
+```bash
+$ covo opus mt | sort -gr
+23859 documents,69.4M tokens	https://object.pouta.csc.fi/OPUS-DGT/v2019/mono/mt.txt.gz
+8665 documents,25.8M tokens	https://object.pouta.csc.fi/OPUS-JRC-Acquis/v3.0/mono/mt.txt.gz
+5388 documents,8.9M tokens	https://object.pouta.csc.fi/OPUS-JW300/v1b/mono/mt.txt.gz
+...
+```
+
+Get the grapheme to phoneme output for some arbitrary input:
+
+```bash
+$ echo "euskal herrian euskaraz" | covo phon eu
+eus̺kal erian eus̺kaɾas̻
+
+$ echo "قايتا نىشان بەلگىلەش ئورنى ئۇيغۇرچە ۋىكىپىدىيە" | covo phon ug
+qɑjtɑ nɪʃɑn bɛlɡɪlɛʃ ornɪ ujʁurtʃɛ vɪkɪpɪdɪjɛ
+```
+
+### Module
+
+#### Alphabet
+
+```python
+>>> from cvutils import Alphabet
+>>> a = Alphabet('cv')
+>>> a.get_alphabet()
+' -абвгдежзийклмнопрстуфхцчшщыэюяёҫӑӗӳ'
+```
+
+#### Corpora
+
+```python
+>>> from cvutils import Corpora
+>>> c = Corpora('kpv')
+>>> c.dump_url()
+'https://dumps.wikimedia.org/kvwiki/latest/kvwiki-latest-pages-articles.xml.bz2'
+>>> c.target_segments()
+[]
+>>> c = Corpora('cv')
+>>> c.target_segments()
+['пӗрре', 'иккӗ', 'виҫҫӗ', 'тӑваттӑ', 'пиллӗк', 'улттӑ', 'ҫиччӗ', 'саккӑр', 'тӑххӑр', 'вуннӑ', 'ҫапла', 'ҫук']
+>>> c.dump_url()
+'https://dumps.wikimedia.org/cvwiki/latest/cvwiki-latest-pages-articles.xml.bz2'
+```
+
+#### Grapheme to phoneme
+
+```python
+>>> from cvutils import Phonemiser
+>>> p = Phonemiser('ab')
+>>> p.phonemise('гӏапынхъамыз')
+'ʕapənqaməz'
+
+>>> p = Phonemiser('br')
+>>> p.phonemise("implijout")
+'impliʒut'
+```
+
+#### Validator
+
+```python
+>>> from cvutils import Validator
+>>> v = Validator('ab')
+>>> v.validate('Аллаҳ хаҵеи-ԥҳәыси иеилыхны, аҭыԥҳацәа роума иалихыз?')
+'аллаҳ хаҵеи-ԥҳәыси иеилыхны аҭыԥҳацәа роума иалихыз'
+
+>>> v = Validator('br')
+>>> v.validate('Ha cʼhoant hocʼh eus da gendercʼhel da implijout ar servijer-mañ ?')
+"ha c'hoant hoc'h eus da genderc'hel da implijout ar servijer-mañ"
+```
+
+#### Sentence segmentation
+
+```python
+>>> from cvutils import Segmenter 
+>>> s = Segmenter('br')
+>>> para = "Peurliesañ avat e kemm ar vogalennoù e c'hengerioù evit dont da vezañ heñvel ouzh ar vogalennoù en nominativ (d.l.e. ar stumm-meneg), da skouer e hungareg: Aour, tungsten, zink, uraniom, h.a., a vez kavet e kondon Bouryatia. A-bouez-bras evit armerzh ar vro eo al labour-douar ivez pa vez gounezet gwinizh ha legumaj dreist-holl. A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa."
+>>> for sent in s.segment(para):
+...     print(sent)
+... 
+Peurliesañ avat e kemm ar vogalennoù e c'hengerioù evit dont da vezañ heñvel ouzh ar vogalennoù en nominativ (d.l.e. ar stumm-meneg), da skouer e hungareg: Aour, tungsten, zink, uraniom, h.a., a vez kavet e kondon Bouryatia.
+A-bouez-bras evit armerzh ar vro eo al labour-douar ivez pa vez gounezet gwinizh ha legumaj dreist-holl.
+A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
+```
+
 ## Language support 
 
 | Language             | Autonym       | Code | (CV) | (WP) | Phon | Valid | Alphabet | Segment |
@@ -94,110 +206,6 @@ utilities and data useful in training ASR and TTS systems.
 | Chinese (Hong Kong)  | 中文     |`cmn` | `zh-HK`  |`zh` |      —      |           |    —      |            |
 | Chinese (Taiwan)     | 中文     |`cmn` | `zh-TW`   |`zh`|      —      |           |    —      |            |
 
-## How to use it
-
-### Command line tool
-
-There is also a command line tool, `covo` /ˈkəʊvəʊ/ which aims to expose much of the functionality
-through the command line. Some examples on the next lines:
-
-Use a Wikipedia dump to get text for a language mode in the right format:
-
-```bash
-$ covo dump mtwiki-latest-pages-articles.xml.bz2 | covo segment mt | covo norm mt
-x'inhi l-wikipedija
-il-wikipedija hi mmexxija mill-fondazzjoni wikimedia fondazzjoni mingħajr fini ta' lukru li tospita proġetti oħra b'kontenut ħieles u multilingwi
-il-malti huwa l-ilsien nazzjonali tar-repubblika ta' malta
-huwa l-ilsien uffiċjali flimkien mal-ingliż kif ukoll wieħed mill-ilsna uffiċjali tal-unjoni ewropea
-```
-
-Get a list of URLs for a particular language from the OPUS corpus collection:
-
-```bash
-$ covo opus mt | sort -gr
-23859 documents,69.4M tokens	https://object.pouta.csc.fi/OPUS-DGT/v2019/mono/mt.txt.gz
-8665 documents,25.8M tokens	https://object.pouta.csc.fi/OPUS-JRC-Acquis/v3.0/mono/mt.txt.gz
-5388 documents,8.9M tokens	https://object.pouta.csc.fi/OPUS-JW300/v1b/mono/mt.txt.gz
-...
-```
-
-Get the grapheme to phoneme output for some arbitrary input:
-
-```bash
-$ echo "euskal herrian euskaraz" | covo phon eu
-eus̺kal erian eus̺kaɾas̻
-
-$ echo "قايتا نىشان بەلگىلەش ئورنى ئۇيغۇرچە ۋىكىپىدىيە" | covo phon ug
-qɑjtɑ nɪʃɑn bɛlɡɪlɛʃ ornɪ ujʁurtʃɛ vɪkɪpɪdɪjɛ
-```
-
-
-### Module
-
-#### Alphabet
-
-```python
->>> from cvutils import Alphabet
->>> a = Alphabet('cv')
->>> a.get_alphabet()
-' -абвгдежзийклмнопрстуфхцчшщыэюяёҫӑӗӳ'
-```
-
-#### Corpora
-
-```python
->>> from cvutils import Corpora
->>> c = Corpora('kpv')
->>> c.dump_url()
-'https://dumps.wikimedia.org/kvwiki/latest/kvwiki-latest-pages-articles.xml.bz2'
->>> c.target_segments()
-[]
->>> c = Corpora('cv')
->>> c.target_segments()
-['пӗрре', 'иккӗ', 'виҫҫӗ', 'тӑваттӑ', 'пиллӗк', 'улттӑ', 'ҫиччӗ', 'саккӑр', 'тӑххӑр', 'вуннӑ', 'ҫапла', 'ҫук']
->>> c.dump_url()
-'https://dumps.wikimedia.org/cvwiki/latest/cvwiki-latest-pages-articles.xml.bz2'
-```
-
-#### Grapheme to phoneme
-
-```python
->>> from cvutils import Phonemiser
->>> p = Phonemiser('ab')
->>> p.phonemise('гӏапынхъамыз')
-'ʕapənqaməz'
-
->>> p = Phonemiser('br')
->>> p.phonemise("implijout")
-'impliʒut'
-```
-
-#### Validator
-
-```python
->>> from cvutils import Validator
->>> v = Validator('ab')
->>> v.validate('Аллаҳ хаҵеи-ԥҳәыси иеилыхны, аҭыԥҳацәа роума иалихыз?')
-'аллаҳ хаҵеи-ԥҳәыси иеилыхны аҭыԥҳацәа роума иалихыз'
-
->>> v = Validator('br')
->>> v.validate('Ha cʼhoant hocʼh eus da gendercʼhel da implijout ar servijer-mañ ?')
-"ha c'hoant hoc'h eus da genderc'hel da implijout ar servijer-mañ"
-```
-
-#### Sentence segmentation
-
-```python
->>> from cvutils import Segmenter 
->>> s = Segmenter('br')
->>> para = "Peurliesañ avat e kemm ar vogalennoù e c'hengerioù evit dont da vezañ heñvel ouzh ar vogalennoù en nominativ (d.l.e. ar stumm-meneg), da skouer e hungareg: Aour, tungsten, zink, uraniom, h.a., a vez kavet e kondon Bouryatia. A-bouez-bras evit armerzh ar vro eo al labour-douar ivez pa vez gounezet gwinizh ha legumaj dreist-holl. A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa."
->>> for sent in s.segment(para):
-...     print(sent)
-... 
-Peurliesañ avat e kemm ar vogalennoù e c'hengerioù evit dont da vezañ heñvel ouzh ar vogalennoù en nominativ (d.l.e. ar stumm-meneg), da skouer e hungareg: Aour, tungsten, zink, uraniom, h.a., a vez kavet e kondon Bouryatia.
-A-bouez-bras evit armerzh ar vro eo al labour-douar ivez pa vez gounezet gwinizh ha legumaj dreist-holl.
-A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
-```
 
 ## Frequently asked questions
 
@@ -233,6 +241,11 @@ not been released yet. If I've been working with them I've included them anyway.
 
 * [`epitran`](https://github.com/dmort27/epitran/): Great grapheme to phoneme system that supports a wide
   range of languages.
+
+## Licence
+
+All the code, aside from that explicitly licensed under a different licence, is licensed under 
+the [AGPL v 3.0](https://www.gnu.org/licenses/agpl-3.0.en.html).
 
 ## Acknowledgements 
 
