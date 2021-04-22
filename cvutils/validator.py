@@ -14,7 +14,7 @@ class Validator:
 		try:
 			self.load_data()
 		except FileNotFoundError:
-			print('[Validator] Function not implemented')
+			print('[Validator] Function not implemented', file=sys.stderr)
 
 	def load_data(self):
 		# Should probably remove this for langs that don't write space

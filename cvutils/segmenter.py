@@ -13,7 +13,7 @@ class Segmenter:
 		try:
 			self.load_data()
 		except FileNotFoundError:
-			print('[Segmenter] Function not implemented')
+			print('[Segmenter] Function not implemented', file=sys.stderr)
 			sys.exit(-1)
 
 	def load_data(self):

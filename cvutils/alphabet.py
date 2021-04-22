@@ -12,7 +12,7 @@ class Alphabet:
 		try:
 			self.load_data()
 		except FileNotFoundError:
-			print('[Alphabet] Function not implemented')
+			print('[Alphabet] Function not implemented', file=sys.stderr)
 
 	def load_data(self):
 		data_dir = os.path.abspath(os.path.dirname(__file__)) + '/data/'

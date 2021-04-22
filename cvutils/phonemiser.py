@@ -17,7 +17,7 @@ class Phonemiser:
 		try:
 			self.load_data()
 		except FileNotFoundError:
-			print('[Phonemiser] Function not implemented')
+			print('[Phonemiser] Function not implemented', file=sys.stderr)
 
 	def load_data(self):
 		self.lkp = {}
