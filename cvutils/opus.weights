@@ -1,35 +1,35 @@
-4	OPUS-OpenSubtitles
-3	OPUS-TED2020
-3	OPUS-TED2013
-3	OPUS-QED
-2	OPUS-Tatoeba
-2	OPUS-GlobalVoices
-2	OPUS-Europarl
-1	OPUS-wikimedia
-1	OPUS-WMT-News
-1	OPUS-UN
-1	OPUS-News-Commentary
-1	OPUS-Books
-0	OPUS-Wikipedia
-0	OPUS-WikiMatrix
-0	OPUS-tico-19
-0	OPUS-MultiUN
-0	OPUS-MPC1
-0	OPUS-JW300
-0	OPUS-bible-uedin
--1	OPUS-ParaCrawl
--1	OPUS-CCAligned
--1	OPUS-MultiCCAligned
--2	OPUS-ECB
--2	OPUS-EUbookshop
--2	OPUS-Ubuntu
--2	OPUS-PHP
--2	OPUS-OpenOffice
--2	OPUS-Mozilla-I10n
--2	OPUS-KDE4
--2	OPUS-JRC-Acquis
--2	OPUS-GNOME
--2	OPUS-EuroPat
--2	OPUS-EUconst
--2	OPUS-EMEA
--2	OPUS-DGT
+4	OPUS-OpenSubtitles	_
+3	OPUS-TED2020	_
+3	OPUS-TED2013	_
+3	OPUS-QED	rm-vallader,rm-sursilv,rm
+2	OPUS-Tatoeba	_
+2	OPUS-GlobalVoices	_
+2	OPUS-Europarl	_
+1	OPUS-wikimedia	_
+1	OPUS-WMT-News	_
+1	OPUS-UN	_
+1	OPUS-News-Commentary	_
+1	OPUS-Books	_
+0	OPUS-Wikipedia	_
+0	OPUS-WikiMatrix	_
+0	OPUS-tico-19	_
+0	OPUS-MultiUN	_
+0	OPUS-MPC1	_
+0	OPUS-JW300	_
+0	OPUS-bible-uedin	_
+-1	OPUS-ParaCrawl	_
+-1	OPUS-CCAligned	_
+-1	OPUS-MultiCCAligned	_
+-2	OPUS-ECB	_
+-2	OPUS-EUbookshop	_
+-2	OPUS-Ubuntu	_
+-2	OPUS-PHP	_
+-2	OPUS-OpenOffice	_
+-2	OPUS-Mozilla-I10n	_
+-2	OPUS-KDE4	_
+-2	OPUS-JRC-Acquis	_
+-2	OPUS-GNOME	_
+-2	OPUS-EuroPat	_
+-2	OPUS-EUconst	_
+-2	OPUS-EMEA	_
+-2	OPUS-DGT	_

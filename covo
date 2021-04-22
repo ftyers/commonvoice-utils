@@ -108,7 +108,9 @@ elif mode == 'opus':
 	for line in crps:
 		if line[0] < 0:
 			continue
-		print('%s\t%s' % (line[2][1], line[2][0]))
+		if locale in line[1]:
+			continue
+		print('%s\t%s' % (line[3][1], line[3][0]))
 
 elif mode == 'text':
 	import csv

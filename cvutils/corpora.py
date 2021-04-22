@@ -37,8 +37,8 @@ class Corpora:
 		if os.path.isfile(wikipedia_file):
 			self.wikipedia_code = open(wikipedia_file).read().strip()
 		for line in open(os.path.abspath(os.path.dirname(__file__))+'/opus.weights').readlines():
-			(v, k) = line.strip().split('\t')
-			self.opus_weights[k] = int(v)
+			(v, k, r) = line.strip().split('\t')
+			self.opus_weights[k] = (int(v), r.split(','))
 
 	def target_segments(self):
 		return self.small_vocab
@@ -78,8 +78,9 @@ class Corpora:
 					name = name.split('/')[0]
 					w = 0
 					if name in self.opus_weights:
-						w = self.opus_weights[name]
-					urls.append((w, name, e))
+						w = self.opus_weights[name][0]
+						r = self.opus_weights[name][1]
+					urls.append((w, r, name, e))
 		return urls					
 
 	def filter(self, input_fd, output_fd, umbral=10):
