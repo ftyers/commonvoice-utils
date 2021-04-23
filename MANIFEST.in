@@ -308,6 +308,8 @@ include cvutils/data/uk/phon.tsv
 include cvutils/data/tt
 include cvutils/data/tt/alphabet.txt
 include cvutils/data/tt/validate.tsv
+include cvutils/data/tt/punct.tsv
+include cvutils/data/tt/abbr.tsv
 include cvutils/data/tt/phon.tsv
 include cvutils/data/tt/vocab.tsv
 include cvutils/opus.weights
