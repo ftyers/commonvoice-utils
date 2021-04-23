@@ -205,6 +205,9 @@ include cvutils/data/fi
 include cvutils/data/fi/alphabet.txt
 include cvutils/data/fi/validate.tsv
 include cvutils/data/fi/phon.tsv
+include cvutils/data/gn
+include cvutils/data/gn/alphabet.txt
+include cvutils/data/gn/phon.tsv
 include cvutils/data/vot
 include cvutils/data/vot/alphabet.txt
 include cvutils/data/vot/wikipedia.txt
