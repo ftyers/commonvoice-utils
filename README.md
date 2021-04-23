@@ -184,7 +184,7 @@ A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 | Mongolian            | Монгол хэл |`khk` | `mn`  |`mn` | ✔          |   ✔     |    ✔   |        ✔     |
 | Maltese              | Malti     |`mlt` | `mt`  |`mt` |      ✔       |      ✔     |      ✔      |         ✔   |
 | Dutch                | Nederlands     |`nld` | `nl` |`nl`  |   ✔         |           |    ✔      |            |
-| Oriya                | ଓଡ଼ିଆ                                       |`ori` | `or`  |`or` |            |     ✔      |    ✔      |            |
+| Oriya                | ଓଡ଼ିଆ                                       |`ori` | `or`  |`or` |            |     ✔      |    ✔      |        ✔     |
 | Punjabi              | ਪੰਜਾਬੀ     |`pan` | `pa-IN`   | `pa`  |          |       ✔    |     ✔     |            |
 | Polish               | Polski     |`pol` | `pl`  |`pl` |   ✔          |           |     ✔     |            |
 | Portuguese           | Português     |`por` | `pt`  |`pt` |            |    ✔        |     ✔     |            |
@@ -202,7 +202,7 @@ A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 | Tamil                | தமிழ்    |`tam` | `ta`   |`ta`|       ✔      |     ✔      |        ✔   |            |
 | Thai                 | ภาษาไทย     |`tha` | `th`  |`th` |    ✔        |    ✔       |     ✔     |            |
 | Turkish              | Türkçe |`tur` | `tr`  |`tr` |   ✔         |       ✔     |      ✔     |            |
-| Tatar                | Татар теле |`tat` | `tt`  |`tt` | ✔          |   ✔     |  ✔     |         |
+| Tatar                | Татар теле |`tat` | `tt`  |`tt` | ✔          |   ✔     |  ✔     |     ✔      |
 | Ukrainian            |  Українська мова    |`ukr` | `uk` |`uk`  |   ✔         |     ✔      |    ✔       |            |
 | Uyghur               | ئۇيغۇر تىلى |`uig` | `ug` |`ug`  |   ✔         |           |    ✔       |            |
 | Vietnamese           | Tiếng Việt     |`vie` | `vi` |`vi`  |       ✔      |       ✔     |    ✔      |            |
