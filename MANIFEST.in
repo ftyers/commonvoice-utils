@@ -258,6 +258,8 @@ include cvutils/data/kpv/phon.tsv
 include cvutils/data/or
 include cvutils/data/or/alphabet.txt
 include cvutils/data/or/validate.tsv
+include cvutils/data/or/punct.tsv
+include cvutils/data/or/abbr.tsv
 include cvutils/data/or/vocab.tsv
 include cvutils/data/sw
 include cvutils/data/sw/alphabet.txt

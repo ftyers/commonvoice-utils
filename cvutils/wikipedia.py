@@ -604,7 +604,7 @@ def process_data(ftype, input, output_sentences, output_structure,
             if (colon < 0 or title[:colon] in acceptedNamespaces) and \
                     not redirect:
                 if (not vital_titles) or (title in vital_titles):
-                    print(id, title)
+                    #print(id, title, file=sys.stderr)
                     sys.stdout.flush()
                     tags = vital_tags[title] if vital_tags else []
                     WikiDocumentSentences(output_sentences, id, title, tags,
@@ -657,13 +657,13 @@ def process(fname):
 
     ftypes = mimetypes.guess_type(fname)
     if 'bzip2' in ftypes:
-        print('File detected as being bzip2.')
+        print('File detected as being bzip2.', file=sys.stderr)
         f = bz2.BZ2File(fname, mode='r')
         process_data('bzip2',f, output_sentences, vital_titles, vital_tags)
         output_sentences.close()
         
     elif 'gzip' in ftypes:
-        print('File detected as being a gzip.')
+        print('File detected as being a gzip.', file=sys.stderr)
         f = gzip.GzipFile(fname, mode='r')
         process_data('gzip',f, output_sentences, vital_titles, vital_tags)
         output_sentences.close() 
