@@ -83,6 +83,7 @@ class Corpora:
 					urls.append((w, r, name, e))
 		return urls					
 
+	# TODO: We should allow a warm-up frequency list of 1-10k tokens
 	def filter(self, input_fd, output_fd, umbral=10):
 		"""Apply a frequency filter to an input stream"""
 		word2sent = {} # A map of tokens to input line hashes

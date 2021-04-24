@@ -14,7 +14,8 @@ from cvutils import Phonemiser
 
 from cvutils import wikipedia
 
-debug = False
+#debug = False
+debug = True
 
 if len(sys.argv) == 1:
 	print('covo   dump     [pages-articles.xml.bz2]',file=sys.stderr)
@@ -63,7 +64,10 @@ elif mode == 'validate' or mode == 'norm':
 			print('',file=sys.stderr)
 			print('\n'.join(skipped), file=sys.stderr)
 			print('',file=sys.stderr)
-			print(chars - alphabet, file=sys.stderr)			
+			missing = list(chars - alphabet)
+			missing.sort()
+			for c in missing:
+				print('%4x\t%s' % (ord(c), c), file=sys.stderr)			
 		print('%d/%d (%.2f%%)' % (count_valid, total, (count_valid/total)*100.0),file=sys.stderr)
 	
 
