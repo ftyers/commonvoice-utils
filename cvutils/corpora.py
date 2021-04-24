@@ -110,7 +110,7 @@ class Corpora:
 				continue
 			tokens = tokenise(line)
 			hash2line[line_hash] = line
-			hash2sent[line_hash] = tokens
+			hash2sent[line_hash] = set(tokens)
 			flush_tokens = set()
 			for token in tokens:
 				if token not in word2freq: word2freq[token] = 0
