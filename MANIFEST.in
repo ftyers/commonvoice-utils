@@ -144,6 +144,8 @@ include cvutils/data/sme
 include cvutils/data/vi
 include cvutils/data/vi/alphabet.txt
 include cvutils/data/vi/validate.tsv
+include cvutils/data/vi/punct.tsv
+include cvutils/data/vi/abbr.tsv
 include cvutils/data/vi/phon.tsv
 include cvutils/data/pl
 include cvutils/data/pl/alphabet.txt
