@@ -96,7 +96,8 @@ elif mode == 'phon' or mode == 'phonemise':
 	p = Phonemiser(locale)
 	line = sys.stdin.readline()
 	while line:
-		print(' '.join([p.phonemise(w) for w in line.split(' ')]))
+		phons = [p.phonemise(w) for w in line.split(' ')]
+		print(' '.join([p for p in phons if p]))
 		line = sys.stdin.readline()
 
 

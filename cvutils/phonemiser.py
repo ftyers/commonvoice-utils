@@ -26,10 +26,10 @@ class Phonemiser:
 		if len(paths) == 0:
 			raise FileNotFoundError
 		for path in paths:
-			if path.count('.att') > 0:
+			if path[-4:] == '.att':
 				self.load_data_att()
 				break
-			if path.count('.tsv') > 0:
+			if path[-4:] == '.tsv':
 				self.load_data_tsv()
 				break
 

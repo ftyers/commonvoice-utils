@@ -129,6 +129,10 @@ include cvutils/data/ta/alphabet.txt
 include cvutils/data/ta/validate.tsv
 include cvutils/data/ta/phon.tsv
 include cvutils/data/ta/vocab.tsv
+include cvutils/data/hi
+include cvutils/data/hi/phon.lexc
+include cvutils/data/hi/foo
+include cvutils/data/hi/phon.att
 include cvutils/data/th
 include cvutils/data/th/alphabet.txt
 include cvutils/data/th/validate.tsv
