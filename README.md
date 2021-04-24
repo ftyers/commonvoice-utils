@@ -65,9 +65,13 @@ $ echo "قايتا نىشان بەلگىلەش ئورنى ئۇيغۇرچە ۋى�
 qɑjtɑ nɪʃɑn bɛlɡɪlɛʃ ornɪ ujʁurtʃɛ vɪkɪpɪdɪjɛ
 ```
 
-### Module
+### Python module
+
+The code can also be used as a Python module, here are some examples:
 
 #### Alphabet
+
+Returns an alphabet appropriate for end-to-end speech recognition.
 
 ```python
 >>> from cvutils import Alphabet
@@ -77,6 +81,8 @@ qɑjtɑ nɪʃɑn bɛlɡɪlɛʃ ornɪ ujʁurtʃɛ vɪkɪpɪdɪjɛ
 ```
 
 #### Corpora
+
+Some miscellaneous tools for working with corpora:
 
 ```python
 >>> from cvutils import Corpora
@@ -94,6 +100,8 @@ qɑjtɑ nɪʃɑn bɛlɡɪlɛʃ ornɪ ujʁurtʃɛ vɪkɪpɪdɪjɛ
 
 #### Grapheme to phoneme
 
+For a given token, return an approximate broad phonemised version of it.
+
 ```python
 >>> from cvutils import Phonemiser
 >>> p = Phonemiser('ab')
@@ -107,6 +115,10 @@ qɑjtɑ nɪʃɑn bɛlɡɪlɛʃ ornɪ ujʁurtʃɛ vɪkɪpɪdɪjɛ
 
 #### Validator
 
+For a given input sentence/utterance, the validator returns either a validated and normalised
+version of the string according to the validation rules, or `None` if the string cannot be 
+validated.
+
 ```python
 >>> from cvutils import Validator
 >>> v = Validator('ab')
@@ -119,6 +131,9 @@ qɑjtɑ nɪʃɑn bɛlɡɪlɛʃ ornɪ ujʁurtʃɛ vɪkɪpɪdɪjɛ
 ```
 
 #### Sentence segmentation
+
+Mostly designed for use with Wikipedia, takes a paragraph and returns a list of the 
+sentences found within it.
 
 ```python
 >>> from cvutils import Segmenter 
