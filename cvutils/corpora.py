@@ -85,55 +85,60 @@ class Corpora:
 
 	def filter(self, input_fd, output_fd, umbral=10):
 		"""Apply a frequency filter to an input stream"""
-		word2sent = {} # token -> sentence
-		word2freq = {} # token -> frequency
-		id2found = {} # sentence id -> number of words over the umbral
-		id2len = {} # sentence id -> len in tokens
-		id2sent = {} # sentence id -> sentence
+		word2sent = {} # A map of tokens to input line hashes
+		word2freq = {} # A map of words to their frequencies so far
+		hash2sent = {} # A map of line hashes to lists of tokens
+		hash2line = {} # A map of line hashes to input lines
+		output_lines = set() # Lines that have been output / seen, implicitly removes duplicates
 
-		idx = 0
-		for line in input_fd:
-			id2sent[idx] = line.strip('\n')
-			if idx not in id2found:
-				id2found[idx] = 0
-			# do better tokenisation
-			tokens = id2sent[idx].split(' ') 
-			id2len[idx] = len(tokens)
-			#print('!!!', idx, tokens)
-			flush = set()
+		def tokenise(s):
+			"""Basic tokenisation function"""
+			return s.split(' ')
+
+		def check_sentence(freqs, tokens, umbral):
+			"""Check if all the tokens in the sentence exceed the umbral"""
 			for token in tokens:
-				if token not in word2freq:
-					word2freq[token] = 0
-				word2freq[token] += 1
-				if token not in word2sent:
-					word2sent[token] = set()
-				word2sent[token].add(idx)	
-				if word2freq[token] >= umbral:
-					for sent in word2sent[token]:
-						if sent in id2found:
-							id2found[sent] += 1
-					# mark the token for flushing
-					flush.add(token)
-			removed = set()
-			for word in flush:
-				for sent in word2sent[word]:
-					if sent not in id2len or sent not in id2found:
-						continue
-					if id2len[sent] == id2found[sent]:
-						#print('$$$', word2freq)
-						#print('###', id2found[sent], '|||', id2len[sent])
-						removed.add(sent)
-				for sent in removed:
-					if sent in word2sent[word]:
-						word2sent[word].remove(sent)
+				if freqs[token] < umbral:
+					return False
+			return True 
 
-			for sent in removed:
-				print(id2sent[sent], file=output_fd)
-				if sent in id2sent: del id2sent[sent]
-				if sent in id2found: del id2found[sent]
-				if sent in id2len: del id2len[sent]
+		for line in input_fd:
+			line = line.strip()
+			line_hash = hash(line)
+			if line_hash in output_lines:
+				# If we have already seen the line, skip it
+				continue
+			tokens = tokenise(line)
+			hash2line[line_hash] = line
+			hash2sent[line_hash] = tokens
+			flush_tokens = set()
+			for token in tokens:
+				if token not in word2freq: word2freq[token] = 0
+				word2freq[token] += 1	
+				if token not in word2sent: word2sent[token] = set()
+				word2sent[token].add(line_hash)
 			
-			idx += 1
+				# If we find a token that exceeds the umbral, add it to the list
+				# of tokens which we should check 
+				if word2freq[token] >= umbral:
+					flush_tokens.add(token)
+			
+			for token in flush_tokens:
+				# The sentences for this token that have yet to make the umbral
+				new_sents = set()
+				for line_hash in word2sent[token]:
+					# If the line has been output, skip it
+					if line_hash in output_lines:
+						continue
+					# Check the sentence to see if all tokens are above the umbral
+					if check_sentence(word2freq, hash2sent[line_hash], umbral):
+						print(hash2line[line_hash], file=output_fd)
+						output_lines.add(line_hash)
+						del hash2line[line_hash]
+						del hash2sent[line_hash]
+						continue
+					new_sents.add(line_hash)
+				word2sent[token] = new_sents
 
 if __name__ == "__main__":
         import doctest
