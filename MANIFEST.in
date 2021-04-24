@@ -26,6 +26,7 @@ include cvutils/data/sl/phon.tsv
 include cvutils/data/sl/vocab.tsv
 include cvutils/data/am
 include cvutils/data/am/alphabet.txt
+include cvutils/data/am/validate.tsv
 include cvutils/data/am/phon.tsv
 include cvutils/data/sk
 include cvutils/data/sk/alphabet.txt

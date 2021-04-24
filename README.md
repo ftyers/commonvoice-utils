@@ -152,7 +152,7 @@ A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 | Language             | Autonym       | Code | (CV) | (WP) | Phon | Valid | Alphabet | Segment |
 |--------------------- |-------------- |----- |------|----- |----------- |----------|---------- |------------|
 | Abhaz                | Аԥсуа         |`abk` | `ab` |  —  | ✔          | ✔         | ✔        |           |
-| Amharic              | አማርኛ          | `amh` | —  | `am` | ✔           |          | ✔         |           |
+| Amharic              | አማርኛ          | `amh` | —  | `am` | ✔           |      ✔      | ✔         |           |
 | Arabic               | اَلْعَرَبِيَّةُ       |`ara` | `ar` | `ar`  |     —       |   ✔         |          ✔  |            |
 | Assamese             |  অসমীয়া    |`asm` | `as`   |   `as` |          |           |          |            |
 | Azeri                | Azərbaycanca | `aze` | `az` | `az` |         |  ✔         |  ✔       |          | 
