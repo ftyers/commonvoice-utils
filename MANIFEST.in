@@ -162,6 +162,8 @@ include cvutils/data/sv-SE/wikipedia.txt
 include cvutils/data/sv-SE/phon.tsv
 include cvutils/data/sv-SE/vocab.tsv
 include cvutils/data/ur
+include cvutils/data/ur/alphabet.txt
+include cvutils/data/ur/validate.tsv
 include cvutils/data/ur/phon.tsv
 include cvutils/data/mt
 include cvutils/data/mt/alphabet.txt
