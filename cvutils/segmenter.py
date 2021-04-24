@@ -33,7 +33,7 @@ class Segmenter:
 		for line in open(data_dir + self.lang + '/abbr.tsv').readlines():
 			row = line.strip('\n').split('\t')
 			k = row[1].strip()	
-			self.abbr.append(k)
+			self.abbr.append(k.replace('.', '\\.'))
 
 	def normalise(self, s):
 		o = s
@@ -60,9 +60,11 @@ class Segmenter:
 				#print(token)
 				found = False
 				for abbrev in self.abbr:
-					if token == abbrev:
+					if re.match(r'\W*' + abbrev, token):
 						sentence += token
 						found = True
+						break
+
 				if re.match('[0-9]+\.', token): 
 					sentence += token
 				elif not found: 
