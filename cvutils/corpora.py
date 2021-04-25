@@ -1,4 +1,4 @@
-import os, urllib.request, re
+import os, urllib.request, re, sys
 
 class Corpora:
 	"""
@@ -96,13 +96,16 @@ class Corpora:
 			"""Basic tokenisation function"""
 			return s.split(' ')
 
-		def check_sentence(freqs, tokens, umbral):
-			"""Check if all the tokens in the sentence exceed the umbral"""
+		def update_sentence(freqs, tokens, umbral):
+			"""Update the tokens in the sentence that have not reached the umbral"""
+			new_sent = set()	
 			for token in tokens:
 				if freqs[token] < umbral:
-					return False
-			return True 
+					new_sent.add(token)
+			return new_sent 
 
+		flush_tokens = set()
+		flush_point = 1
 		for line in input_fd:
 			line = line.strip()
 			line_hash = hash(line)
@@ -112,7 +115,6 @@ class Corpora:
 			tokens = tokenise(line)
 			hash2line[line_hash] = line
 			hash2sent[line_hash] = set(tokens)
-			flush_tokens = set()
 			for token in tokens:
 				if token not in word2freq: word2freq[token] = 0
 				word2freq[token] += 1	
@@ -124,6 +126,30 @@ class Corpora:
 				if word2freq[token] >= umbral:
 					flush_tokens.add(token)
 			
+			if len(flush_tokens) > flush_point:
+				for token in flush_tokens:
+					# The sentences for this token that have yet to make the umbral
+					new_sents = set()
+					for line_hash in word2sent[token]:
+						# If the line has been output, skip it
+						if line_hash in output_lines:
+							continue
+						# Check the sentence to see if all tokens are above the umbral
+						hash2sent[line_hash] = update_sentence(word2freq, hash2sent[line_hash], umbral)
+		
+						if len(hash2sent[line_hash]) == 0:
+							print(hash2line[line_hash], file=output_fd)
+							output_lines.add(line_hash)
+							del hash2line[line_hash]
+							del hash2sent[line_hash]
+							continue
+						new_sents.add(line_hash)
+					word2sent[token] = new_sents
+				flush_tokens = set()
+				flush_point = max(word2freq.values()) 
+				print('flush_point:', flush_point, file=sys.stderr)
+
+			# End of stream
 			for token in flush_tokens:
 				# The sentences for this token that have yet to make the umbral
 				new_sents = set()
@@ -132,7 +158,9 @@ class Corpora:
 					if line_hash in output_lines:
 						continue
 					# Check the sentence to see if all tokens are above the umbral
-					if check_sentence(word2freq, hash2sent[line_hash], umbral):
+					hash2sent[line_hash] = update_sentence(word2freq, hash2sent[line_hash], umbral)
+	
+					if len(hash2sent[line_hash]) == 0:
 						print(hash2line[line_hash], file=output_fd)
 						output_lines.add(line_hash)
 						del hash2line[line_hash]
@@ -140,6 +168,8 @@ class Corpora:
 						continue
 					new_sents.add(line_hash)
 				word2sent[token] = new_sents
+
+
 
 if __name__ == "__main__":
         import doctest
