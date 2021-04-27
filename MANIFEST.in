@@ -241,6 +241,7 @@ include cvutils/data/ar/validate.tsv
 include cvutils/data/ar/vocab.tsv
 include cvutils/data/ru
 include cvutils/data/ru/alphabet.txt
+include cvutils/data/ru/validate.tsv
 include cvutils/data/ru/vocab.tsv
 include cvutils/data/lv
 include cvutils/data/lv/alphabet.txt
