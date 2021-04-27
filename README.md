@@ -207,7 +207,7 @@ A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 | Romansch (Sursilvan) | Romontsch     |`roh` | `rm-sursilv`  |`rm` |            |      ✔     |  ✔        |        ✔      |
 | Romansch (Vallader)  | Rumantsch     |`roh` | `rm-vallader`  |`rm` |            |     ✔      |   ✔       |        ✔      |
 | Romanian             | Românește     |`ron` | `ro`  |`ro` |   ✔          |    ✔         |    ✔       |            |
-| Russian              | Русский     |`rus` | `ru`   |`ru`|            |           |     ✔     |            |
+| Russian              | Русский     |`rus` | `ru`   |`ru`|            |      ✔      |     ✔     |            |
 | Kinyarwanda          | Kinyarwanda     |`kin` | `rw` |`rw`  |    ✔         |           |    ✔       |            |
 | Sakha                | Саха тыла  |`sah` | `sah`   |`sah`| ✔          |      ✔  |  ✔     |      ✔    |
 | Slovak               | Slovenčina |`slk` | `sk`  |`sk` | ✔           |           |    ✔      |            |
