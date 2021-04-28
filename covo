@@ -15,7 +15,7 @@ from cvutils import Phonemiser
 from cvutils import wikipedia
 
 debug = False
-#debug = True
+debug = True
 
 if len(sys.argv) == 1:
 	print('covo   dump     [pages-articles.xml.bz2]',file=sys.stderr)
@@ -67,7 +67,7 @@ elif mode == 'validate' or mode == 'norm':
 			missing = list(chars - alphabet)
 			missing.sort()
 			for c in missing:
-				print('%4x\t%s' % (ord(c), c), file=sys.stderr)			
+				print('%04x\t%s' % (ord(c), c), file=sys.stderr)			
 		print('%d/%d (%.2f%%)' % (count_valid, total, (count_valid/total)*100.0),file=sys.stderr)
 	
 
@@ -98,11 +98,9 @@ elif mode == 'validate' or mode == 'norm':
 elif mode == 'phon' or mode == 'phonemise':
 	locale = sys.argv[2]
 	p = Phonemiser(locale)
-	line = sys.stdin.readline()
-	while line:
+	for line in sys.stdin:
 		phons = [p.phonemise(w) for w in line.split(' ')]
 		print(' '.join([p for p in phons if p]))
-		line = sys.stdin.readline()
 
 
 elif mode == 'opus':

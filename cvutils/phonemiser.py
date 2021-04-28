@@ -1,6 +1,7 @@
 import re, os, sys
 from att import ATTFST
 import pathlib
+from validator import Validator
 
 class Phonemiser:
 	"""
@@ -14,10 +15,17 @@ class Phonemiser:
 	def __init__(self, lang):
 		self.lang = lang
 		self.transducer = None
+		self.normalise = None
 		try:
 			self.load_data()
 		except FileNotFoundError:
 			print('[Phonemiser] Function not implemented', file=sys.stderr)
+		try:
+			self.validator = Validator(self.lang)
+		except FileNotFoundError:
+			pass
+		if self.validator:
+			self.normalise = self.validator.normalise
 
 	def load_data(self):
 		self.lkp = {}
@@ -75,12 +83,16 @@ class Phonemiser:
 		return [firstWord] + self.maxmatch(remainder)
 
 	def lookup_att(self, token):
+		if self.normalise:
+			token = self.normalise(token)[1]
 		res = list(self.transducer.apply(token))
 		if len(res) > 0:
 			return res[0][0]
 		return None
 
 	def lookup_tsv(self, token):
+		if self.normalise:
+			token = self.normalise(token)[1]
 		ks = list(self.lkp.keys())
 		ks.sort(key=lambda x : len(x), reverse=True)
 		segs = self.maxmatch(token.lower())	
@@ -89,13 +101,6 @@ class Phonemiser:
 			if seg in self.lkp:
 				op += self.lkp[seg][0]
 		return op
-	
-	def phonemise(self, token):
-		if self.transducer:
-			self.lookup_att(token)
-		elif len(self.lkp.keys()) > 0:
-			self.lookup_tsv(token)
-		return None	
 
 if __name__ == "__main__":
 	import doctest

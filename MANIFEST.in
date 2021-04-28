@@ -221,6 +221,10 @@ include cvutils/data/fi/phon.tsv
 include cvutils/data/gn
 include cvutils/data/gn/alphabet.txt
 include cvutils/data/gn/phon.tsv
+include cvutils/data/yo
+include cvutils/data/yo/alphabet.txt
+include cvutils/data/yo/validate.tsv
+include cvutils/data/yo/phon.tsv
 include cvutils/data/vot
 include cvutils/data/vot/alphabet.txt
 include cvutils/data/vot/wikipedia.txt

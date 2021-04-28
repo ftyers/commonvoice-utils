@@ -224,6 +224,7 @@ A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 | Vietnamese           | Tiếng Việt     |`vie` | `vi` |`vi`  |       ✔      |       ✔     |    ✔      |       ✔      |
 | Votic                | Vaďďa tšeeli    |`vot` | `vot` |  —  |            |           |   ✔       |            |
 | Wolof                | Wolof |`wol` | —  |  `wo`  |      ✔        |      ✔       |   ✔       |            |
+| Yoruba               | Èdè Yorùbá  |`yor` | —  |  `yo`  |      ✔        |      ✔       |   ✔       |            |
 | Chinese (China)      | 中文     |`cmn` | `zh-CN` |`zh`  |      —      |           |    —      |            |
 | Chinese (Hong Kong)  | 中文     |`cmn` | `zh-HK`  |`zh` |      —      |           |    —      |            |
 | Chinese (Taiwan)     | 中文     |`cmn` | `zh-TW`   |`zh`|      —      |           |    —      |            |
