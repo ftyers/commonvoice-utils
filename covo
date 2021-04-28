@@ -19,7 +19,7 @@ from cvutils import wikipedia
 debug = False
 #debug = True
 
-if len(sys.argv) == 1:
+def help():
 	print('covo   dump     [pages-articles.xml.bz2]',file=sys.stderr)
 	print('       dump-url [locale]',file=sys.stderr)
 	print('       segment  [locale]',file=sys.stderr)
@@ -29,9 +29,18 @@ if len(sys.argv) == 1:
 	print('       filter   [locale]',file=sys.stderr)
 	print('       getckp   [locale] [path]',file=sys.stderr)
 	print('       text     [locale] [tsv file1 tsv file2 ...]',file=sys.stderr)
+	print('       avail    [task]',file=sys.stderr)
+	print('       missing  [task]',file=sys.stderr)
+
+if len(sys.argv) == 1:
+	help()
 	sys.exit(-1)
 
 mode = sys.argv[1]
+
+if mode == 'help':
+	help()
+	sys.exit(-1)
 
 if mode == 'dump':
 	dump_name = sys.argv[2]
