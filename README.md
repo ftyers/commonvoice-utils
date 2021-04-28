@@ -159,6 +159,7 @@ A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 | Bashkort             | Башҡортса     |`ba` | `ba`  |  `ba` |     ✔      |          | ✔        |           |
 | Basaa                | Basaa         |`bas` | `bas`  |  — |     ✔      |          | ✔        |           |
 | Breton               | Brezhoneg     |`bre` | `br`   | `br` | ✔          | ✔         | ✔        |      ✔     |
+| Bulgarian            | Булгарски     | `bul` | `bg`   | `bg` | ✔          |          | ✔        |           |
 | Catalan              | Català        |`cat` | `ca`   | `ca` |            |           |      ✔    |            |
 | Czech                | Čeština       |`ces` | `cs`   |`cs` |    ✔        |    ✔        |  ✔        |            |
 | Chuvash              | Чӑвашла       |`chv` | `cv`   |`cv`| ✔          | ✔         | ✔        |      ✔     |

@@ -138,6 +138,9 @@ include cvutils/data/hi
 include cvutils/data/hi/phon.lexc
 include cvutils/data/hi/foo
 include cvutils/data/hi/phon.att
+include cvutils/data/bg
+include cvutils/data/bg/alphabet.txt
+include cvutils/data/bg/phon.tsv
 include cvutils/data/th
 include cvutils/data/th/alphabet.txt
 include cvutils/data/th/validate.tsv
