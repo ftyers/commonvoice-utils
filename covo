@@ -5,7 +5,9 @@ import sys
 from pathlib import Path
 import urllib.request
 
+import json
 
+from cvutils import CV 
 from cvutils import Corpora 
 from cvutils import Segmenter
 from cvutils import Validator
@@ -169,3 +171,53 @@ elif mode == 'getckp':
 
 	print('[Done] Your checkpoint is in %s' % path + '/')
 	
+elif mode == 'check' or mode == 'missing':
+	exclude = ['zh-TW', 'zh-CN', 'zh-HK', 'ja']
+	check = ''
+	if len(sys.argv) == 3:
+		check = sys.argv[2]	
+	g = urllib.request.urlopen('https://raw.githubusercontent.com/common-voice/common-voice/main/locales/contributable.json')
+	txt = g.read().strip()
+	contributable = set(json.loads(txt.decode('utf-8')))
+	cv = CV()
+	print('Missing: ')
+	if check == 'alpha' or check == '':
+		missing_alphabets = list(contributable - set(cv.alphabets()))
+		missing_alphabets.sort()
+		print(' Alphabets:', ' '.join([code for code in missing_alphabets if not code in exclude]))
+	if check == 'valid' or check == '':
+		missing_validators = list(contributable - set(cv.validators()))
+		missing_validators.sort()
+		print(' Validators:', ' '.join([code for code in missing_validators if not code in exclude]))
+	if check == 'phon' or check == '':
+		missing_phonemisers = list(contributable - set(cv.phonemisers()))
+		missing_phonemisers.sort()
+		print(' Phonemisers:', ' '.join([code for code in missing_phonemisers if not code in exclude]))
+	if check == 'segment' or check == '':
+		missing_segmenters = list(contributable - set(cv.segmenters()))
+		missing_segmenters.sort()
+		print(' Segmenters:', ' '.join([code for code in missing_segmenters if not code in exclude]))
+
+elif mode == 'avail':
+	check = ''
+	if len(sys.argv) == 3:
+		check = sys.argv[2]	
+	cv = CV()
+	print('Available:')
+	if check == 'alpha' or check == '':
+		alphabets = cv.alphabets()
+		alphabets.sort()
+		print(' Alphabets:', ' '.join([code for code in alphabets]))
+	if check == 'valid' or check == '':
+		validators = cv.validators()
+		validators.sort()
+		print(' Validators:', ' '.join([code for code in validators]))
+	if check == 'phon' or check == '':
+		phonemisers = cv.phonemisers()
+		phonemisers.sort()
+		print(' Phonemisers:', ' '.join([code for code in phonemisers]))
+	if check == 'segment' or check == '':
+		segmenters = cv.segmenters()
+		segmenters.sort()
+		print(' Segmenters:', ' '.join([code for code in segmenters]))
+
