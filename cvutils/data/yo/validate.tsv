@@ -12,6 +12,7 @@ NORM	ò	ò	00f2	006f-0300
 NORM	ù	ù	00f9	0075-0300
 NORM	ǹ	ǹ	01f9	006e-0300
 NORM	ń	ń	0144	006e-0301
+NORM	‘	'	2018	0027
 NORM	’	'	2019	0027
 REPL	!	_	0021	_
 REPL	,	_	002c	_
@@ -20,7 +21,6 @@ REPL	.	_	002e	_
 REPL	;	_	003b	_
 REPL	?	_	003f	_
 REPL	—	_	2014	_
-REPL	‘	_	2018	_
 REPL	“	_	201c	_
 REPL	”	_	201d	_
 ALLOW	'	_	0027	_
