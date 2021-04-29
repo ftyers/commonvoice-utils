@@ -1,7 +1,6 @@
 4	OPUS-OpenSubtitles	_
 3	OPUS-TED2020	_
 3	OPUS-TED2013	_
-3	OPUS-QED	rm-vallader,rm-sursilv,rm
 2	OPUS-Tatoeba	_
 2	OPUS-GlobalVoices	_
 2	OPUS-Europarl	_
@@ -17,6 +16,7 @@
 0	OPUS-MPC1	_
 0	OPUS-JW300	_
 0	OPUS-bible-uedin	_
+-1	OPUS-QED	rm-vallader,rm-sursilv,rm
 -1	OPUS-ParaCrawl	_
 -1	OPUS-CCAligned	_
 -1	OPUS-MultiCCAligned	_

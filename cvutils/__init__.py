@@ -27,6 +27,8 @@ class CV:
 
 		for path in pathlib.Path(data_dir).rglob('phon.*'):
 			locale = path.resolve()
+			if '.att' not in str(locale) and '.tsv' not in str(locale):
+				continue
 			locale = re.sub('/phon.(att|tsv)', '', str(locale)).split('/')[-1]
 			self.supported['phonemiser'].append(locale)
 	
