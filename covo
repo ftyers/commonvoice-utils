@@ -190,19 +190,19 @@ elif mode == 'check' or mode == 'missing':
 	contributable = set(json.loads(txt.decode('utf-8')))
 	cv = CV()
 	print('Missing: ')
-	if check == 'alpha' or check == '':
+	if check[:2] == 'al' or check == '':
 		missing_alphabets = list(contributable - set(cv.alphabets()))
 		missing_alphabets.sort()
 		print(' Alphabets:', ' '.join([code for code in missing_alphabets if not code in exclude]))
-	if check == 'valid' or check == '':
+	if check[:3] == 'val' or check == '':
 		missing_validators = list(contributable - set(cv.validators()))
 		missing_validators.sort()
 		print(' Validators:', ' '.join([code for code in missing_validators if not code in exclude]))
-	if check == 'phon' or check == '':
+	if check[:3] == 'pho' or check == '':
 		missing_phonemisers = list(contributable - set(cv.phonemisers()))
 		missing_phonemisers.sort()
 		print(' Phonemisers:', ' '.join([code for code in missing_phonemisers if not code in exclude]))
-	if check == 'segment' or check == '':
+	if check[:3] == 'seg' or check == '':
 		missing_segmenters = list(contributable - set(cv.segmenters()))
 		missing_segmenters.sort()
 		print(' Segmenters:', ' '.join([code for code in missing_segmenters if not code in exclude]))
@@ -213,19 +213,19 @@ elif mode == 'avail':
 		check = sys.argv[2]	
 	cv = CV()
 	print('Available:')
-	if check == 'alpha' or check == '':
+	if check[:2] == 'al' or check == '':
 		alphabets = cv.alphabets()
 		alphabets.sort()
 		print(' Alphabets:', ' '.join([code for code in alphabets]))
-	if check == 'valid' or check == '':
+	if check[:3] == 'val' or check == '':
 		validators = cv.validators()
 		validators.sort()
 		print(' Validators:', ' '.join([code for code in validators]))
-	if check == 'phon' or check == '':
+	if check[:3] == 'pho' or check == '':
 		phonemisers = cv.phonemisers()
 		phonemisers.sort()
 		print(' Phonemisers:', ' '.join([code for code in phonemisers]))
-	if check == 'segment' or check == '':
+	if check[:3] == 'seg' or check == '':
 		segmenters = cv.segmenters()
 		segmenters.sort()
 		print(' Segmenters:', ' '.join([code for code in segmenters]))
