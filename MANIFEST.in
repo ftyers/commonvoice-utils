@@ -42,6 +42,7 @@ include cvutils/data/ab/phon.tsv
 include cvutils/data/ab/vocab.tsv
 include cvutils/data/kk
 include cvutils/data/kk/alphabet.txt
+include cvutils/data/kk/validate.tsv
 include cvutils/data/kk/phon.tsv
 include cvutils/data/br
 include cvutils/data/br/alphabet.txt
