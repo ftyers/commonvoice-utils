@@ -6,6 +6,8 @@ REPL	'	_
 REPL	.	_
 REPL	,	_
 REPL	-	_
+REPL	—	_
+REPL	–	_
 REPL	.	_
 REPL	?	_
 REPL	‘	_
