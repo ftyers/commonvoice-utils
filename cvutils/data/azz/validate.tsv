@@ -8,9 +8,15 @@ REPL	,	_	_	_
 REPL	.	_	_	_
 REPL	;	_	_	_
 REPL	?	_	_	_
+REPL	[	_	_	_
+REPL	]	_	_	_
 REPL	{	_	_	_
 REPL	}	_	_	_
 REPL	|	_	_	_
+REPL	“	_	_	_
+REPL	”	_	_	_
+REPL	‘	_	_	_
+REPL	’	_	_	_
 SKIP	=	_	_	_
 SKIP	&	_	_	_
 SKIP	(	_	_	_

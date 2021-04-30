@@ -17,7 +17,7 @@ from cvutils import Phonemiser
 from cvutils import wikipedia
 
 debug = False
-#debug = True
+debug = True
 
 def help():
 	print('covo   dump     [pages-articles.xml.bz2]',file=sys.stderr)

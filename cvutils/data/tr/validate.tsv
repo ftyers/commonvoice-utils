@@ -22,6 +22,8 @@ SKIP	7	_
 SKIP	8	_
 SKIP	9	_
 NORM	’	'
+NORM	û	u
+NORM	î	i
 ALLOW	a	_
 ALLOW	b	_
 ALLOW	c	_
