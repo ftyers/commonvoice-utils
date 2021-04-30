@@ -118,13 +118,15 @@ elif mode == 'opus':
 	locale = sys.argv[2]
 	c = Corpora(locale)
 	crps = c.opus()
-	crps.sort(reverse=True)
-	for line in crps:
-		if line[0] < 0:
-			continue
-		if locale in line[1]:
-			continue
-		print('%s\t%s' % (line[3][1], line[3][0]))
+	if crps:
+			
+		crps.sort(reverse=True)
+		for line in crps:
+			if line[0] < 0:
+				continue
+			if locale in line[1]:
+				continue
+			print('%s\t%s' % (line[3][1], line[3][0]))
 
 elif mode == 'text':
 	import csv
