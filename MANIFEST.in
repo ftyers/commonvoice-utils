@@ -6,6 +6,10 @@ include cvutils/data/wo/phon.tsv
 include cvutils/data/fa
 include cvutils/data/fa/alphabet.txt
 include cvutils/data/fa/validate.tsv
+include cvutils/data/ckt
+include cvutils/data/ckt/alphabet.txt
+include cvutils/data/ckt/validate.tsv
+include cvutils/data/ckt/phon.tsv
 include cvutils/data/gl
 include cvutils/data/gl/alphabet.txt
 include cvutils/data/gl/phon.tsv
