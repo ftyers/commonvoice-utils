@@ -46,6 +46,8 @@ class Validator:
 					self.transform[k] = ' '
 				else:
 					self.transform[k] = v
+			# Remove all soft-hyphens, this should be safe cross-linguistically
+			self.transform['\u00ad'] = ''
 
 	def set_alphabet(s):
 		self.alphabet = s

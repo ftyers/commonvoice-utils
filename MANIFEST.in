@@ -1,4 +1,8 @@
 include cvutils/data/
+include cvutils/data/azz
+include cvutils/data/azz/alphabet.txt
+include cvutils/data/azz/validate.tsv
+include cvutils/data/azz/phon.tsv
 include cvutils/data/wo
 include cvutils/data/wo/alphabet.txt
 include cvutils/data/wo/validate.tsv
