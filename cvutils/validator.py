@@ -95,6 +95,28 @@ class Validator:
 
 		return (True, label) if label else (False, label)
 
+	def check(self, transcript):
+		"""Finds the non-alphabetic characters in a transcript"""
+		label = transcript.strip()
+		if self.lower:
+			label = label.lower()
+		if self.nfkc:
+			label = unicodedata.normalize('NFKC', label)
+		if self.nfkd:
+			label = unicodedata.normalize('NFKD', label)
+		for k in self.transform:
+			label = label.replace(k, self.transform[k])		
+		unalphabetic = set()
+		skipped = False
+		for c in label:
+			if c in self.skip:
+				skipped = True
+				break
+			if c not in self.alphabet:
+				unalphabetic.add(c)
+		
+		return (skipped, unalphabetic)
+
 
 if __name__ == "__main__":
 	import doctest
