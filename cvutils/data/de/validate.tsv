@@ -33,6 +33,7 @@ NORM	ß	ss
 NORM	ue	ü
 NORM	oe	ö
 NORM	ae	ä
+NORM	ñ	n
 ALLOW	a	_
 ALLOW	ä	_
 ALLOW	b	_

@@ -17,7 +17,6 @@ from cvutils import Phonemiser
 from cvutils import wikipedia
 
 debug = False
-debug = True
 
 def help():
 	print('covo   dump     [pages-articles.xml.bz2]',file=sys.stderr)
@@ -27,7 +26,7 @@ def help():
 	print('       phon     [locale]',file=sys.stderr)
 	print('       opus     [locale]',file=sys.stderr)
 	print('       filter   [locale]',file=sys.stderr)
-	print('       getckp   [locale] [path]',file=sys.stderr)
+#	print('       getckp   [locale] [path]',file=sys.stderr)
 	print('       text     [locale] [tsv file1 tsv file2 ...]',file=sys.stderr)
 	print('       avail    [task]',file=sys.stderr)
 	print('       missing  [task]',file=sys.stderr)
@@ -35,6 +34,10 @@ def help():
 if len(sys.argv) == 1:
 	help()
 	sys.exit(-1)
+
+for arg in sys.argv:
+	if arg == 'debug':
+		debug = True
 
 mode = sys.argv[1]
 
@@ -77,6 +80,7 @@ elif mode == 'validate' or mode == 'norm':
 			print('',file=sys.stderr)
 			missing = list(chars - alphabet)
 			missing.sort()
+			print('Unhandled characters:\n----', file=sys.stderr)
 			for c in missing:
 				print('%04x\t%s' % (ord(c), c), file=sys.stderr)			
 		print('%d/%d (%.2f%%)' % (count_valid, total, (count_valid/total)*100.0),file=sys.stderr)
@@ -153,6 +157,8 @@ elif mode == 'filter':
 	c = Corpora(locale)
 	c.filter(sys.stdin, sys.stdout, umbral=1)
 
+# Reintroduce when we get a new server
+"""
 elif mode == 'getckp':
 	locale = sys.argv[2]
 	path = 'source-checkpoints'
@@ -181,7 +187,7 @@ elif mode == 'getckp':
 		op.close()
 
 	print('[Done] Your checkpoint is in %s' % path + '/')
-	
+"""	
 elif mode == 'check' or mode == 'missing':
 	exclude = ['zh-TW', 'zh-CN', 'zh-HK', 'ja']
 	check = ''
