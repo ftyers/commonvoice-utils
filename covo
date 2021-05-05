@@ -157,37 +157,6 @@ elif mode == 'filter':
 	c = Corpora(locale)
 	c.filter(sys.stdin, sys.stdout, umbral=1)
 
-# Reintroduce when we get a new server
-"""
-elif mode == 'getckp':
-	locale = sys.argv[2]
-	path = 'source-checkpoints'
-	if len(sys.argv) ==4:
-		path = sys.argv[3]
-	Path(path).mkdir(parents=True, exist_ok=True)
-
-	try:
-		g = urllib.request.urlopen('https://tepozcatl.omnilingo.cc/' + locale + '/checkpoints/best_dev_checkpoint')	
-	except urllib.error.HTTPError:
-		print('[Checkpoint not found]', file=sys.stderr)
-		sys.exit(-1)	
-	txt = g.read().strip()
-	if txt == '':
-		print('[Checkpoint not found]', file=sys.stderr)
-		sys.exit(-1)	
-	row = txt.decode('utf-8').split('\n')
-	ref = row[1].split('"')[1].split('/')[-1]
-	print('[Checkpoint found]  %s' % ref)
-
-	for fn in ['.data-00000-of-00001', '.index', '.meta']:
-		print('[Downloading] %s ' % (ref + fn))
-		fd = urllib.request.urlopen('https://tepozcatl.omnilingo.cc/' + locale + '/checkpoints/' + ref + fn)
-		op = open(path + '/' + ref + fn, 'wb')
-		op.write(fd.read())
-		op.close()
-
-	print('[Done] Your checkpoint is in %s' % path + '/')
-"""	
 elif mode == 'check' or mode == 'missing':
 	exclude = ['zh-TW', 'zh-CN', 'zh-HK', 'ja']
 	check = ''
@@ -237,4 +206,37 @@ elif mode == 'avail':
 		segmenters = cv.segmenters()
 		segmenters.sort()
 		print(' Segmenters:', ' '.join([code for code in segmenters]))
+
+# Reintroduce when we get a new server
+"""
+elif mode == 'getckp':
+	locale = sys.argv[2]
+	path = 'source-checkpoints'
+	if len(sys.argv) ==4:
+		path = sys.argv[3]
+	Path(path).mkdir(parents=True, exist_ok=True)
+
+	try:
+		g = urllib.request.urlopen('https://tepozcatl.omnilingo.cc/' + locale + '/checkpoints/best_dev_checkpoint')	
+	except urllib.error.HTTPError:
+		print('[Checkpoint not found]', file=sys.stderr)
+		sys.exit(-1)	
+	txt = g.read().strip()
+	if txt == '':
+		print('[Checkpoint not found]', file=sys.stderr)
+		sys.exit(-1)	
+	row = txt.decode('utf-8').split('\n')
+	ref = row[1].split('"')[1].split('/')[-1]
+	print('[Checkpoint found]  %s' % ref)
+
+	for fn in ['.data-00000-of-00001', '.index', '.meta']:
+		print('[Downloading] %s ' % (ref + fn))
+		fd = urllib.request.urlopen('https://tepozcatl.omnilingo.cc/' + locale + '/checkpoints/' + ref + fn)
+		op = open(path + '/' + ref + fn, 'wb')
+		op.write(fd.read())
+		op.close()
+
+	print('[Done] Your checkpoint is in %s' % path + '/')
+"""	
+
 

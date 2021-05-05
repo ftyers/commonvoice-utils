@@ -53,7 +53,8 @@ class Validator:
 		self.alphabet = s
 
 	def validate(self, transcript):
-		label = transcript
+		"""Returns either the normalised transcript or None"""
+		label = transcript.strip()
 		if self.lower:
 			label = label.lower()
 		if self.nfkc:
@@ -74,6 +75,7 @@ class Validator:
 		return label if label else None
 
 	def normalise(self, transcript):
+		"""Returns transcript and a flag to say if it passes or not"""
 		label = transcript.strip()
 		if self.lower:
 			label = label.lower()
