@@ -203,7 +203,7 @@ A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 | Dutch                | Nederlands     |`nld` | `nl` |`nl`  |   ✔         |           |    ✔      |            |
 | Oriya                | ଓଡ଼ିଆ                                       |`ori` | `or`  |`or` |            |     ✔      |    ✔      |        ✔     |
 | Punjabi              | ਪੰਜਾਬੀ     |`pan` | `pa-IN`   | `pa`  |          |       ✔    |     ✔     |            |
-| Polish               | Polski     |`pol` | `pl`  |`pl` |   ✔          |           |     ✔     |            |
+| Polish               | Polski     |`pol` | `pl`  |`pl` |   ✔          |       ✔     |     ✔     |            |
 | Portuguese           | Português     |`por` | `pt`  |`pt` |            |    ✔        |     ✔     |            |
 | Kʼicheʼ              | Kʼicheʼ             |`quc` | — | — |   ✔          |   ✔        |      ✔    |            |
 | Romansch (Sursilvan) | Romontsch     |`roh` | `rm-sursilv`  |`rm` |            |      ✔     |  ✔        |        ✔      |

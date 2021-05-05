@@ -166,8 +166,10 @@ include cvutils/data/vi/abbr.tsv
 include cvutils/data/vi/phon.tsv
 include cvutils/data/pl
 include cvutils/data/pl/alphabet.txt
+include cvutils/data/pl/validate.tsv
 include cvutils/data/pl/phon.tsv
 include cvutils/data/pl/vocab.tsv
+include cvutils/data/pl/.validate.tsv.swp
 include cvutils/data/ga-IE
 include cvutils/data/ga-IE/alphabet.txt
 include cvutils/data/ga-IE/phon.lexc
