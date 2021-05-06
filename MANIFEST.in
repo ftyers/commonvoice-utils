@@ -224,6 +224,8 @@ include cvutils/data/kab/phon.tsv
 include cvutils/data/da
 include cvutils/data/da/vocab.tsv
 include cvutils/data/as
+include cvutils/data/as/alphabet.txt
+include cvutils/data/as/validate.tsv
 include cvutils/data/as/phon.tsv
 include cvutils/data/lt
 include cvutils/data/lt/alphabet.txt

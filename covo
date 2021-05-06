@@ -5,7 +5,7 @@ import sys
 from pathlib import Path
 import urllib.request
 
-import json
+import json, os
 
 from cvutils import CV 
 from cvutils import Corpora 
@@ -25,6 +25,7 @@ def help():
 	print('       norm     [locale]',file=sys.stderr)
 	print('       phon     [locale]',file=sys.stderr)
 	print('       opus     [locale]',file=sys.stderr)
+	print('       gb       [list|update] [locale]',file=sys.stderr)
 	print('       filter   [locale]',file=sys.stderr)
 #	print('       getckp   [locale] [path]',file=sys.stderr)
 	print('       text     [locale] [tsv file1 tsv file2 ...]',file=sys.stderr)
@@ -206,6 +207,41 @@ elif mode == 'avail':
 		segmenters = cv.segmenters()
 		segmenters.sort()
 		print(' Segmenters:', ' '.join([code for code in segmenters]))
+
+elif mode == 'gutenberg' or mode == 'guten' or mode == 'gb':
+	cmd = sys.argv[2]
+	HOME = os.getenv('HOME')
+	covo_cache_dir = HOME + "/.covo/"
+
+	from cvutils import gutenberg
+
+	def gb_update(covo_cache_dir):
+		if not os.path.isdir(covo_cache_dir):
+			os.mkdir(covo_cache_dir, mode=0o755)
+		fd = open(covo_cache_dir + "GUTINDEX.ALL", 'w')
+		g = urllib.request.urlopen('https://www.gutenberg.org/dirs/GUTINDEX.ALL')
+		txt = g.read().strip()
+		fd.write(txt.decode('utf-8'))
+		fd.close()
+		return len(txt)
+
+	if cmd == 'update':
+		res = gb_update(covo_cache_dir)
+		print('Downloaded index, %d bytes' % (res))
+		sys.exit(0)
+	elif cmd == 'list':
+		locale = sys.argv[3]
+		index_path = covo_cache_dir + "GUTINDEX.ALL"
+		if not os.path.isfile(index_path):
+			res = gb_update(covo_cache_dir)
+			print('Downloaded index, %d bytes' % (res))
+		gb = gutenberg.Gutenberg(index_path)
+		ids = gb.get_catalogue(locale)
+		for idx in ids:
+			print('https://www.gutenberg.org/files/%s/%s-0.txt' % (idx, idx))
+	else:
+		print('Operation not supported.', file=sys.stderr)
+		
 
 # Reintroduce when we get a new server
 """
