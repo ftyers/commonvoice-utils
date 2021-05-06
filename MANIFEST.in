@@ -108,6 +108,9 @@ include cvutils/data/hy-AM
 include cvutils/data/hy-AM/alphabet.txt
 include cvutils/data/hy-AM/wikipedia.txt
 include cvutils/data/hy-AM/phon.tsv
+include cvutils/data/is
+include cvutils/data/is/alphabet.txt
+include cvutils/data/is/validate.tsv
 include cvutils/data/ba
 include cvutils/data/ba/alphabet.txt
 include cvutils/data/ba/phon.tsv
