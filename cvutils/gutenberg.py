@@ -121,4 +121,7 @@ class Gutenberg:
 
 		
 	def get_catalogue(self, locale):
-		return self.catalogue[locale]
+		if locale in self.catalogue:
+			return self.catalogue[locale]
+		else:
+			return []
