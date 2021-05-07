@@ -147,7 +147,9 @@ include cvutils/data/ta/validate.tsv
 include cvutils/data/ta/phon.tsv
 include cvutils/data/ta/vocab.tsv
 include cvutils/data/hi
+include cvutils/data/hi/alphabet.txt
 include cvutils/data/hi/phon.lexc
+include cvutils/data/hi/validate.tsv
 include cvutils/data/hi/foo
 include cvutils/data/hi/phon.att
 include cvutils/data/bg

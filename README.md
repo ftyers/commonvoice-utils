@@ -181,7 +181,7 @@ A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 | Irish                | Gaeilge             |`gle` | `ga-IE`   |`ga`|            |    ✔       |    ✔      |            |
 | Galician             | Galego              |`glg` | `gl`   |`gl`|       ✔       |          |    ✔      |            |
 | Guaraní              | Avañeʼẽ             |`gug` | `gn`   |`gn`|       ✔       |          |    ✔      |            |
-| Hindi                | हिन्दी                                              |`hin` | `hi`   | `hi`           |           |          |            |
+| Hindi                | हिन्दी                                              |`hin` | `hi`   | `hi`           |       ✔    |      ✔    |       ✔     |
 | Upper Sorbian        | Hornjoserbšćina     |`hsb` | `hsb`  |`hsb` |            |       ✔     |       ✔   |       ✔      |
 | Hungarian            | Magyar nyelv     |`hun` | `hu`  |`hu` |      ✔       |       ✔       |     ✔     |            |
 | Armenian             | Հայերեն         | `hye` | `hy-AM` |`hy`| ✔        |          |       ✔   |             |
