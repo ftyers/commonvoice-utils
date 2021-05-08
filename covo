@@ -6,6 +6,7 @@ from pathlib import Path
 import urllib.request
 
 import json, os
+import ssl
 
 from cvutils import CV 
 from cvutils import Corpora 
@@ -13,6 +14,7 @@ from cvutils import Segmenter
 from cvutils import Validator
 from cvutils import Alphabet 
 from cvutils import Phonemiser
+from cvutils import Transliterator
 
 from cvutils import wikipedia
 
@@ -27,7 +29,7 @@ def help():
 	print('       opus     [locale]',file=sys.stderr)
 	print('       gb       [list|update] [locale]',file=sys.stderr)
 	print('       filter   [locale]',file=sys.stderr)
-#	print('       getckp   [locale] [path]',file=sys.stderr)
+	print('       getckp   [locale] [path]',file=sys.stderr)
 	print('       text     [locale] [tsv file1 tsv file2 ...]',file=sys.stderr)
 	print('       avail    [task]',file=sys.stderr)
 	print('       missing  [task]',file=sys.stderr)
@@ -118,6 +120,14 @@ elif mode == 'phon' or mode == 'phonemise':
 	for line in sys.stdin:
 		phons = [p.phonemise(w) for w in line.split(' ')]
 		print(' '.join([p for p in phons if p]))
+
+elif mode == 'tran' or mode == 'translit' or mode == 'transliterate':
+	locale = sys.argv[2]
+	t = Transliterator(locale)
+	for line in sys.stdin:
+		trans = [t.transliterate(w) for w in line.split(' ')]
+		print(' '.join([t for t in trans if t]))
+
 
 
 elif mode == 'opus':
@@ -244,8 +254,6 @@ elif mode == 'gutenberg' or mode == 'guten' or mode == 'gb':
 		print('Operation not supported.', file=sys.stderr)
 		
 
-# Reintroduce when we get a new server
-"""
 elif mode == 'getckp':
 	locale = sys.argv[2]
 	path = 'source-checkpoints'
@@ -253,8 +261,13 @@ elif mode == 'getckp':
 		path = sys.argv[3]
 	Path(path).mkdir(parents=True, exist_ok=True)
 
+
+	ctx = ssl.create_default_context()
+	ctx.check_hostname = False
+	ctx.verify_mode = ssl.CERT_NONE
+
 	try:
-		g = urllib.request.urlopen('https://tepozcatl.omnilingo.cc/' + locale + '/checkpoints/best_dev_checkpoint')	
+		g = urllib.request.urlopen('https://itml.cl.indiana.edu/models/' + locale + '/checkpoints/best_dev_checkpoint', context=ctx)	
 	except urllib.error.HTTPError:
 		print('[Checkpoint not found]', file=sys.stderr)
 		sys.exit(-1)	
@@ -268,12 +281,9 @@ elif mode == 'getckp':
 
 	for fn in ['.data-00000-of-00001', '.index', '.meta']:
 		print('[Downloading] %s ' % (ref + fn))
-		fd = urllib.request.urlopen('https://tepozcatl.omnilingo.cc/' + locale + '/checkpoints/' + ref + fn)
+		fd = urllib.request.urlopen('https://itml.cl.indiana.edu/models/' + locale + '/checkpoints/' + ref + fn, context=ctx)
 		op = open(path + '/' + ref + fn, 'wb')
 		op.write(fd.read())
 		op.close()
 
 	print('[Done] Your checkpoint is in %s' % path + '/')
-"""	
-
-

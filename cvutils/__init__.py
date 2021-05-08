@@ -7,6 +7,8 @@ from segmenter import Segmenter
 from validator import Validator
 from alphabet import Alphabet
 from corpora import Corpora
+from transliterator import Transliterator
+from gutenberg import Gutenberg
 
 # This is horrible, rewrite this
 
