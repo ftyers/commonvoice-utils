@@ -82,18 +82,19 @@ elif mode == 'validate' or mode == 'norm':
 			print('----', file=sys.stderr)
 			print('\n'.join([s for s in skipped if not s.strip() == ""]), file=sys.stderr)
 			print('',file=sys.stderr)
-			missing = list(chars - alphabet)
-			missing.sort()
+			#missing = list(chars - alphabet)
+			missing = [(v, k) for (k, v) in chars.items()]
+			missing.sort(reverse=True)
 			print('Unhandled characters:\n----', file=sys.stderr)
-			for c in missing:
-				print('%04x\t%s' % (ord(c), c), file=sys.stderr)			
+			for (f, c) in missing:
+				print('%d\t%04x\t%s' % (f, ord(c), c), file=sys.stderr)			
 		print('%d/%d (%.2f%%)' % (count_valid, total, (count_valid/total)*100.0),file=sys.stderr)
 	
 
 	v = Validator(locale)
 	a = Alphabet(locale)
 	line = sys.stdin.readline()
-	chars = set()
+	chars = {}
 	alphabet = set(a.get_alphabet())
 	skipped = []
 	count_valid = 0
@@ -106,7 +107,12 @@ elif mode == 'validate' or mode == 'norm':
 				print(sent)
 			else:
 				skipped.append(sent)
-				[chars.add(c) for c in sent]
+				for c in sent:
+					if c in alphabet:
+						continue
+					if c not in chars:
+						chars[c] = 0
+					chars[c] += 1
 			total += 1	
 			line = sys.stdin.readline()
 	except KeyboardInterrupt:
