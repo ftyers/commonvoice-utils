@@ -14,7 +14,6 @@ from cvutils import Segmenter
 from cvutils import Validator
 from cvutils import Alphabet 
 from cvutils import Phonemiser
-from cvutils import Transliterator
 
 from cvutils import wikipedia
 
@@ -43,6 +42,8 @@ for arg in sys.argv:
 		debug = True
 
 mode = sys.argv[1]
+
+# Check the mode here
 
 if mode == 'help':
 	help()
@@ -128,6 +129,7 @@ elif mode == 'phon' or mode == 'phonemise':
 		print(' '.join([p for p in phons if p]))
 
 elif mode == 'tran' or mode == 'translit' or mode == 'transliterate':
+	from cvutils import Transliterator
 	locale = sys.argv[2]
 	t = Transliterator(locale)
 	for line in sys.stdin:
