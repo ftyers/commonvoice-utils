@@ -180,6 +180,8 @@ elif mode == 'clean':
 	# Do this with pathlib to allow globbing
 	total = 0
 	valid_sents = 0
+	discarded = []
+	malformed = []
 	with open(sys.argv[3]) as csv_file:
 		csv_reader = csv.reader(csv_file, delimiter=',')
 		csv_writer = csv.writer(sys.stdout, delimiter=',')
@@ -187,14 +189,37 @@ elif mode == 'clean':
 		for row in csv_reader:
 			if not row:
 				continue
+			if len(row) != 3:
+				total += 1
+				malformed.append(total+1)
+				continue
 			(valid, sent) = v.normalise(row[2])
 			if valid:
 				valid_sents += 1
 				row[2] = sent
 				csv_writer.writerow(row)
+			else:
+				discarded.append(row)
 			total += 1
 
 	print('%d/%d (%.2f%%)' % (valid_sents, total, (valid_sents/total)*100), file=sys.stderr)
+	missing = {}
+	if debug:
+		
+		for row in discarded:
+			(skipped, unalphabetic) = v.check(row[2])
+			for c in unalphabetic:
+				if c not in missing:
+					missing[c] = 0
+				missing[c] += 1
+		missing = [(v, k) for (k, v) in missing.items()]
+		missing.sort(reverse=True)
+		print('Malformed rows:\n----', file=sys.stderr)
+		print(' '.join([str(i) for i in malformed]), file=sys.stderr)
+		print('Unhandled characters:\n----', file=sys.stderr)
+		for (f, c) in missing:
+			print('%d\t%04x\t%s' % (f, ord(c), c), file=sys.stderr)			
+
 
 elif mode == 'filter':
 	locale = sys.argv[2]

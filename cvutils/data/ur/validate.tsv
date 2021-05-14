@@ -20,6 +20,8 @@ REPL	۔	_	06d4	_
 REPL	‍	_	200d	_
 REPL	‎	_	200e	_
 REPL	‏	_	200f	_
+REPL	﻿	_	feff	_
+SKIP	۰	_	06f0	_
 ALLOW	۶	_	06f6	_
 ALLOW	ٴ	_	0674	_
 ALLOW	ۂ	_	06c2	_
