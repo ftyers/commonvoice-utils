@@ -167,6 +167,8 @@ elif mode == 'text':
 			for row in csv_reader:
 				if not row:
 					continue
+				if len(row) != 3:
+					continue
 				(valid, sent) = v.normalise(row[2])
 				if valid:
 					print(sent)		
