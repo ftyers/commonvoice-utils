@@ -64,7 +64,8 @@ if mode == 'dump-url':
 if mode == 'alphabet':
 	locale = sys.argv[2]
 	a = Alphabet(locale)
-	print(a.get_alphabet())
+	print('\n'.join(a.get_alphabet()))
+	print()
 		
 if mode == 'segment':
 	locale = sys.argv[2]
