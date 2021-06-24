@@ -9,6 +9,7 @@ from alphabet import Alphabet
 from corpora import Corpora
 from transliterator import Transliterator
 from tokeniser import Tokeniser
+from tagger import Tagger
 from gutenberg import Gutenberg
 
 # This is horrible, rewrite this

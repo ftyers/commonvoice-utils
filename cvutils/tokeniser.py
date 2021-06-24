@@ -1,4 +1,10 @@
 """Tokenisers."""
+
+"""
+	FIXME:
+		- Put the linguistic data in separate files in the data directories
+"""
+
 import re
 
 class Tokeniser:
