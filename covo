@@ -14,6 +14,7 @@ from cvutils import Segmenter
 from cvutils import Validator
 from cvutils import Alphabet 
 from cvutils import Phonemiser
+from cvutils import Tokeniser
 
 from cvutils import wikipedia
 
@@ -23,6 +24,7 @@ def help():
 	print('covo   dump     [pages-articles.xml.bz2]',file=sys.stderr)
 	print('       dump-url [locale]',file=sys.stderr)
 	print('       segment  [locale]',file=sys.stderr)
+	print('       tokenise [locale]',file=sys.stderr)
 	print('       norm     [locale]',file=sys.stderr)
 	print('       phon     [locale]',file=sys.stderr)
 	print('       opus     [locale]',file=sys.stderr)
@@ -67,6 +69,14 @@ if mode == 'alphabet':
 	print('\n'.join(a.get_alphabet()))
 	print()
 		
+if mode == 'tokenise':
+	locale = sys.argv[2]
+	t = Tokeniser(locale)
+	line = sys.stdin.readline()
+	while line:
+		print(' '.join(t.tokenise(line)).strip())
+		line = sys.stdin.readline()
+
 if mode == 'segment':
 	locale = sys.argv[2]
 	s = Segmenter(locale)
@@ -133,7 +143,7 @@ elif mode == 'phon' or mode == 'phonemise':
 elif mode == 'tran' or mode == 'translit' or mode == 'transliterate':
 	from cvutils import Transliterator
 	locale = sys.argv[2]
-	t = Transliterator(locale)
+	t = Transliterator(locale,normalise=False)
 	for line in sys.stdin:
 		trans = [t.transliterate(w) for w in line.split(' ')]
 		print(' '.join([t for t in trans if t]))
