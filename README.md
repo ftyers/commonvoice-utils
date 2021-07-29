@@ -228,6 +228,7 @@ A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 | Ukrainian            |  Українська мова    |`ukr` | `uk` |`uk`  |   ✔         |     ✔      |    ✔       |            |
 | Urdu                 | اُردُو |`urd` | `ur` |`ur`  |   ✔         |      ✔      |    ✔       |            |
 | Uyghur               | ئۇيغۇر تىلى |`uig` | `ug` |`ug`  |   ✔         |           |    ✔       |            |
+| Uzbek                | Oʻzbekcha |`uzb` | `uz` |`uz`  |   ✔         |           |    ✔       |            |
 | Vietnamese           | Tiếng Việt     |`vie` | `vi` |`vi`  |       ✔      |       ✔     |    ✔      |       ✔      |
 | Votic                | Vaďďa tšeeli    |`vot` | `vot` |  —  |            |           |   ✔       |            |
 | Wolof                | Wolof |`wol` | —  |  `wo`  |      ✔        |      ✔       |   ✔       |            |
