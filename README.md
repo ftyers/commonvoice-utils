@@ -205,6 +205,7 @@ A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 | Lithuanian           | Lietuvių kalba     |`lit` | `lt` |`lt`  |   ✔         |      ✔      |  ✔          |            |
 | Latvian              | Latviešu valoda    |`lvs` | `lv` |`lv`  |  ✔          |      ✔     |     ✔       |            |
 | Macedonian           | Македонски |`mkd` | `mk`  |`mk` |           |       |    ✔   |             |
+| Marathi              | मराठी           |`mar` | `mr`  |`mr` |           |       |    ✔   |             |
 | Mongolian            | Монгол хэл |`khk` | `mn`  |`mn` | ✔          |   ✔     |    ✔   |        ✔     |
 | Maltese              | Malti     |`mlt` | `mt`  |`mt` |      ✔       |      ✔     |      ✔      |         ✔   |
 | Dutch                | Nederlands     |`nld` | `nl` |`nl`  |   ✔         |           |    ✔      |            |
