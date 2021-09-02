@@ -45,6 +45,8 @@ class Tokeniser:
 			self.tokenise = self._lug
 		if lang in ["hi", "hin"]:
 			self.tokenise = self._hin
+		if lang in ["gn", "grn", "gug"]:
+			self.tokenise = self._grn
 		if lang in ["it", "ita"]:
 			self.tokenise = self._ita
 		if lang in ["mt", "mlt"]:
@@ -78,7 +80,15 @@ class Tokeniser:
 		o = re.sub("’", "ʼ", o)
 	
 		return [i for i in re.split("(\\w+)", o) if not i.strip() == ""]
+
+	def _grn(self, sentence):
+		"""Tokeniser for grn."""
+		o = sentence
+		o = re.sub("'", "ʼ", o)
+		o = re.sub("’", "ʼ", o)
 	
+		return [i for i in re.split("(\\w+)", o) if not i.strip() == ""]
+		
 	def _azz(self, sentence):
 		"""Tokeniser for azz.
 	
