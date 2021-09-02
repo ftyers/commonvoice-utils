@@ -175,6 +175,7 @@ A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 | English              | English       |`eng` | `en`   |`en`|      —      |    ✔        |    ✔       |            |
 | Esperanto            | Esperanto     |`epo` | `eo`   |`eo`|            |           |   ✔       |            |
 | Spanish              | Español             |`spa` | `es`   |`es`|       ✔      |           |       ✔   |            |
+| Erzya                | Эрзянь кель |`myv`    | `myv`   |`myv`|             |             |   ✔       |            |
 | Estonian             | Eesti               |`est`    | `et`   |`et`|     ✔        |    ✔         |   ✔       |            |
 | Basque               | Euskara             |`eus` | `eu`   |`eu`|     ✔      |      ✔        |    ✔      |            |
 | Persian              | فارسی               |`pes` | `fa`   |`fa`|    —        |       ✔    |    ✔      |            |
@@ -203,6 +204,7 @@ A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 | Luganda              | Luganda     |`lug` | `lg`  |`lg` |       ✔       |        ✔     |       ✔       |            |
 | Lithuanian           | Lietuvių kalba     |`lit` | `lt` |`lt`  |   ✔         |      ✔      |  ✔          |            |
 | Latvian              | Latviešu valoda    |`lvs` | `lv` |`lv`  |  ✔          |      ✔     |     ✔       |            |
+| Macedonian           | Македонски |`mkd` | `mk`  |`mk` |           |       |    ✔   |             |
 | Mongolian            | Монгол хэл |`khk` | `mn`  |`mn` | ✔          |   ✔     |    ✔   |        ✔     |
 | Maltese              | Malti     |`mlt` | `mt`  |`mt` |      ✔       |      ✔     |      ✔      |         ✔   |
 | Dutch                | Nederlands     |`nld` | `nl` |`nl`  |   ✔         |           |    ✔      |            |
