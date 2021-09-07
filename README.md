@@ -193,7 +193,7 @@ A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 | Interlingua          | Interlingua     |`ina` | `ia`  |`ia` |    ✔         |           |     ✔     |            |
 | Indonesian           | Bahasa indonesia     |`ind` | `id` |`id`  |       ✔        |       ✔     |     ✔     |            |
 | Icelandic            | Íslenska |`isl` | `is` |`is`  |            |       ✔     |    ✔      |            |
-| Italian              | Italiano     |`ita` | `it` |`it`  |     ✔       |           |    ✔      |            |
+| Italian              | Italiano     |`ita` | `it` |`it`  |     ✔       |  ✔         |    ✔      |            |
 | Japanese             | 日本語     |`jpn` | `ja`   |`ja`|      —      |           |     —     |            |
 | Georgian             |  ქართული ენა    |`kat` | `ka`  |`ka` |    ✔          |      ✔      | ✔         |            |
 | Kabyle               | Taqbaylit     |`kab` | `kab`  |`kab` |      ✔        |           |      ✔      |            |
