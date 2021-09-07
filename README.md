@@ -157,7 +157,7 @@ A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 | Assamese             |  অসমীয়া    |`asm` | `as`   |   `as` |   ✔      |       ✔   |    ✔     |            |
 | Azeri                | Azərbaycanca | `aze` | `az` | `az` |         |  ✔         |  ✔       |          | 
 | Bashkort             | Башҡортса     |`bak` | `ba`  |  `ba` |     ✔      |   ✔       | ✔        |           |
-| Basaa                | Basaa         |`bas` | `bas`  |  — |     ✔      |          | ✔        |           |
+| Basaa                | Basaa         |`bas` | `bas`  |  — |     ✔      |      ✔      | ✔        |           |
 | Belarusian           | Беларуская мова |`bel` | `be`  |  `be` |     ✔      |   ✔         | ✔        |           |
 | Bengali              | বাংলা            |`ben` | `bn`  |  `bn` |          |   ✔       | ✔        |   ✔        |
 | Breton               | Brezhoneg     |`bre` | `br`   | `br` | ✔          | ✔         | ✔        |      ✔     |
