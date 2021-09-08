@@ -1,5 +1,5 @@
 LOWER	_	_	_	_
-NKFC	_	_	_	_
+NFKC	_	_	_	_
 NORM	á	á	00e1	0061-0301
 NORM	é	é	00e9	0065-0301
 NORM	í	í	00ed	0069-0301
