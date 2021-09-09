@@ -11,6 +11,7 @@ REPL	.	_	_	_
 REPL	:	_	_	_
 REPL	;	_	_	_
 REPL	?	_	_	_
+REPL	!	_	_	_
 NORM	’	'	_	_
 ALLOW	a	_	0061	_
 ALLOW	à	_	00e0	_

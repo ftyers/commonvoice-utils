@@ -29,10 +29,16 @@ REPL	”	_
 REPL	„	_
 REPL	‟	_
 REPL	…	_
+REPL	–	_
 NORM	ue	ü
 NORM	oe	ö
 NORM	ae	ä
 NORM	ñ	n
+NORM	á	a
+NORM	é	e
+NORM	í	i
+NORM	ó	o
+NORM	ú	u
 ALLOW	a	_
 ALLOW	ä	_
 ALLOW	b	_
