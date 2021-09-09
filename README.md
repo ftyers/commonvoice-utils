@@ -161,7 +161,7 @@ A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 | Belarusian           | Беларуская мова |`bel` | `be`  |  `be` |     ✔      |   ✔         | ✔        |           |
 | Bengali              | বাংলা            |`ben` | `bn`  |  `bn` |          |   ✔       | ✔        |   ✔        |
 | Breton               | Brezhoneg     |`bre` | `br`   | `br` | ✔          | ✔         | ✔        |      ✔     |
-| Bulgarian            | Български | `bul` | `bg`   | `bg` | ✔          |          | ✔        |           |
+| Bulgarian            | Български | `bul` | `bg`   | `bg` | ✔          |    ✔      | ✔        |           |
 | Catalan              | Català        |`cat` | `ca`   | `ca` |            |           |      ✔    |            |
 | Czech                | Čeština       |`ces` | `cs`   |`cs` |    ✔        |    ✔        |  ✔        |            |
 | Chukchi              | Ԓыгъоравэтԓьэн |`ckt` | —   | — | ✔          | ✔         | ✔        |           |
