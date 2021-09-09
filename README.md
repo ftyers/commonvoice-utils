@@ -184,7 +184,7 @@ A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 | Frisian              | Frysk               |`fry` | `fy-NL`   |`fy`|            |     ✔       |       ✔    |     ✔        |
 | Irish                | Gaeilge             |`gle` | `ga-IE`   |`ga`|            |    ✔       |    ✔      |            |
 | Galician             | Galego              |`glg` | `gl`   |`gl`|       ✔       |          |    ✔      |            |
-| Guaraní              | Avañeʼẽ             |`gug` | `gn`   |`gn`|       ✔       |          |    ✔      |            |
+| Guaraní              | Avañeʼẽ             |`gug` | `gn`   |`gn`|       ✔       |    ✔      |    ✔      |            |
 | Hindi                | हिन्दी                                              |`hin` | `hi`   | `hi`           |       ✔    |      ✔    |       ✔     |
 | Hausa                | Harshen Hausa       |`hau` | `ha`  |`ha` |     ✔       |            |       ✔   |             |
 | Upper Sorbian        | Hornjoserbšćina     |`hsb` | `hsb`  |`hsb` |            |       ✔     |       ✔   |       ✔      |
