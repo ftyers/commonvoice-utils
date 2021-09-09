@@ -1,7 +1,5 @@
 LOWER	_	_	_	_
 NFKC	_	_	_	_
-REPL	(	_	0028	_
-REPL	)	_	0029	_
 REPL	,	_	002c	_
 REPL	.	_	002e	_
 REPL	«	_	00ab	_
@@ -41,6 +39,7 @@ ALLOW	ռ	_	054c	_
 ALLOW	ս	_	054d	_
 ALLOW	վ	_	054e	_
 ALLOW	տ	_	054f	_
+ALLOW	ր	_	0550	_
 ALLOW	ց	_	0551	_
 ALLOW	ւ	_	0552	_
 ALLOW	փ	_	0553	_

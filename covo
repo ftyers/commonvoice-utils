@@ -87,7 +87,7 @@ if mode == 'segment':
 		
 		line = sys.stdin.readline()
 
-elif mode == 'validate' or mode == 'norm':
+elif mode == 'validate' or mode == 'norm' or mode == 'valid':
 	locale = sys.argv[2]
 	def cleanup(skipped, chars, alphabet, count_valid, total):
 		if debug:
