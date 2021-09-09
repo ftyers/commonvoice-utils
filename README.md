@@ -189,7 +189,7 @@ A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 | Hausa                | Harshen Hausa       |`hau` | `ha`  |`ha` |     ✔       |            |       ✔   |             |
 | Upper Sorbian        | Hornjoserbšćina     |`hsb` | `hsb`  |`hsb` |            |       ✔     |       ✔   |       ✔      |
 | Hungarian            | Magyar nyelv     |`hun` | `hu`  |`hu` |      ✔       |       ✔       |     ✔     |            |
-| Armenian             | Հայերեն         | `hye` | `hy-AM` |`hy`| ✔        |          |       ✔   |             |
+| Armenian             | Հայերեն         | `hye` | `hy-AM` |`hy`| ✔        |      ✔     |       ✔   |             |
 | Interlingua          | Interlingua     |`ina` | `ia`  |`ia` |    ✔         |           |     ✔     |            |
 | Indonesian           | Bahasa indonesia     |`ind` | `id` |`id`  |       ✔        |       ✔     |     ✔     |            |
 | Icelandic            | Íslenska |`isl` | `is` |`is`  |            |       ✔     |    ✔      |            |
