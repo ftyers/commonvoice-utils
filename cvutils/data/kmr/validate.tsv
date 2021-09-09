@@ -14,6 +14,8 @@ REPL	’	_	2019	_
 REPL	“	_	201c	_
 REPL	”	_	201d	_
 REPL	…	_	2026	_
+NORM	ū	û	016b	00fb
+NORM	ī	î	012b	00ee
 ALLOW	a	_	0061	_
 ALLOW	b	_	0062	_
 ALLOW	c	_	0063	_
@@ -26,7 +28,6 @@ ALLOW	g	_	0067	_
 ALLOW	h	_	0068	_
 ALLOW	i	_	0069	_
 ALLOW	î	_	00ee	_
-ALLOW	ī	_	012b	_
 ALLOW	j	_	006a	_
 ALLOW	k	_	006b	_
 ALLOW	l	_	006c	_
@@ -42,7 +43,6 @@ ALLOW	ş	_	015f	_
 ALLOW	t	_	0074	_
 ALLOW	u	_	0075	_
 ALLOW	û	_	00fb	_
-ALLOW	ū	_	016b	_
 ALLOW	v	_	0076	_
 ALLOW	w	_	0077	_
 ALLOW	x	_	0078	_
