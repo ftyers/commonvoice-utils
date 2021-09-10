@@ -190,7 +190,7 @@ A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 | Upper Sorbian        | Hornjoserbšćina     |`hsb` | `hsb`  |`hsb` |            |       ✔     |       ✔   |       ✔      |
 | Hungarian            | Magyar nyelv     |`hun` | `hu`  |`hu` |      ✔       |       ✔       |     ✔     |            |
 | Armenian             | Հայերեն         | `hye` | `hy-AM` |`hy`| ✔        |      ✔     |       ✔   |             |
-| Interlingua          | Interlingua     |`ina` | `ia`  |`ia` |    ✔         |           |     ✔     |            |
+| Interlingua          | Interlingua     |`ina` | `ia`  |`ia` |    ✔         |    ✔        |     ✔     |            |
 | Indonesian           | Bahasa indonesia     |`ind` | `id` |`id`  |       ✔        |       ✔     |     ✔     |            |
 | Icelandic            | Íslenska |`isl` | `is` |`is`  |            |       ✔     |    ✔      |            |
 | Italian              | Italiano     |`ita` | `it` |`it`  |     ✔       |  ✔         |    ✔      |            |
