@@ -76,8 +76,12 @@ REPL	€	_	20ac	_
 REPL	™	_	2122	_
 NORM	’	'	2019	_
 NORM	á	a	00e1	0061
+NORM	â	a	00e2	0065
 NORM	è	e	00e8	0065
+NORM	ê	e	00ea	0065
 NORM	é	e	00e9	0065
+NORM	ô	o	00f4	006f
+NORM	ç	c	00e7	0063
 ALLOW	'	_	0027	_
 ALLOW	a	_	0061	_
 ALLOW	b	_	0062	_
@@ -95,6 +99,7 @@ ALLOW	m	_	006d	_
 ALLOW	n	_	006e	_
 ALLOW	o	_	006f	_
 ALLOW	p	_	0070	_
+ALLOW	q	_	0071	_
 ALLOW	r	_	0072	_
 ALLOW	s	_	0073	_
 ALLOW	t	_	0074	_

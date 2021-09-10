@@ -98,9 +98,11 @@ elif mode == 'validate' or mode == 'norm' or mode == 'valid':
 			#missing = list(chars - alphabet)
 			missing = [(v, k) for (k, v) in chars.items()]
 			missing.sort(reverse=True)
+			print('Alphabet:', alphabet, file=sys.stderr)
 			print('Unhandled characters:\n----', file=sys.stderr)
 			for (f, c) in missing:
-				print('%d\t%04x\t%s' % (f, ord(c), c), file=sys.stderr)			
+				if c not in alphabet:
+					print('%d\t%04x\t%s' % (f, ord(c), c), file=sys.stderr)			
 		print('%d/%d (%.2f%%)' % (count_valid, total, (count_valid/total)*100.0),file=sys.stderr)
 	
 
