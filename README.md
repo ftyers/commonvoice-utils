@@ -173,14 +173,14 @@ A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 | Danish               | Dansk         |`dan` | `da`   |`da`|            |        |     ✔      |            |
 | German               | Deutsch       |`deu` | `de`   |`de`|            |          ✔  |     ✔      |            |
 | English              | English       |`eng` | `en`   |`en`|      —      |    ✔        |    ✔       |            |
-| Esperanto            | Esperanto     |`epo` | `eo`   |`eo`|            |           |   ✔       |            |
-| Spanish              | Español             |`spa` | `es`   |`es`|       ✔      |           |       ✔   |            |
+| Esperanto            | Esperanto     |`epo` | `eo`   |`eo`|            |      ✔      |   ✔       |            |
+| Spanish              | Español             |`spa` | `es`   |`es`|       ✔      |    ✔        |       ✔   |            |
 | Erzya                | Эрзянь кель |`myv`    | `myv`   |`myv`|             |             |   ✔       |            |
 | Estonian             | Eesti               |`est`    | `et`   |`et`|     ✔        |    ✔         |   ✔       |            |
 | Basque               | Euskara             |`eus` | `eu`   |`eu`|     ✔      |      ✔        |    ✔      |            |
 | Persian              | فارسی               |`pes` | `fa`   |`fa`|    —        |       ✔    |    ✔      |            |
 | Finnish              | Suomi               |`fin` | `fi`   |`fi`| ✔           |   ✔        |   ✔       |            |
-| French               | Français            |`fra` | `fr`   |`fr`|     —       |           |     ✔     |            |
+| French               | Français            |`fra` | `fr`   |`fr`|     —       |        ✔     |     ✔     |            |
 | Frisian              | Frysk               |`fry` | `fy-NL`   |`fy`|            |     ✔       |       ✔    |     ✔        |
 | Irish                | Gaeilge             |`gle` | `ga-IE`   |`ga`|            |    ✔       |    ✔      |            |
 | Galician             | Galego              |`glg` | `gl`   |`gl`|       ✔       |    ✔       |    ✔      |            |
@@ -196,8 +196,8 @@ A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 | Italian              | Italiano     |`ita` | `it` |`it`  |     ✔       |  ✔         |    ✔      |            |
 | Japanese             | 日本語     |`jpn` | `ja`   |`ja`|      —      |           |     —     |            |
 | Georgian             |  ქართული ენა    |`kat` | `ka`  |`ka` |    ✔          |      ✔      | ✔         |            |
-| Kabyle               | Taqbaylit     |`kab` | `kab`  |`kab` |      ✔        |           |      ✔      |            |
-| Kazakh               | Қазақша     |`kaz` | `kk`  |`kk` |   ✔          |           |      ✔     |            |
+| Kabyle               | Taqbaylit     |`kab` | `kab`  |`kab` |      ✔        |     ✔       |      ✔      |            |
+| Kazakh               | Қазақша     |`kaz` | `kk`  |`kk` |   ✔          |     ✔        |      ✔     |            |
 | Kyrgyz               | Кыргызча     |`kir` | `ky`  |`ky` |    ✔         |     ✔        |  ✔        |    ✔          |
 | Kurmanji Kurdish     | Kurmancî    |`kmr` | `ku`  |`ku` |      ✔       |   ✔          |   ✔       |              |
 | Komi-Zyrian          | Коми кыв     |`kpv` | `kv`  |`kv` |       ✔       |           |  ✔        |            |
