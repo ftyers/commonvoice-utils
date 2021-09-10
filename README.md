@@ -173,14 +173,14 @@ A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 | Danish               | Dansk         |`dan` | `da`   |`da`|            |        |     ✔      |            |
 | German               | Deutsch       |`deu` | `de`   |`de`|            |          ✔  |     ✔      |            |
 | English              | English       |`eng` | `en`   |`en`|      —      |    ✔        |    ✔       |            |
-| Esperanto            | Esperanto     |`epo` | `eo`   |`eo`|            |           |   ✔       |            |
-| Spanish              | Español             |`spa` | `es`   |`es`|       ✔      |           |       ✔   |            |
+| Esperanto            | Esperanto     |`epo` | `eo`   |`eo`|            |      ✔      |   ✔       |            |
+| Spanish              | Español             |`spa` | `es`   |`es`|       ✔      |    ✔        |       ✔   |            |
 | Erzya                | Эрзянь кель |`myv`    | `myv`   |`myv`|             |             |   ✔       |            |
 | Estonian             | Eesti               |`est`    | `et`   |`et`|     ✔        |    ✔         |   ✔       |            |
 | Basque               | Euskara             |`eus` | `eu`   |`eu`|     ✔      |      ✔        |    ✔      |            |
 | Persian              | فارسی               |`pes` | `fa`   |`fa`|    —        |       ✔    |    ✔      |            |
 | Finnish              | Suomi               |`fin` | `fi`   |`fi`| ✔           |   ✔        |   ✔       |            |
-| French               | Français            |`fra` | `fr`   |`fr`|     —       |           |     ✔     |            |
+| French               | Français            |`fra` | `fr`   |`fr`|     —       |        ✔     |     ✔     |            |
 | Frisian              | Frysk               |`fry` | `fy-NL`   |`fy`|            |     ✔       |       ✔    |     ✔        |
 | Irish                | Gaeilge             |`gle` | `ga-IE`   |`ga`|            |    ✔       |    ✔      |            |
 | Galician             | Galego              |`glg` | `gl`   |`gl`|       ✔       |    ✔       |    ✔      |            |
@@ -190,14 +190,14 @@ A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 | Upper Sorbian        | Hornjoserbšćina     |`hsb` | `hsb`  |`hsb` |            |       ✔     |       ✔   |       ✔      |
 | Hungarian            | Magyar nyelv     |`hun` | `hu`  |`hu` |      ✔       |       ✔       |     ✔     |            |
 | Armenian             | Հայերեն         | `hye` | `hy-AM` |`hy`| ✔        |      ✔     |       ✔   |             |
-| Interlingua          | Interlingua     |`ina` | `ia`  |`ia` |    ✔         |           |     ✔     |            |
+| Interlingua          | Interlingua     |`ina` | `ia`  |`ia` |    ✔         |    ✔        |     ✔     |            |
 | Indonesian           | Bahasa indonesia     |`ind` | `id` |`id`  |       ✔        |       ✔     |     ✔     |            |
 | Icelandic            | Íslenska |`isl` | `is` |`is`  |            |       ✔     |    ✔      |            |
 | Italian              | Italiano     |`ita` | `it` |`it`  |     ✔       |  ✔         |    ✔      |            |
 | Japanese             | 日本語     |`jpn` | `ja`   |`ja`|      —      |           |     —     |            |
 | Georgian             |  ქართული ენა    |`kat` | `ka`  |`ka` |    ✔          |      ✔      | ✔         |            |
-| Kabyle               | Taqbaylit     |`kab` | `kab`  |`kab` |      ✔        |           |      ✔      |            |
-| Kazakh               | Қазақша     |`kaz` | `kk`  |`kk` |   ✔          |           |      ✔     |            |
+| Kabyle               | Taqbaylit     |`kab` | `kab`  |`kab` |      ✔        |     ✔       |      ✔      |            |
+| Kazakh               | Қазақша     |`kaz` | `kk`  |`kk` |   ✔          |     ✔        |      ✔     |            |
 | Kyrgyz               | Кыргызча     |`kir` | `ky`  |`ky` |    ✔         |     ✔        |  ✔        |    ✔          |
 | Kurmanji Kurdish     | Kurmancî    |`kmr` | `ku`  |`ku` |      ✔       |   ✔          |   ✔       |              |
 | Komi-Zyrian          | Коми кыв     |`kpv` | `kv`  |`kv` |       ✔       |           |  ✔        |            |
@@ -221,7 +221,7 @@ A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 | Kinyarwanda          | Kinyarwanda     |`kin` | `rw` |`rw`  |    ✔         |     ✔       |    ✔       |            |
 | Sakha                | Саха тыла  |`sah` | `sah`   |`sah`| ✔          |      ✔  |  ✔     |      ✔    |
 | Serbian              | Srpski  |`srp` | `sr`  |`sr` | ✔           |     ✔      |    ✔      |            |
-| Slovak               | Slovenčina |`slk` | `sk`  |`sk` | ✔           |           |    ✔      |            |
+| Slovak               | Slovenčina |`slk` | `sk`  |`sk` | ✔           |   ✔         |    ✔      |            |
 | Slovenian            | Slovenščina     |`slv` | `sl`  |`sl` | ✔           |   ✔         |    ✔      |            |
 | Swahili              | Kiswahili    |`swa` | —  |`sw` |     ✔        |     ✔        |     ✔     |            |
 | Swedish              | Svenska      |`swe` | `sv-SE`  |`sv` |     ✔        |           |     ✔     |            |
@@ -231,10 +231,10 @@ A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 | Tatar                | Татар теле |`tat` | `tt`  |`tt` | ✔          |   ✔     |  ✔     |     ✔      |
 | Ukrainian            |  Українська мова    |`ukr` | `uk` |`uk`  |   ✔         |     ✔      |    ✔       |            |
 | Urdu                 | اُردُو |`urd` | `ur` |`ur`  |   ✔         |      ✔      |    ✔       |            |
-| Uyghur               | ئۇيغۇر تىلى |`uig` | `ug` |`ug`  |   ✔         |           |    ✔       |            |
-| Uzbek                | Oʻzbekcha |`uzb` | `uz` |`uz`  |   ✔         |           |    ✔       |            |
+| Uyghur               | ئۇيغۇر تىلى |`uig` | `ug` |`ug`  |   ✔         |    ✔        |    ✔       |            |
+| Uzbek                | Oʻzbekcha |`uzb` | `uz` |`uz`  |   ✔         |   ✔        |    ✔       |            |
 | Vietnamese           | Tiếng Việt     |`vie` | `vi` |`vi`  |       ✔      |       ✔     |    ✔      |       ✔      |
-| Votic                | Vaďďa tšeeli    |`vot` | `vot` |  —  |            |           |   ✔       |            |
+| Votic                | Vaďďa tšeeli    |`vot` | `vot` |  —  |            |      ✔      |   ✔       |            |
 | Wolof                | Wolof |`wol` | —  |  `wo`  |      ✔        |      ✔       |   ✔       |            |
 | Yoruba               | Èdè Yorùbá  |`yor` | —  |  `yo`  |      ✔        |      ✔       |   ✔       |            |
 | Chinese (China)      | 中文     |`cmn` | `zh-CN` |`zh`  |      —      |           |    —      |            |
