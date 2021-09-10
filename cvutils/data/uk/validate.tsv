@@ -1,56 +1,58 @@
-LOWER	_	_
-REPL	"	_
-REPL	,	_
-REPL	-	_
-REPL	.	_
-REPL	:	_
-REPL	;	_
-REPL	?	_
-REPL	«	_
-REPL	»	_
-REPL	–	_
-REPL	—	_
-REPL	“	_
-REPL	”	_
-REPL	…	_
-NORM	’	ʼ
-NORM	'	ʼ
-NORM	`	ʼ
-SKIP	ы	_
-ALLOW	а	_
-ALLOW	б	_
-ALLOW	в	_
-ALLOW	г	_
-ALLOW	ґ	_
-ALLOW	д	_
-ALLOW	е	_
-ALLOW	є	_
-ALLOW	ж	_
-ALLOW	з	_
-ALLOW	и	_
-ALLOW	і	_
-ALLOW	ї	_
-ALLOW	й	_
-ALLOW	к	_
-ALLOW	л	_
-ALLOW	м	_
-ALLOW	н	_
-ALLOW	о	_
-ALLOW	п	_
-ALLOW	р	_
-ALLOW	с	_
-ALLOW	т	_
-ALLOW	у	_
-ALLOW	ф	_
-ALLOW	х	_
-ALLOW	ц	_
-ALLOW	ч	_
-ALLOW	ш	_
-ALLOW	щ	_
-ALLOW	ы	_
-ALLOW	ь	_
-ALLOW	ю	_
-ALLOW	я	_
-ALLOW	-	_
-ALLOW	ʼ	_
-ALLOW	_	_
+LOWER	_	_	_	_
+REPL	"	_	0022	_
+REPL	,	_	002c	_
+REPL	-	_	002d	_
+REPL	.	_	002e	_
+REPL	:	_	003a	_
+REPL	;	_	003b	_
+REPL	?	_	003f	_
+REPL	«	_	00ab	_
+REPL	»	_	00bb	_
+REPL	–	_	2013	_
+REPL	—	_	2014	_
+REPL	“	_	201c	_
+REPL	”	_	201d	_
+REPL	…	_	2026	_
+REPL	!	_	0021	_
+NORM	’	ʼ	_	_
+NORM	'	ʼ	_	_
+NORM	`	ʼ	_	_
+NORM	i	і	0069	0456
+SKIP	ы	_	044b	_
+ALLOW	а	_	0430	_
+ALLOW	б	_	0431	_
+ALLOW	в	_	0432	_
+ALLOW	г	_	0433	_
+ALLOW	ґ	_	0491	_
+ALLOW	д	_	0434	_
+ALLOW	е	_	0435	_
+ALLOW	є	_	0454	_
+ALLOW	ж	_	0436	_
+ALLOW	з	_	0437	_
+ALLOW	и	_	0438	_
+ALLOW	і	_	0456	_
+ALLOW	ї	_	0457	_
+ALLOW	й	_	0439	_
+ALLOW	к	_	043a	_
+ALLOW	л	_	043b	_
+ALLOW	м	_	043c	_
+ALLOW	н	_	043d	_
+ALLOW	о	_	043e	_
+ALLOW	п	_	043f	_
+ALLOW	р	_	0440	_
+ALLOW	с	_	0441	_
+ALLOW	т	_	0442	_
+ALLOW	у	_	0443	_
+ALLOW	ф	_	0444	_
+ALLOW	х	_	0445	_
+ALLOW	ц	_	0446	_
+ALLOW	ч	_	0447	_
+ALLOW	ш	_	0448	_
+ALLOW	щ	_	0449	_
+ALLOW	ы	_	044b	_
+ALLOW	ь	_	044c	_
+ALLOW	ю	_	044e	_
+ALLOW	я	_	044f	_
+ALLOW	-	_	002d	_
+ALLOW	ʼ	_	02bc	_
+ALLOW	_	_	005f	_
