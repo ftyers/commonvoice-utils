@@ -234,7 +234,7 @@ A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 | Uyghur               | ئۇيغۇر تىلى |`uig` | `ug` |`ug`  |   ✔         |    ✔        |    ✔       |            |
 | Uzbek                | Oʻzbekcha |`uzb` | `uz` |`uz`  |   ✔         |   ✔        |    ✔       |            |
 | Vietnamese           | Tiếng Việt     |`vie` | `vi` |`vi`  |       ✔      |       ✔     |    ✔      |       ✔      |
-| Votic                | Vaďďa tšeeli    |`vot` | `vot` |  —  |            |           |   ✔       |            |
+| Votic                | Vaďďa tšeeli    |`vot` | `vot` |  —  |            |      ✔      |   ✔       |            |
 | Wolof                | Wolof |`wol` | —  |  `wo`  |      ✔        |      ✔       |   ✔       |            |
 | Yoruba               | Èdè Yorùbá  |`yor` | —  |  `yo`  |      ✔        |      ✔       |   ✔       |            |
 | Chinese (China)      | 中文     |`cmn` | `zh-CN` |`zh`  |      —      |           |    —      |            |
