@@ -6,6 +6,7 @@ REPL	.	_	002e	_
 REPL	:	_	003a	_
 REPL	;	_	003b	_
 REPL	?	_	003f	_
+REPL	!	_	0021	_
 REPL	«	_	00ab	_
 REPL	»	_	00bb	_
 REPL	–	_	2013	_
