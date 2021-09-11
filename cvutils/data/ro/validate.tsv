@@ -52,4 +52,4 @@ ALLOW	w	_	0077	_
 ALLOW	x	_	0078	_
 ALLOW	y	_	0079	_
 ALLOW	z	_	007a	_
-ALLOW	_	_	005f	_
+ALLOW	_	_	0020	_
