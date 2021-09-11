@@ -60,6 +60,7 @@ ALLOW	p	_
 ALLOW	q	_
 ALLOW	r	_
 ALLOW	s	_
+ALLOW	ß	_
 ALLOW	t	_
 ALLOW	u	_
 ALLOW	ü	_
