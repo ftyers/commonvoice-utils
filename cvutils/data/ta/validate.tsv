@@ -10,6 +10,12 @@ REPL	;	_	_	_
 REPL	?	_	_	_
 REPL	‘	_	_	_
 REPL	’	_	_	_
+REPL	‘	_	_	_
+REPL	“	_	_	_
+REPL	”	_	_	_
+REPL	—	_	_	_
+SKIP	(	_	_	_
+SKIP	)	_	_	_
 ALLOW	அ	_	0b85	_
 ALLOW	ஆ	_	0b86	_
 ALLOW	இ	_	0b87	_
