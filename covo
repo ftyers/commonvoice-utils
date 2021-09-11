@@ -98,7 +98,9 @@ elif mode == 'validate' or mode == 'norm' or mode == 'valid':
 			#missing = list(chars - alphabet)
 			missing = [(v, k) for (k, v) in chars.items()]
 			missing.sort(reverse=True)
-			print('Alphabet:', alphabet, file=sys.stderr)
+			a = list(alphabet)
+			a.sort()
+			print('Alphabet:', a, file=sys.stderr)
 			print('Unhandled characters:\n----', file=sys.stderr)
 			for (f, c) in missing:
 				if c not in alphabet:
