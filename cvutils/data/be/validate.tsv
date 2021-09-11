@@ -3,7 +3,18 @@ NFKC	_	_	_	_
 REPL	.	_	_	_
 REPL	?	_	_	_
 REPL	!	_	_	_
+REPL	"	_	_	_
+REPL	;	_	_	_
+REPL	—	_	_	_
+REPL	:	_	_	_
+REPL	‒	_	_	_
+REPL	«	_	_	_
+REPL	»	_	_	_
+REPL	–	_	_	_
 REPL	,	_	_	_
+REPL	'	ʼ	0027	02bc
+REPL	’	ʼ	2019	02bc
+NORM	i	і	0069	0456
 ALLOW	а	_	0430	_
 ALLOW	б	_	0431	_
 ALLOW	в	_	0432	_
@@ -38,4 +49,5 @@ ALLOW	э	_	044d	_
 ALLOW	ю	_	044e	_
 ALLOW	я	_	044f	_
 ALLOW	ʼ	_	02bc	_
+ALLOW	-	_	002d	_
 ALLOW	_	_	0020	_
