@@ -1,12 +1,19 @@
 LOWER	_	_	_	_
 NFKC	_	_	_	_
+REPL	"	_	_	_
+REPL	»	_	_	_
+REPL	«	_	_	_
 REPL	!	_	_	_
 REPL	,	_	_	_
+REPL	:	_	_	_
+REPL	;	_	_	_
 REPL	.	_	_	_
 REPL	?	_	_	_
 REPL	–	_	_	_
 REPL	—	_	_	_
 NORM	i	і	0069	0456
+NORM	a	а	0061	0430
+NORM	c	с	0063	0441
 NORM	ӊ	ң	04ca	04a3
 ALLOW	а	_	0430	_
 ALLOW	ә	_	04d9	_
@@ -50,4 +57,5 @@ ALLOW	ь	_	044c	_
 ALLOW	э	_	044d	_
 ALLOW	ю	_	044e	_
 ALLOW	я	_	044f	_
+ALLOW	-	_	_	_
 ALLOW	_	_	_	_
