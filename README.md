@@ -224,7 +224,7 @@ A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 | Slovak               | Slovenčina |`slk` | `sk`  |`sk` | ✔           |   ✔         |    ✔      |            |
 | Slovenian            | Slovenščina     |`slv` | `sl`  |`sl` | ✔           |   ✔         |    ✔      |            |
 | Swahili              | Kiswahili    |`swa` | —  |`sw` |     ✔        |     ✔        |     ✔     |            |
-| Swedish              | Svenska      |`swe` | `sv-SE`  |`sv` |     ✔        |           |     ✔     |            |
+| Swedish              | Svenska      |`swe` | `sv-SE`  |`sv` |     ✔        |     ✔        |     ✔     |            |
 | Tamil                | தமிழ்    |`tam` | `ta`   |`ta`|       ✔      |     ✔      |        ✔   |            |
 | Thai                 | ภาษาไทย     |`tha` | `th`  |`th` |    ✔        |    ✔       |     ✔     |            |
 | Turkish              | Türkçe |`tur` | `tr`  |`tr` |   ✔         |       ✔     |      ✔     |            |
