@@ -50,6 +50,7 @@ class Validator:
 					self.transform[k] = v
 			# Remove all soft-hyphens, this should be safe cross-linguistically
 			self.transform['\u00ad'] = ''
+		#print('T:', self.transform, file=sys.stderr)
 
 	def set_alphabet(s):
 		self.alphabet = s
@@ -88,10 +89,11 @@ class Validator:
 		for k in self.transform:
 			label = label.replace(k, self.transform[k])		
 		for c in label:
+			#print('c:', c, '%04x' % ord(c))
 			if c in self.skip:
 				return (False, label)
 			if c not in self.alphabet:
-				#print('X',c)
+				#print('X',c, '%04x' %ord(c))
 				return (False, label)
 
 		label = re.sub('  *', ' ', label)

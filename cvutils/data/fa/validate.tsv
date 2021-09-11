@@ -29,7 +29,6 @@ REPL	ِ	_	0650	_
 REPL	ّ	_	0651	_
 REPL	ْ	_	0652	_
 REPL	ٔ	_	0654	_
-REPL	آ	آ	0622	0627-0653
 REPL	ﺎ	ا	fe8e	0627
 REPL	ﺍ	ا	fe8d	0627
 REPL	ﺑ	ب	fe91	0628
@@ -95,13 +94,15 @@ SKIP	y	_	005a	_
 SKIP	z	_	005a	_
 SKIP	ة	_	0629	_
 SKIP	ۀ	_	06c0	_
-SKIP	ي	_	064a	_
 SKIP	ے	_	06d2	_
+ALLOW	آ	_	0622	_
+ALLOW	ا	_	0627	_
+ALLOW	ٓ	_	0653	_
+ALLOW	ي	_	064a	_
 ALLOW	ء	_	0621	_
 ALLOW	أ	_	0623	_
 ALLOW	ؤ	_	0624	_
 ALLOW	ئ	_	0626	_
-ALLOW	ا	_	0627	_
 ALLOW	ب	_	0628	_
 ALLOW	پ	_	067e	_
 ALLOW	ت	_	062a	_
