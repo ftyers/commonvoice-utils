@@ -39,11 +39,13 @@ class Validator:
 				self.nfkd = True
 			if row[0] == 'SKIP':
 				self.skip.append(row[1])
-			if row[0] == 'REPL' or row[0] == 'NORM':
+			if row[0] == 'REPL' or row[0] == 'NORM' or row[0] == 'DEL':
 				k = row[1].strip()
 				v = row[2].strip()
-				if row[2] == '_':
+				if row[2] == '_' and row[0] == 'REPL':
 					self.transform[k] = ' '
+				elif row[2] == '_' and row[0] == 'DEL':
+					self.transform[k] = ''
 				else:
 					self.transform[k] = v
 			# Remove all soft-hyphens, this should be safe cross-linguistically
