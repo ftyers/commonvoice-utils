@@ -1,8 +1,18 @@
 NFKC	_	_	_	_
 REPL	,	_	_	_
 REPL	!	_	_	_
+REPL	-	_	_	_
+REPL	”	_	_	_
+REPL	“	_	_	_
 REPL	?	_	_	_
 REPL	।	_	_	_
+REPL	"	_	_	_
+REPL	'	ʼ	_	_
+NORM	’	ʼ	2019	02bc
+NORM	‘	ʼ	2018	02bc
+ALLOW	ঁ	_	0981	_
+ALLOW	ং	_	0982	_
+ALLOW	ঃ	_	0983	_
 ALLOW	ʼ	_	02bc	_
 ALLOW	অ	_	0985	_
 ALLOW	আ	_	0986	_
@@ -73,4 +83,6 @@ ALLOW	শ	_	09b6	_
 ALLOW	ষ	_	09b7	_
 ALLOW	স	_	09b8	_
 ALLOW	হ	_	09b9	_
+ALLOW	ৎ	_	09ce	_
+ALLOW	র	_	09b0	_
 ALLOW	_	_	0020	_
