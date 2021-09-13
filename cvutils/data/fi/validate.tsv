@@ -6,10 +6,12 @@ REPL	.	_
 REPL	:	_
 REPL	;	_
 REPL	?	_
+REPL	!	_
 REPL	–	_
 REPL	“	_
 REPL	”	_
 REPL	…	_
+DEL	'	_
 ALLOW	a	_
 ALLOW	ä	_
 ALLOW	b	_
