@@ -1,54 +1,58 @@
-LOWER	_	_
-REPL	.	_
-REPL	,	_
-REPL	?	_
-REPL	;	_
-REPL	!	_
-REPL	:	_
-REPL	"	_
-REPL	-	 	
-SKIP	[	_
-SKIP	]	_
-SKIP	{	_
-SKIP	}	_
-SKIP	&	_
-SKIP	<	_
-SKIP	*	_
-SKIP	0	_
-SKIP	1	_
-SKIP	2	_
-SKIP	3	_
-SKIP	4	_
-SKIP	5	_
-SKIP	6	_
-SKIP	7	_
-SKIP	8	_
-SKIP	9	_
-ALLOW	a	_
-ALLOW	b	_
-ALLOW	c	_
-ALLOW	d	_
-ALLOW	e	_
-ALLOW	f	_
-ALLOW	g	_
-ALLOW	h	_
-ALLOW	i	_
-ALLOW	j	_
-ALLOW	k	_
-ALLOW	l	_
-ALLOW	m	_
-ALLOW	n	_
-ALLOW	o	_
-ALLOW	p	_
-ALLOW	q	_
-ALLOW	r	_
-ALLOW	s	_
-ALLOW	t	_
-ALLOW	u	_
-ALLOW	v	_
-ALLOW	w	_
-ALLOW	x	_
-ALLOW	y	_
-ALLOW	z	_
-ALLOW	'	_
-ALLOW	_	_
+LOWER	_	_	_	_
+NFKC	_	_	_	_
+REPL	.	_	002e	_
+REPL	,	_	002c	_
+REPL	?	_	003f	_
+REPL	;	_	003b	_
+REPL	!	_	0021	_
+REPL	:	_	003a	_
+REPL	"	_	0022	_
+REPL	-	_	002d	_
+SKIP	[	_	005b	_
+SKIP	]	_	005d	_
+SKIP	{	_	007b	_
+SKIP	}	_	007d	_
+SKIP	&	_	0026	_
+SKIP	<	_	003c	_
+SKIP	*	_	002a	_
+SKIP	0	_	0030	_
+SKIP	1	_	0031	_
+SKIP	2	_	0032	_
+SKIP	3	_	0033	_
+SKIP	4	_	0034	_
+SKIP	5	_	0035	_
+SKIP	6	_	0036	_
+SKIP	7	_	0037	_
+SKIP	8	_	0038	_
+SKIP	9	_	0039	_
+NORM	ç	c	00e7	0063
+NORM	ï	i	00ef	0069
+NORM	é	e	00e9	0065
+ALLOW	a	_	0061	_
+ALLOW	b	_	0062	_
+ALLOW	c	_	0063	_
+ALLOW	d	_	0064	_
+ALLOW	e	_	0065	_
+ALLOW	f	_	0066	_
+ALLOW	g	_	0067	_
+ALLOW	h	_	0068	_
+ALLOW	i	_	0069	_
+ALLOW	j	_	006a	_
+ALLOW	k	_	006b	_
+ALLOW	l	_	006c	_
+ALLOW	m	_	006d	_
+ALLOW	n	_	006e	_
+ALLOW	o	_	006f	_
+ALLOW	p	_	0070	_
+ALLOW	q	_	0071	_
+ALLOW	r	_	0072	_
+ALLOW	s	_	0073	_
+ALLOW	t	_	0074	_
+ALLOW	u	_	0075	_
+ALLOW	v	_	0076	_
+ALLOW	w	_	0077	_
+ALLOW	x	_	0078	_
+ALLOW	y	_	0079	_
+ALLOW	z	_	007a	_
+ALLOW	'	_	0027	_
+ALLOW	_	_	0020	_
