@@ -251,8 +251,8 @@ class Tokeniser:
 		"""Tokeniser for fra."""
 		o = sentence
 		o = re.sub(r"([!*+,./\":;?@|~¡«°·»¿–—―’“”…]+)", r" \g<1> ", o)
-		o = re.sub(r"([JDLSM]['’])", r"\g<1> ", o)
-		o = re.sub(r"( [jdlsm]['’])", r" \g<1> ", o)
+		o = re.sub(r"([JDLSMN]['’])", r"\g<1> ", o)
+		o = re.sub(r"( [jdlsmn]['’])", r" \g<1> ", o)
 		o = re.sub(r"  *", " ", o)
 		return [i.replace("ʼ", "'") for i in o.split(" ") if not i.strip() == ""]
 	
