@@ -253,6 +253,7 @@ class Tokeniser:
 		o = re.sub(r"([!*+,./\":;?@|~¡«°·»¿–—―’“”…]+)", r" \g<1> ", o)
 		o = re.sub(r"([JDLSMN]['’])", r"\g<1> ", o)
 		o = re.sub(r"( [jdlsmn]['’])", r" \g<1> ", o)
+		o = re.sub(r"( [Qq]u['’])", r" \g<1> ", o)
 		o = re.sub(r"  *", " ", o)
 		return [i.replace("ʼ", "'") for i in o.split(" ") if not i.strip() == ""]
 	
