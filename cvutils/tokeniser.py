@@ -250,7 +250,7 @@ class Tokeniser:
 	def _fra(self, sentence):
 		"""Tokeniser for fra."""
 		o = sentence
-		o = re.sub(r"([!*+,./\":;?@|~¡«°·»¿–—―’“”…]+)", r" \g<1> ", o)
+		o = re.sub(r"([!*+,./\":;?@|~¡«°·»¿–—―’“”…']+)", r" \g<1> ", o)
 		o = re.sub(r"([JDLSMN]) (['’])", r"\g<1>\g<2>", o)
 		o = re.sub(r"( [jdlsmn]) (['’])", r"\g<1>\g<2>", o)
 		o = re.sub(r"([Qq]u) (['’])", r"\g<1>\g<2>", o)
