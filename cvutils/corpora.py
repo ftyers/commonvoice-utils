@@ -77,6 +77,7 @@ class Corpora:
 					name = e[0].replace(URL_BASE, '')
 					name = name.split('/')[0]
 					w = 0
+					r = []
 					if name in self.opus_weights:
 						w = self.opus_weights[name][0]
 						r = self.opus_weights[name][1]
