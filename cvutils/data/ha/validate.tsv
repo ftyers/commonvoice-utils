@@ -14,7 +14,7 @@ REPL	—	_	2014	_
 REPL	’	_	2019	_
 REPL	“	_	201c	_
 REPL	”	_	201d	_
-NORM	'	ʻ	0027	02bb
+NORM	'	ʼ	0027	02bc
 SKIP	0	_	0030	_
 SKIP	1	_	0031	_
 SKIP	3	_	0033	_
@@ -33,7 +33,7 @@ ALLOW	e	_	0065	_
 ALLOW	f	_	0066	_
 ALLOW	g	_	0067	_
 ALLOW	h	_	0068	_
-ALLOW	ʻ	_	02bb	_
+ALLOW	ʼ	_	02bc	_
 ALLOW	i	_	0069	_
 ALLOW	í	_	00ed	_
 ALLOW	j	_	006a	_

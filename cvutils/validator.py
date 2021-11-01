@@ -88,6 +88,7 @@ class Validator:
 			label = unicodedata.normalize('NFKD', label)
 		for k in self.transform:
 			label = label.replace(k, self.transform[k])		
+			#print('K:', k, label, file=sys.stderr)
 		for c in label:
 			#print('c:', c, '%04x' % ord(c))
 			if c in self.skip:
