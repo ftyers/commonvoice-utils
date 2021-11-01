@@ -3,7 +3,6 @@ NFKC	_	_	_	_
 REPL	!	_	0021	_
 REPL	"	_	0022	_
 REPL	%	_	0025	_
-REPL	'	_	0027	_
 REPL	,	_	002c	_
 REPL	-	_	002d	_
 REPL	.	_	002e	_
@@ -15,6 +14,7 @@ REPL	—	_	2014	_
 REPL	’	_	2019	_
 REPL	“	_	201c	_
 REPL	”	_	201d	_
+NORM	'	ʻ	0027	02bb
 SKIP	0	_	0030	_
 SKIP	1	_	0031	_
 SKIP	3	_	0033	_
