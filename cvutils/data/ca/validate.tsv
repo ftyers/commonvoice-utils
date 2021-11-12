@@ -3,7 +3,6 @@ NFKC	_	_	_	_
 REPL	!	_	0021	_
 REPL	"	_	0022	_
 REPL	,	_	002c	_
-REPL	-	_	002d	_
 REPL	.	_	002e	_
 REPL	/	_	002f	_
 REPL	:	_	003a	_
@@ -12,7 +11,6 @@ REPL	?	_	003f	_
 REPL	~	_	007e	_
 REPL	¡	_	00a1	_
 REPL	«	_	00ab	_
-REPL	·	_	00b7	_
 REPL	»	_	00bb	_
 REPL	¿	_	00bf	_
 REPL	–	_	2013	_
@@ -71,4 +69,6 @@ ALLOW	x	_	0078	_
 ALLOW	y	_	0079	_
 ALLOW	z	_	007a	_
 ALLOW	'	_	0027	_
+ALLOW	·	_	00b7	_
+ALLOW	-	_	002d	_
 ALLOW	 	_	0020	_
