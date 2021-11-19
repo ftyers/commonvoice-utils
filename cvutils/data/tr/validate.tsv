@@ -15,6 +15,7 @@ REPL	?	_	003f	_
 REPL	‘	_	2018	_
 REPL	“	_	201c	_
 REPL	”	_	201d	_
+REPL	…	_	2026	_
 SKIP	0	_	0030	_
 SKIP	1	_	0031	_
 SKIP	2	_	0032	_
