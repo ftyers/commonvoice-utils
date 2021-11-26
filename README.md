@@ -207,6 +207,7 @@ A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 | Luganda              | Luganda     |`lug` | `lg`  |`lg` |       ✔       |        ✔     |       ✔       |            |
 | Lithuanian           | Lietuvių kalba     |`lit` | `lt` |`lt`  |   ✔         |      ✔      |  ✔          |            |
 | Latvian              | Latviešu valoda    |`lvs` | `lv` |`lv`  |  ✔          |      ✔     |     ✔       |            |
+| Luo                  | Dholuo             |`luo` | `luo` | —  |  ✔          |      ✔     |     ✔       |            |
 | Macedonian           | Македонски |`mkd` | `mk`  |`mk` |           |       |    ✔   |             |
 | Marathi              | मराठी           |`mar` | `mr`  |`mr` |           |       |    ✔   |             |
 | Mongolian            | Монгол хэл |`khk` | `mn`  |`mn` | ✔          |   ✔     |    ✔   |        ✔     |
