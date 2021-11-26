@@ -214,6 +214,7 @@ A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 | Moksha               | Мокшень кяль |`mdf` | `mdf`  |`mdf` | ✔          |        |     ✔     |  |
 | Maltese              | Malti     |`mlt` | `mt`  |`mt` |      ✔       |      ✔     |      ✔      |         ✔   |
 | Dutch                | Nederlands     |`nld` | `nl` |`nl`  |   ✔         |     ✔      |    ✔      |            |
+| Chewa                | Chichewa       | `nya` | `ny` | `ny` |   ✔         |     ✔      |    ✔      |            |
 | Norwegian Nynorsk    | Nynorsk |`nno` | `nn-NO` |`nn`  |            |     ✔      |    ✔      |            |
 | Oriya                | ଓଡ଼ିଆ                                       |`ori` | `or`  |`or` |            |     ✔      |    ✔      |        ✔     |
 | Punjabi              | ਪੰਜਾਬੀ     |`pan` | `pa-IN`   | `pa`  |          |       ✔    |     ✔     |            |
