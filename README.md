@@ -235,6 +235,7 @@ A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 | Thai                 | ภาษาไทย     |`tha` | `th`  |`th` |    ✔        |    ✔       |     ✔     |            |
 | Turkish              | Türkçe |`tur` | `tr`  |`tr` |   ✔         |       ✔     |      ✔     |            |
 | Tatar                | Татар теле |`tat` | `tt`  |`tt` | ✔          |   ✔     |  ✔     |     ✔      |
+| Twi                  | Twi        | `tw` | `tw`  | `tw` | ✔          |   ✔     |  ✔    |            |
 | Ukrainian            |  Українська мова    |`ukr` | `uk` |`uk`  |   ✔         |     ✔      |    ✔       |            |
 | Urdu                 | اُردُو |`urd` | `ur` |`ur`  |   ✔         |      ✔      |    ✔       |            |
 | Uyghur               | ئۇيغۇر تىلى |`uig` | `ug` |`ug`  |   ✔         |    ✔        |    ✔       |            |
