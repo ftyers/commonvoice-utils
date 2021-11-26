@@ -206,6 +206,7 @@ A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 | Komi-Zyrian          | Коми кыв     |`kpv` | `kv`  |`kv` |       ✔       |           |  ✔        |            |
 | Luganda              | Luganda     |`lug` | `lg`  |`lg` |       ✔       |        ✔     |       ✔       |            |
 | Lithuanian           | Lietuvių kalba     |`lit` | `lt` |`lt`  |   ✔         |      ✔      |  ✔          |            |
+| Lingala              | Lingála     |`lin` | `ln` |`ln`  |            |      ✔      |  ✔          |            |
 | Latvian              | Latviešu valoda    |`lvs` | `lv` |`lv`  |  ✔          |      ✔     |     ✔       |            |
 | Luo                  | Dholuo             |`luo` | `luo` | —  |  ✔          |      ✔     |     ✔       |            |
 | Macedonian           | Македонски |`mkd` | `mk`  |`mk` |           |       |    ✔   |             |
