@@ -24,6 +24,8 @@ class Validator:
 		self.lower = False
 		data_dir = os.path.abspath(os.path.dirname(__file__)) + '/data/'
 		for line in open(data_dir + self.lang + '/validate.tsv').readlines():
+			if line[0] == '#':
+				continue
 			row = line.strip('\n').split('\t')
 			if row[0] == 'ALLOW':
 				a = row[1].strip()
@@ -89,6 +91,7 @@ class Validator:
 		for k in self.transform:
 			label = label.replace(k, self.transform[k])		
 			#print('K:', k, label, file=sys.stderr)
+
 		for c in label:
 			#print('c:', c, '%04x' % ord(c))
 			if c in self.skip:
