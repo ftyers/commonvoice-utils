@@ -202,6 +202,7 @@ A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 | Kikuyu               | Gĩgĩkũyũ    | `kik` | `ki` | `ki` |  ✔          |     ✔        |      ✔     |            |
 | Kyrgyz               | Кыргызча     |`kir` | `ky`  |`ky` |    ✔         |     ✔        |  ✔        |    ✔          |
 | Kurmanji Kurdish     | Kurmancî    |`kmr` | `ku`  |`ku` |      ✔       |   ✔          |   ✔       |              |
+| Sorani Kurdish       | سۆرانی  |`ckb` | `ckb`  |`ckb` |      ✔       |   ✔          |   ✔       |              |
 | Komi-Zyrian          | Коми кыв     |`kpv` | `kv`  |`kv` |       ✔       |           |  ✔        |            |
 | Luganda              | Luganda     |`lug` | `lg`  |`lg` |       ✔       |        ✔     |       ✔       |            |
 | Lithuanian           | Lietuvių kalba     |`lit` | `lt` |`lt`  |   ✔         |      ✔      |  ✔          |            |
