@@ -11,10 +11,10 @@ REPL	:	_	003a	_
 REPL	;	_	003b	_
 REPL	?	_	003f	_
 REPL	—	_	2014	_
-REPL	’	_	2019	_
 REPL	“	_	201c	_
 REPL	”	_	201d	_
 NORM	'	ʼ	0027	02bc
+NORM	’	ʼ	2019	02bc
 SKIP	0	_	0030	_
 SKIP	1	_	0031	_
 SKIP	3	_	0033	_
