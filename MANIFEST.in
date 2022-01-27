@@ -49,6 +49,7 @@ include cvutils/data/am/validate.tsv
 include cvutils/data/am/phon.tsv
 include cvutils/data/mdf
 include cvutils/data/mdf/alphabet.txt
+include cvutils/data/mdf/validate.tsv
 include cvutils/data/sk
 include cvutils/data/sk/alphabet.txt
 include cvutils/data/sk/validate.tsv
@@ -178,6 +179,7 @@ include cvutils/data/ug
 include cvutils/data/ug/alphabet.txt
 include cvutils/data/ug/validate.tsv
 include cvutils/data/ug/phon.tsv
+include cvutils/data/tig
 include cvutils/data/ta
 include cvutils/data/ta/alphabet.txt
 include cvutils/data/ta/validate.tsv
@@ -201,6 +203,10 @@ include cvutils/data/kmr
 include cvutils/data/kmr/alphabet.txt
 include cvutils/data/kmr/validate.tsv
 include cvutils/data/kmr/phon.tsv
+include cvutils/data/ml
+include cvutils/data/ml/alphabet.txt
+include cvutils/data/ml/validate.tsv
+include cvutils/data/ml/phon.tsv
 include cvutils/data/ln
 include cvutils/data/ln/alphabet.txt
 include cvutils/data/ln/validate.tsv
@@ -275,6 +281,10 @@ include cvutils/data/cv/abbr.tsv
 include cvutils/data/cv/phon.hfst
 include cvutils/data/cv/phon.tsv
 include cvutils/data/cv/vocab.tsv
+include cvutils/data/sat
+include cvutils/data/sat/alphabet.txt
+include cvutils/data/sat/validate.tsv
+include cvutils/data/sat/phon.tsv
 include cvutils/data/kab
 include cvutils/data/kab/alphabet.txt
 include cvutils/data/kab/validate.tsv
