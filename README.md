@@ -183,6 +183,7 @@ A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 | Finnish              | Suomi               |`fin` | `fi`   |`fi`| ✔           |   ✔        |   ✔       |            |
 | French               | Français            |`fra` | `fr`   |`fr`|     —       |        ✔     |     ✔     |            |
 | Frisian              | Frysk               |`fry` | `fy-NL`   |`fy`|            |     ✔       |       ✔    |     ✔        |
+| Igbo                 | Ásụ̀sụ́ Ìgbò          |`ibo` | `ig`   |`ig`|    ✔        |           |    ✔      |            |
 | Irish                | Gaeilge             |`gle` | `ga-IE`   |`ga`|            |    ✔       |    ✔      |            |
 | Galician             | Galego              |`glg` | `gl`   |`gl`|       ✔       |    ✔       |    ✔      |            |
 | Guaraní              | Avañeʼẽ             |`gug` | `gn`   |`gn`|       ✔       |    ✔      |    ✔      |            |
