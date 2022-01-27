@@ -7,6 +7,10 @@ include cvutils/data/wo
 include cvutils/data/wo/alphabet.txt
 include cvutils/data/wo/validate.tsv
 include cvutils/data/wo/phon.tsv
+include cvutils/data/luo
+include cvutils/data/luo/alphabet.txt
+include cvutils/data/luo/validate.tsv
+include cvutils/data/luo/phon.tsv
 include cvutils/data/fa
 include cvutils/data/fa/alphabet.txt
 include cvutils/data/fa/validate.tsv
@@ -43,6 +47,8 @@ include cvutils/data/am
 include cvutils/data/am/alphabet.txt
 include cvutils/data/am/validate.tsv
 include cvutils/data/am/phon.tsv
+include cvutils/data/mdf
+include cvutils/data/mdf/alphabet.txt
 include cvutils/data/sk
 include cvutils/data/sk/alphabet.txt
 include cvutils/data/sk/validate.tsv
@@ -79,6 +85,10 @@ include cvutils/data/hu
 include cvutils/data/hu/alphabet.txt
 include cvutils/data/hu/validate.tsv
 include cvutils/data/hu/phon.tsv
+include cvutils/data/ee
+include cvutils/data/ee/alphabet.txt
+include cvutils/data/ee/validate.tsv
+include cvutils/data/ee/phon.tsv
 include cvutils/data/sah
 include cvutils/data/sah/alphabet.txt
 include cvutils/data/sah/validate.tsv
@@ -118,6 +128,10 @@ include cvutils/data/hy-AM/phon.tsv
 include cvutils/data/is
 include cvutils/data/is/alphabet.txt
 include cvutils/data/is/validate.tsv
+include cvutils/data/ny
+include cvutils/data/ny/alphabet.txt
+include cvutils/data/ny/validate.tsv
+include cvutils/data/ny/phon.tsv
 include cvutils/data/ba
 include cvutils/data/ba/alphabet.txt
 include cvutils/data/ba/validate.tsv
@@ -128,6 +142,10 @@ include cvutils/data/bn/alphabet.txt
 include cvutils/data/bn/validate.tsv
 include cvutils/data/bn/punct.tsv
 include cvutils/data/bn/abbr.tsv
+include cvutils/data/ckb
+include cvutils/data/ckb/alphabet.txt
+include cvutils/data/ckb/validate.tsv
+include cvutils/data/ckb/phon.tsv
 include cvutils/data/it
 include cvutils/data/it/alphabet.txt
 include cvutils/data/it/validate.tsv
@@ -183,6 +201,13 @@ include cvutils/data/kmr
 include cvutils/data/kmr/alphabet.txt
 include cvutils/data/kmr/validate.tsv
 include cvutils/data/kmr/phon.tsv
+include cvutils/data/ln
+include cvutils/data/ln/alphabet.txt
+include cvutils/data/ln/validate.tsv
+include cvutils/data/ki
+include cvutils/data/ki/alphabet.txt
+include cvutils/data/ki/validate.tsv
+include cvutils/data/ki/phon.tsv
 include cvutils/data/sr
 include cvutils/data/sr/alphabet.txt
 include cvutils/data/sr/transliterate.tsv
@@ -254,6 +279,7 @@ include cvutils/data/kab
 include cvutils/data/kab/alphabet.txt
 include cvutils/data/kab/validate.tsv
 include cvutils/data/kab/phon.tsv
+include cvutils/data/kab/vocab.tsv
 include cvutils/data/da
 include cvutils/data/da/alphabet.txt
 include cvutils/data/da/vocab.tsv
@@ -305,6 +331,10 @@ include cvutils/data/lv
 include cvutils/data/lv/alphabet.txt
 include cvutils/data/lv/validate.tsv
 include cvutils/data/lv/phon.tsv
+include cvutils/data/tw
+include cvutils/data/tw/alphabet.txt
+include cvutils/data/tw/validate.tsv
+include cvutils/data/tw/phon.tsv
 include cvutils/data/be
 include cvutils/data/be/alphabet.txt
 include cvutils/data/be/validate.tsv
@@ -361,6 +391,8 @@ include cvutils/data/ca/vocab.tsv
 include cvutils/data/en
 include cvutils/data/en/alphabet.txt
 include cvutils/data/en/validate.tsv
+include cvutils/data/en/punct.tsv
+include cvutils/data/en/abbr.tsv
 include cvutils/data/en/vocab.tsv
 include cvutils/data/ia
 include cvutils/data/ia/alphabet.txt
