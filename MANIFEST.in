@@ -319,6 +319,9 @@ include cvutils/data/ka/alphabet.txt
 include cvutils/data/ka/validate.tsv
 include cvutils/data/ka/phon.tsv
 include cvutils/data/ka/vocab.tsv
+include cvutils/data/ig
+include cvutils/data/ig/alphabet.txt
+include cvutils/data/ig/phon.tsv
 include cvutils/data/ar
 include cvutils/data/ar/alphabet.txt
 include cvutils/data/ar/validate.tsv

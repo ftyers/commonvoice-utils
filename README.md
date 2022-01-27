@@ -229,6 +229,7 @@ A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 | Russian              | Русский     |`rus` | `ru`   |`ru`|            |      ✔      |     ✔     |            |
 | Kinyarwanda          | Kinyarwanda     |`kin` | `rw` |`rw`  |    ✔         |     ✔       |    ✔       |            |
 | Sakha                | Саха тыла  |`sah` | `sah`   |`sah`| ✔          |      ✔  |  ✔     |      ✔    |
+| Santali              | ᱥᱟᱱᱛᱟᱲᱤ |`sat` | `sat`   |`sat`| ✔          |      ✔  |  ✔     |          |
 | Serbian              | Srpski  |`srp` | `sr`  |`sr` | ✔           |     ✔      |    ✔      |            |
 | Slovak               | Slovenčina |`slk` | `sk`  |`sk` | ✔           |   ✔         |    ✔      |            |
 | Slovenian            | Slovenščina     |`slv` | `sl`  |`sl` | ✔           |   ✔         |    ✔      |            |
