@@ -300,3 +300,4 @@ the [AGPL v 3.0](https://www.gnu.org/licenses/agpl-3.0.en.html).
   * `vi`, `uk`, `kk`, `ky`, `ta`
 * Code for [transducer lookup](https://github.com/mhulden/foma/blob/master/foma/python/attapply.py) from Måns Huldén.
 * Code for [Wikipedia extraction](https://github.com/apertium/WikiExtractor) from Apertium.
+* Code for [Coqui export](https://github.com/coqui-ai/STT/blob/main/bin/import_cv2.py) from [Coqui](https://coqui.ai).
