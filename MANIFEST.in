@@ -31,6 +31,7 @@ include cvutils/data/rm-vallader/abbr.tsv
 include cvutils/data/rm-vallader/wikipedia.txt
 include cvutils/data/myv
 include cvutils/data/myv/alphabet.txt
+include cvutils/data/myv/validate.tsv
 include cvutils/data/fy-NL
 include cvutils/data/fy-NL/alphabet.txt
 include cvutils/data/fy-NL/validate.tsv
@@ -65,6 +66,7 @@ include cvutils/data/kk/validate.tsv
 include cvutils/data/kk/phon.tsv
 include cvutils/data/mr
 include cvutils/data/mr/alphabet.txt
+include cvutils/data/mr/validate.tsv
 include cvutils/data/br
 include cvutils/data/br/alphabet.txt
 include cvutils/data/br/validate.tsv
@@ -418,6 +420,7 @@ include cvutils/data/cnh/alphabet.txt
 include cvutils/data/cnh/validate.tsv
 include cvutils/data/mk
 include cvutils/data/mk/alphabet.txt
+include cvutils/data/mk/validate.tsv
 include cvutils/data/bas
 include cvutils/data/bas/alphabet.txt
 include cvutils/data/bas/validate.tsv

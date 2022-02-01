@@ -11,7 +11,7 @@ utilities and data useful in training ASR and TTS systems.
     * a deterministic longest-match left-to-right replacement of orthographic units; or
     * a weighted finite-state transducer
 * Validator: 
-  * A validation script that can be used with `import_cv2.py` from [coqui-ai/STT](https://github.com/coqui-ai/STT/)
+  * A validation and normalisation script.
   * It checks a sentence to see if it can be converted and if possible normalises the encoding, removes punctuation and returns it
 * Alphabet: 
   * The relevant alphabet of the language, appropriate for use in training ASR
@@ -63,6 +63,23 @@ eus̺kal erian eus̺kaɾas̻
 
 $ echo "قايتا نىشان بەلگىلەش ئورنى ئۇيغۇرچە ۋىكىپىدىيە" | covo phon ug
 qɑjtɑ nɪʃɑn bɛlɡɪlɛʃ ornɪ ujʁurtʃɛ vɪkɪpɪdɪjɛ
+```
+
+#### Export data 
+
+Designed for use with [Coqui STT](https://github.com/coqui-ai/STT/), converts 
+to 16kHz mono-channel PCM .wav files and runs the transcripts through the validation
+step. In addition outputs `.csv` files for each of the input `.tsv` files.
+
+```bash
+$ ./covo export myv cv-corpus-8.0-2022-01-19/myv/
+Loading TSV file:  cv-corpus-8.0-2022-01-19/myv/test.tsv
+  Importing mp3 files...
+  Imported 292 samples.
+  Skipped 2 samples that were longer than 10 seconds.
+  Final amount of imported audio: 0:27:03 from 0:27:23.
+  Saving new Coqui STT-formatted CSV file to:  cv-corpus-8.0-2022-01-19/myv/clips/test.csv
+  Writing CSV file for train.py as:  cv-corpus-8.0-2022-01-19/myv/clips/test.csv
 ```
 
 ### Python module
