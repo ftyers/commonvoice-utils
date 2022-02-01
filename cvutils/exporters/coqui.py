@@ -29,7 +29,7 @@ class LabelFilter:
 		#print('>>>', stuff)
 		return label
 	
-class CoquiImporter:
+class CoquiExporter:
 	def __init__(self, validator, alphabet):
 		self.validator = validator
 		self.validate_label = validator.validate
@@ -37,7 +37,7 @@ class CoquiImporter:
 		try:
 			import sox
 		except ModuleNotFoundError:
-			print('The CoquiImporter needs pysox installed.', file=sys.stderr)
+			print('The CoquiExporter needs pysox installed.', file=sys.stderr)
 			print('You can install it with: pip3 install sox', file=sys.stderr)
 			return
 

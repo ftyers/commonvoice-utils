@@ -30,12 +30,12 @@ def help():
 	print('       opus     [locale]',file=sys.stderr)
 	print('       gb       [list|update] [locale]',file=sys.stderr)
 	print('       filter   [locale]',file=sys.stderr)
-	print('       clean    [locale] [tsv file]',file=sys.stderr)
+	print('       clean    [locale] [tsv_file]',file=sys.stderr)
 	print('       getckp   [locale] [path]',file=sys.stderr)
-	print('       text     [locale] [tsv file1 tsv file2 ...]',file=sys.stderr)
+	print('       text     [locale] [tsv_file1 tsv_file2 ...]',file=sys.stderr)
 	print('       avail    [task]',file=sys.stderr)
 	print('       missing  [task]',file=sys.stderr)
-	print('       import   [locale] [tsv dir audio dir]',file=sys.stderr)
+	print('       export   [locale] [tsv_dir] [audio_dir]',file=sys.stderr)
 
 if len(sys.argv) == 1:
 	help()
@@ -53,24 +53,24 @@ if mode == 'help':
 	help()
 	sys.exit(-1)
 
-if mode == 'dump':
+elif mode == 'dump':
 	dump_name = sys.argv[2]
 	if dump_name == '-':
 		dump_name = '/dev/stdin'
 	wikipedia.process(dump_name)
 
-if mode == 'dump-url':
+elif mode == 'dump-url':
 	dump_locale = sys.argv[2]
 	c = Corpora(dump_locale)
 	print(c.dump_url())
 
-if mode == 'alphabet':
+elif mode == 'alphabet':
 	locale = sys.argv[2]
 	a = Alphabet(locale)
 	print('\n'.join(a.get_alphabet()))
 	print()
 		
-if mode == 'tokenise':
+elif mode == 'tokenise':
 	locale = sys.argv[2]
 	t = Tokeniser(locale)
 	line = sys.stdin.readline()
@@ -78,7 +78,7 @@ if mode == 'tokenise':
 		print(' '.join(t.tokenise(line)).strip())
 		line = sys.stdin.readline()
 
-if mode == 'segment':
+elif mode == 'segment':
 	locale = sys.argv[2]
 	s = Segmenter(locale)
 	line = sys.stdin.readline()
@@ -331,7 +331,7 @@ elif mode == 'gutenberg' or mode == 'guten' or mode == 'gb':
 		print('Operation not supported.', file=sys.stderr)
 		
 
-elif mode == 'getckp':
+elif mode == 'getckp' or mode == 'get-ckp':
 	locale = sys.argv[2]
 	path = 'source-checkpoints'
 	if len(sys.argv) ==4:
@@ -365,8 +365,8 @@ elif mode == 'getckp':
 
 	print('[Done] Your checkpoint is in %s' % path + '/')
 
-elif mode == 'import':
-	from cvutils.importers.coqui import CoquiImporter
+elif mode == 'export':
+	from cvutils.exporters.coqui import CoquiExporter
 	locale = sys.argv[2]
 	input_dir = sys.argv[3]
 	output_dir = sys.argv[3] + '/clips/'
@@ -376,7 +376,10 @@ elif mode == 'import':
 	a = Alphabet(locale)
 	v = Validator(locale)
 
-	ci = CoquiImporter(v, a)
+	cx = CoquiExporter(v, a)
 
-	ci.process(input_dir, output_dir)
+	cx.process(input_dir, output_dir)
 
+else:
+	print('Mode ' + sys.argv[1] + ' not found.', file=sys.stderr)
+	sys.exit(-1)
