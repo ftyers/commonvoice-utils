@@ -147,7 +147,7 @@ class CoquiExporter:
 			counter = self.get_counter()
 			num_samples = len(samples)
 	
-			print("Importing mp3 files...")
+			print("  Importing mp3 files...")
 			pool = Pool(initializer=self.init_worker, initargs=())
 			#bar = progressbar.ProgressBar(max_value=num_samples, widgets=SIMPLE_BAR)
 			for i, processed in enumerate(
@@ -166,9 +166,9 @@ class CoquiExporter:
 			self.print_import_report(counter, SAMPLE_RATE, MAX_SECS)
 	
 		output_csv = os.path.join(os.path.abspath(audio_dir), dataset + ".csv")
-		print("Saving new Coqui STT-formatted CSV file to: ", output_csv)
+		print("  Saving new Coqui STT-formatted CSV file to: ", output_csv)
 		with open(output_csv, "w", encoding="utf-8", newline="") as output_csv_file:
-			print("Writing CSV file for train.py as: ", output_csv)
+			print("  Writing CSV file for train.py as: ", output_csv)
 			writer = csv.DictWriter(output_csv_file, fieldnames=FIELDNAMES)
 			writer.writeheader()
 			#bar = progressbar.ProgressBar(max_value=len(rows), widgets=SIMPLE_BAR)
@@ -202,26 +202,26 @@ class CoquiExporter:
 	
 	
 	def print_import_report(self,counter, sample_rate, max_secs):
-		print("Imported %d samples." % (self.get_imported_samples(counter)))
+		print("  Imported %d samples." % (self.get_imported_samples(counter)))
 		if counter["failed"] > 0:
-			print("Skipped %d samples that failed upon conversion." % counter["failed"])
+			print("  Skipped %d samples that failed upon conversion." % counter["failed"])
 		if counter["invalid_label"] > 0:
 			print(
-				"Skipped %d samples that failed on transcript validation."
+				"  Skipped %d samples that failed on transcript validation."
 				% counter["invalid_label"]
 			)
 		if counter["too_short"] > 0:
 			print(
-				"Skipped %d samples that were too short to match the transcript."
+				"  Skipped %d samples that were too short to match the transcript."
 				% counter["too_short"]
 			)
 		if counter["too_long"] > 0:
 			print(
-				"Skipped %d samples that were longer than %d seconds."
+				"  Skipped %d samples that were longer than %d seconds."
 				% (counter["too_long"], max_secs)
 			)
 		print(
-			"Final amount of imported audio: %s from %s."
+			"  Final amount of imported audio: %s from %s."
 			% (
 				self.secs_to_hours(counter["imported_time"] / sample_rate),
 				self.secs_to_hours(counter["total_time"] / sample_rate),
