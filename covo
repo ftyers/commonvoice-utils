@@ -35,6 +35,7 @@ def help():
 	print('       text     [locale] [tsv file1 tsv file2 ...]',file=sys.stderr)
 	print('       avail    [task]',file=sys.stderr)
 	print('       missing  [task]',file=sys.stderr)
+	print('       import   [locale] [tsv dir audio dir]',file=sys.stderr)
 
 if len(sys.argv) == 1:
 	help()
@@ -363,3 +364,19 @@ elif mode == 'getckp':
 		op.close()
 
 	print('[Done] Your checkpoint is in %s' % path + '/')
+
+elif mode == 'import':
+	from cvutils.importers.coqui import CoquiImporter
+	locale = sys.argv[2]
+	input_dir = sys.argv[3]
+	output_dir = sys.argv[3] + '/clips/'
+	if len(sys.argv) == 5:
+		output_dir = sys.argv[4]
+
+	a = Alphabet(locale)
+	v = Validator(locale)
+
+	ci = CoquiImporter(v, a)
+
+	ci.process(input_dir, output_dir)
+

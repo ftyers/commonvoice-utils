@@ -1,5 +1,10 @@
 LOWER	_	_	_	_
 NFKC	_	_	_	_
+REPL	.	_	_	_
+REPL	,	_	_	_
+REPL	!	_	_	_
+REPL	?	_	_	_
+REPL	-	_	_	_
 REPL	â	a	00e2	0061
 REPL	é	e	00e9	0065
 REPL	è	e	00e8	0065
