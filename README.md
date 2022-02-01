@@ -35,6 +35,8 @@ $ pip install git+https://github.com/ftyers/commonvoice-utils.git
 There is also a command line tool, `covo` /ˈkəʊvəʊ/ which aims to expose much of the functionality
 through the command line. Some examples on the next lines:
 
+#### Process a Wikipedia dump
+
 Use a Wikipedia dump to get text for a language mode in the right format:
 
 ```bash
@@ -44,6 +46,8 @@ il-wikipedija hi mmexxija mill-fondazzjoni wikimedia fondazzjoni mingħajr fini 
 il-malti huwa l-ilsien nazzjonali tar-repubblika ta' malta
 huwa l-ilsien uffiċjali flimkien mal-ingliż kif ukoll wieħed mill-ilsna uffiċjali tal-unjoni ewropea
 ```
+
+#### Query the OPUS corpus collection
 
 Get a list of URLs for a particular language from the OPUS corpus collection:
 
@@ -55,6 +59,8 @@ $ covo opus mt | sort -gr
 ...
 ```
 
+#### Convert grapheme input to phonemes
+
 Get the grapheme to phoneme output for some arbitrary input:
 
 ```bash
@@ -65,14 +71,14 @@ $ echo "قايتا نىشان بەلگىلەش ئورنى ئۇيغۇرچە ۋى�
 qɑjtɑ nɪʃɑn bɛlɡɪlɛʃ ornɪ ujʁurtʃɛ vɪkɪpɪdɪjɛ
 ```
 
-#### Export data 
+#### Export data for use in Coqui STT
 
 Designed for use with [Coqui STT](https://github.com/coqui-ai/STT/), converts 
 to 16kHz mono-channel PCM .wav files and runs the transcripts through the validation
 step. In addition outputs `.csv` files for each of the input `.tsv` files.
 
 ```bash
-$ ./covo export myv cv-corpus-8.0-2022-01-19/myv/
+$ covo export myv cv-corpus-8.0-2022-01-19/myv/
 Loading TSV file:  cv-corpus-8.0-2022-01-19/myv/test.tsv
   Importing mp3 files...
   Imported 292 samples.
