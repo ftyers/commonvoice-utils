@@ -212,7 +212,7 @@ A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 | Luo                  | Dholuo             |`luo` | `luo` | —  |  ✔          |      ✔     |     ✔       |            |
 | Macedonian           | Македонски |`mkd` | `mk`  |`mk` |           |   ✔    |    ✔   |             |
 | Malayalam            | മലയാളം  |`mal` | `ml`  |`ml` |           |    ✔      |    ✔   |            |
-| Marathi              | मराठी           |`mar` | `mr`  |`mr` |           |       |    ✔   |             |
+| Marathi              | मराठी           |`mar` | `mr`  |`mr` |           |    ✔   |    ✔   |             |
 | Mongolian            | Монгол хэл |`khk` | `mn`  |`mn` | ✔          |   ✔     |    ✔   |        ✔     |
 | Moksha               | Мокшень кяль |`mdf` | `mdf`  |`mdf` | ✔          |   ✔      |     ✔     |  |
 | Maltese              | Malti     |`mlt` | `mt`  |`mt` |      ✔       |      ✔     |      ✔      |         ✔   |
