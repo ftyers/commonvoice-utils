@@ -176,7 +176,7 @@ A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 | Esperanto            | Esperanto     |`epo` | `eo`   |`eo`|            |      ✔      |   ✔       |            |
 | Ewe                  | Eʋegbe        |`ewe` | `ee`   |`ee`|      ✔        |      ✔      |   ✔       |            |
 | Spanish              | Español             |`spa` | `es`   |`es`|       ✔      |    ✔        |       ✔   |            |
-| Erzya                | Эрзянь кель |`myv`    | `myv`   |`myv`|             |             |   ✔       |            |
+| Erzya                | Эрзянь кель |`myv`    | `myv`   |`myv`|             |    ✔         |   ✔       |            |
 | Estonian             | Eesti               |`est`    | `et`   |`et`|     ✔        |    ✔         |   ✔       |            |
 | Basque               | Euskara             |`eus` | `eu`   |`eu`|     ✔      |      ✔        |    ✔      |            |
 | Persian              | فارسی               |`pes` | `fa`   |`fa`|    —        |       ✔    |    ✔      |            |
@@ -210,7 +210,7 @@ A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 | Lingala              | Lingála     |`lin` | `ln` |`ln`  |            |      ✔      |  ✔          |            |
 | Latvian              | Latviešu valoda    |`lvs` | `lv` |`lv`  |  ✔          |      ✔     |     ✔       |            |
 | Luo                  | Dholuo             |`luo` | `luo` | —  |  ✔          |      ✔     |     ✔       |            |
-| Macedonian           | Македонски |`mkd` | `mk`  |`mk` |           |       |    ✔   |             |
+| Macedonian           | Македонски |`mkd` | `mk`  |`mk` |           |   ✔    |    ✔   |             |
 | Malayalam            | മലയാളം  |`mal` | `ml`  |`ml` |           |    ✔      |    ✔   |            |
 | Marathi              | मराठी           |`mar` | `mr`  |`mr` |           |       |    ✔   |             |
 | Mongolian            | Монгол хэл |`khk` | `mn`  |`mn` | ✔          |   ✔     |    ✔   |        ✔     |
