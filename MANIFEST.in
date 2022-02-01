@@ -292,6 +292,7 @@ include cvutils/data/kab/phon.tsv
 include cvutils/data/kab/vocab.tsv
 include cvutils/data/da
 include cvutils/data/da/alphabet.txt
+include cvutils/data/da/validate.tsv
 include cvutils/data/da/vocab.tsv
 include cvutils/data/as
 include cvutils/data/as/alphabet.txt
@@ -331,6 +332,7 @@ include cvutils/data/ka/phon.tsv
 include cvutils/data/ka/vocab.tsv
 include cvutils/data/ig
 include cvutils/data/ig/alphabet.txt
+include cvutils/data/ig/validate.tsv
 include cvutils/data/ig/phon.tsv
 include cvutils/data/ar
 include cvutils/data/ar/alphabet.txt
