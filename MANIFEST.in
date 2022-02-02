@@ -83,7 +83,6 @@ include cvutils/data/quc/alphabet.txt
 include cvutils/data/quc/validate.tsv
 include cvutils/data/quc/wikipedia.txt
 include cvutils/data/quc/phon.tsv
-include cvutils/data/quc/.validate.tsv.swp
 include cvutils/data/hu
 include cvutils/data/hu/alphabet.txt
 include cvutils/data/hu/validate.tsv
@@ -454,3 +453,5 @@ include cvutils/data/ha/alphabet.txt
 include cvutils/data/ha/validate.tsv
 include cvutils/data/ha/phon.tsv
 include cvutils/opus.weights
+include cvutils/exporters/coqui.py
+include cvutils/exporters/__init__.py
