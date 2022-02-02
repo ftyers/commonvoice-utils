@@ -1,3 +1,5 @@
+include cvutils/exporters/coqui.py
+include cvutils/exporters/__init__.py
 include cvutils/data/
 include cvutils/data/azz
 include cvutils/data/azz/alphabet.txt
@@ -453,5 +455,3 @@ include cvutils/data/ha/alphabet.txt
 include cvutils/data/ha/validate.tsv
 include cvutils/data/ha/phon.tsv
 include cvutils/opus.weights
-include cvutils/exporters/coqui.py
-include cvutils/exporters/__init__.py

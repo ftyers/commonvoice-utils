@@ -366,7 +366,6 @@ elif mode == 'getckp' or mode == 'get-ckp':
 	print('[Done] Your checkpoint is in %s' % path + '/')
 
 elif mode == 'export':
-	from cvutils.exporters.coqui import CoquiExporter
 	locale = sys.argv[2]
 	input_dir = sys.argv[3]
 	output_dir = sys.argv[3] + '/clips/'
@@ -375,6 +374,8 @@ elif mode == 'export':
 
 	a = Alphabet(locale)
 	v = Validator(locale)
+
+	from cvutils.exporters.coqui import CoquiExporter
 
 	cx = CoquiExporter(v, a)
 
