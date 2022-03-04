@@ -247,7 +247,7 @@ elif mode == 'filter':
 	c.filter(sys.stdin, sys.stdout, umbral=1)
 
 elif mode == 'check' or mode == 'missing':
-	exclude = ['zh-TW', 'zh-CN', 'zh-HK', 'ja', 'nan-tw']
+	exclude = ['zh-TW', 'zh-CN', 'zh-HK', 'ja', 'nan-tw', 'tok', 'yue']
 	check = ''
 	if len(sys.argv) == 3:
 		check = sys.argv[2]	
