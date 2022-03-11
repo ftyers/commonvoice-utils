@@ -382,5 +382,5 @@ elif mode == 'export':
 	cx.process(input_dir, output_dir)
 
 else:
-	print('Mode ' + sys.argv[1] + ' not found.', file=sys.stderr)
+	print('Mode ' + sys.argv[1] + ' not found. Maybe try: covo help', file=sys.stderr)
 	sys.exit(-1)
