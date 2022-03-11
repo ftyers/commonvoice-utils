@@ -49,7 +49,7 @@ mode = sys.argv[1]
 
 # Check the mode here
 
-if mode == 'help':
+if mode == 'help' or mode == '--help':
 	help()
 	sys.exit(-1)
 
