@@ -75,7 +75,14 @@ qɑjtɑ nɪʃɑn bɛlɡɪlɛʃ ornɪ ujʁurtʃɛ vɪkɪpɪdɪjɛ
 
 Designed for use with [Coqui STT](https://github.com/coqui-ai/STT/), converts 
 to 16kHz mono-channel PCM .wav files and runs the transcripts through the validation
-step. In addition outputs `.csv` files for each of the input `.tsv` files.
+step. In addition outputs `.csv` files for each of the input `.tsv` files. The 
+structure of the command is:
+
+```bash
+$ covo export [language code] [common voice dataset directory]
+```
+
+For example for Erzya, `myv`:
 
 ```bash
 $ covo export myv cv-corpus-8.0-2022-01-19/myv/
