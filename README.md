@@ -197,6 +197,7 @@ A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 | Chukchi              | Ԓыгъоравэтԓьэн |`ckt` | —   | — | ✔          | ✔         | ✔        |           |
 | Chuvash              | Чӑвашла       |`chv` | `cv`   |`cv`| ✔          | ✔         | ✔        |      ✔     |
 | Hakha Chin           | Hakha Lai     |`cnh` | `cnh`  |—  |            |      ✔      |     ✔      |            |
+| Highland Chatino     |  —            |`ctp` |  —   |  — |             |        ✔     |     ✔      |            |
 | Welsh                | Cymraeg       |`cym` | `cy`   |`cy`|       ✔      |        ✔     |     ✔      |            |
 | Dhivehi              | ދިވެހި           |`div` | `dv`   |`dv`| ✔          |    ✔     |   ✔    |      ✔    |
 | Greek                | Ελληνικά      |`ell` | `el`   |`el`| ✔          |      ✔   |  ✔      |         |
