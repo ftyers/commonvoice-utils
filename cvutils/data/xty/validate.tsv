@@ -24,12 +24,13 @@ NORM	1	¹	_	00b9
 NORM	2	²	_	00b2
 NORM	3	³	_	00b3
 NORM	4	⁴	_	2074
-ALLOW	'	_	0027	_
+NORM	'	ʼ	0027	02bc
 ALLOW		_	0303	_
 DEL	¹	_	00b9	_
 DEL	²	_	00b2	_
 DEL	³	_	00b3	_
 DEL	⁴	_	2074	_
+ALLOW	ʼ	_	02bc	_
 ALLOW	a	_	0061	_
 ALLOW	á	_	00e1	_
 ALLOW	ã	_	00e3	_
