@@ -247,6 +247,7 @@ A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 | Mongolian            | Монгол хэл |`khk` | `mn`  |`mn` | ✔          |   ✔     |    ✔   |        ✔     |
 | Moksha               | Мокшень кяль |`mdf` | `mdf`  |`mdf` | ✔          |   ✔      |     ✔     |  |
 | Maltese              | Malti     |`mlt` | `mt`  |`mt` |      ✔       |      ✔     |      ✔      |         ✔   |
+| Yoloxóchitl Mixtec   |           | `xty` | — | —  |                  |   ✔     |      ✔      |                |
 | Dutch                | Nederlands     |`nld` | `nl` |`nl`  |   ✔         |     ✔      |    ✔      |            |
 | Chewa                | Chichewa       | `nya` | `ny` | `ny` |   ✔         |     ✔      |    ✔      |            |
 | Sierra Puebla Nahuatl | —  | `azz` |— | — |   ✔      |  ✔         |  ✔       |          | 
