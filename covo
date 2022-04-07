@@ -23,6 +23,7 @@ debug = False
 def help():
 	print('covo   dump     [pages-articles.xml.bz2]',file=sys.stderr)
 	print('       dump-url [locale]',file=sys.stderr)
+	print('       alphabet [locale]',file=sys.stderr)
 	print('       segment  [locale]',file=sys.stderr)
 	print('       tokenise [locale]',file=sys.stderr)
 	print('       norm     [locale]',file=sys.stderr)
