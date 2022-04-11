@@ -11,8 +11,9 @@ SKIP	>	_	003e	_
 SKIP	|	_	007c	_
 SKIP	1	_	0031	_
 NORM	:	꞉	003a	a789
-ALLOW	'	_	0027	_
-ALLOW	꞉	_	a789	_
+NORM	'	ʼ	0027	02bc
+DEL	꞉	_	a789	_
+ALLOW	ʼ	_	02bc	_
 ALLOW	a	_	0061	_
 ALLOW	á	_	00e1	_
 ALLOW	b	_	0062	_
