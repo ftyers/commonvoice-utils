@@ -17,7 +17,8 @@ SKIP	˜	_	02dc	_
 SKIP	6	_	0036	_
 SKIP	8	_	0038	_
 SKIP	9	_	0039	_
-ALLOW	'	_	0027	_
+NORM	'	ʼ	0027	02bc
+ALLOW	ʼ	_	02bc	_
 ALLOW	0	_	0030	_
 ALLOW	1	_	0031	_
 ALLOW	2	_	0032	_
