@@ -14,6 +14,10 @@ MAX_SECS = 10
 PARAMS = None
 FILTER_OBJ = None
 
+# Increase maximum size of field in the csv processing 
+# module (for TSVs with long fields)
+csv.field_size_limit(sys.maxsize)
+
 class LabelFilter:
 	def __init__(self, normalise, alphabet, validator):
 		self.normalise = normalise
