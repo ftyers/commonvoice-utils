@@ -124,6 +124,8 @@ elif mode == 'validate' or mode == 'norm' or mode == 'valid':
 			if valid:
 				count_valid += 1
 				print(sent)
+#			elif not valid and debug:
+#				print(sent + '\t---')
 			else:
 				skipped.append(sent)
 				for c in sent:
