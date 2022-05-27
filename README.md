@@ -271,7 +271,7 @@ A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 | Swedish              | Svenska      |`swe` | `sv-SE`  |`sv` |     ✔        |     ✔        |     ✔     |            |
 | Tamil                | தமிழ்    |`tam` | `ta`   |`ta`|       ✔      |     ✔      |        ✔   |            |
 | Thai                 | ภาษาไทย     |`tha` | `th`  |`th` |    ✔        |    ✔       |     ✔     |            |
-| Turkish              | Türkçe |`tur` | `tr`  |`tr` |   ✔         |       ✔     |      ✔     |            |
+| Turkish              | Türkçe |`tur` | `tr`  |`tr` |   ✔         |       ✔     |      ✔     |        ✔     |
 | Tatar                | Татар теле |`tat` | `tt`  |`tt` | ✔          |   ✔     |  ✔     |     ✔      |
 | Highland Totonac     | —          |`tos` | —  | — |           |   ✔     |  ✔     |           |
 | Twi                  | Twi        | `tw` | `tw`  | `tw` | ✔          |   ✔     |  ✔    |            |
