@@ -209,7 +209,7 @@ A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 | Spanish              | Español             |`spa` | `es`   |`es`|       ✔      |    ✔        |       ✔   |            |
 | Erzya                | Эрзянь кель |`myv`    | `myv`   |`myv`|             |    ✔         |   ✔       |            |
 | Estonian             | Eesti               |`est`    | `et`   |`et`|     ✔        |    ✔         |   ✔       |            |
-| Basque               | Euskara             |`eus` | `eu`   |`eu`|     ✔      |      ✔        |    ✔      |            |
+| Basque               | Euskara             |`eus` | `eu`   |`eu`|     ✔      |      ✔        |    ✔      |     ✔        |
 | Persian              | فارسی               |`pes` | `fa`   |`fa`|    —        |       ✔    |    ✔      |            |
 | Finnish              | Suomi               |`fin` | `fi`   |`fi`| ✔           |   ✔        |   ✔       |            |
 | French               | Français            |`fra` | `fr`   |`fr`|     —       |        ✔     |     ✔     |            |

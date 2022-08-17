@@ -380,6 +380,8 @@ include cvutils/data/es/vocab.tsv
 include cvutils/data/eu
 include cvutils/data/eu/alphabet.txt
 include cvutils/data/eu/validate.tsv
+include cvutils/data/eu/punct.tsv
+include cvutils/data/eu/abbr.tsv
 include cvutils/data/eu/phon.tsv
 include cvutils/data/eu/vocab.tsv
 include cvutils/data/fr
