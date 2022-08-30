@@ -369,20 +369,30 @@ elif mode == 'getckp' or mode == 'get-ckp':
 	print('[Done] Your checkpoint is in %s' % path + '/')
 
 elif mode == 'export':
-	locale = sys.argv[2]
-	input_dir = sys.argv[3]
-	output_dir = sys.argv[3] + '/clips/'
-	if len(sys.argv) == 5:
-		output_dir = sys.argv[4]
+	tipus = sys.argv[2]
+	locale = sys.argv[3]
+	input_dir = sys.argv[4]
+	output_dir = sys.argv[4] + '/clips/'
+	if len(sys.argv) == 6:
+		output_dir = sys.argv[5]
 
 	a = Alphabet(locale)
 	v = Validator(locale)
 
-	from cvutils.exporters.coqui import CoquiExporter
+	if tipus == 'coqui':
 
-	cx = CoquiExporter(v, a)
+		from cvutils.exporters.coqui import CoquiExporter
 
-	cx.process(input_dir, output_dir)
+		cx = CoquiExporter(v, a)
+
+		cx.process(input_dir, output_dir)
+	elif tipus == 'nemo':
+
+		from cvutils.exporters.nemo import NemoExporter
+
+		cx = NemoExporter(v, a)
+
+		cx.process(input_dir, output_dir)
 
 else:
 	print('Mode ' + sys.argv[1] + ' not found. Maybe try: covo help', file=sys.stderr)
