@@ -366,3 +366,4 @@ the [AGPL v 3.0](https://www.gnu.org/licenses/agpl-3.0.en.html).
 * Code for [transducer lookup](https://github.com/mhulden/foma/blob/master/foma/python/attapply.py) from Måns Huldén.
 * Code for [Wikipedia extraction](https://github.com/apertium/WikiExtractor) from Apertium.
 * Code for [Coqui export](https://github.com/coqui-ai/STT/blob/main/bin/import_cv2.py) from [Coqui](https://coqui.ai).
+* Code for [NeMo export]()https://github.com/NVIDIA/NeMo/blob/0e57b58a849f6275629910cdeebd608e528327bf/scripts/dataset_processing/get_commonvoice_data.py from [NVIDIA](http://www.nvidia.com)
