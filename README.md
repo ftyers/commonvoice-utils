@@ -79,7 +79,7 @@ step. In addition outputs `.csv` files for each of the input `.tsv` files. The
 structure of the command is:
 
 ```bash
-$ covo export [language code] [common voice dataset directory]
+$ covo export coqui [language code] [common voice dataset directory]
 ```
 
 For example for Erzya, `myv`:
@@ -93,6 +93,36 @@ Loading TSV file:  cv-corpus-8.0-2022-01-19/myv/test.tsv
   Final amount of imported audio: 0:27:03 from 0:27:23.
   Saving new Coqui STT-formatted CSV file to:  cv-corpus-8.0-2022-01-19/myv/clips/test.csv
   Writing CSV file for train.py as:  cv-corpus-8.0-2022-01-19/myv/clips/test.csv
+```
+
+#### Export data for use in NVIDIA NeMo
+
+Designed for use with [NVIDIA's Nemo](https://github.com/NVIDIA/NeMo), converts 
+to 16kHz mono-channel PCM .wav files and runs the transcripts through the validation
+step. In addition outputs `.json` files for each of the input `.tsv` files. The 
+structure of the command is:
+
+
+```bash
+$ covo export nemo [language code] [common voice dataset directory]
+```
+
+For example for Sardinian, `sc`:
+
+```bash
+INFO:root:Find existing folder /tmp/cv-corpus-10.0-2022-07-04/sc/
+INFO:root:Converting mp3 to wav for /tmp/cv-corpus-10.0-2022-07-04/sc/test.tsv.
+100%|█████████████████████████████████████| 98/98 [00:00<00:00, 466.73it/s]
+INFO:root:Creating manifests...
+100%|█████████████████████████████████████| 98/98 [00:00<00:00, 94059.91it/s]
+INFO:root:Converting mp3 to wav for /tmp/cv-corpus-10.0-2022-07-04/sc/dev.tsv.
+100%|█████████████████████████████████████| 79/79 [00:00<00:00, 494.77it/s]
+INFO:root:Creating manifests...
+100%|█████████████████████████████████████| 79/79 [00:00<00:00, 100744.91it/s]
+INFO:root:Converting mp3 to wav for /tmp/cv-corpus-10.0-2022-07-04/sc/train.tsv.
+100%|█████████████████████████████████████| 200/200 [00:00<00:00, 497.96it/s]
+INFO:root:Creating manifests...
+100%|█████████████████████████████████████| 200/200 [00:00<00:00, 113836.45it/s]
 ```
 
 ### Python module
@@ -263,6 +293,7 @@ A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 | Russian              | Русский     |`rus` | `ru`   |`ru`|            |      ✔      |     ✔     |            |
 | Kinyarwanda          | Kinyarwanda     |`kin` | `rw` |`rw`  |    ✔         |     ✔       |    ✔       |            |
 | Sakha                | Саха тыла  |`sah` | `sah`   |`sah`| ✔          |      ✔  |  ✔     |      ✔    |
+| Sardinian            | Limba sarda |`srd` | `sc`   |`sc`|           |      ✔  |  ✔     |          |
 | Santali              | ᱥᱟᱱᱛᱟᱲᱤ |`sat` | `sat`   |`sat`| ✔          |      ✔  |  ✔     |          |
 | Serbian              | Srpski  |`srp` | `sr`  |`sr` | ✔           |     ✔      |    ✔      |            |
 | Slovak               | Slovenčina |`slk` | `sk`  |`sk` | ✔           |   ✔         |    ✔      |            |
