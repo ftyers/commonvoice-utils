@@ -254,9 +254,11 @@ elif mode == 'check' or mode == 'missing':
 	check = ''
 	if len(sys.argv) == 3:
 		check = sys.argv[2]	
-	g = urllib.request.urlopen('https://raw.githubusercontent.com/common-voice/common-voice/main/locales/contributable.json')
+	g = urllib.request.urlopen('https://commonvoice.mozilla.org/api/v1/stats/languages')
 	txt = g.read().strip()
-	contributable = set(json.loads(txt.decode('utf-8')))
+	j_contributable = json.loads(txt.decode('utf-8'))
+	contributable = set([i["locale"] for i in j_contributable if i["is_contributable"] == 1])
+#	print(contributable)
 	cv = CV()
 	print('Missing: ')
 	if check[:2] == 'al' or check == '':
