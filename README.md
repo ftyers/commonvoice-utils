@@ -275,6 +275,8 @@ A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 | Macedonian           | Македонски |`mkd` | `mk`  |`mk` |           |   ✔    |    ✔   |             |
 | Malayalam            | മലയാളം  |`mal` | `ml`  |`ml` |           |    ✔      |    ✔   |            |
 | Marathi              | मराठी           |`mar` | `mr`  |`mr` |           |    ✔   |    ✔   |             |
+| Hill Mari            | Мары йӹлмӹ |`mrj` | `mrj`  |`mrj` |           |   ✔     |    ✔   |             |
+| Meadow Mari          | Олык марий |`mhr` | `mhr`  |`mhr` |           |   ✔     |    ✔   |             |
 | Mongolian            | Монгол хэл |`khk` | `mn`  |`mn` | ✔          |   ✔     |    ✔   |        ✔     |
 | Moksha               | Мокшень кяль |`mdf` | `mdf`  |`mdf` | ✔          |   ✔      |     ✔     |  |
 | Maltese              | Malti     |`mlt` | `mt`  |`mt` |      ✔       |      ✔     |      ✔      |         ✔   |
