@@ -215,6 +215,7 @@ A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 | Amharic              | አማርኛ          | `amh` | —  | `am` | ✔           |      ✔      | ✔         |           |
 | Arabic               | اَلْعَرَبِيَّةُ       |`ara` | `ar` | `ar`  |     —       |   ✔         |          ✔  |            |
 | Assamese             |  অসমীয়া    |`asm` | `as`   |   `as` |   ✔      |       ✔   |    ✔     |            |
+| Asturian             | Asturianu | `ast` | `ast` | `ast` |         |  ✔         |  ✔       |          | 
 | Azeri                | Azərbaycanca | `aze` | `az` | `az` |         |  ✔         |  ✔       |          | 
 | Bashkort             | Башҡортса     |`bak` | `ba`  |  `ba` |     ✔      |   ✔       | ✔        |           |
 | Basaa                | Basaa         |`bas` | `bas`  |  — |     ✔      |      ✔      | ✔        |           |
