@@ -284,6 +284,7 @@ A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 | Dutch                | Nederlands     |`nld` | `nl` |`nl`  |   ✔         |     ✔      |    ✔      |            |
 | Chewa                | Chichewa       | `nya` | `ny` | `ny` |   ✔         |     ✔      |    ✔      |            |
 | Sierra Puebla Nahuatl | —  | `azz` |— | — |   ✔      |  ✔         |  ✔       |          | 
+| Nepali               |  नेपाली|`ne` | `ne`  |`ne` |             |      ✔     |      ✔      |            |
 | Norwegian Nynorsk    | Nynorsk |`nno` | `nn-NO` |`nn`  |            |     ✔      |    ✔      |            |
 | Oriya                | ଓଡ଼ିଆ                                       |`ori` | `or`  |`or` |            |     ✔      |    ✔      |        ✔     |
 | Punjabi              | ਪੰਜਾਬੀ     |`pan` | `pa-IN`   | `pa`  |          |       ✔    |     ✔     |            |
@@ -298,6 +299,7 @@ A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 | Sakha                | Саха тыла  |`sah` | `sah`   |`sah`| ✔          |      ✔  |  ✔     |      ✔    |
 | Sardinian            | Limba sarda |`srd` | `sc`   |`sc`|           |      ✔  |  ✔     |          |
 | Santali              | ᱥᱟᱱᱛᱟᱲᱤ |`sat` | `sat`   |`sat`| ✔          |      ✔  |  ✔     |          |
+| Saraiki              | |`skr` | `skr`   | — | ✔          |      ✔  |  ✔     |          |
 | Serbian              | Srpski  |`srp` | `sr`  |`sr` | ✔           |     ✔      |    ✔      |            |
 | Slovak               | Slovenčina |`slk` | `sk`  |`sk` | ✔           |   ✔         |    ✔      |            |
 | Slovenian            | Slovenščina     |`slv` | `sl`  |`sl` | ✔           |   ✔         |    ✔      |            |
@@ -305,6 +307,8 @@ A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 | Swedish              | Svenska      |`swe` | `sv-SE`  |`sv` |     ✔        |     ✔        |     ✔     |            |
 | Tamil                | தமிழ்    |`tam` | `ta`   |`ta`|       ✔      |     ✔      |        ✔   |            |
 | Thai                 | ภาษาไทย     |`tha` | `th`  |`th` |    ✔        |    ✔       |     ✔     |            |
+| Tigre                | ትግራይት |`tig` | `ti`  |`tig` |            |       ✔     |      ✔     |             |
+| Tigrinya             | ትግርኛ |`ti` | `ti`  |`ti` |            |       ✔     |      ✔     |             |
 | Turkish              | Türkçe |`tur` | `tr`  |`tr` |   ✔         |       ✔     |      ✔     |        ✔     |
 | Tatar                | Татар теле |`tat` | `tt`  |`tt` | ✔          |   ✔     |  ✔     |     ✔      |
 | Highland Totonac     | —          |`tos` | —  | — |           |   ✔     |  ✔     |           |
