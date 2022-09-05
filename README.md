@@ -79,7 +79,7 @@ step. In addition outputs `.csv` files for each of the input `.tsv` files. The
 structure of the command is:
 
 ```bash
-$ covo export [language code] [common voice dataset directory]
+$ covo export coqui [language code] [common voice dataset directory]
 ```
 
 For example for Erzya, `myv`:
@@ -93,6 +93,36 @@ Loading TSV file:  cv-corpus-8.0-2022-01-19/myv/test.tsv
   Final amount of imported audio: 0:27:03 from 0:27:23.
   Saving new Coqui STT-formatted CSV file to:  cv-corpus-8.0-2022-01-19/myv/clips/test.csv
   Writing CSV file for train.py as:  cv-corpus-8.0-2022-01-19/myv/clips/test.csv
+```
+
+#### Export data for use in NVIDIA NeMo
+
+Designed for use with [NVIDIA's Nemo](https://github.com/NVIDIA/NeMo), converts 
+to 16kHz mono-channel PCM .wav files and runs the transcripts through the validation
+step. In addition outputs `.json` files for each of the input `.tsv` files. The 
+structure of the command is:
+
+
+```bash
+$ covo export nemo [language code] [common voice dataset directory]
+```
+
+For example for Sardinian, `sc`:
+
+```bash
+INFO:root:Find existing folder /tmp/cv-corpus-10.0-2022-07-04/sc/
+INFO:root:Converting mp3 to wav for /tmp/cv-corpus-10.0-2022-07-04/sc/test.tsv.
+100%|█████████████████████████████████████| 98/98 [00:00<00:00, 466.73it/s]
+INFO:root:Creating manifests...
+100%|█████████████████████████████████████| 98/98 [00:00<00:00, 94059.91it/s]
+INFO:root:Converting mp3 to wav for /tmp/cv-corpus-10.0-2022-07-04/sc/dev.tsv.
+100%|█████████████████████████████████████| 79/79 [00:00<00:00, 494.77it/s]
+INFO:root:Creating manifests...
+100%|█████████████████████████████████████| 79/79 [00:00<00:00, 100744.91it/s]
+INFO:root:Converting mp3 to wav for /tmp/cv-corpus-10.0-2022-07-04/sc/train.tsv.
+100%|█████████████████████████████████████| 200/200 [00:00<00:00, 497.96it/s]
+INFO:root:Creating manifests...
+100%|█████████████████████████████████████| 200/200 [00:00<00:00, 113836.45it/s]
 ```
 
 ### Python module
@@ -185,6 +215,7 @@ A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 | Amharic              | አማርኛ          | `amh` | —  | `am` | ✔           |      ✔      | ✔         |           |
 | Arabic               | اَلْعَرَبِيَّةُ       |`ara` | `ar` | `ar`  |     —       |   ✔         |          ✔  |            |
 | Assamese             |  অসমীয়া    |`asm` | `as`   |   `as` |   ✔      |       ✔   |    ✔     |            |
+| Asturian             | Asturianu | `ast` | `ast` | `ast` |         |  ✔         |  ✔       |          | 
 | Azeri                | Azərbaycanca | `aze` | `az` | `az` |         |  ✔         |  ✔       |          | 
 | Bashkort             | Башҡортса     |`bak` | `ba`  |  `ba` |     ✔      |   ✔       | ✔        |           |
 | Basaa                | Basaa         |`bas` | `bas`  |  — |     ✔      |      ✔      | ✔        |           |
@@ -244,6 +275,8 @@ A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 | Macedonian           | Македонски |`mkd` | `mk`  |`mk` |           |   ✔    |    ✔   |             |
 | Malayalam            | മലയാളം  |`mal` | `ml`  |`ml` |           |    ✔      |    ✔   |            |
 | Marathi              | मराठी           |`mar` | `mr`  |`mr` |           |    ✔   |    ✔   |             |
+| Hill Mari            | Мары йӹлмӹ |`mrj` | `mrj`  |`mrj` |           |   ✔     |    ✔   |             |
+| Meadow Mari          | Олык марий |`mhr` | `mhr`  |`mhr` |           |   ✔     |    ✔   |             |
 | Mongolian            | Монгол хэл |`khk` | `mn`  |`mn` | ✔          |   ✔     |    ✔   |        ✔     |
 | Moksha               | Мокшень кяль |`mdf` | `mdf`  |`mdf` | ✔          |   ✔      |     ✔     |  |
 | Maltese              | Malti     |`mlt` | `mt`  |`mt` |      ✔       |      ✔     |      ✔      |         ✔   |
@@ -251,6 +284,7 @@ A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 | Dutch                | Nederlands     |`nld` | `nl` |`nl`  |   ✔         |     ✔      |    ✔      |            |
 | Chewa                | Chichewa       | `nya` | `ny` | `ny` |   ✔         |     ✔      |    ✔      |            |
 | Sierra Puebla Nahuatl | —  | `azz` |— | — |   ✔      |  ✔         |  ✔       |          | 
+| Nepali               |  नेपाली|`ne` | `ne`  |`ne` |             |      ✔     |      ✔      |            |
 | Norwegian Nynorsk    | Nynorsk |`nno` | `nn-NO` |`nn`  |            |     ✔      |    ✔      |            |
 | Oriya                | ଓଡ଼ିଆ                                       |`ori` | `or`  |`or` |            |     ✔      |    ✔      |        ✔     |
 | Punjabi              | ਪੰਜਾਬੀ     |`pan` | `pa-IN`   | `pa`  |          |       ✔    |     ✔     |            |
@@ -263,7 +297,9 @@ A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 | Russian              | Русский     |`rus` | `ru`   |`ru`|            |      ✔      |     ✔     |            |
 | Kinyarwanda          | Kinyarwanda     |`kin` | `rw` |`rw`  |    ✔         |     ✔       |    ✔       |            |
 | Sakha                | Саха тыла  |`sah` | `sah`   |`sah`| ✔          |      ✔  |  ✔     |      ✔    |
+| Sardinian            | Limba sarda |`srd` | `sc`   |`sc`|           |      ✔  |  ✔     |          |
 | Santali              | ᱥᱟᱱᱛᱟᱲᱤ |`sat` | `sat`   |`sat`| ✔          |      ✔  |  ✔     |          |
+| Saraiki              | |`skr` | `skr`   | — | ✔          |      ✔  |  ✔     |          |
 | Serbian              | Srpski  |`srp` | `sr`  |`sr` | ✔           |     ✔      |    ✔      |            |
 | Slovak               | Slovenčina |`slk` | `sk`  |`sk` | ✔           |   ✔         |    ✔      |            |
 | Slovenian            | Slovenščina     |`slv` | `sl`  |`sl` | ✔           |   ✔         |    ✔      |            |
@@ -271,6 +307,8 @@ A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 | Swedish              | Svenska      |`swe` | `sv-SE`  |`sv` |     ✔        |     ✔        |     ✔     |            |
 | Tamil                | தமிழ்    |`tam` | `ta`   |`ta`|       ✔      |     ✔      |        ✔   |            |
 | Thai                 | ภาษาไทย     |`tha` | `th`  |`th` |    ✔        |    ✔       |     ✔     |            |
+| Tigre                | ትግራይት |`tig` | `ti`  |`tig` |            |       ✔     |      ✔     |             |
+| Tigrinya             | ትግርኛ |`ti` | `ti`  |`ti` |            |       ✔     |      ✔     |             |
 | Turkish              | Türkçe |`tur` | `tr`  |`tr` |   ✔         |       ✔     |      ✔     |        ✔     |
 | Tatar                | Татар теле |`tat` | `tt`  |`tt` | ✔          |   ✔     |  ✔     |     ✔      |
 | Highland Totonac     | —          |`tos` | —  | — |           |   ✔     |  ✔     |           |
@@ -335,3 +373,4 @@ the [AGPL v 3.0](https://www.gnu.org/licenses/agpl-3.0.en.html).
 * Code for [transducer lookup](https://github.com/mhulden/foma/blob/master/foma/python/attapply.py) from Måns Huldén.
 * Code for [Wikipedia extraction](https://github.com/apertium/WikiExtractor) from Apertium.
 * Code for [Coqui export](https://github.com/coqui-ai/STT/blob/main/bin/import_cv2.py) from [Coqui](https://coqui.ai).
+* Code for [NeMo export](https://github.com/NVIDIA/NeMo/blob/0e57b58a849f6275629910cdeebd608e528327bf/scripts/dataset_processing/get_commonvoice_data.py) from [NVIDIA](http://www.nvidia.com)
