@@ -1,5 +1,6 @@
 include cvutils/exporters/coqui.py
 include cvutils/exporters/__init__.py
+include cvutils/exporters/nemo.py
 include cvutils/data/
 include cvutils/data/azz
 include cvutils/data/azz/alphabet.txt
@@ -110,10 +111,16 @@ include cvutils/data/cs/alphabet.txt
 include cvutils/data/cs/validate.tsv
 include cvutils/data/cs/phon.tsv
 include cvutils/data/cs/vocab.tsv
+include cvutils/data/mhr
+include cvutils/data/mhr/alphabet.txt
+include cvutils/data/mhr/validate.tsv
 include cvutils/data/el
 include cvutils/data/el/alphabet.txt
 include cvutils/data/el/validate.tsv
 include cvutils/data/el/phon.tsv
+include cvutils/data/ti
+include cvutils/data/ti/alphabet.txt
+include cvutils/data/ti/validate.tsv
 include cvutils/data/pt
 include cvutils/data/pt/alphabet.txt
 include cvutils/data/pt/validate.tsv
@@ -174,6 +181,9 @@ include cvutils/data/az
 include cvutils/data/az/alphabet.txt
 include cvutils/data/az/validate.tsv
 include cvutils/data/az/phon.tsv
+include cvutils/data/ast
+include cvutils/data/ast/alphabet.txt
+include cvutils/data/ast/validate.tsv
 include cvutils/data/de
 include cvutils/data/de/alphabet.txt
 include cvutils/data/de/validate.tsv
@@ -190,6 +200,8 @@ include cvutils/data/ug/alphabet.txt
 include cvutils/data/ug/validate.tsv
 include cvutils/data/ug/phon.tsv
 include cvutils/data/tig
+include cvutils/data/tig/alphabet.txt
+include cvutils/data/tig/validate.tsv
 include cvutils/data/ta
 include cvutils/data/ta/alphabet.txt
 include cvutils/data/ta/validate.tsv
@@ -236,6 +248,10 @@ include cvutils/data/vi/validate.tsv
 include cvutils/data/vi/punct.tsv
 include cvutils/data/vi/abbr.tsv
 include cvutils/data/vi/phon.tsv
+include cvutils/data/skr
+include cvutils/data/skr/alphabet.txt
+include cvutils/data/skr/validate.tsv
+include cvutils/data/skr/phon.tsv
 include cvutils/data/pl
 include cvutils/data/pl/alphabet.txt
 include cvutils/data/pl/validate.tsv
@@ -304,6 +320,9 @@ include cvutils/data/da
 include cvutils/data/da/alphabet.txt
 include cvutils/data/da/validate.tsv
 include cvutils/data/da/vocab.tsv
+include cvutils/data/ne-NP
+include cvutils/data/ne-NP/alphabet.txt
+include cvutils/data/ne-NP/validate.tsv
 include cvutils/data/as
 include cvutils/data/as/alphabet.txt
 include cvutils/data/as/validate.tsv
@@ -328,6 +347,9 @@ include cvutils/data/yo/phon.tsv
 include cvutils/data/tos
 include cvutils/data/tos/alphabet.txt
 include cvutils/data/tos/validate.tsv
+include cvutils/data/sc
+include cvutils/data/sc/alphabet.txt
+include cvutils/data/sc/validate.tsv
 include cvutils/data/vot
 include cvutils/data/vot/alphabet.txt
 include cvutils/data/vot/validate.tsv
@@ -384,6 +406,9 @@ include cvutils/data/eu/punct.tsv
 include cvutils/data/eu/abbr.tsv
 include cvutils/data/eu/phon.tsv
 include cvutils/data/eu/vocab.tsv
+include cvutils/data/mrj
+include cvutils/data/mrj/alphabet.txt
+include cvutils/data/mrj/validate.tsv
 include cvutils/data/fr
 include cvutils/data/fr/alphabet.txt
 include cvutils/data/fr/validate.tsv
