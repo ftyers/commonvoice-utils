@@ -96,6 +96,7 @@ class Phonemiser:
 		ks = list(self.lkp.keys())
 		ks.sort(key=lambda x : len(x), reverse=True)
 		segs = self.maxmatch(token.lower())	
+		print(segs, file=sys.stderr)
 		op = ''
 		for seg in segs:
 			if seg in self.lkp:
