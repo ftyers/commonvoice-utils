@@ -36,7 +36,7 @@ def help():
 	print('       text     [locale] [tsv_file1 tsv_file2 ...]',file=sys.stderr)
 	print('       avail    [task]',file=sys.stderr)
 	print('       missing  [task]',file=sys.stderr)
-	print('       export   [locale] [tsv_dir] [audio_dir]',file=sys.stderr)
+	print('       export   <coqui|nemo> [locale] [tsv_dir] [audio_dir]',file=sys.stderr)
 
 # check here if covo is called as "python* covo" and define an offset for args
 arg_offset = 0
