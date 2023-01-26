@@ -34,8 +34,6 @@ ALLOW	g	_	0067	_
 ALLOW	h	_	0068	_
 ALLOW	i	_	0069	_
 ALLOW	í	_	00ed	_
-ALLOW	j	_	006a	_
-ALLOW	k	_	006b	_
 ALLOW	l	_	006c	_
 ALLOW	m	_	006d	_
 ALLOW	n	_	006e	_
@@ -51,8 +49,26 @@ ALLOW	u	_	0075	_
 ALLOW	ú	_	00fa	_
 ALLOW	ü	_	00fc	_
 ALLOW	v	_	0076	_
-ALLOW	w	_	0077	_
 ALLOW	x	_	0078	_
-ALLOW	y	_	0079	_
 ALLOW	z	_	007a	_
 ALLOW	_	_	0020	_
+NORM	â	a
+NORM	à	a
+NORM	ê	e
+NORM	è	e
+NORM	î	i
+NORM	ì	i
+NORM	ï	i
+NORM	ô	o
+NORM	ò	o
+NORM	û	u
+NORM	ù	u
+NORM	ç	c
+NORM	j	i
+NORM	ka	ca
+NORM	ko	co
+NORM	ku	cu
+NORM	ke	que
+NORM	ki	qui
+NORM	w	u
+NORM	y	i

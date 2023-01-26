@@ -36,9 +36,14 @@ def help():
 	print('       text     [locale] [tsv_file1 tsv_file2 ...]',file=sys.stderr)
 	print('       avail    [task]',file=sys.stderr)
 	print('       missing  [task]',file=sys.stderr)
-	print('       export   [locale] [tsv_dir] [audio_dir]',file=sys.stderr)
+	print('       export   <coqui|nemo> [locale] [tsv_dir] [audio_dir]',file=sys.stderr)
 
-if len(sys.argv) == 1:
+# check here if covo is called as "python* covo" and define an offset for args
+arg_offset = 0
+if (sys.argv[0] != 'covo'): # if it is not covo, it must be initilized with some kind of python call
+	arg_offset = 1
+
+if len(sys.argv) == 1 + arg_offset:
 	help()
 	sys.exit(-1)
 
@@ -46,7 +51,7 @@ for arg in sys.argv:
 	if arg == 'debug':
 		debug = True
 
-mode = sys.argv[1]
+mode = sys.argv[1 + arg_offset]
 
 # Check the mode here
 
@@ -55,24 +60,24 @@ if mode == 'help' or mode == '--help':
 	sys.exit(-1)
 
 elif mode == 'dump':
-	dump_name = sys.argv[2]
+	dump_name = sys.argv[2 + arg_offset]
 	if dump_name == '-':
 		dump_name = '/dev/stdin'
 	wikipedia.process(dump_name)
 
 elif mode == 'dump-url':
-	dump_locale = sys.argv[2]
+	dump_locale = sys.argv[2 + arg_offset]
 	c = Corpora(dump_locale)
 	print(c.dump_url())
 
 elif mode == 'alphabet':
-	locale = sys.argv[2]
+	locale = sys.argv[2 + arg_offset]
 	a = Alphabet(locale)
 	print('\n'.join(a.get_alphabet()))
 	print()
 		
 elif mode == 'tokenise':
-	locale = sys.argv[2]
+	locale = sys.argv[2 + arg_offset]
 	t = Tokeniser(locale)
 	line = sys.stdin.readline()
 	while line:
@@ -80,7 +85,7 @@ elif mode == 'tokenise':
 		line = sys.stdin.readline()
 
 elif mode == 'segment':
-	locale = sys.argv[2]
+	locale = sys.argv[2 + arg_offset]
 	s = Segmenter(locale)
 	line = sys.stdin.readline()
 	while line:
@@ -90,7 +95,7 @@ elif mode == 'segment':
 		line = sys.stdin.readline()
 
 elif mode == 'validate' or mode == 'norm' or mode == 'valid':
-	locale = sys.argv[2]
+	locale = sys.argv[2 + arg_offset]
 	def cleanup(skipped, chars, alphabet, count_valid, total):
 		if debug:
 			print('',file=sys.stderr)
@@ -142,7 +147,7 @@ elif mode == 'validate' or mode == 'norm' or mode == 'valid':
 	cleanup(skipped, chars, alphabet, count_valid, total)
 
 elif mode == 'phon' or mode == 'phonemise':
-	locale = sys.argv[2]
+	locale = sys.argv[2 + arg_offset]
 	p = Phonemiser(locale)
 	for line in sys.stdin:
 		phons = [p.phonemise(w) for w in line.split(' ')]
@@ -150,7 +155,7 @@ elif mode == 'phon' or mode == 'phonemise':
 
 elif mode == 'tran' or mode == 'translit' or mode == 'transliterate':
 	from cvutils import Transliterator
-	locale = sys.argv[2]
+	locale = sys.argv[2 + arg_offset]
 	t = Transliterator(locale,normalise=False)
 	for line in sys.stdin:
 		trans = [t.transliterate(w) for w in line.split(' ')]
@@ -159,7 +164,7 @@ elif mode == 'tran' or mode == 'translit' or mode == 'transliterate':
 
 
 elif mode == 'opus':
-	locale = sys.argv[2]
+	locale = sys.argv[2 + arg_offset]
 	c = Corpora(locale)
 	crps = c.opus()
 	if crps:
@@ -175,10 +180,10 @@ elif mode == 'opus':
 elif mode == 'text':
 	import csv
 
-	locale = sys.argv[2]
+	locale = sys.argv[2 + arg_offset]
 	v = Validator(locale)
 	# Do this with pathlib to allow globbing
-	for fn in sys.argv[3:]:
+	for fn in sys.argv[3 + arg_offset:]:
 		with open(fn) as csv_file:
 			csv_reader = csv.reader(csv_file, delimiter=',')
 			next(csv_reader)
@@ -195,14 +200,14 @@ elif mode == 'clean':
 	"""Cleans an existing .csv file"""
 	import csv
 
-	locale = sys.argv[2]
+	locale = sys.argv[2 + arg_offset]
 	v = Validator(locale)
 	# Do this with pathlib to allow globbing
 	total = 0
 	valid_sents = 0
 	discarded = []
 	malformed = []
-	with open(sys.argv[3]) as csv_file:
+	with open(sys.argv[3 + arg_offset]) as csv_file:
 		csv_reader = csv.reader(csv_file, delimiter=',')
 		csv_writer = csv.writer(sys.stdout, delimiter=',')
 		csv_writer.writerow(next(csv_reader))
@@ -242,18 +247,18 @@ elif mode == 'clean':
 
 
 elif mode == 'filter':
-	locale = sys.argv[2]
+	locale = sys.argv[2 + arg_offset]
 	umbral = 1
-	if len(sys.argv) == 4:
-		umbral = int(sys.argv[3])
+	if len(sys.argv) == 4 + arg_offset:
+		umbral = int(sys.argv[3 + arg_offset])
 	c = Corpora(locale)
 	c.filter(sys.stdin, sys.stdout, umbral=1)
 
 elif mode == 'check' or mode == 'missing':
 	exclude = ['zh-TW', 'zh-CN', 'zh-HK', 'ja', 'nan-tw', 'tok', 'yue']
 	check = ''
-	if len(sys.argv) == 3:
-		check = sys.argv[2]	
+	if len(sys.argv) == 3 + arg_offset:
+		check = sys.argv[2 + arg_offset]
 	g = urllib.request.urlopen('https://commonvoice.mozilla.org/api/v1/stats/languages')
 	txt = g.read().strip()
 	j_contributable = json.loads(txt.decode('utf-8'))
@@ -280,8 +285,8 @@ elif mode == 'check' or mode == 'missing':
 
 elif mode == 'avail':
 	check = ''
-	if len(sys.argv) == 3:
-		check = sys.argv[2]	
+	if len(sys.argv) == 3 + arg_offset:
+		check = sys.argv[2 + arg_offset]
 	cv = CV()
 	print('Available:')
 	if check[:2] == 'al' or check == '':
@@ -302,7 +307,7 @@ elif mode == 'avail':
 		print(' Segmenters:', ' '.join([code for code in segmenters]))
 
 elif mode == 'gutenberg' or mode == 'guten' or mode == 'gb':
-	cmd = sys.argv[2]
+	cmd = sys.argv[2 + arg_offset]
 	HOME = os.getenv('HOME')
 	covo_cache_dir = HOME + "/.covo/"
 
@@ -323,7 +328,7 @@ elif mode == 'gutenberg' or mode == 'guten' or mode == 'gb':
 		print('Downloaded index, %d bytes' % (res))
 		sys.exit(0)
 	elif cmd == 'list':
-		locale = sys.argv[3]
+		locale = sys.argv[3 + arg_offset]
 		index_path = covo_cache_dir + "GUTINDEX.ALL"
 		if not os.path.isfile(index_path):
 			res = gb_update(covo_cache_dir)
@@ -337,10 +342,10 @@ elif mode == 'gutenberg' or mode == 'guten' or mode == 'gb':
 		
 
 elif mode == 'getckp' or mode == 'get-ckp':
-	locale = sys.argv[2]
+	locale = sys.argv[2 + arg_offset]
 	path = 'source-checkpoints'
-	if len(sys.argv) ==4:
-		path = sys.argv[3]
+	if len(sys.argv) == 4 + arg_offset:
+		path = sys.argv[3 + arg_offset]
 	Path(path).mkdir(parents=True, exist_ok=True)
 
 
@@ -371,12 +376,12 @@ elif mode == 'getckp' or mode == 'get-ckp':
 	print('[Done] Your checkpoint is in %s' % path + '/')
 
 elif mode == 'export':
-	tipus = sys.argv[2]
-	locale = sys.argv[3]
-	input_dir = sys.argv[4]
-	output_dir = sys.argv[4] + '/clips/'
-	if len(sys.argv) == 6:
-		output_dir = sys.argv[5]
+	tipus = sys.argv[2 + arg_offset]
+	locale = sys.argv[3 + arg_offset]
+	input_dir = sys.argv[4 + arg_offset]
+	output_dir = sys.argv[4 + arg_offset] + '/clips/'
+	if len(sys.argv) == 6 + arg_offset:
+		output_dir = sys.argv[5 + arg_offset]
 
 	a = Alphabet(locale)
 	v = Validator(locale)
@@ -397,5 +402,5 @@ elif mode == 'export':
 		cx.process(input_dir, output_dir)
 
 else:
-	print('Mode ' + sys.argv[1] + ' not found. Maybe try: covo help', file=sys.stderr)
+	print('Mode ' + sys.argv[1 + arg_offset] + ' not found. Maybe try: covo help', file=sys.stderr)
 	sys.exit(-1)
