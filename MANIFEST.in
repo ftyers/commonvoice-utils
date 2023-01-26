@@ -27,6 +27,8 @@ include cvutils/data/ckt/phon.tsv
 include cvutils/data/gl
 include cvutils/data/gl/alphabet.txt
 include cvutils/data/gl/validate.tsv
+include cvutils/data/gl/punct.tsv
+include cvutils/data/gl/abbr.tsv
 include cvutils/data/gl/phon.tsv
 include cvutils/data/gl/vocab.tsv
 include cvutils/data/rm-vallader
