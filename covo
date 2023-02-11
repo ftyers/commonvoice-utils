@@ -40,7 +40,7 @@ def help():
 
 # check here if covo is called as "python* covo" and define an offset for args
 arg_offset = 0
-if (sys.argv[0] != 'covo'): # if it is not covo, it must be initilized with some kind of python call
+if (os.path.basename(sys.argv[0]) != 'covo'): # if it is not covo, it must be initilized with some kind of python call
 	arg_offset = 1
 
 if len(sys.argv) == 1 + arg_offset:
