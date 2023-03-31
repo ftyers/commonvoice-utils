@@ -28,6 +28,7 @@ def help():
 	print('       tokenise [locale]',file=sys.stderr)
 	print('       norm     [locale]',file=sys.stderr)
 	print('       phon     [locale]',file=sys.stderr)
+	print('       graph    [locale]',file=sys.stderr)
 	print('       opus     [locale]',file=sys.stderr)
 	print('       gb       [list|update] [locale]',file=sys.stderr)
 	print('       filter   [locale]',file=sys.stderr)
@@ -145,6 +146,13 @@ elif mode == 'validate' or mode == 'norm' or mode == 'valid':
 		cleanup(skipped, chars, alphabet, count_valid, total)
 
 	cleanup(skipped, chars, alphabet, count_valid, total)
+
+elif mode == 'graph' or mode == 'graphemes':
+	locale = sys.argv[2 + arg_offset]
+	p = Phonemiser(locale)
+	for line in sys.stdin:
+		graphs = [p.graphemes(w) for w in line.split(' ')]
+		print(' '.join([p for p in graphs if p]))
 
 elif mode == 'phon' or mode == 'phonemise':
 	locale = sys.argv[2 + arg_offset]

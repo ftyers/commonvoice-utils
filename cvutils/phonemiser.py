@@ -90,13 +90,22 @@ class Phonemiser:
 			return res[0][0]
 		return None
 
+	def graphemes(self, token):
+		if self.normalise:
+			token = self.normalise(token)[1]
+		ks = list(self.lkp.keys())
+		ks.sort(key=lambda x : len(x), reverse=True)
+		segs = self.maxmatch(token.lower())	
+		#print(segs, file=sys.stderr)
+		return ' '.join(segs)
+
 	def lookup_tsv(self, token):
 		if self.normalise:
 			token = self.normalise(token)[1]
 		ks = list(self.lkp.keys())
 		ks.sort(key=lambda x : len(x), reverse=True)
 		segs = self.maxmatch(token.lower())	
-		print(segs, file=sys.stderr)
+		#print(segs, file=sys.stderr)
 		op = ''
 		for seg in segs:
 			if seg in self.lkp:
