@@ -152,7 +152,7 @@ elif mode == 'graph' or mode == 'graphemes':
 	p = Phonemiser(locale)
 	for line in sys.stdin:
 		graphs = [p.graphemes(w) for w in line.split(' ')]
-		print(' '.join([p for p in graphs if p]))
+		print(' _ '.join([p for p in graphs if p]))
 
 elif mode == 'phon' or mode == 'phonemise':
 	locale = sys.argv[2 + arg_offset]
