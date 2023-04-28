@@ -71,6 +71,7 @@ $ echo "قايتا نىشان بەلگىلەش ئورنى ئۇيغۇرچە ۋى�
 qɑjtɑ nɪʃɑn bɛlɡɪlɛʃ ornɪ ujʁurtʃɛ vɪkɪpɪdɪjɛ
 ```
 
+<!--
 #### Export data for use in Coqui STT
 
 Designed for use with [Coqui STT](https://github.com/coqui-ai/STT/), converts 
@@ -94,6 +95,7 @@ Loading TSV file:  cv-corpus-8.0-2022-01-19/myv/test.tsv
   Saving new Coqui STT-formatted CSV file to:  cv-corpus-8.0-2022-01-19/myv/clips/test.csv
   Writing CSV file for train.py as:  cv-corpus-8.0-2022-01-19/myv/clips/test.csv
 ```
+-->
 
 #### Export data for use in NVIDIA NeMo
 
@@ -211,7 +213,8 @@ A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 
 | Language             | Autonym       | Code | (CV) | (WP) | Phon | Valid | Alphabet | Segment |
 |--------------------- |-------------- |----- |------|----- |----------- |----------|---------- |------------|
-| Abkhaz                | Аԥсуа         |`abk` | `ab` |  —  | ✔          | ✔         | ✔        |           |
+| Abkhaz               | Аԥсуа         |`abk` | `ab` |  —  | ✔          | ✔         | ✔        |           |
+| Albanian             | Shqipja       |`sq` | `sq`  | `sq` |            |         |     ✔      |            |
 | Amharic              | አማርኛ          | `amh` | —  | `am` | ✔           |      ✔      | ✔         |           |
 | Arabic               | اَلْعَرَبِيَّةُ       |`ara` | `ar` | `ar`  |     —       |   ✔         |          ✔  |            |
 | Assamese             |  অসমীয়া    |`asm` | `as`   |   `as` |   ✔      |       ✔   |    ✔     |            |
@@ -232,6 +235,7 @@ A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 | Welsh                | Cymraeg       |`cym` | `cy`   |`cy`|       ✔      |        ✔     |     ✔      |            |
 | Dhivehi              | ދިވެހި           |`div` | `dv`   |`dv`| ✔          |    ✔     |   ✔    |      ✔    |
 | Greek                | Ελληνικά      |`ell` | `el`   |`el`| ✔          |      ✔   |  ✔      |         |
+| Dyula                | Dyula         |`dyu` | —   | — |            |         |     ✔      |            |
 | Danish               | Dansk         |`dan` | `da`   |`da`|            |     ✔    |     ✔      |            |
 | German               | Deutsch       |`deu` | `de`   |`de`|            |          ✔  |     ✔      |            |
 | English              | English       |`eng` | `en`   |`en`|      —      |    ✔        |    ✔       |            |
@@ -287,9 +291,11 @@ A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 | Nepali               |  नेपाली|`ne` | `ne`  |`ne` |             |      ✔     |      ✔      |            |
 | Norwegian Nynorsk    | Nynorsk |`nno` | `nn-NO` |`nn`  |            |     ✔      |    ✔      |            |
 | Oriya                | ଓଡ଼ିଆ                                       |`ori` | `or`  |`or` |            |     ✔      |    ✔      |        ✔     |
+| Occitan              | Occità |`oc` | `oc`  | `oc` |            |         |     ✔      |            |
 | Punjabi              | ਪੰਜਾਬੀ     |`pan` | `pa-IN`   | `pa`  |          |       ✔    |     ✔     |            |
 | Polish               | Polski     |`pol` | `pl`  |`pl` |   ✔          |       ✔     |     ✔     |            |
 | Portuguese           | Português     |`por` | `pt`  |`pt` |            |    ✔        |     ✔     |            |
+| Ayacucho Quechua     | Chanka runasimi | `quy` | — | — |               |  ✔          |              |          | 
 | Kʼicheʼ              | Kʼicheʼ             |`quc` | — | — |   ✔          |   ✔        |      ✔    |            |
 | Romansch (Sursilvan) | Romontsch     |`roh` | `rm-sursilv`  |`rm` |            |      ✔     |  ✔        |        ✔      |
 | Romansch (Vallader)  | Rumantsch     |`roh` | `rm-vallader`  |`rm` |            |     ✔      |   ✔       |        ✔      |
@@ -310,6 +316,7 @@ A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 | Tigre                | ትግራይት |`tig` | `ti`  |`tig` |            |       ✔     |      ✔     |             |
 | Tigrinya             | ትግርኛ |`ti` | `ti`  |`ti` |            |       ✔     |      ✔     |             |
 | Turkish              | Türkçe |`tur` | `tr`  |`tr` |   ✔         |       ✔     |      ✔     |        ✔     |
+| Turkmen              | Türkmençe |`tk` | `tk`  | `tk` |            |         |     ✔      |            |
 | Tatar                | Татар теле |`tat` | `tt`  |`tt` | ✔          |   ✔     |  ✔     |     ✔      |
 | Highland Totonac     | —          |`tos` | —  | — |           |   ✔     |  ✔     |           |
 | Twi                  | Twi        | `tw` | `tw`  | `tw` | ✔          |   ✔     |  ✔    |            |
