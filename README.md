@@ -292,6 +292,7 @@ A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 | Norwegian Nynorsk    | Nynorsk |`nno` | `nn-NO` |`nn`  |            |     ✔      |    ✔      |            |
 | Oriya                | ଓଡ଼ିଆ                                       |`ori` | `or`  |`or` |            |     ✔      |    ✔      |        ✔     |
 | Occitan              | Occità |`oc` | `oc`  | `oc` |            |         |     ✔      |            |
+| Pashto               | پښتو   | `ps` | `ps` | `ps` |            |   ✔         |             |          | 
 | Punjabi              | ਪੰਜਾਬੀ     |`pan` | `pa-IN`   | `pa`  |          |       ✔    |     ✔     |            |
 | Polish               | Polski     |`pol` | `pl`  |`pl` |   ✔          |       ✔     |     ✔     |            |
 | Portuguese           | Português     |`por` | `pt`  |`pt` |            |    ✔        |     ✔     |            |
