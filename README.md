@@ -275,6 +275,7 @@ A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 | Lithuanian           | Lietuvių kalba     |`lit` | `lt` |`lt`  |   ✔         |      ✔      |  ✔          |            |
 | Lingala              | Lingála     |`lin` | `ln` |`ln`  |            |      ✔      |  ✔          |            |
 | Latvian              | Latviešu valoda    |`lvs` | `lv` |`lv`  |  ✔          |      ✔     |     ✔       |            |
+| Lao                  | ພາສາລາວ      |`lo` | `lo` | —  |            |      ✔     |            |            |
 | Luo                  | Dholuo             |`luo` | `luo` | —  |  ✔          |      ✔     |     ✔       |            |
 | Macedonian           | Македонски |`mkd` | `mk`  |`mk` |           |   ✔    |    ✔   |             |
 | Malayalam            | മലയാളം  |`mal` | `ml`  |`ml` |           |    ✔      |    ✔   |            |
