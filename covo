@@ -33,11 +33,10 @@ def help():
 	print('       gb       [list|update] [locale]',file=sys.stderr)
 	print('       filter   [locale]',file=sys.stderr)
 	print('       clean    [locale] [tsv_file]',file=sys.stderr)
-	print('       getckp   [locale] [path]',file=sys.stderr)
 	print('       text     [locale] [tsv_file1 tsv_file2 ...]',file=sys.stderr)
 	print('       avail    [task]',file=sys.stderr)
 	print('       missing  [task]',file=sys.stderr)
-	print('       export   <coqui|nemo> [locale] [tsv_dir] [audio_dir]',file=sys.stderr)
+	print('       export   <nemo> [locale] [tsv_dir] [audio_dir]',file=sys.stderr)
 
 # check here if covo is called as "python* covo" and define an offset for args
 arg_offset = 0
@@ -349,39 +348,40 @@ elif mode == 'gutenberg' or mode == 'guten' or mode == 'gb':
 		print('Operation not supported.', file=sys.stderr)
 		
 
-elif mode == 'getckp' or mode == 'get-ckp':
-	locale = sys.argv[2 + arg_offset]
-	path = 'source-checkpoints'
-	if len(sys.argv) == 4 + arg_offset:
-		path = sys.argv[3 + arg_offset]
-	Path(path).mkdir(parents=True, exist_ok=True)
-
-
-	ctx = ssl.create_default_context()
-	ctx.check_hostname = False
-	ctx.verify_mode = ssl.CERT_NONE
-
-	try:
-		g = urllib.request.urlopen('https://itml.cl.indiana.edu/models/' + locale + '/checkpoints/best_dev_checkpoint', context=ctx)	
-	except urllib.error.HTTPError:
-		print('[Checkpoint not found]', file=sys.stderr)
-		sys.exit(-1)	
-	txt = g.read().strip()
-	if txt == '':
-		print('[Checkpoint not found]', file=sys.stderr)
-		sys.exit(-1)	
-	row = txt.decode('utf-8').split('\n')
-	ref = row[1].split('"')[1].split('/')[-1]
-	print('[Checkpoint found]  %s' % ref)
-
-	for fn in ['.data-00000-of-00001', '.index', '.meta']:
-		print('[Downloading] %s ' % (ref + fn))
-		fd = urllib.request.urlopen('https://itml.cl.indiana.edu/models/' + locale + '/checkpoints/' + ref + fn, context=ctx)
-		op = open(path + '/' + ref + fn, 'wb')
-		op.write(fd.read())
-		op.close()
-
-	print('[Done] Your checkpoint is in %s' % path + '/')
+# TODO: Deprecated
+#elif mode == 'getckp' or mode == 'get-ckp':
+#	locale = sys.argv[2 + arg_offset]
+#	path = 'source-checkpoints'
+#	if len(sys.argv) == 4 + arg_offset:
+#		path = sys.argv[3 + arg_offset]
+#	Path(path).mkdir(parents=True, exist_ok=True)
+#
+#
+#	ctx = ssl.create_default_context()
+#	ctx.check_hostname = False
+#	ctx.verify_mode = ssl.CERT_NONE
+#
+#	try:
+#		g = urllib.request.urlopen('https://itml.cl.indiana.edu/models/' + locale + '/checkpoints/best_dev_checkpoint', context=ctx)	
+#	except urllib.error.HTTPError:
+#		print('[Checkpoint not found]', file=sys.stderr)
+#		sys.exit(-1)	
+#	txt = g.read().strip()
+#	if txt == '':
+#		print('[Checkpoint not found]', file=sys.stderr)
+#		sys.exit(-1)	
+#	row = txt.decode('utf-8').split('\n')
+#	ref = row[1].split('"')[1].split('/')[-1]
+#	print('[Checkpoint found]  %s' % ref)
+#
+#	for fn in ['.data-00000-of-00001', '.index', '.meta']:
+#		print('[Downloading] %s ' % (ref + fn))
+#		fd = urllib.request.urlopen('https://itml.cl.indiana.edu/models/' + locale + '/checkpoints/' + ref + fn, context=ctx)
+#		op = open(path + '/' + ref + fn, 'wb')
+#		op.write(fd.read())
+#		op.close()
+#
+#	print('[Done] Your checkpoint is in %s' % path + '/')
 
 elif mode == 'export':
 	tipus = sys.argv[2 + arg_offset]
@@ -394,20 +394,15 @@ elif mode == 'export':
 	a = Alphabet(locale)
 	v = Validator(locale)
 
-	if tipus == 'coqui':
-
-		from cvutils.exporters.coqui import CoquiExporter
-
-		cx = CoquiExporter(v, a)
-
-		cx.process(input_dir, output_dir)
-	elif tipus == 'nemo':
+	if tipus == 'nemo':
 
 		from cvutils.exporters.nemo import NemoExporter
 
 		cx = NemoExporter(v, a)
 
 		cx.process(input_dir, output_dir)
+	else:
+		print('Type', tipus, 'not supported.', file=sys.stderr)
 
 else:
 	print('Mode ' + sys.argv[1 + arg_offset] + ' not found. Maybe try: covo help', file=sys.stderr)
