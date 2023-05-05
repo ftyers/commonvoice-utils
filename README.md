@@ -297,7 +297,7 @@ A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 | Punjabi              | ਪੰਜਾਬੀ     |`pan` | `pa-IN`   | `pa`  |          |       ✔    |     ✔     |            |
 | Polish               | Polski     |`pol` | `pl`  |`pl` |   ✔          |       ✔     |     ✔     |            |
 | Portuguese           | Português     |`por` | `pt`  |`pt` |            |    ✔        |     ✔     |            |
-| Ayacucho Quechua     | Chanka runasimi | `quy` | — | — |               |  ✔          |              |          | 
+| Ayacucho Quechua     | Chanka runasimi | `quy` | — | — |               |  ✔          |     ✔         |          | 
 | Kʼicheʼ              | Kʼicheʼ             |`quc` | — | — |   ✔          |   ✔        |      ✔    |            |
 | Romansch (Sursilvan) | Romontsch     |`roh` | `rm-sursilv`  |`rm` |            |      ✔     |  ✔        |        ✔      |
 | Romansch (Vallader)  | Rumantsch     |`roh` | `rm-vallader`  |`rm` |            |     ✔      |   ✔       |        ✔      |
