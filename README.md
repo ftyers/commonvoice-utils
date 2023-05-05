@@ -241,7 +241,7 @@ A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 | English              | English       |`eng` | `en`   |`en`|      —      |    ✔        |    ✔       |            |
 | Esperanto            | Esperanto     |`epo` | `eo`   |`eo`|            |      ✔      |   ✔       |            |
 | Ewe                  | Eʋegbe        |`ewe` | `ee`   |`ee`|      ✔        |      ✔      |   ✔       |            |
-| Spanish              | Español             |`spa` | `es`   |`es`|       ✔      |    ✔        |       ✔   |            |
+| Spanish              | Español             |`spa` | `es`   |`es`|       ✔      |    ✔        |       ✔   |     ✔      |
 | Erzya                | Эрзянь кель |`myv`    | `myv`   |`myv`|             |    ✔         |   ✔       |            |
 | Estonian             | Eesti               |`est`    | `et`   |`et`|     ✔        |    ✔         |   ✔       |            |
 | Basque               | Euskara             |`eus` | `eu`   |`eu`|     ✔      |      ✔        |    ✔      |     ✔        |

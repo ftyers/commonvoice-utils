@@ -399,6 +399,8 @@ include cvutils/data/rw/vocab.tsv
 include cvutils/data/es
 include cvutils/data/es/alphabet.txt
 include cvutils/data/es/validate.tsv
+include cvutils/data/es/punct.tsv
+include cvutils/data/es/abbr.tsv
 include cvutils/data/es/phon.tsv
 include cvutils/data/es/vocab.tsv
 include cvutils/data/eu
