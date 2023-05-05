@@ -318,7 +318,7 @@ A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 | Tigre                | ትግራይት |`tig` | `ti`  |`tig` |            |       ✔     |      ✔     |             |
 | Tigrinya             | ትግርኛ |`ti` | `ti`  |`ti` |            |       ✔     |      ✔     |             |
 | Turkish              | Türkçe |`tur` | `tr`  |`tr` |   ✔         |       ✔     |      ✔     |        ✔     |
-| Turkmen              | Türkmençe |`tk` | `tk`  | `tk` |            |         |     ✔      |            |
+| Turkmen              | Türkmençe |`tk` | `tk`  | `tk` |            |    ✔      |     ✔      |            |
 | Tatar                | Татар теле |`tat` | `tt`  |`tt` | ✔          |   ✔     |  ✔     |     ✔      |
 | Highland Totonac     | —          |`tos` | —  | — |           |   ✔     |  ✔     |           |
 | Twi                  | Twi        | `tw` | `tw`  | `tw` | ✔          |   ✔     |  ✔    |            |
