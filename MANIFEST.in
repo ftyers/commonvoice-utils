@@ -489,6 +489,8 @@ include cvutils/data/ve/phon.tsv
 include cvutils/data/ca
 include cvutils/data/ca/alphabet.txt
 include cvutils/data/ca/validate.tsv
+include cvutils/data/ca/punct.tsv
+include cvutils/data/ca/abbr.tsv
 include cvutils/data/ca/vocab.tsv
 include cvutils/data/en
 include cvutils/data/en/alphabet.txt
