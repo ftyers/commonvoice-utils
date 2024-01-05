@@ -2,6 +2,13 @@ LOWER	_	_	_	_
 NFKC	_	_	_	_
 REPL	!	_	0021	_
 REPL	"	_	0022	_
+REPL	«	"
+REPL	»	"
+REPL	‟	"
+REPL	‘	'
+REPL	´	'
+REPL	`	'
+REPL	ʼ	'
 REPL	,	_	002c	_
 REPL	.	_	002e	_
 REPL	/	_	002f	_

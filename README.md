@@ -227,7 +227,7 @@ A-hend-all e vez gounezet arc'hant dre chaseal ha pesketa.
 | Bengali              | বাংলা            |`ben` | `bn`  |  `bn` |          |   ✔       | ✔        |   ✔        |
 | Breton               | Brezhoneg     |`bre` | `br`   | `br` | ✔          | ✔         | ✔        |      ✔     |
 | Bulgarian            | Български | `bul` | `bg`   | `bg` | ✔          |    ✔      | ✔        |           |
-| Catalan              | Català        |`cat` | `ca`   | `ca` |            |    ✔        |      ✔    |            |
+| Catalan              | Català        |`cat` | `ca`   | `ca` |            |    ✔        |      ✔    |     ✔       |
 | Czech                | Čeština       |`ces` | `cs`   |`cs` |    ✔        |    ✔        |  ✔        |            |
 | Chukchi              | Ԓыгъоравэтԓьэн |`ckt` | —   | — | ✔          | ✔         | ✔        |           |
 | Chuvash              | Чӑвашла       |`chv` | `cv`   |`cv`| ✔          | ✔         | ✔        |      ✔     |
