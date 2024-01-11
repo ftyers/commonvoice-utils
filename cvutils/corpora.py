@@ -1,4 +1,8 @@
-import os, urllib.request, re, sys
+"""Corpora module"""
+import os
+import sys
+import re
+import urllib.request
 
 class Corpora:
 	"""
@@ -26,17 +30,17 @@ class Corpora:
 		self.load_data()
 
 	def load_data(self):
-		data_dir = os.path.abspath(os.path.dirname(__file__)) + '/data/'
-		vocab_file = data_dir + self.lang + '/vocab.tsv'
+		data_dir = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'data')
+		vocab_file = os.path.join(data_dir, self.lang, 'vocab.tsv')
 		self.small_vocab = []
 		if os.path.isfile(vocab_file):
-			fd = open(data_dir + self.lang + '/vocab.tsv')
+			fd = open(vocab_file)
 			self.small_vocab = [line.strip('\n') for line in fd.read().strip().split('\n')]
 		self.wikipedia_code = self.lang
-		wikipedia_file = data_dir + self.lang + '/wikipedia.txt'
+		wikipedia_file = os.path.join(data_dir, self.lang, 'wikipedia.txt')
 		if os.path.isfile(wikipedia_file):
 			self.wikipedia_code = open(wikipedia_file).read().strip()
-		for line in open(os.path.abspath(os.path.dirname(__file__))+'/opus.weights').readlines():
+		for line in open(os.path.join(os.path.abspath(os.path.dirname(__file__)), 'opus.weights')).readlines():
 			(v, k, r) = line.strip().split('\t')
 			self.opus_weights[k] = (int(v), r.split(','))
 

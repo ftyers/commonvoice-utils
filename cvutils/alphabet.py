@@ -1,3 +1,4 @@
+"""Alphabet module"""
 import sys
 import os
 
@@ -16,8 +17,8 @@ class Alphabet:
 			print('[Alphabet] Function not implemented', file=sys.stderr)
 
 	def load_data(self):
-		data_dir = os.path.abspath(os.path.dirname(__file__)) + '/data/'
-		fd = open(data_dir + self.lang + '/alphabet.txt')
+		data_dir = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'data')
+		fd = open(os.path.join(data_dir, self.lang, 'alphabet.txt'))
 		a = [' '] + [line.strip('\n') for line in fd.readlines()]
 		a = list(set(''.join(a)))
 		a.sort()

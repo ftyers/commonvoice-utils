@@ -1,4 +1,8 @@
-import re, os, sys, unicodedata
+"""Validator module"""
+import os
+import sys
+import re
+import unicodedata
 
 class Validator:
 	"""
@@ -22,8 +26,8 @@ class Validator:
 		self.skip = [] 
 		self.transform = {}
 		self.lower = False
-		data_dir = os.path.abspath(os.path.dirname(__file__)) + '/data/'
-		for line in open(data_dir + self.lang + '/validate.tsv').readlines():
+		data_dir = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'data')
+		for line in open(os.path.join(data_dir, self.lang, 'validate.tsv'), encoding="utf8").readlines():
 			if line[0] == '#':
 				continue
 			row = line.strip('\n').split('\t')
@@ -54,8 +58,8 @@ class Validator:
 			self.transform['\u00ad'] = ''
 		#print('T:', self.transform, file=sys.stderr)
 
-	def set_alphabet(s):
-		self.alphabet = s
+	# def set_alphabet(s):
+	# 	self.alphabet = s
 
 	def validate(self, transcript):
 		"""Returns either the normalised transcript or None"""
