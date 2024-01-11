@@ -1,4 +1,7 @@
-import re, os, sys
+"""Segmenter module"""
+import os
+import sys
+import re
 
 class Segmenter:
 	"""
@@ -18,19 +21,19 @@ class Segmenter:
 
 	def load_data(self):
 		self.eos = []
-		data_dir = os.path.abspath(os.path.dirname(__file__)) + '/data/'
-		for line in open(data_dir + self.lang + '/validate.tsv').readlines():
+		data_dir = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'data')
+		for line in open(os.path.join(data_dir, self.lang, 'validate.tsv'), encoding="utf8").readlines():
 			row = line.strip('\n').split('\t')
 			if row[0] == 'NORM':
 				k = row[1].strip()	
 				v = row[2].strip()	
 				self.transform[k] = v
-		for line in open(data_dir + self.lang + '/punct.tsv').readlines():
+		for line in open(os.path.join(data_dir, self.lang, 'punct.tsv'), encoding="utf8").readlines():
 			row = line.strip('\n').split('\t')
 			k = row[1].strip()	
 			self.eos.append(k)
 		self.abbr = []
-		for line in open(data_dir + self.lang + '/abbr.tsv').readlines():
+		for line in open(os.path.join(data_dir, self.lang, 'abbr.tsv'), encoding="utf8" ).readlines():
 			row = line.strip('\n').split('\t')
 			k = row[1].strip()	
 			self.abbr.append(k.replace('.', '\\.'))

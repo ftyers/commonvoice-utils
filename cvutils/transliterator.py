@@ -1,7 +1,12 @@
-import re, os, sys
-from att import ATTFST
+"""Transliterator module"""
+import os
+import sys
+import re
 import pathlib
-from validator import Validator
+
+from .validator import Validator
+# from .att import ATTFST
+
 
 class Transliterator:
 	"""
@@ -16,6 +21,7 @@ class Transliterator:
 		self.detector = {}
 		self.transducer = None
 		self.normalise = None
+		self.transliterate = None
 		try:
 			self.load_data()
 		except FileNotFoundError:
@@ -29,7 +35,7 @@ class Transliterator:
 
 	def load_data(self):
 		self.lkp = {}
-		data_dir = os.path.abspath(os.path.dirname(__file__)) + '/data/' + self.lang + '/'
+		data_dir = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'data', self.lang)
 		paths = [p.name for p in pathlib.Path(data_dir).glob('transliterate.*')]
 		if len(paths) == 0:
 			raise FileNotFoundError
@@ -47,8 +53,8 @@ class Transliterator:
 	#	self.transliterate = self.lookup_att
 
 	def load_data_tsv(self):
-		data_dir = os.path.abspath(os.path.dirname(__file__)) + '/data/' + self.lang + '/'
-		fd = open(data_dir + '/transliterate.tsv')
+		data_dir = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'data', self.lang)
+		fd = open(os.path.join(data_dir,'transliterate.tsv'))
 		# Cyrl	Latn
 		scripts_row = fd.readline().strip().split('\t') 
 		# [а-я]	[a-z]

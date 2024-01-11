@@ -1,7 +1,10 @@
-import re, os, sys
-from att import ATTFST
+"""Phonemiser module"""
+import os
+import sys
 import pathlib
-from validator import Validator
+
+from .att import ATTFST
+from .validator import Validator
 
 class Phonemiser:
 	"""
@@ -29,7 +32,7 @@ class Phonemiser:
 
 	def load_data(self):
 		self.lkp = {}
-		data_dir = os.path.abspath(os.path.dirname(__file__)) + '/data/' + self.lang + '/'
+		data_dir = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'data', self.lang)
 		paths = [p.name for p in pathlib.Path(data_dir).glob('phon.*')]
 		if len(paths) == 0:
 			raise FileNotFoundError
@@ -42,13 +45,13 @@ class Phonemiser:
 				break
 
 	def load_data_att(self):
-		data_dir = os.path.abspath(os.path.dirname(__file__)) + '/data/' + self.lang + '/'
-		self.transducer = ATTFST(data_dir + '/phon.att')	
+		data_dir = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'data', self.lang)
+		self.transducer = ATTFST(os.path.join(data_dir, 'phon.att'))
 		self.phonemise = self.lookup_att
 
 	def load_data_tsv(self):
-		data_dir = os.path.abspath(os.path.dirname(__file__)) + '/data/' + self.lang + '/'
-		fd = open(data_dir + '/phon.tsv')
+		data_dir = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'data', self.lang)
+		fd = open(os.path.join(data_dir, 'phon.tsv'))
 		line = fd.readline() # Skip the first line
 		line = fd.readline()
 		while line:

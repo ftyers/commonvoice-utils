@@ -81,9 +81,9 @@ class NemoExporter:
 			tsv_file: str, path to *.csv file with data description, usually start from 'cv-'
 			data_root: str, path to dir to save results; wav/ dir will be created
 		"""
-		wav_dir = os.path.join(data_root, 'wav/')
+		wav_dir = os.path.join(data_root, 'wav')
 		os.makedirs(wav_dir, exist_ok=True)
-		audio_clips_path = os.path.dirname(tsv_file) + '/clips/'
+		audio_clips_path = os.path.join(os.path.dirname(tsv_file), 'clips')
 	
 		def process(x):
 			file_path, text = x

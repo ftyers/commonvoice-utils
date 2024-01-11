@@ -1,20 +1,20 @@
 #!/usr/bin/env python3
+"""covo cli"""
 
+
+import os
 import sys
-
-from pathlib import Path
-import urllib.request
-
-import json, os
-import ssl
-
+import json
+# import ssl
 import multiprocessing as mp
+import urllib.request
+# from pathlib import Path
 
-from cvutils import CV 
-from cvutils import Corpora 
+from cvutils import CV
+from cvutils import Corpora
 from cvutils import Segmenter
 from cvutils import Validator
-from cvutils import Alphabet 
+from cvutils import Alphabet
 from cvutils import Phonemiser
 from cvutils import Tokeniser
 
@@ -215,7 +215,7 @@ elif mode == 'clean':
 	valid_sents = 0
 	discarded = []
 	malformed = []
-	with open(sys.argv[3 + arg_offset]) as csv_file:
+	with open(sys.argv[3 + arg_offset], encoding="utf8") as csv_file:
 		csv_reader = csv.reader(csv_file, delimiter=',')
 		csv_writer = csv.writer(sys.stdout, delimiter=',')
 		csv_writer.writerow(next(csv_reader))
@@ -317,14 +317,14 @@ elif mode == 'avail':
 elif mode == 'gutenberg' or mode == 'guten' or mode == 'gb':
 	cmd = sys.argv[2 + arg_offset]
 	HOME = os.getenv('HOME')
-	covo_cache_dir = HOME + "/.covo/"
+	covo_cache_dir = os.path.join(HOME, ".covo")
 
 	from cvutils import gutenberg
 
 	def gb_update(covo_cache_dir):
 		if not os.path.isdir(covo_cache_dir):
 			os.mkdir(covo_cache_dir, mode=0o755)
-		fd = open(covo_cache_dir + "GUTINDEX.ALL", 'w')
+		fd = open(os.path.join(covo_cache_dir, "GUTINDEX.ALL"), 'w')
 		g = urllib.request.urlopen('https://www.gutenberg.org/dirs/GUTINDEX.ALL')
 		txt = g.read().strip()
 		fd.write(txt.decode('utf-8'))
@@ -388,7 +388,7 @@ elif mode == 'export':
 	tipus = sys.argv[2 + arg_offset]
 	locale = sys.argv[3 + arg_offset]
 	input_dir = sys.argv[4 + arg_offset]
-	output_dir = sys.argv[4 + arg_offset] + '/clips/'
+	output_dir = os.path.join(sys.argv[4 + arg_offset], 'clips')
 	if len(sys.argv) == 6 + arg_offset:
 		output_dir = sys.argv[5 + arg_offset]
 
